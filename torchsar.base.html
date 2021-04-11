@@ -1,0 +1,601 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>torchsar.base package &mdash; TorchSAR 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+        <script src="_static/katex_autorenderer.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="torchsar.calibration package" href="torchsar.calibration.html" />
+    <link rel="prev" title="torchsar package" href="torchsar.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> TorchSAR
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">torchsar.base package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.calibration.html">torchsar.calibration package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.dsp.html">torchsar.dsp package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.evaluation.html">torchsar.evaluation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.imaging.html">torchsar.imaging package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.layerfunction.html">torchsar.layerfunction package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.misc.html">torchsar.misc package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.module.html">torchsar.module package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sarcfg.html">torchsar.sarcfg package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html">torchsar.sharing package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.simulation.html">torchsar.simulation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-torchsar">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TorchSAR</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">torchsar</a> &raquo;</li>
+        
+          <li><a href="torchsar.html">torchsar package</a> &raquo;</li>
+        
+      <li>torchsar.base package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/torchsar.base.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="torchsar-base-package">
+<h1>torchsar.base package<a class="headerlink" href="#torchsar-base-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-torchsar.base.arrayops">
+<span id="torchsar-base-arrayops-module"></span><h2>torchsar.base.arrayops module<a class="headerlink" href="#module-torchsar.base.arrayops" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="torchsar.base.arrayops.arraycomb">
+<code class="sig-prename descclassname">torchsar.base.arrayops.</code><code class="sig-name descname">arraycomb</code><span class="sig-paren">(</span><em class="sig-param">arrays</em>, <em class="sig-param">out=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.arrayops.arraycomb" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="torchsar.base.arrayops.cut">
+<code class="sig-prename descclassname">torchsar.base.arrayops.</code><code class="sig-name descname">cut</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">pos</em>, <em class="sig-param">axis=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.arrayops.cut" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cut array at given position.</p>
+<p>Cut array at given position.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>{torch.ndarray}</em>) – [description]</p></li>
+<li><p><strong>pos</strong> (<em>{tulpe</em><em> or </em><em>list}</em>) – cut positions: ((cpstart, cpend), (cpstart, cpend), …)</p></li>
+<li><p><strong>axis</strong> (<em>{number</em><em>, </em><em>tulpe</em><em> or </em><em>list}</em><em>, </em><em>optional</em>) – cut axis (the default is None, which means nothing)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="torchsar.base.arrayops.sl">
+<code class="sig-prename descclassname">torchsar.base.arrayops.</code><code class="sig-name descname">sl</code><span class="sig-paren">(</span><em class="sig-param">dims</em>, <em class="sig-param">axis</em>, <em class="sig-param">idx=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.arrayops.sl" title="Permalink to this definition">¶</a></dt>
+<dd><p>slice any axis</p>
+<p>generates slice of specified axis.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dims</strong> (<em>{integer}</em>) – total dimensions</p></li>
+<li><p><strong>axis</strong> (<em>{int</em><em> or </em><em>list}</em>) – select axis list.</p></li>
+<li><p><strong>idx</strong> (<em>{list</em><em> or </em><em>None}</em><em>, </em><em>optional</em>) – slice lists of the specified <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code>, if None, does nothing (the default)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>slice for specified axis elements.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>[tuple of slice]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.base.baseops">
+<span id="torchsar-base-baseops-module"></span><h2>torchsar.base.baseops module<a class="headerlink" href="#module-torchsar.base.baseops" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="torchsar.base.baseops.cat">
+<code class="sig-prename descclassname">torchsar.base.baseops.</code><code class="sig-name descname">cat</code><span class="sig-paren">(</span><em class="sig-param">shapes</em>, <em class="sig-param">axis=0</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.baseops.cat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Concatenates</p>
+<p>Concatenates the given sequence of seq shapes in the given dimension.
+All tensors must either have the same shape (except in the concatenating dimension) or be empty.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>shapes</strong> (<em>{tuples</em><em> or </em><em>lists}</em>) – (shape1, shape2, …)</p></li>
+<li><p><strong>axis</strong> (<em>{number}</em><em>, </em><em>optional</em>) – specify the concatenated axis (the default is 0)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>concatenated shape</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tulpe or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)">list</a></p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.9)"><strong>ValueError</strong></a> – Shapes are not consistent in axises except the specified one.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="torchsar.base.baseops.concat2">
+<code class="sig-prename descclassname">torchsar.base.baseops.</code><code class="sig-name descname">concat2</code><span class="sig-paren">(</span><em class="sig-param">X1</em>, <em class="sig-param">X2</em>, <em class="sig-param">axis</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.baseops.concat2" title="Permalink to this definition">¶</a></dt>
+<dd><p>concatenate [X1, X2] in aixs direction</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X1</strong> (<em>{Torch Tensor}</em>) – the first torch tensor for concatenating</p></li>
+<li><p><strong>X2</strong> (<em>{Torch Tensor}</em>) – the second torch tensor for concatenating</p></li>
+<li><p><strong>axis</strong> (<em>{integer}</em>) – concatenating axis</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>concatenated tensors</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Torch Tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="torchsar.base.baseops.dmka">
+<code class="sig-prename descclassname">torchsar.base.baseops.</code><code class="sig-name descname">dmka</code><span class="sig-paren">(</span><em class="sig-param">D</em>, <em class="sig-param">Ds</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.baseops.dmka" title="Permalink to this definition">¶</a></dt>
+<dd><p>Multi-key value assign</p>
+<p>Multi-key value assign</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>D</strong> (<em>{</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#type" title="(in Python v3.9)"><em>type</em></a><em>]</em><em>}</em>) – [description]</p></li>
+<li><p><strong>Ds</strong> (<em>{</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#type" title="(in Python v3.9)"><em>type</em></a><em>]</em><em>}</em>) – [description]</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.base.mathops">
+<span id="torchsar-base-mathops-module"></span><h2>torchsar.base.mathops module<a class="headerlink" href="#module-torchsar.base.mathops" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="torchsar.base.mathops.absc">
+<code class="sig-prename descclassname">torchsar.base.mathops.</code><code class="sig-name descname">absc</code><span class="sig-paren">(</span><em class="sig-param">X</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.absc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="torchsar.base.mathops.conj">
+<code class="sig-prename descclassname">torchsar.base.mathops.</code><code class="sig-name descname">conj</code><span class="sig-paren">(</span><em class="sig-param">X</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.conj" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="torchsar.base.mathops.ebemulcc">
+<code class="sig-prename descclassname">torchsar.base.mathops.</code><code class="sig-name descname">ebemulcc</code><span class="sig-paren">(</span><em class="sig-param">A</em>, <em class="sig-param">B</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.ebemulcc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Element-by-element complex multiplication</p>
+<p>like A .* B in matlab</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>A</strong> (<em>{torch array}</em>) – any size torch array, both complex and real representation are supported.
+For real representation, the last dimension is 2 (the first –&gt; real part, the second –&gt; imaginary part).</p></li>
+<li><p><strong>B</strong> (<em>{torch array}</em>) – any size torch array, both complex and real representation are supported.
+For real representation, the last dimension is 2 (the first –&gt; real part, the second –&gt; imaginary part).
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">B</span></code> has the same size as <code class="xref py py-attr docutils literal notranslate"><span class="pre">A</span></code>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>result of element-by-element complex multiplication with the same repesentation as <code class="xref py py-attr docutils literal notranslate"><span class="pre">A</span></code>.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>torch array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="torchsar.base.mathops.matmulcc">
+<code class="sig-prename descclassname">torchsar.base.mathops.</code><code class="sig-name descname">matmulcc</code><span class="sig-paren">(</span><em class="sig-param">A</em>, <em class="sig-param">B</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.matmulcc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Complex matrix multiplication</p>
+<p>like A * B in matlab</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>A</strong> (<em>{torch array}</em>) – any size torch array, both complex and real representation are supported.
+For real representation, the last dimension is 2 (the first –&gt; real part, the second –&gt; imaginary part).</p></li>
+<li><p><strong>B</strong> (<em>{torch array}</em>) – any size torch array, both complex and real representation are supported.
+For real representation, the last dimension is 2 (the first –&gt; real part, the second –&gt; imaginary part).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>result of complex multiplication with the same repesentation as <code class="xref py py-attr docutils literal notranslate"><span class="pre">A</span></code>.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>torch array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="torchsar.base.mathops.mmcc">
+<code class="sig-prename descclassname">torchsar.base.mathops.</code><code class="sig-name descname">mmcc</code><span class="sig-paren">(</span><em class="sig-param">A</em>, <em class="sig-param">B</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.mmcc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Complex matrix multiplication</p>
+<p>like A * B in matlab</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>A</strong> (<em>{torch array}</em>) – any size torch array, both complex and real representation are supported.
+For real representation, the last dimension is 2 (the first –&gt; real part, the second –&gt; imaginary part).</p></li>
+<li><p><strong>B</strong> (<em>{torch array}</em>) – any size torch array, both complex and real representation are supported.
+For real representation, the last dimension is 2 (the first –&gt; real part, the second –&gt; imaginary part).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>result of complex multiplication with the same repesentation as <code class="xref py py-attr docutils literal notranslate"><span class="pre">A</span></code>.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>torch array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="torchsar.base.mathops.nextpow2">
+<code class="sig-prename descclassname">torchsar.base.mathops.</code><code class="sig-name descname">nextpow2</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.nextpow2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="torchsar.base.mathops.prevpow2">
+<code class="sig-prename descclassname">torchsar.base.mathops.</code><code class="sig-name descname">prevpow2</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.prevpow2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="torchsar.base.mathops.sinc">
+<code class="sig-prename descclassname">torchsar.base.mathops.</code><code class="sig-name descname">sinc</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.sinc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.base.randomfunc">
+<span id="torchsar-base-randomfunc-module"></span><h2>torchsar.base.randomfunc module<a class="headerlink" href="#module-torchsar.base.randomfunc" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="torchsar.base.randomfunc.permutation">
+<code class="sig-prename descclassname">torchsar.base.randomfunc.</code><code class="sig-name descname">permutation</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.randomfunc.permutation" title="Permalink to this definition">¶</a></dt>
+<dd><p>permutation function like numpy.random.permutation</p>
+<p>permutation function like numpy.random.permutation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>{torch.tensor}</em>) – inputs, can have any dimensions.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>x</strong> – permutated tensor</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>{torch.tensor}</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="torchsar.base.randomfunc.randgrid">
+<code class="sig-prename descclassname">torchsar.base.randomfunc.</code><code class="sig-name descname">randgrid</code><span class="sig-paren">(</span><em class="sig-param">start</em>, <em class="sig-param">stop</em>, <em class="sig-param">step</em>, <em class="sig-param">shake=0</em>, <em class="sig-param">n=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.randomfunc.randgrid" title="Permalink to this definition">¶</a></dt>
+<dd><p>generates non-repeated uniform stepped random ints</p>
+<p>Generates <code class="xref py py-attr docutils literal notranslate"><span class="pre">n</span></code> non-repeated random ints from <code class="xref py py-attr docutils literal notranslate"><span class="pre">start</span></code> to <code class="xref py py-attr docutils literal notranslate"><span class="pre">stop</span></code>
+with step size <code class="xref py py-attr docutils literal notranslate"><span class="pre">step</span></code>.</p>
+<p>When step is 1 and shake is 0, it works similar to randperm,</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>{int</em><em> or </em><em>list}</em>) – start sampling point</p></li>
+<li><p><strong>stop</strong> (<em>{int</em><em> or </em><em>list}</em>) – stop sampling point</p></li>
+<li><p><strong>step</strong> (<em>{int</em><em> or </em><em>list}</em>) – sampling stepsize</p></li>
+<li><p><strong>shake</strong> (<em>{float}</em>) – the shake rate, if <code class="xref py py-attr docutils literal notranslate"><span class="pre">shake</span></code> is 0, no shake, (default),
+if positive, add a positive shake, if negative, add a negative.</p></li>
+<li><p><strong>n</strong> (<em>{int</em><em> or </em><em>None}</em>) – the number of samples (default None, int((stop0 - start0) / step0) * int((stop1 - start1) / step1)…).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>for multi-dimension, return a 2-d tensor, for 1-dimension, return a 1d-tensor.</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">setseed</span><span class="p">(</span><span class="mi">2021</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">randperm</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="s2">&quot;, randperm(2, 40, 8)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">randgrid</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="s2">&quot;, randgrid(2, 40, 1, 8, -1.)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">randgrid</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="s2">&quot;, randgrid(2, 40, 6, 8)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">randgrid</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="s2">&quot;, randgrid(2, 40, 6, 8, 0.5)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">randgrid</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">),</span> <span class="s2">&quot;, randgrid(2, 40, 6, 12)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">randgrid</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">12</span><span class="p">),</span> <span class="s2">&quot;, randgrid(2, 40, 6, 12, 0.5)&quot;</span><span class="p">)</span>
+
+<span class="n">mask</span> <span class="o">=</span> <span class="n">th</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">mask</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">mask</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">Rh</span><span class="p">,</span> <span class="n">Rw</span> <span class="o">=</span> <span class="n">randperm2d</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="n">mask</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">Rh</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Rw</span><span class="p">)</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="n">randperm</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8192</span><span class="p">,</span> <span class="mi">800</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">randperm</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8192</span><span class="p">,</span> <span class="mi">800</span><span class="p">)</span>
+
+<span class="n">y</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="n">randgrid</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">512</span><span class="p">,</span> <span class="mi">512</span><span class="p">],</span> <span class="p">[</span><span class="mi">64</span><span class="p">,</span> <span class="mi">64</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.</span><span class="p">],</span> <span class="mi">32</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">y</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="n">randgrid</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">8192</span><span class="p">,</span> <span class="mi">8192</span><span class="p">],</span> <span class="p">[</span><span class="mi">256</span><span class="p">,</span> <span class="mi">256</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">],</span> <span class="mi">400</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>see <a class="reference internal" href="#torchsar.base.randomfunc.randperm" title="torchsar.base.randomfunc.randperm"><code class="xref py py-func docutils literal notranslate"><span class="pre">randperm()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="torchsar.base.randomfunc.randperm">
+<code class="sig-prename descclassname">torchsar.base.randomfunc.</code><code class="sig-name descname">randperm</code><span class="sig-paren">(</span><em class="sig-param">start</em>, <em class="sig-param">stop</em>, <em class="sig-param">n</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.randomfunc.randperm" title="Permalink to this definition">¶</a></dt>
+<dd><p>randperm function like matlab</p>
+<p>genarates diffrent random interges in range [start, stop)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>{int</em><em> or </em><em>list}</em>) – start sampling point</p></li>
+<li><p><strong>stop</strong> (<em>{int</em><em> or </em><em>list}</em>) – stop sampling point</p></li>
+<li><p><strong>n</strong> (<em>{int</em><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em> or </em><em>None}</em>) – the number of samples (default None, (stop - start))</p></li>
+</ul>
+</dd>
+</dl>
+<p>:param see <a class="reference internal" href="#torchsar.base.randomfunc.randgrid" title="torchsar.base.randomfunc.randgrid"><code class="xref py py-func docutils literal notranslate"><span class="pre">randgrid()</span></code></a>.:</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="torchsar.base.randomfunc.randperm2d">
+<code class="sig-prename descclassname">torchsar.base.randomfunc.</code><code class="sig-name descname">randperm2d</code><span class="sig-paren">(</span><em class="sig-param">H</em>, <em class="sig-param">W</em>, <em class="sig-param">number</em>, <em class="sig-param">population=None</em>, <em class="sig-param">mask=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.randomfunc.randperm2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>randperm 2d function</p>
+<p>genarates diffrent random interges in range [start, end)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>H</strong> (<em>{int}</em>) – height</p></li>
+<li><p><strong>W</strong> (<em>{int}</em>) – width</p></li>
+<li><p><strong>number</strong> (<em>{int}</em>) – random numbers</p></li>
+<li><p><strong>population</strong> (<em>{list</em><em> or </em><em>numpy array</em><em>(</em><em>1d</em><em> or </em><em>2d</em><em>)</em><em>}</em>) – part of population in range(0, H*W)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="torchsar.base.randomfunc.setseed">
+<code class="sig-prename descclassname">torchsar.base.randomfunc.</code><code class="sig-name descname">setseed</code><span class="sig-paren">(</span><em class="sig-param">seed=None</em>, <em class="sig-param">target='torch'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.randomfunc.setseed" title="Permalink to this definition">¶</a></dt>
+<dd><p>set seed</p>
+<p>Set numpy / random / torch / torch.random / torch.cuda seed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>seed</strong> (<em>{int</em><em> or </em><em>None}</em><em>, </em><em>optional</em>) – seed for random number generator (the default is None)</p></li>
+<li><p><strong>target</strong> (<em>{str}</em><em>, </em><em>optional</em>) – <ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">'numpy'</span></code>: <code class="docutils literal notranslate"><span class="pre">np.random.seed(seed)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'random'</span></code>: <code class="docutils literal notranslate"><span class="pre">random.seed(seed)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'torch'</span></code>: <code class="docutils literal notranslate"><span class="pre">torch.manual_seed(seed)</span></code> (default)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'torch.random'</span></code>: <code class="docutils literal notranslate"><span class="pre">torch.random.manual_seed(seed)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'cuda'</span></code>: <code class="docutils literal notranslate"><span class="pre">torch.cuda.manual_seed(seed)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'cudaall'</span></code>: <code class="docutils literal notranslate"><span class="pre">torch.cuda.manual_seed_all(seed)</span></code></p></li>
+</ul>
+</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.base">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-torchsar.base" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="torchsar.calibration.html" class="btn btn-neutral float-right" title="torchsar.calibration package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="torchsar.html" class="btn btn-neutral float-left" title="torchsar package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2017-2021, Zhi Liu, School of Artificial Intelligence, Xidian University
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,836 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>torchsar.module.loss package &mdash; TorchSAR 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+        <script src="_static/katex_autorenderer.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="torchsar.module.misc package" href="torchsar.module.misc.html" />
+    <link rel="prev" title="torchsar.module.layers package" href="torchsar.module.layers.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> TorchSAR
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="torchsar.base.html">torchsar.base package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.calibration.html">torchsar.calibration package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.dsp.html">torchsar.dsp package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.evaluation.html">torchsar.evaluation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.imaging.html">torchsar.imaging package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.layerfunction.html">torchsar.layerfunction package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.misc.html">torchsar.misc package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="torchsar.module.html">torchsar.module package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sarcfg.html">torchsar.sarcfg package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html">torchsar.sharing package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.simulation.html">torchsar.simulation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-torchsar">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TorchSAR</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">torchsar</a> &raquo;</li>
+        
+          <li><a href="torchsar.html">torchsar package</a> &raquo;</li>
+        
+          <li><a href="torchsar.module.html">torchsar.module package</a> &raquo;</li>
+        
+      <li>torchsar.module.loss package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/torchsar.module.loss.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="torchsar-module-loss-package">
+<h1>torchsar.module.loss package<a class="headerlink" href="#torchsar-module-loss-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-torchsar.module.loss.contrast">
+<span id="torchsar-module-loss-contrast-module"></span><h2>torchsar.module.loss.contrast module<a class="headerlink" href="#module-torchsar.module.loss.contrast" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="torchsar.module.loss.contrast.ContrastLoss">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.loss.contrast.</code><code class="sig-name descname">ContrastLoss</code><span class="sig-paren">(</span><em class="sig-param">mode='way1'</em>, <em class="sig-param">axis=None</em>, <em class="sig-param">caxis=None</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.contrast.ContrastLoss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>way1 is defined as follows, see [1]:</p>
+<div class="math">
+\[C = \frac{\sqrt{{\rm E}\left(|I|^2 - {\rm E}(|I|^2)\right)^2}}{{\rm E}(|I|^2)}
+
+\]</div>
+<p>way2 is defined as follows, see [2]:</p>
+<div class="math">
+\[C = \frac{{\rm E}(|I|^2)}{\left({\rm E}(|I|)\right)^2}
+
+\]</div>
+<p>[1] Efficient Nonparametric ISAR Autofocus Algorithm Based on Contrast Maximization and Newton
+[2] section 13.4.1 in “Ian G. Cumming’s SAR book”</p>
+<dl class="method">
+<dt id="torchsar.module.loss.contrast.ContrastLoss.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.contrast.ContrastLoss.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="torchsar.module.loss.contrast.ContrastLoss.training">
+<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.loss.contrast.ContrastLoss.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="torchsar.module.loss.contrast.ContrastReciprocalLoss">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.loss.contrast.</code><code class="sig-name descname">ContrastReciprocalLoss</code><span class="sig-paren">(</span><em class="sig-param">mode='way1'</em>, <em class="sig-param">axis=None</em>, <em class="sig-param">caxis=None</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.contrast.ContrastReciprocalLoss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>way1 is defined as follows, see [1]:</p>
+<div class="math">
+\[C = \frac{{\rm E}(|I|^2)}{\sqrt{{\rm E}\left(|I|^2 - {\rm E}(|I|^2)\right)^2}}
+
+\]</div>
+<p>way2 is defined as follows, see [2]:</p>
+<div class="math">
+\[C = \frac{\left({\rm E}(|I|)\right)^2}{{\rm E}(|I|^2)}
+
+\]</div>
+<p>[1] Efficient Nonparametric ISAR Autofocus Algorithm Based on Contrast Maximization and Newton
+[2] section 13.4.1 in “Ian G. Cumming’s SAR book”</p>
+<dl class="method">
+<dt id="torchsar.module.loss.contrast.ContrastReciprocalLoss.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.contrast.ContrastReciprocalLoss.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="torchsar.module.loss.contrast.ContrastReciprocalLoss.training">
+<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.loss.contrast.ContrastReciprocalLoss.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="torchsar.module.loss.contrast.NegativeContrastLoss">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.loss.contrast.</code><code class="sig-name descname">NegativeContrastLoss</code><span class="sig-paren">(</span><em class="sig-param">mode='way1'</em>, <em class="sig-param">axis=None</em>, <em class="sig-param">caxis=None</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.contrast.NegativeContrastLoss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>way1 is defined as follows, see [1]:</p>
+<div class="math">
+\[C = -\frac{\sqrt{{\rm E}\left(|I|^2 - {\rm E}(|I|^2)\right)^2}}{{\rm E}(|I|^2)}
+
+\]</div>
+<p>way2 is defined as follows, see [2]:</p>
+<div class="math">
+\[C = -\frac{{\rm E}(|I|^2)}{\left({\rm E}(|I|)\right)^2}
+
+\]</div>
+<p>[1] Efficient Nonparametric ISAR Autofocus Algorithm Based on Contrast Maximization and Newton
+[2] section 13.4.1 in “Ian G. Cumming’s SAR book”</p>
+<dl class="method">
+<dt id="torchsar.module.loss.contrast.NegativeContrastLoss.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.contrast.NegativeContrastLoss.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="torchsar.module.loss.contrast.NegativeContrastLoss.training">
+<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.loss.contrast.NegativeContrastLoss.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.module.loss.entropy">
+<span id="torchsar-module-loss-entropy-module"></span><h2>torchsar.module.loss.entropy module<a class="headerlink" href="#module-torchsar.module.loss.entropy" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="torchsar.module.loss.entropy.EntropyLoss">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.loss.entropy.</code><code class="sig-name descname">EntropyLoss</code><span class="sig-paren">(</span><em class="sig-param">mode='shannon'</em>, <em class="sig-param">axis=None</em>, <em class="sig-param">caxis=None</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.entropy.EntropyLoss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>Entropy loss</p>
+<dl class="method">
+<dt id="torchsar.module.loss.entropy.EntropyLoss.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.entropy.EntropyLoss.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="torchsar.module.loss.entropy.EntropyLoss.training">
+<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.loss.entropy.EntropyLoss.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.module.loss.fourier_domain">
+<span id="torchsar-module-loss-fourier-domain-module"></span><h2>torchsar.module.loss.fourier_domain module<a class="headerlink" href="#module-torchsar.module.loss.fourier_domain" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="torchsar.module.loss.fourier_domain.FourierDomainAmplitudeLoss">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.loss.fourier_domain.</code><code class="sig-name descname">FourierDomainAmplitudeLoss</code><span class="sig-paren">(</span><em class="sig-param">mode='mse'</em>, <em class="sig-param">axis=(-2</em>, <em class="sig-param">-1)</em>, <em class="sig-param">caxis=None</em>, <em class="sig-param">norm=None</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.fourier_domain.FourierDomainAmplitudeLoss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>Entropy loss</p>
+<dl class="method">
+<dt id="torchsar.module.loss.fourier_domain.FourierDomainAmplitudeLoss.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">P</em>, <em class="sig-param">G</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.fourier_domain.FourierDomainAmplitudeLoss.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="torchsar.module.loss.fourier_domain.FourierDomainAmplitudeLoss.training">
+<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.loss.fourier_domain.FourierDomainAmplitudeLoss.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="torchsar.module.loss.fourier_domain.FourierDomainLoss">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.loss.fourier_domain.</code><code class="sig-name descname">FourierDomainLoss</code><span class="sig-paren">(</span><em class="sig-param">mode='mse'</em>, <em class="sig-param">axis=(-2</em>, <em class="sig-param">-1)</em>, <em class="sig-param">caxis=None</em>, <em class="sig-param">norm=None</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.fourier_domain.FourierDomainLoss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>Fourier loss</p>
+<dl class="method">
+<dt id="torchsar.module.loss.fourier_domain.FourierDomainLoss.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">P</em>, <em class="sig-param">G</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.fourier_domain.FourierDomainLoss.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="torchsar.module.loss.fourier_domain.FourierDomainLoss.training">
+<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.loss.fourier_domain.FourierDomainLoss.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="torchsar.module.loss.fourier_domain.FourierDomainNormLoss">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.loss.fourier_domain.</code><code class="sig-name descname">FourierDomainNormLoss</code><span class="sig-paren">(</span><em class="sig-param">reduction='mean'</em>, <em class="sig-param">p=1.5</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.fourier_domain.FourierDomainNormLoss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<div class="math">
+\[C = \frac{{\rm E}(|I|^2)}{[E(|I|)]^2}
+
+\]</div>
+<p>see Fast Fourier domain optimization using hybrid</p>
+<dl class="method">
+<dt id="torchsar.module.loss.fourier_domain.FourierDomainNormLoss.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">w=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.fourier_domain.FourierDomainNormLoss.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>[summary]</p>
+<p>[description]</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>{</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#type" title="(in Python v3.9)"><em>type</em></a><em>]</em><em>}</em>) – After fft in azimuth</p></li>
+<li><p><strong>w</strong> (<em>{</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#type" title="(in Python v3.9)"><em>type</em></a><em>]</em><em>}</em><em>, </em><em>optional</em>) – [description] (the default is None, which [default_description])</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>[description]</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#type" title="(in Python v3.9)">type</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="torchsar.module.loss.fourier_domain.FourierDomainNormLoss.training">
+<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.loss.fourier_domain.FourierDomainNormLoss.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="torchsar.module.loss.fourier_domain.FourierDomainPhaseLoss">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.loss.fourier_domain.</code><code class="sig-name descname">FourierDomainPhaseLoss</code><span class="sig-paren">(</span><em class="sig-param">mode='mse'</em>, <em class="sig-param">axis=(-2</em>, <em class="sig-param">-1)</em>, <em class="sig-param">caxis=None</em>, <em class="sig-param">norm=None</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.fourier_domain.FourierDomainPhaseLoss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>Fourier loss</p>
+<dl class="method">
+<dt id="torchsar.module.loss.fourier_domain.FourierDomainPhaseLoss.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">P</em>, <em class="sig-param">G</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.fourier_domain.FourierDomainPhaseLoss.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="torchsar.module.loss.fourier_domain.FourierDomainPhaseLoss.training">
+<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.loss.fourier_domain.FourierDomainPhaseLoss.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.module.loss.mean_squared_error">
+<span id="torchsar-module-loss-mean-squared-error-module"></span><h2>torchsar.module.loss.mean_squared_error module<a class="headerlink" href="#module-torchsar.module.loss.mean_squared_error" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="torchsar.module.loss.mean_squared_error.CMAELoss">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.loss.mean_squared_error.</code><code class="sig-name descname">CMAELoss</code><span class="sig-paren">(</span><em class="sig-param">caxis=-1</em>, <em class="sig-param">norm='max'</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.mean_squared_error.CMAELoss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>Complex mean absoluted error loss</p>
+<dl class="method">
+<dt id="torchsar.module.loss.mean_squared_error.CMAELoss.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">P</em>, <em class="sig-param">G</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.mean_squared_error.CMAELoss.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="torchsar.module.loss.mean_squared_error.CMAELoss.training">
+<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.loss.mean_squared_error.CMAELoss.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="torchsar.module.loss.mean_squared_error.CMSELoss">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.loss.mean_squared_error.</code><code class="sig-name descname">CMSELoss</code><span class="sig-paren">(</span><em class="sig-param">caxis=-1</em>, <em class="sig-param">norm='max'</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.mean_squared_error.CMSELoss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>Complex mean squared error loss</p>
+<dl class="method">
+<dt id="torchsar.module.loss.mean_squared_error.CMSELoss.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">P</em>, <em class="sig-param">G</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.mean_squared_error.CMSELoss.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="torchsar.module.loss.mean_squared_error.CMSELoss.training">
+<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.loss.mean_squared_error.CMSELoss.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.module.loss.norm">
+<span id="torchsar-module-loss-norm-module"></span><h2>torchsar.module.loss.norm module<a class="headerlink" href="#module-torchsar.module.loss.norm" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="torchsar.module.loss.norm.FrobeniusLoss">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.loss.norm.</code><code class="sig-name descname">FrobeniusLoss</code><span class="sig-paren">(</span><em class="sig-param">p=2</em>, <em class="sig-param">axis=None</em>, <em class="sig-param">caxis=None</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.norm.FrobeniusLoss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>Frobenius norm loss</p>
+<div class="math">
+\[\|\bm X\|_p^p = (\sum{x^p})^{1/p}
+
+\]</div>
+<dl class="method">
+<dt id="torchsar.module.loss.norm.FrobeniusLoss.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.norm.FrobeniusLoss.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="torchsar.module.loss.norm.FrobeniusLoss.training">
+<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.loss.norm.FrobeniusLoss.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="torchsar.module.loss.norm.LogFrobeniusLoss">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.loss.norm.</code><code class="sig-name descname">LogFrobeniusLoss</code><span class="sig-paren">(</span><em class="sig-param">p=2</em>, <em class="sig-param">axis=None</em>, <em class="sig-param">caxis=-1</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.norm.LogFrobeniusLoss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>LogFrobenius Loss</p>
+<div class="math">
+\[{\log}{\||\bm X|\|_p^p} = \log {\left((\sum{|x|^p})^{1/p}\right)}
+
+\]</div>
+<dl class="method">
+<dt id="torchsar.module.loss.norm.LogFrobeniusLoss.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.norm.LogFrobeniusLoss.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="torchsar.module.loss.norm.LogFrobeniusLoss.training">
+<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.loss.norm.LogFrobeniusLoss.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.module.loss.perceptual">
+<span id="torchsar-module-loss-perceptual-module"></span><h2>torchsar.module.loss.perceptual module<a class="headerlink" href="#module-torchsar.module.loss.perceptual" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="torchsar.module.loss.perceptual.RandomProjectionLoss">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.loss.perceptual.</code><code class="sig-name descname">RandomProjectionLoss</code><span class="sig-paren">(</span><em class="sig-param">mode='real', baseloss='MSE', channels=[3, 32], kernel_sizes=[(3, 3)], activations=['ReLU'], reduction='mean', device='cpu'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.perceptual.RandomProjectionLoss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>RandomProjection loss</p>
+<dl class="method">
+<dt id="torchsar.module.loss.perceptual.RandomProjectionLoss.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">P</em>, <em class="sig-param">G</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.perceptual.RandomProjectionLoss.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="torchsar.module.loss.perceptual.RandomProjectionLoss.training">
+<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.loss.perceptual.RandomProjectionLoss.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="torchsar.module.loss.perceptual.RandomProjectionLoss.weight_init">
+<code class="sig-name descname">weight_init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.perceptual.RandomProjectionLoss.weight_init" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.module.loss.retrieval">
+<span id="torchsar-module-loss-retrieval-module"></span><h2>torchsar.module.loss.retrieval module<a class="headerlink" href="#module-torchsar.module.loss.retrieval" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="torchsar.module.loss.retrieval.DiceLoss">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.loss.retrieval.</code><code class="sig-name descname">DiceLoss</code><span class="sig-paren">(</span><em class="sig-param">size_average=True</em>, <em class="sig-param">reduce=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.retrieval.DiceLoss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="method">
+<dt id="torchsar.module.loss.retrieval.DiceLoss.soft_dice_coeff">
+<code class="sig-name descname">soft_dice_coeff</code><span class="sig-paren">(</span><em class="sig-param">P</em>, <em class="sig-param">G</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.retrieval.DiceLoss.soft_dice_coeff" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="torchsar.module.loss.retrieval.DiceLoss.training">
+<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.loss.retrieval.DiceLoss.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="torchsar.module.loss.retrieval.F1Loss">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.loss.retrieval.</code><code class="sig-name descname">F1Loss</code><span class="sig-paren">(</span><em class="sig-param">size_average=True</em>, <em class="sig-param">reduce=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.retrieval.F1Loss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>F1 distance Loss</p>
+<div class="math">
+\[F_{\beta} = 1 -\frac{(1+\beta^2) * P * R}{\beta^2 *P + R}
+
+\]</div>
+<p>where,</p>
+<div class="math">
+\[{\rm PPV} = {P} = \frac{\rm TP}{{\rm TP} + {\rm FP}}
+
+\]</div>
+<div class="math">
+\[{\rm TPR} = {R} = \frac{\rm TP}{{\rm TP} + {\rm FN}}
+
+\]</div>
+<dl class="method">
+<dt id="torchsar.module.loss.retrieval.F1Loss.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">P</em>, <em class="sig-param">G</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.retrieval.F1Loss.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="torchsar.module.loss.retrieval.F1Loss.training">
+<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.loss.retrieval.F1Loss.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="torchsar.module.loss.retrieval.IridescentLoss">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.loss.retrieval.</code><code class="sig-name descname">IridescentLoss</code><span class="sig-paren">(</span><em class="sig-param">size_average=True</em>, <em class="sig-param">reduce=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.retrieval.IridescentLoss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>Iridescent Distance Loss</p>
+<div class="math">
+\[d_{J}({\mathbb A}, {\mathbb B})=1-J({\mathbb A}, {\mathbb B})=\frac{|{\mathbb A} \cup {\mathbb B}|-|{\mathbb A} \cap {\mathbb B}|}{|{\mathbb A} \cup {\mathbb B}|}
+
+\]</div>
+<dl class="method">
+<dt id="torchsar.module.loss.retrieval.IridescentLoss.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">P</em>, <em class="sig-param">G</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.retrieval.IridescentLoss.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="torchsar.module.loss.retrieval.IridescentLoss.training">
+<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.loss.retrieval.IridescentLoss.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="torchsar.module.loss.retrieval.JaccardLoss">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.loss.retrieval.</code><code class="sig-name descname">JaccardLoss</code><span class="sig-paren">(</span><em class="sig-param">size_average=True</em>, <em class="sig-param">reduce=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.retrieval.JaccardLoss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>Jaccard distance</p>
+<div class="math">
+\[d_{J}({\mathbb A}, {\mathbb B})=1-J({\mathbb A}, {\mathbb B})=\frac{|{\mathbb A} \cup {\mathbb B}|-|{\mathbb A} \cap {\mathbb B}|}{|{\mathbb A} \cup {\mathbb B}|}
+
+\]</div>
+<dl class="method">
+<dt id="torchsar.module.loss.retrieval.JaccardLoss.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">P</em>, <em class="sig-param">G</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.retrieval.JaccardLoss.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="torchsar.module.loss.retrieval.JaccardLoss.training">
+<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.loss.retrieval.JaccardLoss.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.module.loss.sparse_metric">
+<span id="torchsar-module-loss-sparse-metric-module"></span><h2>torchsar.module.loss.sparse_metric module<a class="headerlink" href="#module-torchsar.module.loss.sparse_metric" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="torchsar.module.loss.sparse_metric.FourierDomainLogSparseLoss">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.loss.sparse_metric.</code><code class="sig-name descname">FourierDomainLogSparseLoss</code><span class="sig-paren">(</span><em class="sig-param">p=1</em>, <em class="sig-param">axis=(-2</em>, <em class="sig-param">-1)</em>, <em class="sig-param">caxis=None</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.sparse_metric.FourierDomainLogSparseLoss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="method">
+<dt id="torchsar.module.loss.sparse_metric.FourierDomainLogSparseLoss.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.sparse_metric.FourierDomainLogSparseLoss.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="torchsar.module.loss.sparse_metric.FourierDomainLogSparseLoss.training">
+<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.loss.sparse_metric.FourierDomainLogSparseLoss.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="torchsar.module.loss.sparse_metric.LogSparseLoss">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.loss.sparse_metric.</code><code class="sig-name descname">LogSparseLoss</code><span class="sig-paren">(</span><em class="sig-param">p=1.0</em>, <em class="sig-param">axis=None</em>, <em class="sig-param">caxis=None</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.sparse_metric.LogSparseLoss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>Log Sparse loss</p>
+<dl class="method">
+<dt id="torchsar.module.loss.sparse_metric.LogSparseLoss.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.loss.sparse_metric.LogSparseLoss.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="torchsar.module.loss.sparse_metric.LogSparseLoss.training">
+<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.loss.sparse_metric.LogSparseLoss.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.module.loss">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-torchsar.module.loss" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="torchsar.module.misc.html" class="btn btn-neutral float-right" title="torchsar.module.misc package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="torchsar.module.layers.html" class="btn btn-neutral float-left" title="torchsar.module.layers package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2017-2021, Zhi Liu, School of Artificial Intelligence, Xidian University
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

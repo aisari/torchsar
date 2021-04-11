@@ -1,0 +1,450 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>torchsar.simulation package &mdash; TorchSAR 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+        <script src="_static/katex_autorenderer.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="torchsar.utils package" href="torchsar.utils.html" />
+    <link rel="prev" title="torchsar.sharing package" href="torchsar.sharing.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> TorchSAR
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="torchsar.base.html">torchsar.base package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.calibration.html">torchsar.calibration package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.dsp.html">torchsar.dsp package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.evaluation.html">torchsar.evaluation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.imaging.html">torchsar.imaging package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.layerfunction.html">torchsar.layerfunction package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.misc.html">torchsar.misc package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.module.html">torchsar.module package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sarcfg.html">torchsar.sarcfg package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html">torchsar.sharing package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">torchsar.simulation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-torchsar">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TorchSAR</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">torchsar</a> &raquo;</li>
+        
+          <li><a href="torchsar.html">torchsar package</a> &raquo;</li>
+        
+      <li>torchsar.simulation package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/torchsar.simulation.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="torchsar-simulation-package">
+<h1>torchsar.simulation package<a class="headerlink" href="#torchsar-simulation-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-torchsar.simulation.geometry">
+<span id="torchsar-simulation-geometry-module"></span><h2>torchsar.simulation.geometry module<a class="headerlink" href="#module-torchsar.simulation.geometry" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="torchsar.simulation.geometry.disc">
+<code class="sig-prename descclassname">torchsar.simulation.geometry.</code><code class="sig-name descname">disc</code><span class="sig-paren">(</span><em class="sig-param">SceneArea</em>, <em class="sig-param">x0</em>, <em class="sig-param">y0</em>, <em class="sig-param">r</em>, <em class="sig-param">a=None</em>, <em class="sig-param">dx=None</em>, <em class="sig-param">dy=None</em>, <em class="sig-param">verbose=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.geometry.disc" title="Permalink to this definition">¶</a></dt>
+<dd><p>disc area</p>
+<p>generates disc area</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>SceneArea</strong> (<em>{list</em><em> or </em><em>tuple}</em>) – Scene Area, [xmin,xmax,ymin,ymax]</p></li>
+<li><p><strong>x0</strong> (<em>{number}</em>) – x center of disc (x: horizontal, y: vertical)</p></li>
+<li><p><strong>y0</strong> (<em>{number}</em>) – y center of disc (x: horizontal, y: vertical)</p></li>
+<li><p><strong>r</strong> (<em>{number}</em>) – radius of disc</p></li>
+<li><p><strong>a</strong> (<em>{number}</em><em>, </em><em>optional</em>) – amplitude of disc (default: {None})</p></li>
+<li><p><strong>dx</strong> (<em>{float}</em><em>, </em><em>optional</em>) – resolution in range (default: {1 / (xmax-xmin)})</p></li>
+<li><p><strong>dy</strong> (<em>{float}</em><em>, </em><em>optional</em>) – resolution in azimuth (default: {1 / (ymax-ymin)})</p></li>
+<li><p><strong>verbose</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – show more log info (the default is False, which means does not show)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>ccas</strong> – disk area</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="torchsar.simulation.geometry.rectangle">
+<code class="sig-prename descclassname">torchsar.simulation.geometry.</code><code class="sig-name descname">rectangle</code><span class="sig-paren">(</span><em class="sig-param">SceneArea</em>, <em class="sig-param">x0</em>, <em class="sig-param">y0</em>, <em class="sig-param">h</em>, <em class="sig-param">w</em>, <em class="sig-param">a=None</em>, <em class="sig-param">dx=None</em>, <em class="sig-param">dy=None</em>, <em class="sig-param">verbose=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.geometry.rectangle" title="Permalink to this definition">¶</a></dt>
+<dd><p>rectangle area</p>
+<p>generates rectangle area</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>SceneArea</strong> (<em>{list</em><em> or </em><em>tuple}</em>) – Scene Area, unit m, [xmin,xmax,ymin,ymax]</p></li>
+<li><p><strong>x0</strong> (<em>{float}</em>) – x center of rectangle, unit m (x: horizontal, y: vertical)</p></li>
+<li><p><strong>y0</strong> (<em>{float}</em>) – y center of rectangle, unit m (x: horizontal, y: vertical)</p></li>
+<li><p><strong>h</strong> (<em>{float}</em>) – height of rectangle, unit m (the default is None, which generates randomly)</p></li>
+<li><p><strong>w</strong> (<em>{float}</em>) – width of rectangle, unit m (the default is None, which generates randomly)</p></li>
+<li><p><strong>a</strong> (<em>{float}</em><em>, </em><em>optional</em>) – amplitude (the default is None, which generates randomly)</p></li>
+<li><p><strong>dx</strong> (<em>{float}</em><em>, </em><em>optional</em>) – resolution in range (default: {1 / (xmax-xmin)})</p></li>
+<li><p><strong>dy</strong> (<em>{float}</em><em>, </em><em>optional</em>) – resolution in azimuth (default: {1 / (ymax-ymin)})</p></li>
+<li><p><strong>verbose</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – show more log info (the default is False, which means does not show)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>rects</strong> – rectangle area</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.simulation.make_sar_params">
+<span id="torchsar-simulation-make-sar-params-module"></span><h2>torchsar.simulation.make_sar_params module<a class="headerlink" href="#module-torchsar.simulation.make_sar_params" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="torchsar.simulation.make_sar_params.SARParameterGenerator">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.simulation.make_sar_params.</code><code class="sig-name descname">SARParameterGenerator</code><span class="sig-paren">(</span><em class="sig-param">prdict</em>, <em class="sig-param">seed=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.make_sar_params.SARParameterGenerator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="torchsar.simulation.make_sar_params.SARParameterGenerator.mksarp">
+<code class="sig-name descname">mksarp</code><span class="sig-paren">(</span><em class="sig-param">n=1</em>, <em class="sig-param">seed=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.make_sar_params.SARParameterGenerator.mksarp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.simulation.make_targets">
+<span id="torchsar-simulation-make-targets-module"></span><h2>torchsar.simulation.make_targets module<a class="headerlink" href="#module-torchsar.simulation.make_targets" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="torchsar.simulation.make_targets.gpoints">
+<code class="sig-prename descclassname">torchsar.simulation.make_targets.</code><code class="sig-name descname">gpoints</code><span class="sig-paren">(</span><em class="sig-param">SceneArea</em>, <em class="sig-param">npoints</em>, <em class="sig-param">amax=1.0</em>, <em class="sig-param">seed=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.make_targets.gpoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.simulation.sar_model">
+<span id="torchsar-simulation-sar-model-module"></span><h2>torchsar.simulation.sar_model module<a class="headerlink" href="#module-torchsar.simulation.sar_model" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="torchsar.simulation.sar_model.load_sarmodel">
+<code class="sig-prename descclassname">torchsar.simulation.sar_model.</code><code class="sig-name descname">load_sarmodel</code><span class="sig-paren">(</span><em class="sig-param">datafile</em>, <em class="sig-param">mod='AinvA'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.sar_model.load_sarmodel" title="Permalink to this definition">¶</a></dt>
+<dd><p>load sarmodel file</p>
+<p>load sarmodel file (<code class="docutils literal notranslate"><span class="pre">.pkl</span></code>)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>datafile</strong> (<em>{str}</em>) – Model data file path.</p></li>
+<li><p><strong>mod</strong> (<em>{str}</em><em>, </em><em>optional</em>) – Specify load which variable, <code class="docutils literal notranslate"><span class="pre">A</span></code>, <code class="docutils literal notranslate"><span class="pre">invA</span></code>, <code class="docutils literal notranslate"><span class="pre">AinvA</span></code>
+(the default is ‘AinvA’, which <span class="math">\(\bm A\)</span>, <span class="math">\({\bm A}^{-1}\)</span> )</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>A</strong> (<em>numpy array</em>) – Imaging mapping matrix.</p></li>
+<li><p><strong>invA</strong> (<em>numpy array</em>) – Inverse of imaging mapping matrix.</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.9)"><strong>ValueError</strong></a> – wrong mod</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="torchsar.simulation.sar_model.sarmodel">
+<code class="sig-prename descclassname">torchsar.simulation.sar_model.</code><code class="sig-name descname">sarmodel</code><span class="sig-paren">(</span><em class="sig-param">pdict</em>, <em class="sig-param">mod='2D1'</em>, <em class="sig-param">gdshape=None</em>, <em class="sig-param">device='cpu'</em>, <em class="sig-param">islog=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.sar_model.sarmodel" title="Permalink to this definition">¶</a></dt>
+<dd><p>model sar imaging process.</p>
+<p>SAR imaging model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pdict</strong> (<em>{dict}</em>) – SAR platform parameters</p></li>
+<li><p><strong>mod</strong> (<em>{str}</em><em>, </em><em>optional</em>) – <p>mod type(default: {‘2D1’})</p>
+<blockquote>
+<div><dl class="simple">
+<dt>if mod is ‘2D1’:</dt><dd><dl class="simple">
+<dt>the model will be in vector mode:</dt><dd><p>s = A      g
+MNx1      MNxHW  HWx1(M: Na, N: Nr, MN &lt;&lt; HW)</p>
+</dd>
+</dl>
+</dd>
+<dt>if mod is ‘2D2’:</dt><dd><dl class="simple">
+<dt>the model will be in mat mode:</dt><dd><p>S = Aa     G     Be
+MxN       MxH    HxW   WxN(M: Na, N: Nr, M &lt;&lt; H, N &lt;&lt; W)</p>
+</dd>
+</dl>
+</dd>
+<dt>if mod is ‘1Da’:</dt><dd><p>S = A      G
+MxW       MxH    HxW(M: Na, N: Nr, M &lt;&lt; H)</p>
+</dd>
+<dt>if mod is ‘1Dr’:</dt><dd><p>S’    =   A      G’
+NxH       NxW    WxH(M: Na, N: Nr, N &lt;&lt; W)</p>
+</dd>
+</dl>
+</div></blockquote>
+</p></li>
+<li><p><strong>gdshape</strong> (<em>{tuple}</em><em>, </em><em>optional</em>) – discrete scene size of G (default: {None}, sarplat.acquisition[‘SceneArea’], dx=dy=1)</p></li>
+<li><p><strong>device</strong> (<em>{str}</em>) – device, default is ‘cpu’</p></li>
+<li><p><strong>islog</strong> ({ <code class="docutils literal notranslate"><span class="pre">bool</span></code> }) – show log info (default: {True})</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>A</strong> – Imaging mapping matrix.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>torch tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="torchsar.simulation.sar_model.save_sarmodel">
+<code class="sig-prename descclassname">torchsar.simulation.sar_model.</code><code class="sig-name descname">save_sarmodel</code><span class="sig-paren">(</span><em class="sig-param">A</em>, <em class="sig-param">invA=None</em>, <em class="sig-param">AH=None</em>, <em class="sig-param">datafile='./model.pkl'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.sar_model.save_sarmodel" title="Permalink to this definition">¶</a></dt>
+<dd><p>save model mapping matrix</p>
+<p>save model mapping matrix to a file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>A</strong> (<em>{numpy array}</em>) – Imaging mapping matrix</p></li>
+<li><p><strong>invA</strong> (<em>{numpy array}</em><em>, </em><em>optional</em>) – Moore - Penorse inverse of A(default: {None})</p></li>
+<li><p><strong>AH</strong> (<em>{numpy array}</em><em>, </em><em>optional</em>) – The Hermite <span class="math">\({\bm A}^H\)</span> of the Imaging mapping matrix <span class="math">\(\bm A\)</span>
+(the default is None, which does not store)</p></li>
+<li><p><strong>datafile</strong> (<em>{str}</em><em>, </em><em>optional</em>) – save file path(default: {‘./model.pkl’})</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.simulation.sharing">
+<span id="torchsar-simulation-sharing-module"></span><h2>torchsar.simulation.sharing module<a class="headerlink" href="#module-torchsar.simulation.sharing" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="torchsar.simulation.sharing.range_angle">
+<code class="sig-prename descclassname">torchsar.simulation.sharing.</code><code class="sig-name descname">range_angle</code><span class="sig-paren">(</span><em class="sig-param">sensorpos</em>, <em class="sig-param">targetpos</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.sharing.range_angle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.simulation.simulation_chirp_scaling">
+<span id="torchsar-simulation-simulation-chirp-scaling-module"></span><h2>torchsar.simulation.simulation_chirp_scaling module<a class="headerlink" href="#module-torchsar.simulation.simulation_chirp_scaling" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-torchsar.simulation.simulation_freq_domain">
+<span id="torchsar-simulation-simulation-freq-domain-module"></span><h2>torchsar.simulation.simulation_freq_domain module<a class="headerlink" href="#module-torchsar.simulation.simulation_freq_domain" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="torchsar.simulation.simulation_freq_domain.dsm2sar_fd">
+<code class="sig-prename descclassname">torchsar.simulation.simulation_freq_domain.</code><code class="sig-name descname">dsm2sar_fd</code><span class="sig-paren">(</span><em class="sig-param">g</em>, <em class="sig-param">pdict</em>, <em class="sig-param">mode='StationaryTarget2D'</em>, <em class="sig-param">ftshift=True</em>, <em class="sig-param">device='cpu'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.simulation_freq_domain.dsm2sar_fd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.simulation.simulation_time_domain">
+<span id="torchsar-simulation-simulation-time-domain-module"></span><h2>torchsar.simulation.simulation_time_domain module<a class="headerlink" href="#module-torchsar.simulation.simulation_time_domain" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="torchsar.simulation.simulation_time_domain.tgs2sar_td">
+<code class="sig-prename descclassname">torchsar.simulation.simulation_time_domain.</code><code class="sig-name descname">tgs2sar_td</code><span class="sig-paren">(</span><em class="sig-param">targets</em>, <em class="sig-param">pdict</em>, <em class="sig-param">mode='Target'</em>, <em class="sig-param">device='cpu'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.simulation_time_domain.tgs2sar_td" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.simulation">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-torchsar.simulation" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="torchsar.utils.html" class="btn btn-neutral float-right" title="torchsar.utils package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="torchsar.sharing.html" class="btn btn-neutral float-left" title="torchsar.sharing package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2017-2021, Zhi Liu, School of Artificial Intelligence, Xidian University
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,423 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>torchsar.evaluation package &mdash; TorchSAR 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+        <script src="_static/katex_autorenderer.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="torchsar.imaging package" href="torchsar.imaging.html" />
+    <link rel="prev" title="torchsar.dsp package" href="torchsar.dsp.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> TorchSAR
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="torchsar.base.html">torchsar.base package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.calibration.html">torchsar.calibration package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.dsp.html">torchsar.dsp package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">torchsar.evaluation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.imaging.html">torchsar.imaging package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.layerfunction.html">torchsar.layerfunction package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.misc.html">torchsar.misc package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.module.html">torchsar.module package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sarcfg.html">torchsar.sarcfg package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html">torchsar.sharing package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.simulation.html">torchsar.simulation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-torchsar">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TorchSAR</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">torchsar</a> &raquo;</li>
+        
+          <li><a href="torchsar.html">torchsar package</a> &raquo;</li>
+        
+      <li>torchsar.evaluation package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/torchsar.evaluation.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="torchsar-evaluation-package">
+<h1>torchsar.evaluation package<a class="headerlink" href="#torchsar-evaluation-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-torchsar.evaluation.contrast">
+<span id="torchsar-evaluation-contrast-module"></span><h2>torchsar.evaluation.contrast module<a class="headerlink" href="#module-torchsar.evaluation.contrast" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="torchsar.evaluation.contrast.contrast">
+<code class="sig-prename descclassname">torchsar.evaluation.contrast.</code><code class="sig-name descname">contrast</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">mode='way1'</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.contrast.contrast" title="Permalink to this definition">¶</a></dt>
+<dd><p>way1 is defined as follows, see [1]:</p>
+<div class="math">
+\[C = \frac{\sqrt{{\rm E}\left(|I|^2 - {\rm E}(|I|^2)\right)^2}}{{\rm E}(|I|^2)}
+
+\]</div>
+<p>way2 is defined as follows, see [2]:</p>
+<div class="math">
+\[C = \frac{{\rm E}(|I|^2)}{\left({\rm E}(|I|)\right)^2}
+
+\]</div>
+<p>[1] Efficient Nonparametric ISAR Autofocus Algorithm Based on Contrast Maximization and Newton
+[2] section 13.4.1 in “Ian G. Cumming’s SAR book”</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.evaluation.entropy">
+<span id="torchsar-evaluation-entropy-module"></span><h2>torchsar.evaluation.entropy module<a class="headerlink" href="#module-torchsar.evaluation.entropy" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="torchsar.evaluation.entropy.entropy">
+<code class="sig-prename descclassname">torchsar.evaluation.entropy.</code><code class="sig-name descname">entropy</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">mode='shannon'</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.entropy.entropy" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute the entropy of the inputs</p>
+<p>[description]</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>{torch tensor}</em>) – The complex or real inputs, for complex inputs, both complex and real representations are surpported.</p></li>
+<li><p><strong>mode</strong> (<em>{str}</em><em>, </em><em>optional</em>) – The entropy mode: <code class="docutils literal notranslate"><span class="pre">'shannon'</span></code> or <code class="docutils literal notranslate"><span class="pre">'natural'</span></code> (the default is ‘shannon’)</p></li>
+<li><p><strong>reduction</strong> (<em>{str}</em><em>, </em><em>optional</em>) – The operation in batch dim, <code class="docutils literal notranslate"><span class="pre">'None'</span></code>, <code class="docutils literal notranslate"><span class="pre">'mean'</span></code> or <code class="docutils literal notranslate"><span class="pre">'sum'</span></code> (the default is ‘mean’)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>S</strong> – The entropy of the inputs.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>{torch tensor}</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.evaluation.norm">
+<span id="torchsar-evaluation-norm-module"></span><h2>torchsar.evaluation.norm module<a class="headerlink" href="#module-torchsar.evaluation.norm" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="torchsar.evaluation.norm.frobenius">
+<code class="sig-prename descclassname">torchsar.evaluation.norm.</code><code class="sig-name descname">frobenius</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">p=2</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.norm.frobenius" title="Permalink to this definition">¶</a></dt>
+<dd><p>frobenius norm</p>
+<div class="math">
+\[\|\bm X\|_p^p = (\sum{x^p})^{1/p}
+
+\]</div>
+</dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.evaluation.ssims">
+<span id="torchsar-evaluation-ssims-module"></span><h2>torchsar.evaluation.ssims module<a class="headerlink" href="#module-torchsar.evaluation.ssims" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="torchsar.evaluation.ssims.gaussian_filter">
+<code class="sig-prename descclassname">torchsar.evaluation.ssims.</code><code class="sig-name descname">gaussian_filter</code><span class="sig-paren">(</span><em class="sig-param">input</em>, <em class="sig-param">win</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.ssims.gaussian_filter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Blur input with 1-D kernel
+:param input: a batch of tensors to be blurred
+:type input: torch.Tensor
+:param window: 1-D gauss kernel
+:type window: torch.Tensor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>blurred tensors</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>torch.Tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="torchsar.evaluation.ssims.msssim">
+<code class="sig-prename descclassname">torchsar.evaluation.ssims.</code><code class="sig-name descname">msssim</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">Y</em>, <em class="sig-param">data_range=255</em>, <em class="sig-param">size_average=True</em>, <em class="sig-param">win_size=11</em>, <em class="sig-param">win_sigma=1.5</em>, <em class="sig-param">win=None</em>, <em class="sig-param">weights=None</em>, <em class="sig-param">K=(0.01</em>, <em class="sig-param">0.03)</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.ssims.msssim" title="Permalink to this definition">¶</a></dt>
+<dd><p>interface of ms-ssim
+:param X: a batch of images, (N,C,[T,]H,W)
+:type X: torch.Tensor
+:param Y: a batch of images, (N,C,[T,]H,W)
+:type Y: torch.Tensor
+:param data_range: value range of input images. (usually 1.0 or 255)
+:type data_range: float or int, optional
+:param size_average: if size_average=True, ssim of all images will be averaged as a scalar
+:type size_average: bool, optional
+:param win_size: (int, optional): the size of gauss kernel
+:param win_sigma: (float, optional): sigma of normal distribution
+:param win: 1-D gauss kernel. if None, a new kernel will be created according to win_size and win_sigma
+:type win: torch.Tensor, optional
+:param weights: weights for different levels
+:type weights: list, optional
+:param K: scalar constants (K1, K2). Try a larger K2 constant (e.g. 0.4) if you get a negative or NaN results.
+:type K: list or tuple, optional</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>msssim results</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>torch.Tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="torchsar.evaluation.ssims.ssim">
+<code class="sig-prename descclassname">torchsar.evaluation.ssims.</code><code class="sig-name descname">ssim</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">Y</em>, <em class="sig-param">data_range=255</em>, <em class="sig-param">size_average=True</em>, <em class="sig-param">win_size=11</em>, <em class="sig-param">win_sigma=1.5</em>, <em class="sig-param">win=None</em>, <em class="sig-param">K=(0.01</em>, <em class="sig-param">0.03)</em>, <em class="sig-param">nonnegative_ssim=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.ssims.ssim" title="Permalink to this definition">¶</a></dt>
+<dd><p>interface of ssim
+:param X: a batch of images, (N,C,H,W)
+:type X: torch.Tensor
+:param Y: a batch of images, (N,C,H,W)
+:type Y: torch.Tensor
+:param data_range: value range of input images. (usually 1.0 or 255)
+:type data_range: float or int, optional
+:param size_average: if size_average=True, ssim of all images will be averaged as a scalar
+:type size_average: bool, optional
+:param win_size: (int, optional): the size of gauss kernel
+:param win_sigma: (float, optional): sigma of normal distribution
+:param win: 1-D gauss kernel. if None, a new kernel will be created according to win_size and win_sigma
+:type win: torch.Tensor, optional
+:param K: scalar constants (K1, K2). Try a larger K2 constant (e.g. 0.4) if you get a negative or NaN results.
+:type K: list or tuple, optional
+:param nonnegative_ssim: force the ssim response to be nonnegative with relu
+:type nonnegative_ssim: bool, optional</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>ssim results</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>torch.Tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.evaluation.target_background">
+<span id="torchsar-evaluation-target-background-module"></span><h2>torchsar.evaluation.target_background module<a class="headerlink" href="#module-torchsar.evaluation.target_background" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="torchsar.evaluation.target_background.tbr">
+<code class="sig-prename descclassname">torchsar.evaluation.target_background.</code><code class="sig-name descname">tbr</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">tgrs</em>, <em class="sig-param">subrs=None</em>, <em class="sig-param">isshow=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.target_background.tbr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Target-to-Background Ratio (TBR)</p>
+<div class="math">
+\[\begin{align}
+{\rm TBR} = 20{\rm log}_{10}\left(\frac{{\rm max}_{i\in{\mathbb T}}(|{\bf X}_i|)}{{(1/N_{\mathbb B})}\Sigma_{j\in \mathbb B}|{\bf X}_j|)}\right)
+\label{equ:TBR}
+\end{align}
+
+\]</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>{numpy ndarray}</em>) – reconstructed, if complex, abs(X) is used</p></li>
+<li><p><strong>tgrs</strong> (<em>{lists}</em><em>, </em><em>optional</em>) – target regions:[[TG1],[TG2], …, [TGn]], [TGk] = [lefttop, rightbottom]]</p></li>
+<li><p><strong>subrs</strong> (<em>{lists}</em><em>, </em><em>optional</em>) – sub regions:[[SUB1],[SUB2], …, [SUBn]], [SUBk] = [lefttop, rightbottom]]</p></li>
+<li><p><strong>isshow</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – show target mask given by <code class="xref py py-attr docutils literal notranslate"><span class="pre">tgrs</span></code> (default: {False}</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>TBR</strong> – Target-to-Background Ratio (TBR)</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)">float</a></p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.9)"><strong>TypeError</strong></a> – tgrs mast be given</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.evaluation">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-torchsar.evaluation" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="torchsar.imaging.html" class="btn btn-neutral float-right" title="torchsar.imaging package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="torchsar.dsp.html" class="btn btn-neutral float-left" title="torchsar.dsp package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2017-2021, Zhi Liu, School of Artificial Intelligence, Xidian University
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
