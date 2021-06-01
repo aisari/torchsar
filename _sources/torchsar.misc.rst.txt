@@ -36,6 +36,22 @@ torchsar.misc.sampling module
    :undoc-members:
    :show-inheritance:
 
+torchsar.misc.sardata module
+----------------------------
+
+.. automodule:: torchsar.misc.sardata
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+torchsar.misc.sarplat module
+----------------------------
+
+.. automodule:: torchsar.misc.sarplat
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 torchsar.misc.transform module
 ------------------------------
 

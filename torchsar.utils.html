@@ -91,6 +91,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="torchsar.autofocus.html">torchsar.autofocus package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.base.html">torchsar.base package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.calibration.html">torchsar.calibration package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.dsp.html">torchsar.dsp package</a></li>
@@ -105,7 +106,7 @@
 <li class="toctree-l4 current"><a class="current reference internal" href="#">torchsar.utils package</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-torchsar">Module contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -199,8 +200,8 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>rgb</strong> (<em>{torch.Tensor}</em>) – Original RGB tensor.</p></li>
-<li><p><strong>fmt</strong> (<em>{str}</em><em>, </em><em>optional</em>) – Specifies the position of channels in <code class="xref py py-attr docutils literal notranslate"><span class="pre">rgb</span></code> tensor, surpported are:
+<li><p><strong>rgb</strong> (<em>Tensor</em>) – Original RGB tensor.</p></li>
+<li><p><strong>fmt</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – Specifies the position of channels in <code class="xref py py-attr docutils literal notranslate"><span class="pre">rgb</span></code> tensor, surpported are:
 - <code class="docutils literal notranslate"><span class="pre">'chnllast'</span></code> (default)
 - <code class="docutils literal notranslate"><span class="pre">'chnlfirst'</span></code></p></li>
 </ul>
@@ -217,12 +218,33 @@
 <dl class="function">
 <dt id="torchsar.utils.convert.str2list">
 <code class="sig-prename descclassname">torchsar.utils.convert.</code><code class="sig-name descname">str2list</code><span class="sig-paren">(</span><em class="sig-param">s</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.convert.str2list" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Converts string with <code class="docutils literal notranslate"><span class="pre">[</span></code> and <code class="docutils literal notranslate"><span class="pre">]</span></code> to list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>s</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – The string.</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="function">
 <dt id="torchsar.utils.convert.str2num">
 <code class="sig-prename descclassname">torchsar.utils.convert.</code><code class="sig-name descname">str2num</code><span class="sig-paren">(</span><em class="sig-param">s</em>, <em class="sig-param">tfunc=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.convert.str2num" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Extracts numbers in a string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – The string.</p></li>
+<li><p><strong>tfunc</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – formating function.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The number list.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
 
 </div>
 <div class="section" id="module-torchsar.utils.file">
@@ -236,13 +258,13 @@ The <code class="xref py py-attr docutils literal notranslate"><span class="pre"
 file name extension.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>file</strong> (<em>{str}</em>) – The name of a file or folder.</p>
+<dd class="field-odd"><p><strong>file</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – The name string of a file or folder.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><ul class="simple">
-<li><p><strong>filepath</strong> (<em>{str}</em>) – The path of a file or folder.</p></li>
-<li><p><strong>name</strong> (<em>{str}</em>) – The name of a file or folder.</p></li>
-<li><p><strong>ext</strong> (<em>{str}</em>) – The ext of a file.</p></li>
+<li><p><strong>filepath</strong> (<em>str</em>) – The path string of the file or folder.</p></li>
+<li><p><strong>name</strong> (<em>str</em>) – The name string of the file or folder.</p></li>
+<li><p><strong>ext</strong> (<em>str</em>) – The extension string of the file.</p></li>
 </ul>
 </p>
 </dd>
@@ -251,20 +273,87 @@ file name extension.</p>
 
 <dl class="function">
 <dt id="torchsar.utils.file.listxfile">
-<code class="sig-prename descclassname">torchsar.utils.file.</code><code class="sig-name descname">listxfile</code><span class="sig-paren">(</span><em class="sig-param">listdir=None</em>, <em class="sig-param">exts=None</em>, <em class="sig-param">recursive=False</em>, <em class="sig-param">filelists=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.file.listxfile" title="Permalink to this definition">¶</a></dt>
-<dd><p>listdir: lists of string
-exts: list of string, such as [‘.png’, ‘jpg’]</p>
+<code class="sig-prename descclassname">torchsar.utils.file.</code><code class="sig-name descname">listxfile</code><span class="sig-paren">(</span><em class="sig-param">listdir=None</em>, <em class="sig-param">exts=None</em>, <em class="sig-param">recursive=False</em>, <em class="sig-param">filelist=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.file.listxfile" title="Permalink to this definition">¶</a></dt>
+<dd><p>List the files in a directory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>listdir</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – The directory for listing. The default is None, which means return <code class="xref py py-attr docutils literal notranslate"><span class="pre">filelist</span></code> directly.</p></li>
+<li><p><strong>exts</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – File extension string or extension string list, such as <code class="docutils literal notranslate"><span class="pre">'.png'</span></code> or <code class="docutils literal notranslate"><span class="pre">['.png',</span> <span class="pre">'jpg']</span></code>.
+The default is None, which means any extension.</p></li>
+<li><p><strong>recursive</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Recursive search? The default is False, which means only list the root directory (<code class="xref py py-attr docutils literal notranslate"><span class="pre">listdir</span></code>).</p></li>
+<li><p><strong>filelist</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em>, </em><em>optional</em>) – An initial list contains files’s path. The default is <code class="docutils literal notranslate"><span class="pre">[]</span></code>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The list of file path with extension <code class="xref py py-attr docutils literal notranslate"><span class="pre">exts</span></code>.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)">list</a></p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="function">
 <dt id="torchsar.utils.file.pathjoin">
 <code class="sig-prename descclassname">torchsar.utils.file.</code><code class="sig-name descname">pathjoin</code><span class="sig-paren">(</span><em class="sig-param">*kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.file.pathjoin" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Joint strings to a path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>*kwargs</strong> – strings.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The joined path string.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="torchsar.utils.file.readnum">
+<code class="sig-prename descclassname">torchsar.utils.file.</code><code class="sig-name descname">readnum</code><span class="sig-paren">(</span><em class="sig-param">filepath</em>, <em class="sig-param">pmain='Train'</em>, <em class="sig-param">psub='loss'</em>, <em class="sig-param">vfn=&lt;class 'float'&gt;</em>, <em class="sig-param">nshots=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.file.readnum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read a file and extract numbers in it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filepath</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – Description</p></li>
+<li><p><strong>pmain</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – The matching pattern string, such as ‘—&gt;Train’.</p></li>
+<li><p><strong>psub</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – The sub-matching pattern string, such as ‘loss’.</p></li>
+<li><p><strong>vfn</strong> (<em>function</em><em>, </em><em>optional</em>) – The function for formating the numbers. <code class="docutils literal notranslate"><span class="pre">float</span></code> –&gt; convert to float number; <code class="docutils literal notranslate"><span class="pre">int</span></code> –&gt; convert to integer number…, The default is <code class="docutils literal notranslate"><span class="pre">float</span></code>.</p></li>
+<li><p><strong>nshots</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – The number of shots of sub-matching pattern.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The list of numbers.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="function">
 <dt id="torchsar.utils.file.readtxt">
 <code class="sig-prename descclassname">torchsar.utils.file.</code><code class="sig-name descname">readtxt</code><span class="sig-paren">(</span><em class="sig-param">filepath</em>, <em class="sig-param">mode=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.file.readtxt" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Read a text file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filepath</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – The path string of the file.</p></li>
+<li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – <code class="docutils literal notranslate"><span class="pre">'line'</span></code> –&gt; reading line-by-line.
+<code class="docutils literal notranslate"><span class="pre">'all'</span></code> –&gt; reading all content.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>File content.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
 
 </div>
 <div class="section" id="module-torchsar.utils.image">
@@ -297,13 +386,14 @@ exts: list of string, such as [‘.png’, ‘jpg’]</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>img</strong> (<em>{ndarray}</em>) – Input image.</p></li>
-<li><p><strong>oshape</strong> (<em>{tulpe}</em><em>, </em><em>optional</em>) – output shape (the default is None, which is the same as the input)</p></li>
-<li><p><strong>odtype</strong> (<em>{string}</em><em>, </em><em>optional</em>) – output data type, <code class="docutils literal notranslate"><span class="pre">'uint8',</span> <span class="pre">'uint16',</span> <span class="pre">'int8',</span> <span class="pre">...</span></code> (the default is None, float)</p></li>
+<li><p><strong>img</strong> (<em>ndarray</em>) – Input image.</p></li>
+<li><p><strong>oshape</strong> (<em>tulpe</em><em>, </em><em>optional</em>) – output shape (the default is None, which is the same as the input)</p></li>
+<li><p><strong>odtype</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – output data type, <code class="docutils literal notranslate"><span class="pre">'uint8',</span> <span class="pre">'uint16',</span> <span class="pre">'int8',</span> <span class="pre">...</span></code> (the default is None, float)</p></li>
 <li><p><strong>order</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – The order of the spline interpolation, default is 1. The order has to
 be in the range 0-5. See <cite>skimage.transform.warp</cite> for detail.</p></li>
-<li><p><strong>mode</strong> (<em>{'constant'</em><em>, </em><em>'edge'</em><em>, </em><em>'symmetric'</em><em>, </em><em>'reflect'</em><em>, </em><em>'wrap'}</em><em>, </em><em>optional</em>) – Points outside the boundaries of the input are filled according
-to the given mode.  Modes match the behaviour of <cite>numpy.pad</cite>.  The
+<li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – Points outside the boundaries of the input are filled according
+to the given mode. {<code class="docutils literal notranslate"><span class="pre">'constant'</span></code>, <code class="docutils literal notranslate"><span class="pre">'edge'</span></code>, <code class="docutils literal notranslate"><span class="pre">'symmetric'</span></code>, <code class="docutils literal notranslate"><span class="pre">'reflect'</span></code>, <code class="docutils literal notranslate"><span class="pre">'wrap'</span></code>},
+Modes match the behaviour of <cite>numpy.pad</cite>.  The
 default mode is ‘constant’.</p></li>
 <li><p><strong>cval</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><em>float</em></a><em>, </em><em>optional</em>) – Used in conjunction with mode ‘constant’, the value outside
 the image boundaries.</p></li>
@@ -347,12 +437,12 @@ would be [0, 1, 2, 1, 0, 1, 2].</p>
 <span id="torchsar-utils-ios-module"></span><h2>torchsar.utils.ios module<a class="headerlink" href="#module-torchsar.utils.ios" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="torchsar.utils.ios.loadh5">
-<code class="sig-prename descclassname">torchsar.utils.ios.</code><code class="sig-name descname">loadh5</code><span class="sig-paren">(</span><em class="sig-param">filename</em>, <em class="sig-param">keys=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.loadh5" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">torchsar.utils.ios.</code><code class="sig-name descname">loadh5</code><span class="sig-paren">(</span><em class="sig-param">filepath</em>, <em class="sig-param">keys=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.loadh5" title="Permalink to this definition">¶</a></dt>
 <dd><p>load h5 file</p>
 <p>load all the data from a h5 file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>filename</strong> (<em>{str}</em>) – File’s full path string.</p>
+<dd class="field-odd"><p><strong>filepath</strong> (<em>{str}</em>) – File’s full path string.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><strong>D</strong> – The loaded data in <code class="docutils literal notranslate"><span class="pre">dict</span></code> type.</p>
@@ -365,28 +455,58 @@ would be [0, 1, 2, 1, 0, 1, 2].</p>
 
 <dl class="function">
 <dt id="torchsar.utils.ios.loadjson">
-<code class="sig-prename descclassname">torchsar.utils.ios.</code><code class="sig-name descname">loadjson</code><span class="sig-paren">(</span><em class="sig-param">filename</em>, <em class="sig-param">dbname=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.loadjson" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<code class="sig-prename descclassname">torchsar.utils.ios.</code><code class="sig-name descname">loadjson</code><span class="sig-paren">(</span><em class="sig-param">filepath</em>, <em class="sig-param">field=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.loadjson" title="Permalink to this definition">¶</a></dt>
+<dd><p>Summary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filepath</strong> (<em>TYPE</em>) – Description</p></li>
+<li><p><strong>field</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – Description</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Description</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>TYPE</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="function">
 <dt id="torchsar.utils.ios.loadmat">
-<code class="sig-prename descclassname">torchsar.utils.ios.</code><code class="sig-name descname">loadmat</code><span class="sig-paren">(</span><em class="sig-param">filename</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.loadmat" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">torchsar.utils.ios.</code><code class="sig-name descname">loadmat</code><span class="sig-paren">(</span><em class="sig-param">filepath</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.loadmat" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="function">
 <dt id="torchsar.utils.ios.loadyaml">
-<code class="sig-prename descclassname">torchsar.utils.ios.</code><code class="sig-name descname">loadyaml</code><span class="sig-paren">(</span><em class="sig-param">filename</em>, <em class="sig-param">dbname=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.loadyaml" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<code class="sig-prename descclassname">torchsar.utils.ios.</code><code class="sig-name descname">loadyaml</code><span class="sig-paren">(</span><em class="sig-param">filepath</em>, <em class="sig-param">field=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.loadyaml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load a yaml file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filepath</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – The file path string.</p></li>
+<li><p><strong>field</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – The string of field that want to be loaded.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Description</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>TYPE</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="function">
 <dt id="torchsar.utils.ios.saveh5">
-<code class="sig-prename descclassname">torchsar.utils.ios.</code><code class="sig-name descname">saveh5</code><span class="sig-paren">(</span><em class="sig-param">filename</em>, <em class="sig-param">mdict</em>, <em class="sig-param">mode='w'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.saveh5" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">torchsar.utils.ios.</code><code class="sig-name descname">saveh5</code><span class="sig-paren">(</span><em class="sig-param">filepath</em>, <em class="sig-param">mdict</em>, <em class="sig-param">mode='w'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.saveh5" title="Permalink to this definition">¶</a></dt>
 <dd><p>save data to h5 file</p>
 <p>save data to h5 file</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>filename</strong> (<em>{str}</em>) – filename string</p></li>
+<li><p><strong>filepath</strong> (<em>{str}</em>) – filepath string</p></li>
 <li><p><strong>mdict</strong> (<em>{dict}</em>) – each dict is store in group, the elements in dict are store in dataset</p></li>
 <li><p><strong>mode</strong> (<em>{str}</em>) – save mode, <code class="docutils literal notranslate"><span class="pre">'w'</span></code> for write, <code class="docutils literal notranslate"><span class="pre">'a'</span></code> for add.</p></li>
 </ul>
@@ -402,7 +522,7 @@ would be [0, 1, 2, 1, 0, 1, 2].</p>
 
 <dl class="function">
 <dt id="torchsar.utils.ios.savemat">
-<code class="sig-prename descclassname">torchsar.utils.ios.</code><code class="sig-name descname">savemat</code><span class="sig-paren">(</span><em class="sig-param">filename</em>, <em class="sig-param">mdict</em>, <em class="sig-param">fmt='5'</em>, <em class="sig-param">dtype=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.savemat" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">torchsar.utils.ios.</code><code class="sig-name descname">savemat</code><span class="sig-paren">(</span><em class="sig-param">filepath</em>, <em class="sig-param">mdict</em>, <em class="sig-param">fmt='5'</em>, <em class="sig-param">dtype=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.savemat" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </div>

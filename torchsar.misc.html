@@ -92,6 +92,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="torchsar.autofocus.html">torchsar.autofocus package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.base.html">torchsar.base package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.calibration.html">torchsar.calibration package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.dsp.html">torchsar.dsp package</a></li>
@@ -245,8 +246,8 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>sardata</strong> (<em>SarData</em>) – The SAR raw data.</p></li>
-<li><p><strong>sarplat</strong> (<em>SarPlat</em>) – The SAR platform for obtain the SAR data.</p></li>
+<li><p><strong>sardata</strong> (<a class="reference internal" href="#torchsar.misc.sardata.SarData" title="torchsar.misc.sardata.SarData"><em>SarData</em></a>) – The SAR raw data.</p></li>
+<li><p><strong>sarplat</strong> (<a class="reference internal" href="#torchsar.misc.sarplat.SarPlat" title="torchsar.misc.sarplat.SarPlat"><em>SarPlat</em></a>) – The SAR platform for obtain the SAR data.</p></li>
 <li><p><strong>file</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – Description</p></li>
 </ul>
 </dd>
@@ -596,12 +597,13 @@ if positive, add a positive shake, if negative, add a negative.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>see <code class="xref py py-func docutils literal notranslate"><span class="pre">randperm()</span></code>, <code class="xref py py-func docutils literal notranslate"><span class="pre">randgrid()</span></code>.</p>
+<dd class="field-even"><p>for multi-dimension, return a 2-d tensor, for 1-dimension, return a 1d-tensor.</p>
 </dd>
 <dt class="field-odd">Raises</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.9)"><strong>TypeError</strong></a> – The number of samples should be an integer or None.</p>
 </dd>
 </dl>
+<p>see <code class="xref py py-func docutils literal notranslate"><span class="pre">randperm()</span></code>, <code class="xref py py-func docutils literal notranslate"><span class="pre">randgrid()</span></code>.</p>
 </dd></dl>
 
 <dl class="function">
@@ -660,45 +662,193 @@ equals to the number of blocks with specified <code class="xref py py-attr docut
 </dd></dl>
 
 </div>
+<div class="section" id="module-torchsar.misc.sardata">
+<span id="torchsar-misc-sardata-module"></span><h2>torchsar.misc.sardata module<a class="headerlink" href="#module-torchsar.misc.sardata" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="torchsar.misc.sardata.SarData">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.misc.sardata.</code><code class="sig-name descname">SarData</code><a class="headerlink" href="#torchsar.misc.sardata.SarData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>SAR data class.
+rawdata
+image
+store
+read</p>
+<dl class="method">
+<dt id="torchsar.misc.sardata.SarData.image">
+<em class="property">property </em><code class="sig-name descname">image</code><a class="headerlink" href="#torchsar.misc.sardata.SarData.image" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="torchsar.misc.sardata.SarData.name">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#torchsar.misc.sardata.SarData.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="torchsar.misc.sardata.SarData.rawdata">
+<em class="property">property </em><code class="sig-name descname">rawdata</code><a class="headerlink" href="#torchsar.misc.sardata.SarData.rawdata" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="torchsar.misc.sardata.SarData.read">
+<code class="sig-name descname">read</code><span class="sig-paren">(</span><em class="sig-param">file</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sardata.SarData.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read SAR data file</p>
+<p>Read SAR data file (<code class="docutils literal notranslate"><span class="pre">.pkl</span></code> or <code class="docutils literal notranslate"><span class="pre">.mat</span></code>)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file</strong> (<em>{str}</em>) – SAR data file path}</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>sardata</strong> (<em>Instance SarData</em>) – The SAR raw data.</p></li>
+<li><p><strong>sarplat</strong> (<em>Instance of SarPlat</em>) – The SAR platform for obtain the SAR data.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="torchsar.misc.sardata.SarData.store">
+<code class="sig-name descname">store</code><span class="sig-paren">(</span><em class="sig-param">sarplat</em>, <em class="sig-param">file</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sardata.SarData.store" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-torchsar.misc.sarplat">
+<span id="torchsar-misc-sarplat-module"></span><h2>torchsar.misc.sarplat module<a class="headerlink" href="#module-torchsar.misc.sarplat" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="torchsar.misc.sarplat.SarPlat">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.misc.sarplat.</code><code class="sig-name descname">SarPlat</code><a class="headerlink" href="#torchsar.misc.sarplat.SarPlat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>SAR platform class.
+sensor
+acquisition
+params</p>
+<dl class="method">
+<dt id="torchsar.misc.sarplat.SarPlat.acquisition">
+<em class="property">property </em><code class="sig-name descname">acquisition</code><a class="headerlink" href="#torchsar.misc.sarplat.SarPlat.acquisition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="torchsar.misc.sarplat.SarPlat.name">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#torchsar.misc.sarplat.SarPlat.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="torchsar.misc.sarplat.SarPlat.params">
+<em class="property">property </em><code class="sig-name descname">params</code><a class="headerlink" href="#torchsar.misc.sarplat.SarPlat.params" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="torchsar.misc.sarplat.SarPlat.printsp">
+<code class="sig-name descname">printsp</code><span class="sig-paren">(</span><em class="sig-param">verbose=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sarplat.SarPlat.printsp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="torchsar.misc.sarplat.SarPlat.selection">
+<em class="property">property </em><code class="sig-name descname">selection</code><a class="headerlink" href="#torchsar.misc.sarplat.SarPlat.selection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="torchsar.misc.sarplat.SarPlat.sensor">
+<em class="property">property </em><code class="sig-name descname">sensor</code><a class="headerlink" href="#torchsar.misc.sarplat.SarPlat.sensor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
 <div class="section" id="module-torchsar.misc.transform">
 <span id="torchsar-misc-transform-module"></span><h2>torchsar.misc.transform module<a class="headerlink" href="#module-torchsar.misc.transform" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
+<dt id="torchsar.misc.transform.ct2rt">
+<code class="sig-prename descclassname">torchsar.misc.transform.</code><code class="sig-name descname">ct2rt</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">axis=0</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.transform.ct2rt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts a complex-valued tensor to a real-valued tensor</p>
+<p>Converts a complex-valued tensor <span class="math">\({\bf x}\)</span> to a real-valued tensor with FFT and conjugate symmetry.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>Tensor</em>) – The input tensor <span class="math">\({\bf x}\in {\mathbb C}^{H×W}\)</span>.</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – The axis for excuting FFT.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The output tensor <span class="math">\({\bf y}\in {\mathbb R}^{2H×W}\)</span> ( <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code> = 0 ), <span class="math">\({\bf y}\in {\mathbb R}^{H×2W}\)</span> ( <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code> = 1 )</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
 <dt id="torchsar.misc.transform.db20">
 <code class="sig-prename descclassname">torchsar.misc.transform.</code><code class="sig-name descname">db20</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.transform.db20" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Computes dB value of a tensor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>Tensor</em>) – The input tensor.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The output tensor (dB)</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Tensor</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="function">
 <dt id="torchsar.misc.transform.quantization">
 <code class="sig-prename descclassname">torchsar.misc.transform.</code><code class="sig-name descname">quantization</code><span class="sig-paren">(</span><em class="sig-param">X, idrange=None, odrange=[0, 31], odtype='auto', extra=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.transform.quantization" title="Permalink to this definition">¶</a></dt>
 <dd><p>Quantize data.</p>
 <div class="math">
-\[{\bm X} \in [a, b] \rightarrow y \in [c, d]
+\[x \in [a, b] \rightarrow y \in [c, d]
 
 \]</div>
 <div class="math">
-\[{\bm Y} = \lfloor (d-c) (X-a) / (b-a) + c \rfloor.
+\[y = (d-c)*(x-a) / (b-a) + c.
 
 \]</div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>X</strong> (<em>Tensor</em>) – The data to be quantized with shape <span class="math">\({\bm X} \in {\mathbb R}^{N_a×N_r}\)</span>, or <span class="math">\({\bm X} \in {\mathbb C}^{N_a×N_r}\)</span>.</p></li>
-<li><p><strong>idrange</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><em>tuple</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em>, </em><em>optional</em>) – Specifies the range of data. Default <span class="math">\([{\rm min}(X), {\rm max}(X)]\)</span>.</p></li>
+<li><p><strong>X</strong> (<em>tensor_like</em>) – The data to be quantized with shape <span class="math">\(N_a×N_r ∈ {\mathbb R}\)</span>, or <span class="math">\(N_a×N_r ∈ {\mathbb C}\)</span>.</p></li>
+<li><p><strong>idrange</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><em>tuple</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em>, </em><em>optional</em>) – Specifies the range of data. Default [min(X), max(X)].</p></li>
 <li><p><strong>odrange</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><em>tuple</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em>, </em><em>optional</em>) – Specifies the range of data after beening quantized. Default [0, 31].</p></li>
-<li><p><strong>odtype</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – output data type, supportted are <code class="docutils literal notranslate"><span class="pre">'auto'</span></code> (auto infer, default), or torch tensor’s dtype string.
-If the type of <code class="xref py py-attr docutils literal notranslate"><span class="pre">odtype</span></code> is not string(such as None), the type of output data is the same with input.</p></li>
-<li><p><strong>extra</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a>) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, also return <code class="xref py py-attr docutils literal notranslate"><span class="pre">idrange</span></code> and <code class="xref py py-attr docutils literal notranslate"><span class="pre">odrange</span></code>.</p></li>
+<li><p><strong>odtype</strong> (<em>{str</em><em>, </em><em>None... }</em><em>, </em><em>optional</em>) – output data type, supportted are <code class="docutils literal notranslate"><span class="pre">'auto'</span></code> (auto infer, default), or torch tensor’s dtype string.
+If the type of <code class="xref py py-attr docutils literal notranslate"><span class="pre">odtype</span></code> is not string(such as None),
+the type of output data is the same with input.</p></li>
+<li><p><strong>extra</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a>) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, also return <code class="xref py py-attr docutils literal notranslate"><span class="pre">st</span></code> and <code class="xref py py-attr docutils literal notranslate"><span class="pre">idrange</span></code>.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Quantized data tensor, if the input is complex, will return a tensor with shape <span class="math">\({\bm Y} \in {\mathbb R}^{N_a×N_r×2}\)</span>.
-idrange, odrange (list or tuple): If <code class="xref py py-attr docutils literal notranslate"><span class="pre">extra</span></code> is true, also be returned</p>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>out</strong> (<em>tensor</em>) – Quantized data tensor, if the input is complex, will return a tensor with shape <span class="math">\(N_a×N_r×2 ∈ {\mathbb R}\)</span>.</p></li>
+<li><p><strong>idrange, odrange</strong> (<em>list or tuple</em>) – If <code class="xref py py-attr docutils literal notranslate"><span class="pre">extra</span></code> is true, also be returned</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="torchsar.misc.transform.rt2ct">
+<code class="sig-prename descclassname">torchsar.misc.transform.</code><code class="sig-name descname">rt2ct</code><span class="sig-paren">(</span><em class="sig-param">y</em>, <em class="sig-param">axis=0</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.transform.rt2ct" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts a real-valued tensor to a complex-valued tensor</p>
+<p>Converts a real-valued tensor <span class="math">\({\bf y}\)</span> to a complex-valued tensor with FFT and conjugate symmetry.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>y</strong> (<em>Tensor</em>) – The input tensor <span class="math">\({\bf y}\in {\mathbb C}^{2H×W}\)</span>.</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – The axis for excuting FFT.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The output tensor <span class="math">\({\bf x}\in {\mathbb R}^{H×W}\)</span> ( <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code> = 0 ), <span class="math">\({\bf x}\in {\mathbb R}^{H×W}\)</span> ( <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code> = 1 )</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>(tensor)</p>
-</dd>
-<dt class="field-even">Raises</dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.9)"><strong>Exception</strong></a> – <code class="xref py py-attr docutils literal notranslate"><span class="pre">idrange</span></code> and <code class="xref py py-attr docutils literal notranslate"><span class="pre">odrange</span></code> should be (tulpe) or (list)</p>
+<dd class="field-odd"><p>Tensor</p>
 </dd>
 </dl>
 </dd></dl>
@@ -718,7 +868,7 @@ idrange, odrange (list or tuple): If <code class="xref py py-attr docutils liter
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>X</strong> (<em>Tensor</em>) – The data to be scaled.</p></li>
+<li><p><strong>X</strong> (<em>tensor_like</em>) – The data to be scaled.</p></li>
 <li><p><strong>st</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><em>tuple</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em>, </em><em>optional</em>) – Specifies the range of data after beening scaled. Default [0, 1].</p></li>
 <li><p><strong>sf</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><em>tuple</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em>, </em><em>optional</em>) – Specifies the range of data. Default [min(X), max(X)].</p></li>
 <li><p><strong>istrunc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a>) – Specifies wether to truncate the data to [a, b], For example,
@@ -728,14 +878,11 @@ then X[X &lt; a] == a and X[X &gt; b] == b.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Scaled data tensor.
-st, sf (list or tuple): If <code class="xref py py-attr docutils literal notranslate"><span class="pre">extra</span></code> is true, also be returned</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>out (tensor)</p>
-</dd>
-<dt class="field-even">Raises</dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.9)"><strong>Exception</strong></a> – Description</p>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>out</strong> (<em>tensor</em>) – Scaled data tensor.</p></li>
+<li><p><strong>st, sf</strong> (<em>list or tuple</em>) – If <code class="xref py py-attr docutils literal notranslate"><span class="pre">extra</span></code> is true, also be returned</p></li>
+</ul>
+</p>
 </dd>
 </dl>
 </dd></dl>
@@ -750,18 +897,12 @@ st, sf (list or tuple): If <code class="xref py py-attr docutils literal notrans
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>X</strong> (<em>Tensor</em>) – data to be normalized,</p></li>
-<li><p><strong>mean</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – mean value (the default is None, which means auto computed)</p></li>
-<li><p><strong>std</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – standard deviation (the default is None, which means auto computed)</p></li>
-<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – specify the axis for computing mean and standard deviation (the default is None, which means all elements)</p></li>
-<li><p><strong>extra</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – if True, also return the mean and std (the default is False, which means just return the standardized data)</p></li>
+<li><p><strong>X</strong> (<em>{torch tensor}</em>) – data to be normalized,</p></li>
+<li><p><strong>mean</strong> (<em>{list</em><em> or </em><em>None}</em><em>, </em><em>optional</em>) – mean value (the default is None, which means auto computed)</p></li>
+<li><p><strong>std</strong> (<em>{list</em><em> or </em><em>None}</em><em>, </em><em>optional</em>) – standard deviation (the default is None, which means auto computed)</p></li>
+<li><p><strong>axis</strong> (<em>{list</em><em> or </em><em>int}</em><em>, </em><em>optional</em>) – specify the axis for computing mean and standard deviation (the default is None, which means all elements)</p></li>
+<li><p><strong>extra</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – if True, also return the mean and std (the default is False, which means just return the standardized data)</p></li>
 </ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Standardized/Normalized tensor.</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>(Tensor)</p>
 </dd>
 </dl>
 </dd></dl>

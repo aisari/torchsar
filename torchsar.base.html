@@ -42,7 +42,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="torchsar.calibration package" href="torchsar.calibration.html" />
-    <link rel="prev" title="torchsar package" href="torchsar.html" /> 
+    <link rel="prev" title="torchsar.autofocus package" href="torchsar.autofocus.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -92,6 +92,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="torchsar.autofocus.html">torchsar.autofocus package</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">torchsar.base package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.calibration.html">torchsar.calibration package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.dsp.html">torchsar.dsp package</a></li>
@@ -106,7 +107,7 @@
 <li class="toctree-l4"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-torchsar">Module contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -216,7 +217,7 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>dims</strong> (<em>{integer}</em>) – total dimensions</p></li>
+<li><p><strong>dims</strong> (<em>{int}</em>) – total dimensions</p></li>
 <li><p><strong>axis</strong> (<em>{int</em><em> or </em><em>list}</em>) – select axis list.</p></li>
 <li><p><strong>idx</strong> (<em>{list</em><em> or </em><em>None}</em><em>, </em><em>optional</em>) – slice lists of the specified <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code>, if None, does nothing (the default)</p></li>
 </ul>
@@ -243,7 +244,7 @@ All tensors must either have the same shape (except in the concatenating dimensi
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>shapes</strong> (<em>{tuples</em><em> or </em><em>lists}</em>) – (shape1, shape2, …)</p></li>
-<li><p><strong>axis</strong> (<em>{number}</em><em>, </em><em>optional</em>) – specify the concatenated axis (the default is 0)</p></li>
+<li><p><strong>axis</strong> (<em>{int}</em><em>, </em><em>optional</em>) – specify the concatenated axis (the default is 0)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -267,7 +268,7 @@ All tensors must either have the same shape (except in the concatenating dimensi
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>X1</strong> (<em>{Torch Tensor}</em>) – the first torch tensor for concatenating</p></li>
 <li><p><strong>X2</strong> (<em>{Torch Tensor}</em>) – the second torch tensor for concatenating</p></li>
-<li><p><strong>axis</strong> (<em>{integer}</em>) – concatenating axis</p></li>
+<li><p><strong>axis</strong> (<em>{int}</em>) – concatenating axis</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -553,7 +554,7 @@ if positive, add a positive shake, if negative, add a negative.</p></li>
         <a href="torchsar.calibration.html" class="btn btn-neutral float-right" title="torchsar.calibration package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="torchsar.html" class="btn btn-neutral float-left" title="torchsar package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="torchsar.autofocus.html" class="btn btn-neutral float-left" title="torchsar.autofocus package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

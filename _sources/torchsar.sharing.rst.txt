@@ -52,6 +52,14 @@ torchsar.sharing.doppler\_rate\_estimation module
    :undoc-members:
    :show-inheritance:
 
+torchsar.sharing.gain\_compensation module
+------------------------------------------
+
+.. automodule:: torchsar.sharing.gain_compensation
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 torchsar.sharing.matched\_filter module
 ---------------------------------------
 

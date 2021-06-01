@@ -277,10 +277,10 @@ the focused pixel.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>{torch tensor}</em>) – Corrupt complex SAR image. N-Na-Nr(complex) or N-Na-Nr-2(real)</p></li>
-<li><p><strong>niter</strong> (<em>{number}</em><em>, </em><em>optional</em>) – The number of iteration (the default is 10)</p></li>
+<li><p><strong>niter</strong> (<em>{int}</em><em>, </em><em>optional</em>) – The number of iteration (the default is 10)</p></li>
 <li><p><strong>delta</strong> (<em>{float</em><em> or </em><em>None}</em><em>, </em><em>optional</em>) – The change step (the default is None (i.e. PI))</p></li>
-<li><p><strong>toli</strong> (<em>{number}</em><em>, </em><em>optional</em>) – Tolerance error for inner loop (the default is 1e-2)</p></li>
-<li><p><strong>tolo</strong> (<em>{number}</em><em>, </em><em>optional</em>) – Tolerance error for outer loop (the default is 1e-2)</p></li>
+<li><p><strong>toli</strong> (<em>{int}</em><em>, </em><em>optional</em>) – Tolerance error for inner loop (the default is 1e-2)</p></li>
+<li><p><strong>tolo</strong> (<em>{int}</em><em>, </em><em>optional</em>) – Tolerance error for outer loop (the default is 1e-2)</p></li>
 <li><p><strong>ftshift</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – Shift the zero frequency to center? (the default is True)</p></li>
 <li><p><strong>islog</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – Print log information? (the default is False)</p></li>
 </ul>
@@ -301,7 +301,7 @@ the focused pixel.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>{2D tensor}</em>) – complex image with shape <span class="math">\(N×N_a×N_r\)</span> or <span class="math">\(N×N_a×N_r×2\)</span></p></li>
 <li><p><strong>phi</strong> (<em>{float}</em><em>, </em><em>optional</em>) – initial value of <span class="math">\(\phi\)</span> (the default is None, which means zeros)</p></li>
-<li><p><strong>niter</strong> (<em>{integer}</em><em>, </em><em>optional</em>) – number of iterations (the default is 10)</p></li>
+<li><p><strong>niter</strong> (<em>{int}</em><em>, </em><em>optional</em>) – number of iterations (the default is 10)</p></li>
 <li><p><strong>method</strong> (<em>{string}</em><em>, </em><em>optional</em>) – method used to update the phase error
 - <code class="docutils literal notranslate"><span class="pre">'FP-MCA'</span></code> –&gt; Fix Point
 - <code class="docutils literal notranslate"><span class="pre">'CD-MCA'</span></code> –&gt; Coordinate Descent
@@ -310,7 +310,7 @@ the focused pixel.</p>
 - <code class="docutils literal notranslate"><span class="pre">'SN-MCA'</span></code> –&gt; Simplified Newton
 - <code class="docutils literal notranslate"><span class="pre">'MN-MCA'</span></code> –&gt; Modified Newton</p></li>
 <li><p><strong>selscat</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – Select brighter scatters.</p></li>
-<li><p><strong>axis</strong> (<em>{number}</em><em>, </em><em>optional</em>) – Compensation axis.</p></li>
+<li><p><strong>axis</strong> (<em>{int}</em><em>, </em><em>optional</em>) – Compensation axis.</p></li>
 <li><p><strong>ftshift</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – Does shift zero frequency to center?</p></li>
 <li><p><strong>islog</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – Does print log info.</p></li>
 </ul>
@@ -371,10 +371,10 @@ the focused pixel.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>{torch tensor}</em>) – Corrupt complex SAR image. N-Na-Nr(complex) or N-Na-Nr-2(real)</p></li>
-<li><p><strong>niter</strong> (<em>{number}</em><em>, </em><em>optional</em>) – The number of iteration (the default is 10)</p></li>
+<li><p><strong>niter</strong> (<em>{int}</em><em>, </em><em>optional</em>) – The number of iteration (the default is 10)</p></li>
 <li><p><strong>delta</strong> (<em>{float</em><em> or </em><em>None}</em><em>, </em><em>optional</em>) – The change step (the default is None (i.e. PI))</p></li>
-<li><p><strong>toli</strong> (<em>{number}</em><em>, </em><em>optional</em>) – Tolerance error for inner loop (the default is 1e-2)</p></li>
-<li><p><strong>tolo</strong> (<em>{number}</em><em>, </em><em>optional</em>) – Tolerance error for outer loop (the default is 1e-2)</p></li>
+<li><p><strong>toli</strong> (<em>{int}</em><em>, </em><em>optional</em>) – Tolerance error for inner loop (the default is 1e-2)</p></li>
+<li><p><strong>tolo</strong> (<em>{int}</em><em>, </em><em>optional</em>) – Tolerance error for outer loop (the default is 1e-2)</p></li>
 <li><p><strong>ftshift</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – Shift the zero frequency to center? (the default is True)</p></li>
 <li><p><strong>islog</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – Print log information? (the default is False)</p></li>
 </ul>
@@ -502,7 +502,7 @@ where, <span class="math">\({\bf p}_n = [p_2, \cdots, p_M]^T\)</span>).</p></li>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>n</strong> (<em>{integer}</em>) – Number of samples.</p></li>
+<li><p><strong>n</strong> (<em>{int}</em>) – Number of samples.</p></li>
 <li><p><strong>norm</strong> (<em>{bool}</em>) – Normalize the frequencies.</p></li>
 <li><p><strong>shift</strong> (<em>{bool}</em>) – Does shift the zero frequency to center.</p></li>
 <li><p><strong>mode</strong> (<em>{str}</em>) – Frequency sampling mode. <code class="docutils literal notranslate"><span class="pre">'fftfreq'</span></code> or <code class="docutils literal notranslate"><span class="pre">'freq'</span></code>, for two times,

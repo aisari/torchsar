@@ -92,6 +92,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="torchsar.autofocus.html">torchsar.autofocus package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.base.html">torchsar.base package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.calibration.html">torchsar.calibration package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.dsp.html">torchsar.dsp package</a></li>
@@ -204,6 +205,54 @@
 <dt id="torchsar.sharing.beamwidth_footprint.azimuth_footprint">
 <code class="sig-prename descclassname">torchsar.sharing.beamwidth_footprint.</code><code class="sig-name descname">azimuth_footprint</code><span class="sig-paren">(</span><em class="sig-param">R</em>, <em class="sig-param">Wl</em>, <em class="sig-param">La</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.sharing.beamwidth_footprint.azimuth_footprint" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="function">
+<dt id="torchsar.sharing.beamwidth_footprint.compute_range_beamwidth2">
+<code class="sig-prename descclassname">torchsar.sharing.beamwidth_footprint.</code><code class="sig-name descname">compute_range_beamwidth2</code><span class="sig-paren">(</span><em class="sig-param">Nr</em>, <em class="sig-param">Fsr</em>, <em class="sig-param">H</em>, <em class="sig-param">Aon</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.sharing.beamwidth_footprint.compute_range_beamwidth2" title="Permalink to this definition">¶</a></dt>
+<dd><p>computes beam angle in range direction</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Nr</strong> (<em>{integer}</em>) – Number of samples in range direction.</p></li>
+<li><p><strong>Fsr</strong> (<em>{float}</em>) – Sampling rate in range direction.</p></li>
+<li><p><strong>H</strong> (<em>{float}</em>) – Height of the platform.</p></li>
+<li><p><strong>Aon</strong> (<em>{float}</em>) – The off-nadir angle (unit: rad).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The beam angle (unit, rad) in range direction.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="torchsar.sharing.beamwidth_footprint.cr_footprint">
+<code class="sig-prename descclassname">torchsar.sharing.beamwidth_footprint.</code><code class="sig-name descname">cr_footprint</code><span class="sig-paren">(</span><em class="sig-param">Wl</em>, <em class="sig-param">H</em>, <em class="sig-param">La</em>, <em class="sig-param">Ad</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.sharing.beamwidth_footprint.cr_footprint" title="Permalink to this definition">¶</a></dt>
+<dd><p>cross range (azimuth) foot print</p>
+<div class="math">
+\[R_{CR} \approx \frac{\lambda}{L_a}\frac{H}{{\rm cos}\theta_d}
+
+\]</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Wl</strong> (<em>{float}</em>) – wave length</p></li>
+<li><p><strong>H</strong> (<em>{float}</em>) – height of SAR platform</p></li>
+<li><p><strong>La</strong> (<em>{float}</em>) – length of antenna aperture (azimuth)</p></li>
+<li><p><strong>Ad</strong> (<em>{float}</em>) – depression angle</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>foot print size in azimuth</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
 
 </div>
 <div class="section" id="module-torchsar.sharing.chirp_signal">
@@ -373,6 +422,41 @@
 </dd></dl>
 
 </div>
+<div class="section" id="module-torchsar.sharing.gain_compensation">
+<span id="torchsar-sharing-gain-compensation-module"></span><h2>torchsar.sharing.gain_compensation module<a class="headerlink" href="#module-torchsar.sharing.gain_compensation" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="torchsar.sharing.gain_compensation.vga_gain_compensation">
+<code class="sig-prename descclassname">torchsar.sharing.gain_compensation.</code><code class="sig-name descname">vga_gain_compensation</code><span class="sig-paren">(</span><em class="sig-param">S</em>, <em class="sig-param">V</em>, <em class="sig-param">mod='linear'</em>, <em class="sig-param">fact=1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.sharing.gain_compensation.vga_gain_compensation" title="Permalink to this definition">¶</a></dt>
+<dd><p>vga gain compensation</p>
+<p>vga gain compensation</p>
+<div class="math">
+\[\begin{aligned}
+{\bm F} &= (λ 10^{{\bm V}/20})\\
+{\bm S}_{c} &= {\bm F} \odot {\bm S}
+\end{aligned}
+
+\]</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>S</strong> (<em>torch tensor</em>) – <code class="xref py py-attr docutils literal notranslate"><span class="pre">S</span></code> is an <span class="math">\(N_a×N_r×2\)</span> array, where, <span class="math">\(S[:,:,0]\)</span> is the I signal
+and <span class="math">\(S[:,:,1]\)</span> is the Q signal.</p></li>
+<li><p><strong>V</strong> (<em>torch tensor</em>) – <code class="xref py py-attr docutils literal notranslate"><span class="pre">S</span></code> is an <span class="math">\(N_a×N_r\)</span> or <span class="math">\(N_a×1\)</span> VGA gain array, the gain values are in
+<code class="docutils literal notranslate"><span class="pre">dB</span></code> unit.</p></li>
+<li><p><strong>mod</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – compensation mode (the default is ‘linear’)</p></li>
+<li><p><strong>fact</strong> (<em>number</em><em>, </em><em>optional</em>) – fact is the factor <span class="math">\(\lambda\)</span> (the default is 1.0)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>compensated signal, <span class="math">\(N_a×N_r×2\)</span> array.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>torch tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
 <div class="section" id="module-torchsar.sharing.matched_filter">
 <span id="torchsar-sharing-matched-filter-module"></span><h2>torchsar.sharing.matched_filter module<a class="headerlink" href="#module-torchsar.sharing.matched_filter" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
@@ -397,9 +481,9 @@
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>X</strong> (<em>{torch.Tensor}</em>) – Data after pulse compression.</p></li>
-<li><p><strong>No</strong> (<em>{number}</em>) – Output size.</p></li>
-<li><p><strong>Nh</strong> (<em>{number}</em>) – Filter size.</p></li>
-<li><p><strong>axis</strong> (<em>{number}</em><em>, </em><em>optional</em>) – Throwaway dimension. (the default is 0)</p></li>
+<li><p><strong>No</strong> (<em>{int}</em>) – Output size.</p></li>
+<li><p><strong>Nh</strong> (<em>{int}</em>) – Filter size.</p></li>
+<li><p><strong>axis</strong> (<em>{int}</em><em>, </em><em>optional</em>) – Throwaway dimension. (the default is 0)</p></li>
 <li><p><strong>mffdmod</strong> (<em>{str}</em><em>, </em><em>optional</em>) – Frequency filter mode. (the default is ‘way1’)</p></li>
 <li><p><strong>ftshift</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – Whether to shift frequency (the default is False)</p></li>
 </ul>
@@ -554,13 +638,13 @@ where, <span class="math">\(N\)</span> is the number of targets,
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>scene</strong> (<em>{list</em><em> or </em><em>tuple}</em>) – Scene Area, [xmin, xmax, ymin, ymax]</p></li>
-<li><p><strong>n</strong> (<em>{integer}</em>) – number of rectangles</p></li>
+<li><p><strong>n</strong> (<em>{int}</em>) – number of rectangles</p></li>
 <li><p><strong>amps</strong> (<em>{list}</em><em>, </em><em>optional</em>) – amplitudes (the default is None, which generate randomly)</p></li>
 <li><p><strong>height</strong> (<em>{list}</em><em>, </em><em>optional</em>) – height of each rectangle (the default is None, which generate randomly)</p></li>
 <li><p><strong>width</strong> (<em>{list}</em><em>, </em><em>optional</em>) – width of each rectangle (the default is None, which generate randomly)</p></li>
 <li><p><strong>dx</strong> (<em>{float}</em><em>, </em><em>optional</em>) – resolution in range (default: {1 / (xmax-xmin)})</p></li>
 <li><p><strong>dy</strong> (<em>{float}</em><em>, </em><em>optional</em>) – resolution in azimuth (default: {1 / (ymax-ymin)})</p></li>
-<li><p><strong>seed</strong> (<em>{integer}</em><em>, </em><em>optional</em>) – random seed (the default is None, which different seed every time.)</p></li>
+<li><p><strong>seed</strong> (<em>{int}</em><em>, </em><em>optional</em>) – random seed (the default is None, which different seed every time.)</p></li>
 <li><p><strong>verbose</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – show more log info (the default is False, which means does not show)</p></li>
 </ul>
 </dd>

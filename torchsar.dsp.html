@@ -92,6 +92,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="torchsar.autofocus.html">torchsar.autofocus package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.base.html">torchsar.base package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.calibration.html">torchsar.calibration package</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">torchsar.dsp package</a></li>
@@ -106,7 +107,7 @@
 <li class="toctree-l4"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-torchsar">Module contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -196,15 +197,15 @@
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>y</strong> (<em>{torch.tensor}</em>) – array after <code class="docutils literal notranslate"><span class="pre">iff</span></code>.</p></li>
-<li><p><strong>nfft</strong> (<em>{number}</em>) – number of fft points.</p></li>
-<li><p><strong>Nx</strong> (<em>{number}</em>) – signal length</p></li>
-<li><p><strong>Nh</strong> (<em>{number}</em>) – filter length</p></li>
+<li><p><strong>nfft</strong> (<em>{int}</em>) – number of fft points.</p></li>
+<li><p><strong>Nx</strong> (<em>{int}</em>) – signal length</p></li>
+<li><p><strong>Nh</strong> (<em>{int}</em>) – filter length</p></li>
 <li><p><strong>shape</strong> (<em>{str}</em>) – output shape:
 1. <code class="docutils literal notranslate"><span class="pre">'same'</span> <span class="pre">--&gt;</span> <span class="pre">same</span> <span class="pre">size</span> <span class="pre">as</span> <span class="pre">input</span> <span class="pre">x</span></code>, <span class="math">\(N_x\)</span>
 2. <code class="docutils literal notranslate"><span class="pre">'valid'</span> <span class="pre">--&gt;</span> <span class="pre">valid</span> <span class="pre">convolution</span> <span class="pre">output</span></code>
 3. <code class="docutils literal notranslate"><span class="pre">'full'</span> <span class="pre">--&gt;</span> <span class="pre">full</span> <span class="pre">convolution</span> <span class="pre">output</span></code>, <span class="math">\(N_x+N_h-1\)</span>
 (the default is ‘same’)</p></li>
-<li><p><strong>axis</strong> (<em>{number}</em>) – convolution axis (the default is 0)</p></li>
+<li><p><strong>axis</strong> (<em>{int}</em>) – convolution axis (the default is 0)</p></li>
 <li><p><strong>ftshift</strong> (<em>{</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#type" title="(in Python v3.9)"><em>type</em></a><em>]</em><em>}</em>) – whether to shift zero the frequency to center (the default is False)</p></li>
 </ul>
 </dd>
@@ -232,8 +233,8 @@
 2. <code class="docutils literal notranslate"><span class="pre">'valid'</span> <span class="pre">--&gt;</span> <span class="pre">valid</span> <span class="pre">convolution</span> <span class="pre">output</span></code>
 3. <code class="docutils literal notranslate"><span class="pre">'full'</span> <span class="pre">--&gt;</span> <span class="pre">full</span> <span class="pre">convolution</span> <span class="pre">output</span></code>, <span class="math">\(N_x+N_h-1\)</span>
 (the default is ‘same’)</p></li>
-<li><p><strong>axis</strong> (<em>{number}</em><em>, </em><em>optional</em>) – convolution axis (the default is 0)</p></li>
-<li><p><strong>nfft</strong> (<em>{number}</em><em>, </em><em>optional</em>) – number of fft points (the default is <span class="math">\(2^nextpow2(N_x+N_h-1)\)</span>),
+<li><p><strong>axis</strong> (<em>{int}</em><em>, </em><em>optional</em>) – convolution axis (the default is 0)</p></li>
+<li><p><strong>nfft</strong> (<em>{int}</em><em>, </em><em>optional</em>) – number of fft points (the default is <span class="math">\(2^nextpow2(N_x+N_h-1)\)</span>),
 note that <code class="xref py py-attr docutils literal notranslate"><span class="pre">nfft</span></code> can not be smaller than <span class="math">\(N_x+N_h-1\)</span>.</p></li>
 <li><p><strong>ftshift</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – whether shift frequencies (the default is False)</p></li>
 <li><p><strong>eps</strong> (<em>{None</em><em> or </em><em>float}</em><em>, </em><em>optional</em>) – x[abs(x)&lt;eps] = 0 (the default is None, does nothing)</p></li>
@@ -283,15 +284,15 @@ note that <code class="xref py py-attr docutils literal notranslate"><span class
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>y</strong> (<em>{torch.tensor}</em>) – array after <code class="docutils literal notranslate"><span class="pre">iff</span></code>.</p></li>
-<li><p><strong>nfft</strong> (<em>{number}</em>) – number of fft points.</p></li>
-<li><p><strong>Nx</strong> (<em>{number}</em>) – signal length</p></li>
-<li><p><strong>Nh</strong> (<em>{number}</em>) – filter length</p></li>
+<li><p><strong>nfft</strong> (<em>{int}</em>) – number of fft points.</p></li>
+<li><p><strong>Nx</strong> (<em>{int}</em>) – signal length</p></li>
+<li><p><strong>Nh</strong> (<em>{int}</em>) – filter length</p></li>
 <li><p><strong>shape</strong> (<em>{str}</em>) – output shape:
 1. <code class="docutils literal notranslate"><span class="pre">'same'</span> <span class="pre">--&gt;</span> <span class="pre">same</span> <span class="pre">size</span> <span class="pre">as</span> <span class="pre">input</span> <span class="pre">x</span></code>, <span class="math">\(N_x\)</span>
 2. <code class="docutils literal notranslate"><span class="pre">'valid'</span> <span class="pre">--&gt;</span> <span class="pre">valid</span> <span class="pre">correlation</span> <span class="pre">output</span></code>
 3. <code class="docutils literal notranslate"><span class="pre">'full'</span> <span class="pre">--&gt;</span> <span class="pre">full</span> <span class="pre">correlation</span> <span class="pre">output</span></code>, <span class="math">\(N_x+N_h-1\)</span>
 (the default is ‘same’)</p></li>
-<li><p><strong>axis</strong> (<em>{number}</em>) – correlation axis (the default is 0)</p></li>
+<li><p><strong>axis</strong> (<em>{int}</em>) – correlation axis (the default is 0)</p></li>
 <li><p><strong>ftshift</strong> (<em>{</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#type" title="(in Python v3.9)"><em>type</em></a><em>]</em><em>}</em>) – whether to shift the frequencies (the default is False)</p></li>
 </ul>
 </dd>
@@ -319,8 +320,8 @@ note that <code class="xref py py-attr docutils literal notranslate"><span class
 2. <code class="docutils literal notranslate"><span class="pre">'valid'</span> <span class="pre">--&gt;</span> <span class="pre">valid</span> <span class="pre">correlation</span> <span class="pre">output</span></code>
 3. <code class="docutils literal notranslate"><span class="pre">'full'</span> <span class="pre">--&gt;</span> <span class="pre">full</span> <span class="pre">correlation</span> <span class="pre">output</span></code>, <span class="math">\(N_x+N_h-1\)</span>
 (the default is ‘same’)</p></li>
-<li><p><strong>axis</strong> (<em>{number}</em><em>, </em><em>optional</em>) – correlation axis (the default is 0)</p></li>
-<li><p><strong>nfft</strong> (<em>{number}</em><em>, </em><em>optional</em>) – number of fft points (the default is None, <span class="math">\(2^nextpow2(N_x+N_h-1)\)</span>),
+<li><p><strong>axis</strong> (<em>{int}</em><em>, </em><em>optional</em>) – correlation axis (the default is 0)</p></li>
+<li><p><strong>nfft</strong> (<em>{int}</em><em>, </em><em>optional</em>) – number of fft points (the default is None, <span class="math">\(2^nextpow2(N_x+N_h-1)\)</span>),
 note that <code class="xref py py-attr docutils literal notranslate"><span class="pre">nfft</span></code> can not be smaller than <span class="math">\(N_x+N_h-1\)</span>.</p></li>
 <li><p><strong>ftshift</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – whether shift frequencies (the default is False)</p></li>
 <li><p><strong>eps</strong> (<em>{None</em><em> or </em><em>float}</em><em>, </em><em>optional</em>) – x[abs(x)&lt;eps] = 0 (the default is None, does nothing)</p></li>
@@ -374,8 +375,8 @@ note that <code class="xref py py-attr docutils literal notranslate"><span class
 <li><p><strong>x</strong> (<em>{torch array}</em>) – complex representation is supported. Since torch1.7 and above support complex array,
 when <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> is in real-representation formation(last dimension is 2, real, imag),
 we will change the representation in complex formation, after FFT, it will be change back.</p></li>
-<li><p><strong>n</strong> (<em>{integer}</em><em>, </em><em>optional</em>) – number of fft points (the default is None –&gt; equals to signal dimension)</p></li>
-<li><p><strong>axis</strong> (<em>{number}</em><em>, </em><em>optional</em>) – axis of fft (the default is 0, which the first dimension)</p></li>
+<li><p><strong>n</strong> (<em>{int}</em><em>, </em><em>optional</em>) – number of fft points (the default is None –&gt; equals to signal dimension)</p></li>
+<li><p><strong>axis</strong> (<em>{int}</em><em>, </em><em>optional</em>) – axis of fft (the default is 0, which the first dimension)</p></li>
 <li><p><strong>norm</strong> (<em>{None</em><em> or </em><em>str}</em><em>, </em><em>optional</em>) – Normalization mode. For the forward transform (fft()), these correspond to:
 - “forward” - normalize by <code class="docutils literal notranslate"><span class="pre">1/n</span></code>
 - “backward” - no normalization (default)
@@ -441,7 +442,7 @@ Note that <code class="docutils literal notranslate"><span class="pre">y[0]</spa
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>{torch tensor}</em>) – Input tensor.</p></li>
-<li><p><strong>axis</strong> (<em>{number}</em><em>, </em><em>optional</em>) – Axes over which to shift. (Default is None, which shifts all axes.)</p></li>
+<li><p><strong>axis</strong> (<em>{int}</em><em>, </em><em>optional</em>) – Axes over which to shift. (Default is None, which shifts all axes.)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -513,7 +514,7 @@ Note that <code class="docutils literal notranslate"><span class="pre">y[0]</spa
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>fs</strong> (<em>{float}</em>) – Sampling rate.</p></li>
-<li><p><strong>n</strong> (<em>{integer}</em>) – Number of samples.</p></li>
+<li><p><strong>n</strong> (<em>{int}</em>) – Number of samples.</p></li>
 <li><p><strong>norm</strong> (<em>{bool}</em>) – Normalize the frequencies.</p></li>
 <li><p><strong>shift</strong> (<em>{bool}</em>) – Does shift the zero frequency to center.</p></li>
 <li><p><strong>dtype</strong> (<em>{torch tensor}</em>) – Data type, default is <code class="docutils literal notranslate"><span class="pre">th.float32</span></code>.</p></li>
@@ -542,8 +543,8 @@ also you can use torch’s rifft.</p>
 <li><p><strong>x</strong> (<em>{torch array}</em>) – both complex and real representation are supported. Since torch does not
 support complex array, when <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> is complex, we will change the representation
 in real formation(last dimension is 2, real, imag), after IFFT, it will be change back.</p></li>
-<li><p><strong>n</strong> (<em>{integer}</em><em>, </em><em>optional</em>) – number of ifft points (the default is None –&gt; equals to signal dimension)</p></li>
-<li><p><strong>axis</strong> (<em>{number}</em><em>, </em><em>optional</em>) – axis of ifft (the default is 0, which the first dimension)</p></li>
+<li><p><strong>n</strong> (<em>{int}</em><em>, </em><em>optional</em>) – number of ifft points (the default is None –&gt; equals to signal dimension)</p></li>
+<li><p><strong>axis</strong> (<em>{int}</em><em>, </em><em>optional</em>) – axis of ifft (the default is 0, which the first dimension)</p></li>
 <li><p><strong>norm</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – Normalization mode. For the backward transform (ifft()), these correspond to:
 - “forward” - no normalization
 - “backward” - normalize by <code class="docutils literal notranslate"><span class="pre">1/n</span></code> (default)
@@ -573,7 +574,7 @@ functions differ by one sample for odd-length <cite>x</cite>.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>{torch tensor}</em>) – The input tensor.</p></li>
-<li><p><strong>axis</strong> (<em>{number}</em><em>, </em><em>optional</em>) – Axes over which to shift. (Default is None, which shifts all axes.)</p></li>
+<li><p><strong>axis</strong> (<em>{int}</em><em>, </em><em>optional</em>) – Axes over which to shift. (Default is None, which shifts all axes.)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -637,7 +638,7 @@ functions differ by one sample for odd-length <cite>x</cite>.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>X</strong> (<em>{torch tensor}</em>) – Data to be padded.</p></li>
 <li><p><strong>nfft</strong> (<em>{number</em><em> or </em><em>None}</em>) – Padding size.</p></li>
-<li><p><strong>axis</strong> (<em>{number}</em><em>, </em><em>optional</em>) – Padding dimension. (the default is 0)</p></li>
+<li><p><strong>axis</strong> (<em>{int}</em><em>, </em><em>optional</em>) – Padding dimension. (the default is 0)</p></li>
 <li><p><strong>shift</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – Whether to shift the frequency (the default is False)</p></li>
 </ul>
 </dd>
@@ -919,7 +920,7 @@ the data with 2 to <span class="math">\(M\)</span> order polynominal.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>{torch 1d tensor}</em>) – x-coordinates of the N sample points <span class="math">\((x[i], y[i])\)</span></p></li>
 <li><p><strong>y</strong> (<em>{torch 1d tensor}</em>) – y-coordinates of the N sample points <span class="math">\((x[i], y[i])\)</span></p></li>
-<li><p><strong>deg</strong> (<em>{number}</em><em>, </em><em>optional</em>) – degree (<span class="math">\(M\)</span>) of the fitting polynomial (the default is 1)</p></li>
+<li><p><strong>deg</strong> (<em>{int}</em><em>, </em><em>optional</em>) – degree (<span class="math">\(M\)</span>) of the fitting polynomial (the default is 1)</p></li>
 <li><p><strong>C</strong> (<em>{float}</em><em>, </em><em>optional</em>) – the balance factor of weight regularization and fitting error.</p></li>
 </ul>
 </dd>
