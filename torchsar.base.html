@@ -107,7 +107,7 @@
 <li class="toctree-l4"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-contents">Module contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-torchsar">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -201,7 +201,7 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>x</strong> (<em>{torch.ndarray}</em>) – [description]</p></li>
+<li><p><strong>x</strong> (<em>{torch.tensor}</em>) – [description]</p></li>
 <li><p><strong>pos</strong> (<em>{tulpe</em><em> or </em><em>list}</em>) – cut positions: ((cpstart, cpend), (cpstart, cpend), …)</p></li>
 <li><p><strong>axis</strong> (<em>{number</em><em>, </em><em>tulpe</em><em> or </em><em>list}</em><em>, </em><em>optional</em>) – cut axis (the default is None, which means nothing)</p></li>
 </ul>
@@ -217,9 +217,9 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>dims</strong> (<em>{int}</em>) – total dimensions</p></li>
+<li><p><strong>dims</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – total dimensions</p></li>
 <li><p><strong>axis</strong> (<em>{int</em><em> or </em><em>list}</em>) – select axis list.</p></li>
-<li><p><strong>idx</strong> (<em>{list</em><em> or </em><em>None}</em><em>, </em><em>optional</em>) – slice lists of the specified <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code>, if None, does nothing (the default)</p></li>
+<li><p><strong>idx</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – slice lists of the specified <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code>, if None, does nothing (the default)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -243,8 +243,8 @@ All tensors must either have the same shape (except in the concatenating dimensi
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>shapes</strong> (<em>{tuples</em><em> or </em><em>lists}</em>) – (shape1, shape2, …)</p></li>
-<li><p><strong>axis</strong> (<em>{int}</em><em>, </em><em>optional</em>) – specify the concatenated axis (the default is 0)</p></li>
+<li><p><strong>shapes</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><em>tuple</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a>) – (shape1, shape2, …)</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – specify the concatenated axis (the default is 0)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -266,16 +266,16 @@ All tensors must either have the same shape (except in the concatenating dimensi
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>X1</strong> (<em>{Torch Tensor}</em>) – the first torch tensor for concatenating</p></li>
-<li><p><strong>X2</strong> (<em>{Torch Tensor}</em>) – the second torch tensor for concatenating</p></li>
-<li><p><strong>axis</strong> (<em>{int}</em>) – concatenating axis</p></li>
+<li><p><strong>X1</strong> (<em>Tensor</em>) – the first torch tensor for concatenating</p></li>
+<li><p><strong>X2</strong> (<em>Tensor</em>) – the second torch tensor for concatenating</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – concatenating axis</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>concatenated tensors</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>Torch Tensor</p>
+<dd class="field-odd"><p>Tensor</p>
 </dd>
 </dl>
 </dd></dl>
@@ -288,8 +288,8 @@ All tensors must either have the same shape (except in the concatenating dimensi
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>D</strong> (<em>{</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#type" title="(in Python v3.9)"><em>type</em></a><em>]</em><em>}</em>) – [description]</p></li>
-<li><p><strong>Ds</strong> (<em>{</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#type" title="(in Python v3.9)"><em>type</em></a><em>]</em><em>}</em>) – [description]</p></li>
+<li><p><strong>D</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)"><em>dict</em></a>) – Main-dict.</p></li>
+<li><p><strong>Ds</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)"><em>dict</em></a>) – Sub-dict.</p></li>
 </ul>
 </dd>
 </dl>
@@ -403,13 +403,13 @@ For real representation, the last dimension is 2 (the first –&gt; real part, t
 <p>permutation function like numpy.random.permutation</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>x</strong> (<em>{torch.tensor}</em>) – inputs, can have any dimensions.</p>
+<dd class="field-odd"><p><strong>x</strong> (<em>Tensor</em>) – inputs, can have any dimensions.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><strong>x</strong> – permutated tensor</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>{torch.tensor}</p>
+<dd class="field-odd"><p>Tensor</p>
 </dd>
 </dl>
 </dd></dl>
@@ -427,9 +427,9 @@ with step size <code class="xref py py-attr docutils literal notranslate"><span 
 <li><p><strong>start</strong> (<em>{int</em><em> or </em><em>list}</em>) – start sampling point</p></li>
 <li><p><strong>stop</strong> (<em>{int</em><em> or </em><em>list}</em>) – stop sampling point</p></li>
 <li><p><strong>step</strong> (<em>{int</em><em> or </em><em>list}</em>) – sampling stepsize</p></li>
-<li><p><strong>shake</strong> (<em>{float}</em>) – the shake rate, if <code class="xref py py-attr docutils literal notranslate"><span class="pre">shake</span></code> is 0, no shake, (default),
+<li><p><strong>shake</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><em>float</em></a>) – the shake rate, if <code class="xref py py-attr docutils literal notranslate"><span class="pre">shake</span></code> is 0, no shake, (default),
 if positive, add a positive shake, if negative, add a negative.</p></li>
-<li><p><strong>n</strong> (<em>{int</em><em> or </em><em>None}</em>) – the number of samples (default None, int((stop0 - start0) / step0) * int((stop1 - start1) / step1)…).</p></li>
+<li><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a>) – the number of samples (default None, int((stop0 - start0) / step0) * int((stop1 - start1) / step1)…).</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -505,9 +505,9 @@ if positive, add a positive shake, if negative, add a negative.</p></li>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>H</strong> (<em>{int}</em>) – height</p></li>
-<li><p><strong>W</strong> (<em>{int}</em>) – width</p></li>
-<li><p><strong>number</strong> (<em>{int}</em>) – random numbers</p></li>
+<li><p><strong>H</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – height</p></li>
+<li><p><strong>W</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – width</p></li>
+<li><p><strong>number</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – random numbers</p></li>
 <li><p><strong>population</strong> (<em>{list</em><em> or </em><em>numpy array</em><em>(</em><em>1d</em><em> or </em><em>2d</em><em>)</em><em>}</em>) – part of population in range(0, H*W)</p></li>
 </ul>
 </dd>
@@ -522,8 +522,8 @@ if positive, add a positive shake, if negative, add a negative.</p></li>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>seed</strong> (<em>{int</em><em> or </em><em>None}</em><em>, </em><em>optional</em>) – seed for random number generator (the default is None)</p></li>
-<li><p><strong>target</strong> (<em>{str}</em><em>, </em><em>optional</em>) – <ul>
+<li><p><strong>seed</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – seed for random number generator (the default is None)</p></li>
+<li><p><strong>target</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">'numpy'</span></code>: <code class="docutils literal notranslate"><span class="pre">np.random.seed(seed)</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">'random'</span></code>: <code class="docutils literal notranslate"><span class="pre">random.seed(seed)</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">'torch'</span></code>: <code class="docutils literal notranslate"><span class="pre">torch.manual_seed(seed)</span></code> (default)</p></li>

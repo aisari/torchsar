@@ -216,16 +216,16 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>X</strong> (<em>{torch tensor}</em>) – The complex or real inputs, for complex inputs, both complex and real representations are surpported.</p></li>
-<li><p><strong>mode</strong> (<em>{str}</em><em>, </em><em>optional</em>) – The entropy mode: <code class="docutils literal notranslate"><span class="pre">'shannon'</span></code> or <code class="docutils literal notranslate"><span class="pre">'natural'</span></code> (the default is ‘shannon’)</p></li>
-<li><p><strong>reduction</strong> (<em>{str}</em><em>, </em><em>optional</em>) – The operation in batch dim, <code class="docutils literal notranslate"><span class="pre">'None'</span></code>, <code class="docutils literal notranslate"><span class="pre">'mean'</span></code> or <code class="docutils literal notranslate"><span class="pre">'sum'</span></code> (the default is ‘mean’)</p></li>
+<li><p><strong>X</strong> (<em>Tensor</em>) – The complex or real inputs, for complex inputs, both complex and real representations are surpported.</p></li>
+<li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – The entropy mode: <code class="docutils literal notranslate"><span class="pre">'shannon'</span></code> or <code class="docutils literal notranslate"><span class="pre">'natural'</span></code> (the default is ‘shannon’)</p></li>
+<li><p><strong>reduction</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – The operation in batch dim, <code class="docutils literal notranslate"><span class="pre">'None'</span></code>, <code class="docutils literal notranslate"><span class="pre">'mean'</span></code> or <code class="docutils literal notranslate"><span class="pre">'sum'</span></code> (the default is ‘mean’)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><strong>S</strong> – The entropy of the inputs.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>{torch tensor}</p>
+<dd class="field-odd"><p>Tensor</p>
 </dd>
 </dl>
 </dd></dl>
@@ -341,10 +341,10 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>X</strong> (<em>{numpy ndarray}</em>) – reconstructed, if complex, abs(X) is used</p></li>
+<li><p><strong>X</strong> (<em>{numpy tensor}</em>) – reconstructed, if complex, abs(X) is used</p></li>
 <li><p><strong>tgrs</strong> (<em>{lists}</em><em>, </em><em>optional</em>) – target regions:[[TG1],[TG2], …, [TGn]], [TGk] = [lefttop, rightbottom]]</p></li>
 <li><p><strong>subrs</strong> (<em>{lists}</em><em>, </em><em>optional</em>) – sub regions:[[SUB1],[SUB2], …, [SUBn]], [SUBk] = [lefttop, rightbottom]]</p></li>
-<li><p><strong>isshow</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – show target mask given by <code class="xref py py-attr docutils literal notranslate"><span class="pre">tgrs</span></code> (default: {False}</p></li>
+<li><p><strong>isshow</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – show target mask given by <code class="xref py py-attr docutils literal notranslate"><span class="pre">tgrs</span></code> (default: {False}</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>

@@ -695,7 +695,7 @@ read</p>
 <p>Read SAR data file (<code class="docutils literal notranslate"><span class="pre">.pkl</span></code> or <code class="docutils literal notranslate"><span class="pre">.mat</span></code>)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>file</strong> (<em>{str}</em>) – SAR data file path}</p>
+<dd class="field-odd"><p><strong>file</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – SAR data file path}</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><ul class="simple">
@@ -813,10 +813,10 @@ params</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>X</strong> (<em>tensor_like</em>) – The data to be quantized with shape <span class="math">\(N_a×N_r ∈ {\mathbb R}\)</span>, or <span class="math">\(N_a×N_r ∈ {\mathbb C}\)</span>.</p></li>
+<li><p><strong>X</strong> (<em>tensor</em>) – The data to be quantized with shape <span class="math">\(N_a×N_r ∈ {\mathbb R}\)</span>, or <span class="math">\(N_a×N_r ∈ {\mathbb C}\)</span>.</p></li>
 <li><p><strong>idrange</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><em>tuple</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em>, </em><em>optional</em>) – Specifies the range of data. Default [min(X), max(X)].</p></li>
 <li><p><strong>odrange</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><em>tuple</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em>, </em><em>optional</em>) – Specifies the range of data after beening quantized. Default [0, 31].</p></li>
-<li><p><strong>odtype</strong> (<em>{str</em><em>, </em><em>None... }</em><em>, </em><em>optional</em>) – output data type, supportted are <code class="docutils literal notranslate"><span class="pre">'auto'</span></code> (auto infer, default), or torch tensor’s dtype string.
+<li><p><strong>odtype</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – output data type, supportted are <code class="docutils literal notranslate"><span class="pre">'auto'</span></code> (auto infer, default), or torch tensor’s dtype string.
 If the type of <code class="xref py py-attr docutils literal notranslate"><span class="pre">odtype</span></code> is not string(such as None),
 the type of output data is the same with input.</p></li>
 <li><p><strong>extra</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a>) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, also return <code class="xref py py-attr docutils literal notranslate"><span class="pre">st</span></code> and <code class="xref py py-attr docutils literal notranslate"><span class="pre">idrange</span></code>.</p></li>
@@ -897,11 +897,11 @@ then X[X &lt; a] == a and X[X &gt; b] == b.</p></li>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>X</strong> (<em>{torch tensor}</em>) – data to be normalized,</p></li>
-<li><p><strong>mean</strong> (<em>{list</em><em> or </em><em>None}</em><em>, </em><em>optional</em>) – mean value (the default is None, which means auto computed)</p></li>
-<li><p><strong>std</strong> (<em>{list</em><em> or </em><em>None}</em><em>, </em><em>optional</em>) – standard deviation (the default is None, which means auto computed)</p></li>
-<li><p><strong>axis</strong> (<em>{list</em><em> or </em><em>int}</em><em>, </em><em>optional</em>) – specify the axis for computing mean and standard deviation (the default is None, which means all elements)</p></li>
-<li><p><strong>extra</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – if True, also return the mean and std (the default is False, which means just return the standardized data)</p></li>
+<li><p><strong>X</strong> (<em>Tensor</em>) – data to be normalized,</p></li>
+<li><p><strong>mean</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – mean value (the default is None, which means auto computed)</p></li>
+<li><p><strong>std</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – standard deviation (the default is None, which means auto computed)</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – specify the axis for computing mean and standard deviation (the default is None, which means all elements)</p></li>
+<li><p><strong>extra</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – if True, also return the mean and std (the default is False, which means just return the standardized data)</p></li>
 </ul>
 </dd>
 </dl>
@@ -914,17 +914,18 @@ then X[X &lt; a] == a and X[X &gt; b] == b.</p></li>
 <dt id="torchsar.misc.visual.apshow">
 <code class="sig-prename descclassname">torchsar.misc.visual.</code><code class="sig-name descname">apshow</code><span class="sig-paren">(</span><em class="sig-param">Srx</em>, <em class="sig-param">Title=None</em>, <em class="sig-param">cmap=None</em>, <em class="sig-param">extent=None</em>, <em class="sig-param">keepAspectRatio=True</em>, <em class="sig-param">outfile=None</em>, <em class="sig-param">isshow=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.visual.apshow" title="Permalink to this definition">¶</a></dt>
 <dd><p>[summary]</p>
-<p>[description]</p>
+<p>Show amplitude and phase.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>Srx</strong> (<em>{</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#type" title="(in Python v3.9)"><em>type</em></a><em>]</em><em>}</em>) – [description]</p></li>
-<li><p><strong>Title</strong> (<em>{</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#type" title="(in Python v3.9)"><em>type</em></a><em>]</em><em>}</em><em>, </em><em>optional</em>) – [description] (the default is None, which [default_description])</p></li>
-<li><p><strong>cmap</strong> (<em>{</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#type" title="(in Python v3.9)"><em>type</em></a><em>]</em><em>}</em><em>, </em><em>optional</em>) – [description] (the default is None, which [default_description])</p></li>
-<li><p><strong>extent</strong> (<em>{</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#type" title="(in Python v3.9)"><em>type</em></a><em>]</em><em>}</em><em>, </em><em>optional</em>) – [description] (the default is None, which [default_description])</p></li>
-<li><p><strong>keepAspectRatio</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – [description] (the default is True, which [default_description])</p></li>
-<li><p><strong>outfile</strong> (<em>{</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#type" title="(in Python v3.9)"><em>type</em></a><em>]</em><em>}</em><em>, </em><em>optional</em>) – [description] (the default is None, which [default_description])</p></li>
-<li><p><strong>isshow</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – [description] (the default is True, which [default_description])</p></li>
+<li><p><strong>Srx</strong> (<em>Tensor</em>) – Complex-valued tensor.</p></li>
+<li><p><strong>Title</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – The figure title (the default is None, which means
+no title).</p></li>
+<li><p><strong>cmap</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – The colormap (the default is None)</p></li>
+<li><p><strong>extent</strong> (<em>tulpe</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em>, </em><em>optional</em>) – [description] (the default is None)</p></li>
+<li><p><strong>keepAspectRatio</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – [description] (the default is True)</p></li>
+<li><p><strong>outfile</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – The filename for outputing (the default is None, which means not save)</p></li>
+<li><p><strong>isshow</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to show the figure (the default is True).</p></li>
 </ul>
 </dd>
 </dl>
@@ -961,7 +962,7 @@ then X[X &lt; a] == a and X[X &gt; b] == b.</p></li>
 <li><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>} --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> – {None})</p></li>
 <li><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>} --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> – {None})</p></li>
 <li><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>} --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> – {None})</p></li>
-<li><p><strong>{bool} --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> (<em>newfig</em>) – {True})</p></li>
+<li><p><strong>bool --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> (<em>newfig</em>) – {True})</p></li>
 <li><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>} --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> – {None})</p></li>
 </ul>
 </dd>
@@ -978,8 +979,8 @@ then X[X &lt; a] == a and X[X &gt; b] == b.</p></li>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>Srx</strong> (<em>{</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#type" title="(in Python v3.9)"><em>type</em></a><em>]</em><em>}</em>) – [description]</p></li>
 <li><p><strong>extent</strong> (<em>{</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#type" title="(in Python v3.9)"><em>type</em></a><em>]</em><em>}</em><em>, </em><em>optional</em>) – [description] (the default is None, which [default_description])</p></li>
-<li><p><strong>title</strong> (<em>{str}</em><em>, </em><em>optional</em>) – [description] (the default is “Figure”, which [default_description])</p></li>
-<li><p><strong>keepAspectRatio</strong> (<em>{bool}</em><em>, </em><em>optional</em>) – [description] (the default is True, which [default_description])</p></li>
+<li><p><strong>title</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – [description] (the default is “Figure”, which [default_description])</p></li>
+<li><p><strong>keepAspectRatio</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – [description] (the default is True, which [default_description])</p></li>
 </ul>
 </dd>
 </dl>
@@ -997,15 +998,15 @@ then X[X &lt; a] == a and X[X &gt; b] == b.</p></li>
 <p>[description]</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>}</strong> (<em>Srx</em>) – [description]</p>
+<dd class="field-odd"><p><strong>Srx</strong> (<em>Tensor</em>) – [description]</p>
 </dd>
 <dt class="field-even">Keyword Arguments</dt>
 <dd class="field-even"><ul class="simple">
-<li><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>}</strong> (<em>outfile</em>) – [description] (default: {None})</p></li>
-<li><p><strong>{str}</strong> (<em>title</em>) – [description] (default: {“Figure”})</p></li>
-<li><p><strong>{bool}</strong> (<em>isshow</em>) – [description] (default: {True})</p></li>
-<li><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>}</strong> – [description] (default: {None})</p></li>
-<li><p><strong>{bool}</strong> – [description] (default: {True})</p></li>
+<li><p><strong>extent</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><em>tuple</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a>) – [description] (default: None)</p></li>
+<li><p><strong>title</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – [description] (default: “Figure”)</p></li>
+<li><p><strong>keepAspectRatio</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a>) – [description] (default: True)</p></li>
+<li><p><strong>outfile</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – [description] (default: None)</p></li>
+<li><p><strong>isshow</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a>) – [description] (default: True)</p></li>
 </ul>
 </dd>
 </dl>
@@ -1028,10 +1029,10 @@ then X[X &lt; a] == a and X[X &gt; b] == b.</p></li>
 <li><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>} --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> (<em>figsize</em>) – {None})</p></li>
 <li><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>} --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> – {None})</p></li>
 <li><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>} --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> – {None})</p></li>
-<li><p><strong>{bool} --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> (<em>newfig</em>) – {False})</p></li>
+<li><p><strong>bool --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> (<em>newfig</em>) – {False})</p></li>
 <li><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>} --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> – {None})</p></li>
 <li><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>} --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> – {None})</p></li>
-<li><p><strong>{bool} --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> – {True})</p></li>
+<li><p><strong>bool --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> – {True})</p></li>
 <li><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>} --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> – {None})</p></li>
 </ul>
 </dd>
@@ -1055,7 +1056,7 @@ then X[X &lt; a] == a and X[X &gt; b] == b.</p></li>
 <li><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>} --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> (<em>figsize</em>) – {None})</p></li>
 <li><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>} --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> – {None})</p></li>
 <li><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>} --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> – {None})</p></li>
-<li><p><strong>{bool} --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> (<em>isimgadj</em>) – {False})</p></li>
+<li><p><strong>bool --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> (<em>isimgadj</em>) – {False})</p></li>
 <li><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>} --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> – {None})</p></li>
 <li><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>} --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> – {None})</p></li>
 <li><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>} --</strong><strong> [</strong><strong>description</strong><strong>] </strong><strong>(</strong><strong>default</strong> – {None})</p></li>
@@ -1072,26 +1073,25 @@ then X[X &lt; a] == a and X[X &gt; b] == b.</p></li>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>}</strong> (<em>shape</em>) – [description]</p></li>
-<li><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>}</strong> – [description]</p></li>
+<li><p><strong>targets</strong> (<em>Tensor</em>) – A tensor contains information of targets.</p></li>
+<li><p><strong>scene</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><em>tuple</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a>) – Area of scene [xmin, xmax, ymin, ymax].</p></li>
+<li><p><strong>shape</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><em>tuple</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a>) – The shape of the scene.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Keyword Arguments</dt>
 <dd class="field-even"><ul class="simple">
-<li><p><strong>{</strong><strong>[</strong><strong>type</strong><strong>]</strong><strong>}</strong> (<em>outfile</em>) – [description] (default: {None})</p></li>
-<li><p><strong>{bool}</strong> (<em>isshow</em>) – [description] (default: {True})</p></li>
+<li><p><strong>outfile</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – The filename for writting figure (default: None, do not save).</p></li>
+<li><p><strong>isshow</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a>) – Whether to plot figure (default: True).</p></li>
 </ul>
 </dd>
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p></p>
 </dd>
 <dt class="field-even">Return type</dt>
-<dd class="field-even"><p>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#type" title="(in Python v3.9)">type</a>] – [description]</p>
-</dd>
-<dt class="field-odd">Raises</dt>
-<dd class="field-odd"><p><strong>ValueError --</strong><strong> [</strong><strong>description</strong><strong>]</strong> – </p>
+<dd class="field-even"><p>Tensor – The final image tensor for show.</p>
 </dd>
 </dl>
+<p>:raises ValueError – <code class="xref py py-attr docutils literal notranslate"><span class="pre">targets</span></code> should not be None.:</p>
 </dd></dl>
 
 </div>

@@ -234,6 +234,14 @@ registered hooks while the latter silently ignores them.</p>
 <dt id="torchsar.module.evaluation.entropy.Entropy">
 <em class="property">class </em><code class="sig-prename descclassname">torchsar.module.evaluation.entropy.</code><code class="sig-name descname">Entropy</code><span class="sig-paren">(</span><em class="sig-param">mode='shannon'</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.entropy.Entropy" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<div class="math">
+\[\mathrm{S}=-\sum_{i=0}^{H-1} \sum_{j=0}^{W-1} \frac{|\mathbf{X}|_{i j}^{2}}{Z} \ln \frac{|\mathbf{X}|_{i j}^{2}}{Z}
+
+\]</div>
+<div class="math">
+\[Z=\sum_{i=0}^{H-1} \sum_{j=0}^{W-1}|\mathbf{X}|_{i j}^{2}
+
+\]</div>
 <dl class="method">
 <dt id="torchsar.module.evaluation.entropy.Entropy.forward">
 <code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.entropy.Entropy.forward" title="Permalink to this definition">¶</a></dt>
