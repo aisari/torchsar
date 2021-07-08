@@ -86,8 +86,9 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <p><span class="caption-text">Contents:</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modules.html">torchsar</a></li>
 </ul>
 
@@ -169,6 +170,7 @@
  | <a href="#L"><strong>L</strong></a>
  | <a href="#M"><strong>M</strong></a>
  | <a href="#N"><strong>N</strong></a>
+ | <a href="#O"><strong>O</strong></a>
  | <a href="#P"><strong>P</strong></a>
  | <a href="#Q"><strong>Q</strong></a>
  | <a href="#R"><strong>R</strong></a>
@@ -270,6 +272,8 @@
 </li>
       <li><a href="torchsar.sharing.html#torchsar.sharing.chirp_signal.chirp_tran">chirp_tran() (in module torchsar.sharing.chirp_signal)</a>
 </li>
+      <li><a href="torchsar.sparse.html#torchsar.sparse.complex_image.CICISTA">CICISTA (class in torchsar.sparse.complex_image)</a>
+</li>
       <li><a href="torchsar.module.loss.html#torchsar.module.loss.mean_squared_error.CMAELoss">CMAELoss (class in torchsar.module.loss.mean_squared_error)</a>
 </li>
       <li><a href="torchsar.module.loss.html#torchsar.module.loss.mean_squared_error.CMSELoss">CMSELoss (class in torchsar.module.loss.mean_squared_error)</a>
@@ -310,10 +314,10 @@
 </li>
       <li><a href="torchsar.module.layers.html#torchsar.module.layers.complex_layers.ComplexLeakyReLU">ComplexLeakyReLU (class in torchsar.module.layers.complex_layers)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="torchsar.module.layers.html#torchsar.module.layers.complex_layers.ComplexLinear">ComplexLinear (class in torchsar.module.layers.complex_layers)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="torchsar.module.layers.html#torchsar.module.layers.complex_layers.ComplexMaxPool1">ComplexMaxPool1 (class in torchsar.module.layers.complex_layers)</a>
 </li>
       <li><a href="torchsar.module.layers.html#torchsar.module.layers.complex_layers.ComplexMaxPool1d">ComplexMaxPool1d (class in torchsar.module.layers.complex_layers)</a>
@@ -333,6 +337,8 @@
       <li><a href="torchsar.module.layers.html#torchsar.module.layers.complex_layers.ComplexReLU">ComplexReLU (class in torchsar.module.layers.complex_layers)</a>
 </li>
       <li><a href="torchsar.module.layers.html#torchsar.module.layers.complex_layers.ComplexSequential">ComplexSequential (class in torchsar.module.layers.complex_layers)</a>
+</li>
+      <li><a href="torchsar.module.layers.html#torchsar.module.layers.complex_layers.ComplexSoftShrink">ComplexSoftShrink (class in torchsar.module.layers.complex_layers)</a>
 </li>
       <li><a href="torchsar.module.layers.html#torchsar.module.layers.complex_layers.ComplexUpsample">ComplexUpsample (class in torchsar.module.layers.complex_layers)</a>
 </li>
@@ -362,6 +368,10 @@
 </li>
       <li><a href="torchsar.sharing.html#torchsar.sharing.beamwidth_footprint.cr_footprint">cr_footprint() (in module torchsar.sharing.beamwidth_footprint)</a>
 </li>
+      <li><a href="torchsar.layerfunction.html#torchsar.layerfunction.cplxfunc.csign">csign() (in module torchsar.layerfunction.cplxfunc)</a>
+</li>
+      <li><a href="torchsar.layerfunction.html#torchsar.layerfunction.cplxfunc.csoftshrink">csoftshrink() (in module torchsar.layerfunction.cplxfunc)</a>
+</li>
       <li><a href="torchsar.misc.html#torchsar.misc.transform.ct2rt">ct2rt() (in module torchsar.misc.transform)</a>
 </li>
       <li><a href="torchsar.base.html#torchsar.base.arrayops.cut">cut() (in module torchsar.base.arrayops)</a>
@@ -388,15 +398,19 @@
 </li>
       <li><a href="torchsar.module.evaluation.html#torchsar.module.evaluation.retrieval.Dice">Dice (class in torchsar.module.evaluation.retrieval)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="torchsar.module.loss.html#torchsar.module.loss.retrieval.DiceLoss">DiceLoss (class in torchsar.module.loss.retrieval)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="torchsar.simulation.html#torchsar.simulation.geometry.disc">disc() (in module torchsar.simulation.geometry)</a>
 </li>
       <li><a href="torchsar.base.html#torchsar.base.baseops.dmka">dmka() (in module torchsar.base.baseops)</a>
 </li>
       <li><a href="torchsar.misc.html#torchsar.misc.sampling.dnsampling">dnsampling() (in module torchsar.misc.sampling)</a>
+</li>
+      <li><a href="torchsar.misc.html#torchsar.misc.draw_shapes.draw_eclipse">draw_eclipse() (in module torchsar.misc.draw_shapes)</a>
+</li>
+      <li><a href="torchsar.misc.html#torchsar.misc.draw_shapes.draw_rectangle">draw_rectangle() (in module torchsar.misc.draw_shapes)</a>
 </li>
       <li><a href="torchsar.sharing.html#torchsar.sharing.doppler_rate_estimation.dre_geo">dre_geo() (in module torchsar.sharing.doppler_rate_estimation)</a>
 </li>
@@ -419,6 +433,8 @@
       <li><a href="torchsar.evaluation.html#torchsar.evaluation.entropy.entropy">entropy() (in module torchsar.evaluation.entropy)</a>
 </li>
       <li><a href="torchsar.module.loss.html#torchsar.module.loss.entropy.EntropyLoss">EntropyLoss (class in torchsar.module.loss.entropy)</a>
+</li>
+      <li><a href="torchsar.evaluation.html#torchsar.evaluation.target_background.extract_targets">extract_targets() (in module torchsar.evaluation.target_background)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -547,11 +563,15 @@
 </li>
         <li><a href="torchsar.module.layers.html#torchsar.module.layers.complex_layers.ComplexSequential.forward">(torchsar.module.layers.complex_layers.ComplexSequential method)</a>
 </li>
+        <li><a href="torchsar.module.layers.html#torchsar.module.layers.complex_layers.ComplexSoftShrink.forward">(torchsar.module.layers.complex_layers.ComplexSoftShrink method)</a>
+</li>
         <li><a href="torchsar.module.layers.html#torchsar.module.layers.complex_layers.ComplexUpsample.forward">(torchsar.module.layers.complex_layers.ComplexUpsample method)</a>
 </li>
         <li><a href="torchsar.module.layers.html#torchsar.module.layers.complex_layers.NaiveComplexBatchNorm1d.forward">(torchsar.module.layers.complex_layers.NaiveComplexBatchNorm1d method)</a>
 </li>
         <li><a href="torchsar.module.layers.html#torchsar.module.layers.complex_layers.NaiveComplexBatchNorm2d.forward">(torchsar.module.layers.complex_layers.NaiveComplexBatchNorm2d method)</a>
+</li>
+        <li><a href="torchsar.module.layers.html#torchsar.module.layers.complex_layers.SoftShrink.forward">(torchsar.module.layers.complex_layers.SoftShrink method)</a>
 </li>
         <li><a href="torchsar.module.layers.html#torchsar.module.layers.consistency_layers.DataConsistency2d.forward">(torchsar.module.layers.consistency_layers.DataConsistency2d method)</a>
 </li>
@@ -847,6 +867,14 @@
   </ul></td>
 </tr></table>
 
+<h2 id="O">O</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="torchsar.sparse.html#torchsar.sparse.complex_image.CICISTA.optimize">optimize() (torchsar.sparse.complex_image.CICISTA method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
 <h2 id="P">P</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
@@ -1026,12 +1054,12 @@
 </li>
       <li><a href="torchsar.misc.html#torchsar.misc.visual.show_response">show_response() (in module torchsar.misc.visual)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="torchsar.misc.html#torchsar.misc.visual.show_sarimage">show_sarimage() (in module torchsar.misc.visual)</a>
 </li>
       <li><a href="torchsar.misc.html#torchsar.misc.visual.show_sarimage3d">show_sarimage3d() (in module torchsar.misc.visual)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="torchsar.misc.html#torchsar.misc.visual.showReImAmplitudePhase">showReImAmplitudePhase() (in module torchsar.misc.visual)</a>
 </li>
       <li><a href="torchsar.misc.html#torchsar.misc.sampling.shuffle_tensor">shuffle_tensor() (in module torchsar.misc.sampling)</a>
@@ -1054,6 +1082,12 @@
         <li><a href="torchsar.module.loss.html#torchsar.module.loss.retrieval.DiceLoss.soft_dice_coeff">(torchsar.module.loss.retrieval.DiceLoss method)</a>
 </li>
       </ul></li>
+      <li><a href="torchsar.module.layers.html#torchsar.module.layers.complex_layers.SoftShrink">SoftShrink (class in torchsar.module.layers.complex_layers)</a>
+</li>
+      <li><a href="torchsar.layerfunction.html#torchsar.layerfunction.cplxfunc.softshrink">softshrink() (in module torchsar.layerfunction.cplxfunc)</a>
+</li>
+      <li><a href="torchsar.sparse.html#torchsar.sparse.sharing.sparse_degree">sparse_degree() (in module torchsar.sparse.sharing)</a>
+</li>
       <li><a href="torchsar.misc.html#torchsar.misc.sampling.split_tensor">split_tensor() (in module torchsar.misc.sampling)</a>
 </li>
       <li><a href="torchsar.autofocus.html#torchsar.autofocus.phase_gradient.spotlight_width">spotlight_width() (in module torchsar.autofocus.phase_gradient)</a>
@@ -1065,6 +1099,8 @@
       <li><a href="torchsar.module.misc.html#torchsar.module.misc.transform.Standardization">Standardization (class in torchsar.module.misc.transform)</a>
 </li>
       <li><a href="torchsar.misc.html#torchsar.misc.transform.standardization">standardization() (in module torchsar.misc.transform)</a>
+</li>
+      <li><a href="torchsar.sparse.html#torchsar.sparse.complex_image.CICISTA.step">step() (torchsar.sparse.complex_image.CICISTA method)</a>
 </li>
       <li><a href="torchsar.misc.html#torchsar.misc.sardata.SarData.store">store() (torchsar.misc.sardata.SarData method)</a>
 </li>
@@ -1079,6 +1115,8 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="torchsar.evaluation.html#torchsar.evaluation.target_background.tbr">tbr() (in module torchsar.evaluation.target_background)</a>
+</li>
+      <li><a href="torchsar.evaluation.html#torchsar.evaluation.target_background.tbr2">tbr2() (in module torchsar.evaluation.target_background)</a>
 </li>
       <li><a href="torchsar.misc.html#torchsar.misc.sampling.tensor2patch">tensor2patch() (in module torchsar.misc.sampling)</a>
 </li>
@@ -1154,9 +1192,13 @@
 </li>
       <li><a href="torchsar.layerfunction.html#module-torchsar.layerfunction.complex_functions">torchsar.layerfunction.complex_functions (module)</a>
 </li>
+      <li><a href="torchsar.layerfunction.html#module-torchsar.layerfunction.cplxfunc">torchsar.layerfunction.cplxfunc (module)</a>
+</li>
       <li><a href="torchsar.misc.html#module-torchsar.misc">torchsar.misc (module)</a>
 </li>
       <li><a href="torchsar.misc.html#module-torchsar.misc.data">torchsar.misc.data (module)</a>
+</li>
+      <li><a href="torchsar.misc.html#module-torchsar.misc.draw_shapes">torchsar.misc.draw_shapes (module)</a>
 </li>
       <li><a href="torchsar.misc.html#module-torchsar.misc.mapping_operation">torchsar.misc.mapping_operation (module)</a>
 </li>
@@ -1284,12 +1326,14 @@
 </li>
       <li><a href="torchsar.sharing.html#module-torchsar.sharing.slant_ground_range">torchsar.sharing.slant_ground_range (module)</a>
 </li>
+      <li><a href="torchsar.sharing.html#module-torchsar.sharing.window_function">torchsar.sharing.window_function (module)</a>
+</li>
       <li><a href="torchsar.simulation.html#module-torchsar.simulation">torchsar.simulation (module)</a>
+</li>
+      <li><a href="torchsar.simulation.html#module-torchsar.simulation.geometry">torchsar.simulation.geometry (module)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="torchsar.simulation.html#module-torchsar.simulation.geometry">torchsar.simulation.geometry (module)</a>
-</li>
       <li><a href="torchsar.simulation.html#module-torchsar.simulation.make_sar_params">torchsar.simulation.make_sar_params (module)</a>
 </li>
       <li><a href="torchsar.simulation.html#module-torchsar.simulation.make_targets">torchsar.simulation.make_targets (module)</a>
@@ -1303,6 +1347,12 @@
       <li><a href="torchsar.simulation.html#module-torchsar.simulation.simulation_freq_domain">torchsar.simulation.simulation_freq_domain (module)</a>
 </li>
       <li><a href="torchsar.simulation.html#module-torchsar.simulation.simulation_time_domain">torchsar.simulation.simulation_time_domain (module)</a>
+</li>
+      <li><a href="torchsar.sparse.html#module-torchsar.sparse">torchsar.sparse (module)</a>
+</li>
+      <li><a href="torchsar.sparse.html#module-torchsar.sparse.complex_image">torchsar.sparse.complex_image (module)</a>
+</li>
+      <li><a href="torchsar.sparse.html#module-torchsar.sparse.sharing">torchsar.sparse.sharing (module)</a>
 </li>
       <li><a href="torchsar.utils.html#module-torchsar.utils">torchsar.utils (module)</a>
 </li>
@@ -1415,11 +1465,15 @@
 </li>
         <li><a href="torchsar.module.layers.html#torchsar.module.layers.complex_layers.ComplexSequential.training">(torchsar.module.layers.complex_layers.ComplexSequential attribute)</a>
 </li>
+        <li><a href="torchsar.module.layers.html#torchsar.module.layers.complex_layers.ComplexSoftShrink.training">(torchsar.module.layers.complex_layers.ComplexSoftShrink attribute)</a>
+</li>
         <li><a href="torchsar.module.layers.html#torchsar.module.layers.complex_layers.ComplexUpsample.training">(torchsar.module.layers.complex_layers.ComplexUpsample attribute)</a>
 </li>
         <li><a href="torchsar.module.layers.html#torchsar.module.layers.complex_layers.NaiveComplexBatchNorm1d.training">(torchsar.module.layers.complex_layers.NaiveComplexBatchNorm1d attribute)</a>
 </li>
         <li><a href="torchsar.module.layers.html#torchsar.module.layers.complex_layers.NaiveComplexBatchNorm2d.training">(torchsar.module.layers.complex_layers.NaiveComplexBatchNorm2d attribute)</a>
+</li>
+        <li><a href="torchsar.module.layers.html#torchsar.module.layers.complex_layers.SoftShrink.training">(torchsar.module.layers.complex_layers.SoftShrink attribute)</a>
 </li>
         <li><a href="torchsar.module.layers.html#torchsar.module.layers.consistency_layers.DataConsistency2d.training">(torchsar.module.layers.consistency_layers.DataConsistency2d attribute)</a>
 </li>
@@ -1516,11 +1570,15 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="torchsar.module.loss.html#torchsar.module.loss.perceptual.RandomProjectionLoss.weight_init">weight_init() (torchsar.module.loss.perceptual.RandomProjectionLoss method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="torchsar.misc.html#torchsar.misc.noising.wgn">wgn() (in module torchsar.misc.noising)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="torchsar.sharing.html#torchsar.sharing.window_function.window">window() (in module torchsar.sharing.window_function)</a>
+</li>
       <li><a href="torchsar.sharing.html#torchsar.sharing.scatter_selection.window_data">window_data() (in module torchsar.sharing.scatter_selection)</a>
+</li>
+      <li><a href="torchsar.sharing.html#torchsar.sharing.window_function.windowing">windowing() (in module torchsar.sharing.window_function)</a>
 </li>
   </ul></td>
 </tr></table>

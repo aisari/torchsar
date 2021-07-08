@@ -116,6 +116,14 @@ torchsar.sharing.slant\_ground\_range module
    :undoc-members:
    :show-inheritance:
 
+torchsar.sharing.window\_function module
+----------------------------------------
+
+.. automodule:: torchsar.sharing.window_function
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 
 Module contents
 ---------------

@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>torchsar.module.layers package &mdash; TorchSAR 1.0 documentation</title>
@@ -87,9 +88,11 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <p><span class="caption-text">Contents:</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="setup.html">setup module</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="torchsar.autofocus.html">torchsar.autofocus package</a></li>
@@ -104,6 +107,7 @@
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sarcfg.html">torchsar.sarcfg package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html">torchsar.sharing package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.simulation.html">torchsar.simulation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sparse.html">torchsar.sparse package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a></li>
 </ul>
 </li>
@@ -183,12 +187,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="torchsar-module-layers-package">
+  <section id="torchsar-module-layers-package">
 <h1>torchsar.module.layers package<a class="headerlink" href="#torchsar-module-layers-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="submodules">
+<section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-torchsar.module.layers.complex_layers">
+</section>
+<section id="module-torchsar.module.layers.complex_layers">
 <span id="torchsar-module-layers-complex-layers-module"></span><h2>torchsar.module.layers.complex_layers module<a class="headerlink" href="#module-torchsar.module.layers.complex_layers" title="Permalink to this headline">¶</a></h2>
 <p>Created on Tue Mar 19 10:30:02 2019</p>
 <p>&#64;author: Sebastien M. Popoff</p>
@@ -644,6 +648,31 @@ registered hooks while the latter silently ignores them.</p>
 </dd></dl>
 
 <dl class="class">
+<dt id="torchsar.module.layers.complex_layers.ComplexSoftShrink">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexSoftShrink</code><span class="sig-paren">(</span><em class="sig-param">alpha=0.5</em>, <em class="sig-param">caxis=None</em>, <em class="sig-param">inplace=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexSoftShrink" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="method">
+<dt id="torchsar.module.layers.complex_layers.ComplexSoftShrink.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">input</em>, <em class="sig-param">alpha=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexSoftShrink.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="torchsar.module.layers.complex_layers.ComplexSoftShrink.training">
+<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexSoftShrink.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
 <dt id="torchsar.module.layers.complex_layers.ComplexUpsample">
 <em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexUpsample</code><span class="sig-paren">(</span><em class="sig-param">size=None</em>, <em class="sig-param">scale_factor=None</em>, <em class="sig-param">mode='nearest'</em>, <em class="sig-param">align_corners=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexUpsample" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
@@ -720,8 +749,33 @@ registered hooks while the latter silently ignores them.</p>
 
 </dd></dl>
 
+<dl class="class">
+<dt id="torchsar.module.layers.complex_layers.SoftShrink">
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">SoftShrink</code><span class="sig-paren">(</span><em class="sig-param">alpha=0.5</em>, <em class="sig-param">inplace=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.SoftShrink" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="method">
+<dt id="torchsar.module.layers.complex_layers.SoftShrink.forward">
+<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">input</em>, <em class="sig-param">alpha=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.SoftShrink.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
 </div>
-<div class="section" id="module-torchsar.module.layers.consistency_layers">
+</dd></dl>
+
+<dl class="attribute">
+<dt id="torchsar.module.layers.complex_layers.SoftShrink.training">
+<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.SoftShrink.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-torchsar.module.layers.consistency_layers">
 <span id="torchsar-module-layers-consistency-layers-module"></span><h2>torchsar.module.layers.consistency_layers module<a class="headerlink" href="#module-torchsar.module.layers.consistency_layers" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
 <dt id="torchsar.module.layers.consistency_layers.DataConsistency2d">
@@ -748,8 +802,8 @@ registered hooks while the latter silently ignores them.</p>
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.module.layers.fft_layers">
+</section>
+<section id="module-torchsar.module.layers.fft_layers">
 <span id="torchsar-module-layers-fft-layers-module"></span><h2>torchsar.module.layers.fft_layers module<a class="headerlink" href="#module-torchsar.module.layers.fft_layers" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
 <dt id="torchsar.module.layers.fft_layers.FFTLayer1d">
@@ -776,8 +830,8 @@ registered hooks while the latter silently ignores them.</p>
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.module.layers.phase_convolution">
+</section>
+<section id="module-torchsar.module.layers.phase_convolution">
 <span id="torchsar-module-layers-phase-convolution-module"></span><h2>torchsar.module.layers.phase_convolution module<a class="headerlink" href="#module-torchsar.module.layers.phase_convolution" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
 <dt id="torchsar.module.layers.phase_convolution.ComplexPhaseConv1d">
@@ -979,11 +1033,11 @@ registered hooks while the latter silently ignores them.</p>
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.module.layers">
+</section>
+<section id="module-torchsar.module.layers">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-torchsar.module.layers" title="Permalink to this headline">¶</a></h2>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

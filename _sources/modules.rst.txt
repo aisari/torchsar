@@ -4,4 +4,5 @@ torchsar
 .. toctree::
    :maxdepth: 4
 
+   setup
    torchsar

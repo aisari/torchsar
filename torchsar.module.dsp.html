@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>torchsar.module.dsp package &mdash; TorchSAR 1.0 documentation</title>
@@ -87,9 +88,11 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <p><span class="caption-text">Contents:</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="setup.html">setup module</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="torchsar.autofocus.html">torchsar.autofocus package</a></li>
@@ -104,6 +107,7 @@
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sarcfg.html">torchsar.sarcfg package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html">torchsar.sharing package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.simulation.html">torchsar.simulation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sparse.html">torchsar.sparse package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a></li>
 </ul>
 </li>
@@ -183,12 +187,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="torchsar-module-dsp-package">
+  <section id="torchsar-module-dsp-package">
 <h1>torchsar.module.dsp package<a class="headerlink" href="#torchsar-module-dsp-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="submodules">
+<section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-torchsar.module.dsp.convolution">
+</section>
+<section id="module-torchsar.module.dsp.convolution">
 <span id="torchsar-module-dsp-convolution-module"></span><h2>torchsar.module.dsp.convolution module<a class="headerlink" href="#module-torchsar.module.dsp.convolution" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
 <dt id="torchsar.module.dsp.convolution.Conv1">
@@ -315,12 +319,12 @@ registered hooks while the latter silently ignores them.</p>
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.module.dsp.interpolation">
+</section>
+<section id="module-torchsar.module.dsp.interpolation">
 <span id="torchsar-module-dsp-interpolation-module"></span><h2>torchsar.module.dsp.interpolation module<a class="headerlink" href="#module-torchsar.module.dsp.interpolation" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
 <dt id="torchsar.module.dsp.interpolation.Interp1">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.dsp.interpolation.</code><code class="sig-name descname">Interp1</code><a class="headerlink" href="#torchsar.module.dsp.interpolation.Interp1" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.dsp.interpolation.</code><code class="sig-name descname">Interp1</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.dsp.interpolation.Interp1" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.autograd.function.Function</span></code></p>
 <dl class="method">
 <dt id="torchsar.module.dsp.interpolation.Interp1.backward">
@@ -328,10 +332,13 @@ registered hooks while the latter silently ignores them.</p>
 <dd><p>Defines a formula for differentiating the operation.</p>
 <p>This function is to be overridden by all subclasses.</p>
 <p>It must accept a context <code class="xref py py-attr docutils literal notranslate"><span class="pre">ctx</span></code> as the first argument, followed by
-as many outputs did <a class="reference internal" href="#torchsar.module.dsp.interpolation.Interp1.forward" title="torchsar.module.dsp.interpolation.Interp1.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a> return, and it should return as many
-tensors, as there were inputs to <a class="reference internal" href="#torchsar.module.dsp.interpolation.Interp1.forward" title="torchsar.module.dsp.interpolation.Interp1.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a>. Each argument is the
-gradient w.r.t the given output, and each returned value should be the
-gradient w.r.t. the corresponding input.</p>
+as many outputs as the <a class="reference internal" href="#torchsar.module.dsp.interpolation.Interp1.forward" title="torchsar.module.dsp.interpolation.Interp1.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a> returned (None will be passed in
+for non tensor outputs of the forward function),
+and it should return as many tensors, as there were inputs to
+<a class="reference internal" href="#torchsar.module.dsp.interpolation.Interp1.forward" title="torchsar.module.dsp.interpolation.Interp1.forward"><code class="xref py py-func docutils literal notranslate"><span class="pre">forward()</span></code></a>. Each argument is the gradient w.r.t the given output,
+and each returned value should be the gradient w.r.t. the
+corresponding input. If an input is not a Tensor or is a Tensor not
+requiring grads, you can just pass None as a gradient for that input.</p>
 <p>The context can be used to retrieve tensors saved during the forward
 pass. It also has an attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">ctx.needs_input_grad</span></code> as a tuple
 of booleans representing whether each input needs gradient. E.g.,
@@ -370,8 +377,8 @@ dimension must be the same as that of whichever <cite>x</cite> and <cite>y</cite
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.module.dsp.polynomialfit">
+</section>
+<section id="module-torchsar.module.dsp.polynomialfit">
 <span id="torchsar-module-dsp-polynomialfit-module"></span><h2>torchsar.module.dsp.polynomialfit module<a class="headerlink" href="#module-torchsar.module.dsp.polynomialfit" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
 <dt id="torchsar.module.dsp.polynomialfit.PolyFit">
@@ -398,11 +405,11 @@ registered hooks while the latter silently ignores them.</p>
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.module.dsp">
+</section>
+<section id="module-torchsar.module.dsp">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-torchsar.module.dsp" title="Permalink to this headline">¶</a></h2>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

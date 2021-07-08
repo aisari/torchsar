@@ -1,0 +1,30 @@
+torchsar.sparse package
+=======================
+
+Submodules
+----------
+
+torchsar.sparse.complex\_image module
+-------------------------------------
+
+.. automodule:: torchsar.sparse.complex_image
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+torchsar.sparse.sharing module
+------------------------------
+
+.. automodule:: torchsar.sparse.sharing
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: torchsar.sparse
+   :members:
+   :undoc-members:
+   :show-inheritance:

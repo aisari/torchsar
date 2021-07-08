@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>torchsar &mdash; TorchSAR 1.0 documentation</title>
@@ -41,8 +42,8 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="torchsar package" href="torchsar.html" />
-    <link rel="prev" title="Welcome to TorchSAR’s documentation!" href="index.html" /> 
+    <link rel="next" title="setup module" href="setup.html" />
+    <link rel="prev" title="Get Started" href="getstarted.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -87,9 +88,11 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <p><span class="caption-text">Contents:</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">torchsar</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="setup.html">setup module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="torchsar.html">torchsar package</a></li>
 </ul>
 </li>
@@ -158,10 +161,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="torchsar">
+  <section id="torchsar">
 <h1>torchsar<a class="headerlink" href="#torchsar" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">setup module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="torchsar.html">torchsar package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="torchsar.autofocus.html">torchsar.autofocus package</a><ul>
@@ -221,12 +225,14 @@
 <li class="toctree-l3"><a class="reference internal" href="torchsar.layerfunction.html">torchsar.layerfunction package</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.layerfunction.html#submodules">Submodules</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.layerfunction.html#module-torchsar.layerfunction.complex_functions">torchsar.layerfunction.complex_functions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.layerfunction.html#module-torchsar.layerfunction.cplxfunc">torchsar.layerfunction.cplxfunc module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.layerfunction.html#module-torchsar.layerfunction">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="torchsar.misc.html">torchsar.misc package</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.misc.html#submodules">Submodules</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.misc.html#module-torchsar.misc.data">torchsar.misc.data module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.misc.html#module-torchsar.misc.draw_shapes">torchsar.misc.draw_shapes module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.misc.html#module-torchsar.misc.mapping_operation">torchsar.misc.mapping_operation module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.misc.html#module-torchsar.misc.noising">torchsar.misc.noising module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.misc.html#module-torchsar.misc.sampling">torchsar.misc.sampling module</a></li>
@@ -264,6 +270,7 @@
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html#module-torchsar.sharing.scatter_selection">torchsar.sharing.scatter_selection module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html#module-torchsar.sharing.scene_and_targets">torchsar.sharing.scene_and_targets module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html#module-torchsar.sharing.slant_ground_range">torchsar.sharing.slant_ground_range module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html#module-torchsar.sharing.window_function">torchsar.sharing.window_function module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html#module-torchsar.sharing">Module contents</a></li>
 </ul>
 </li>
@@ -278,6 +285,13 @@
 <li class="toctree-l4"><a class="reference internal" href="torchsar.simulation.html#module-torchsar.simulation.simulation_freq_domain">torchsar.simulation.simulation_freq_domain module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.simulation.html#module-torchsar.simulation.simulation_time_domain">torchsar.simulation.simulation_time_domain module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.simulation.html#module-torchsar.simulation">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.sparse.html">torchsar.sparse package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sparse.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sparse.html#module-torchsar.sparse.complex_image">torchsar.sparse.complex_image module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sparse.html#module-torchsar.sparse.sharing">torchsar.sparse.sharing module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sparse.html#module-torchsar.sparse">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a><ul>
@@ -299,7 +313,7 @@
 </li>
 </ul>
 </div>
-</div>
+</section>
 
 
            </div>
@@ -309,10 +323,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="torchsar.html" class="btn btn-neutral float-right" title="torchsar package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="setup.html" class="btn btn-neutral float-right" title="setup module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to TorchSAR’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="getstarted.html" class="btn btn-neutral float-left" title="Get Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

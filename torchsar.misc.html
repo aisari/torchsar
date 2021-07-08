@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>torchsar.misc package &mdash; TorchSAR 1.0 documentation</title>
@@ -87,9 +88,11 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <p><span class="caption-text">Contents:</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="setup.html">setup module</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="torchsar.autofocus.html">torchsar.autofocus package</a></li>
@@ -104,6 +107,7 @@
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sarcfg.html">torchsar.sarcfg package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html">torchsar.sharing package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.simulation.html">torchsar.simulation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sparse.html">torchsar.sparse package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a></li>
 </ul>
 </li>
@@ -181,12 +185,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="torchsar-misc-package">
+  <section id="torchsar-misc-package">
 <h1>torchsar.misc package<a class="headerlink" href="#torchsar-misc-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="submodules">
+<section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-torchsar.misc.data">
+</section>
+<section id="module-torchsar.misc.data">
 <span id="torchsar-misc-data-module"></span><h2>torchsar.misc.data module<a class="headerlink" href="#module-torchsar.misc.data" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="torchsar.misc.data.format_data">
@@ -260,8 +264,34 @@
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.misc.mapping_operation">
+</section>
+<section id="module-torchsar.misc.draw_shapes">
+<span id="torchsar-misc-draw-shapes-module"></span><h2>torchsar.misc.draw_shapes module<a class="headerlink" href="#module-torchsar.misc.draw_shapes" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="torchsar.misc.draw_shapes.draw_eclipse">
+<code class="sig-prename descclassname">torchsar.misc.draw_shapes.</code><code class="sig-name descname">draw_eclipse</code><span class="sig-paren">(</span><em class="sig-param">x, centroids, aradii, bradii, edgecolors=[255, 0, 0], linewidths=1, fillcolors=None, axes=(-2, -1)</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.draw_shapes.draw_eclipse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="torchsar.misc.draw_shapes.draw_rectangle">
+<code class="sig-prename descclassname">torchsar.misc.draw_shapes.</code><code class="sig-name descname">draw_rectangle</code><span class="sig-paren">(</span><em class="sig-param">x, rects, edgecolors=[[255, 0, 0]], linewidths=[1], fillcolors=[None], axes=(-3, -2)</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.draw_shapes.draw_rectangle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw rectangles in a tensor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>tensor</em>) – The input with any size.</p></li>
+<li><p><strong>rects</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><em>tuple</em></a>) – The coordinates of the rectangles [[lefttop, rightbottom]].</p></li>
+<li><p><strong>edgecolors</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em>, </em><em>optional</em>) – The color of edge.</p></li>
+<li><p><strong>linewidths</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – The linewidths of edge.</p></li>
+<li><p><strong>fillcolors</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – The color for filling.</p></li>
+<li><p><strong>axes</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – The axes for drawing the rect (default [(-3, -2)]).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-torchsar.misc.mapping_operation">
 <span id="torchsar-misc-mapping-operation-module"></span><h2>torchsar.misc.mapping_operation module<a class="headerlink" href="#module-torchsar.misc.mapping_operation" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="torchsar.misc.mapping_operation.mapping">
@@ -290,8 +320,8 @@ If the type of <code class="xref py py-attr docutils literal notranslate"><span 
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.misc.noising">
+</section>
+<section id="module-torchsar.misc.noising">
 <span id="torchsar-misc-noising-module"></span><h2>torchsar.misc.noising module<a class="headerlink" href="#module-torchsar.misc.noising" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="torchsar.misc.noising.awgn">
@@ -400,8 +430,8 @@ assumed that there is a load of 1 Ohm.</p>
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.misc.sampling">
+</section>
+<section id="module-torchsar.misc.sampling">
 <span id="torchsar-misc-sampling-module"></span><h2>torchsar.misc.sampling module<a class="headerlink" href="#module-torchsar.misc.sampling" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="torchsar.misc.sampling.dnsampling">
@@ -488,7 +518,7 @@ idx (list): Sampled indexes, if <code class="xref py py-attr docutils literal no
 </dd>
 </dl>
 <p class="rubric">Example</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span class="n">setseed</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="s1">&#39;torch&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setseed</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="s1">&#39;torch&#39;</span><span class="p">)</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="n">th</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 <span class="n">y1</span><span class="p">,</span> <span class="n">idx1</span> <span class="o">=</span> <span class="n">sample_tensor</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">groups</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;sequentially&#39;</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -551,7 +581,7 @@ idx (list): Shuffled indexes, if <code class="xref py py-attr docutils literal n
 </dd>
 </dl>
 <p class="rubric">Example</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span class="n">setseed</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="s1">&#39;torch&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setseed</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="s1">&#39;torch&#39;</span><span class="p">)</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="n">th</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 <span class="n">y1</span><span class="p">,</span> <span class="n">idx1</span> <span class="o">=</span> <span class="n">shuffle_tensor</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">groups</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;intra&#39;</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -661,8 +691,8 @@ equals to the number of blocks with specified <code class="xref py py-attr docut
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.misc.sardata">
+</section>
+<section id="module-torchsar.misc.sardata">
 <span id="torchsar-misc-sardata-module"></span><h2>torchsar.misc.sardata module<a class="headerlink" href="#module-torchsar.misc.sardata" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
 <dt id="torchsar.misc.sardata.SarData">
@@ -714,8 +744,8 @@ read</p>
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.misc.sarplat">
+</section>
+<section id="module-torchsar.misc.sarplat">
 <span id="torchsar-misc-sarplat-module"></span><h2>torchsar.misc.sarplat module<a class="headerlink" href="#module-torchsar.misc.sarplat" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
 <dt id="torchsar.misc.sarplat.SarPlat">
@@ -757,8 +787,8 @@ params</p>
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.misc.transform">
+</section>
+<section id="module-torchsar.misc.transform">
 <span id="torchsar-misc-transform-module"></span><h2>torchsar.misc.transform module<a class="headerlink" href="#module-torchsar.misc.transform" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="torchsar.misc.transform.ct2rt">
@@ -907,8 +937,8 @@ then X[X &lt; a] == a and X[X &gt; b] == b.</p></li>
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.misc.visual">
+</section>
+<section id="module-torchsar.misc.visual">
 <span id="torchsar-misc-visual-module"></span><h2>torchsar.misc.visual module<a class="headerlink" href="#module-torchsar.misc.visual" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="torchsar.misc.visual.apshow">
@@ -1094,11 +1124,11 @@ no title).</p></li>
 <p>:raises ValueError – <code class="xref py py-attr docutils literal notranslate"><span class="pre">targets</span></code> should not be None.:</p>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.misc">
+</section>
+<section id="module-torchsar.misc">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-torchsar.misc" title="Permalink to this headline">¶</a></h2>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

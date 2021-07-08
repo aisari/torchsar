@@ -18,6 +18,7 @@ Subpackages
    torchsar.sarcfg
    torchsar.sharing
    torchsar.simulation
+   torchsar.sparse
    torchsar.utils
 
 Module contents
