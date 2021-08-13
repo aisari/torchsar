@@ -1,0 +1,14 @@
+include *.in
+include *.ini
+include *.rst
+include *.txt
+
+include LICENSE
+
+
+global-exclude __pycache__ *.py[cod]
+
+
+# exclude torchsar/misc/sampling.py
+# exclude torchsar/misc/draw_shapes.py
+# exclude torchsar/misc/mapping_operation.py
