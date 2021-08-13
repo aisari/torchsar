@@ -1,11 +1,13 @@
 Get Started
 ============
 
-Some links:
+Sevral links:
 
-- [pypi, torchsar](https://pypi.org/project/torchsar/)
-- [github, torchsar](https://github.com/aisari/torchsar/)
-- [document, torchsar](https://aisari.iridescent.ink/torchsar/)
+#. `pypi, torchsar <https://pypi.org/project/torchsar/>`_
+
+#. `github, torchsar <https://github.com/aisari/torchsar/>`_
+
+#. `document, torchsar <https://aisari.iridescent.ink/torchsar/>`_
 
 
 Installation
