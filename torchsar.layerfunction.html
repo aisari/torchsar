@@ -14,7 +14,9 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
 
   
@@ -29,12 +31,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"></script>
         <script src="_static/katex_autorenderer.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
@@ -88,7 +90,7 @@
               
             
             
-              <p><span class="caption-text">Contents:</span></p>
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
@@ -193,47 +195,47 @@
 <section id="module-torchsar.layerfunction.complex_functions">
 <span id="torchsar-layerfunction-complex-functions-module"></span><h2>torchsar.layerfunction.complex_functions module<a class="headerlink" href="#module-torchsar.layerfunction.complex_functions" title="Permalink to this headline">¶</a></h2>
 <p>&#64;author: spopoff</p>
-<dl class="function">
-<dt id="torchsar.layerfunction.complex_functions.complex_dropout">
-<code class="sig-prename descclassname">torchsar.layerfunction.complex_functions.</code><code class="sig-name descname">complex_dropout</code><span class="sig-paren">(</span><em class="sig-param">input</em>, <em class="sig-param">p=0.5</em>, <em class="sig-param">training=True</em>, <em class="sig-param">inplace=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.layerfunction.complex_functions.complex_dropout" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.layerfunction.complex_functions.complex_dropout">
+<span class="sig-prename descclassname"><span class="pre">torchsar.layerfunction.complex_functions.</span></span><span class="sig-name descname"><span class="pre">complex_dropout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">training</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.layerfunction.complex_functions.complex_dropout" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.layerfunction.complex_functions.complex_dropout2d">
-<code class="sig-prename descclassname">torchsar.layerfunction.complex_functions.</code><code class="sig-name descname">complex_dropout2d</code><span class="sig-paren">(</span><em class="sig-param">input</em>, <em class="sig-param">p=0.5</em>, <em class="sig-param">training=True</em>, <em class="sig-param">inplace=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.layerfunction.complex_functions.complex_dropout2d" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.layerfunction.complex_functions.complex_dropout2d">
+<span class="sig-prename descclassname"><span class="pre">torchsar.layerfunction.complex_functions.</span></span><span class="sig-name descname"><span class="pre">complex_dropout2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">training</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.layerfunction.complex_functions.complex_dropout2d" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.layerfunction.complex_functions.complex_leaky_relu">
-<code class="sig-prename descclassname">torchsar.layerfunction.complex_functions.</code><code class="sig-name descname">complex_leaky_relu</code><span class="sig-paren">(</span><em class="sig-param">input</em>, <em class="sig-param">negative_slope=(0.01</em>, <em class="sig-param">0.01)</em>, <em class="sig-param">inplace=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.layerfunction.complex_functions.complex_leaky_relu" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.layerfunction.complex_functions.complex_leaky_relu">
+<span class="sig-prename descclassname"><span class="pre">torchsar.layerfunction.complex_functions.</span></span><span class="sig-name descname"><span class="pre">complex_leaky_relu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">negative_slope</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.01,</span> <span class="pre">0.01)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.layerfunction.complex_functions.complex_leaky_relu" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.layerfunction.complex_functions.complex_max_pool1d">
-<code class="sig-prename descclassname">torchsar.layerfunction.complex_functions.</code><code class="sig-name descname">complex_max_pool1d</code><span class="sig-paren">(</span><em class="sig-param">input</em>, <em class="sig-param">kernel_size</em>, <em class="sig-param">stride=None</em>, <em class="sig-param">padding=0</em>, <em class="sig-param">dilation=1</em>, <em class="sig-param">ceil_mode=False</em>, <em class="sig-param">return_indices=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.layerfunction.complex_functions.complex_max_pool1d" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.layerfunction.complex_functions.complex_max_pool1d">
+<span class="sig-prename descclassname"><span class="pre">torchsar.layerfunction.complex_functions.</span></span><span class="sig-name descname"><span class="pre">complex_max_pool1d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ceil_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_indices</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.layerfunction.complex_functions.complex_max_pool1d" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.layerfunction.complex_functions.complex_max_pool2d">
-<code class="sig-prename descclassname">torchsar.layerfunction.complex_functions.</code><code class="sig-name descname">complex_max_pool2d</code><span class="sig-paren">(</span><em class="sig-param">input</em>, <em class="sig-param">kernel_size</em>, <em class="sig-param">stride=None</em>, <em class="sig-param">padding=0</em>, <em class="sig-param">dilation=1</em>, <em class="sig-param">ceil_mode=False</em>, <em class="sig-param">return_indices=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.layerfunction.complex_functions.complex_max_pool2d" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.layerfunction.complex_functions.complex_max_pool2d">
+<span class="sig-prename descclassname"><span class="pre">torchsar.layerfunction.complex_functions.</span></span><span class="sig-name descname"><span class="pre">complex_max_pool2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ceil_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_indices</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.layerfunction.complex_functions.complex_max_pool2d" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.layerfunction.complex_functions.complex_relu">
-<code class="sig-prename descclassname">torchsar.layerfunction.complex_functions.</code><code class="sig-name descname">complex_relu</code><span class="sig-paren">(</span><em class="sig-param">input</em>, <em class="sig-param">inplace=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.layerfunction.complex_functions.complex_relu" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.layerfunction.complex_functions.complex_relu">
+<span class="sig-prename descclassname"><span class="pre">torchsar.layerfunction.complex_functions.</span></span><span class="sig-name descname"><span class="pre">complex_relu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.layerfunction.complex_functions.complex_relu" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.layerfunction.complex_functions.complex_upsample">
-<code class="sig-prename descclassname">torchsar.layerfunction.complex_functions.</code><code class="sig-name descname">complex_upsample</code><span class="sig-paren">(</span><em class="sig-param">input</em>, <em class="sig-param">size=None</em>, <em class="sig-param">scale_factor=None</em>, <em class="sig-param">mode='nearest'</em>, <em class="sig-param">align_corners=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.layerfunction.complex_functions.complex_upsample" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.layerfunction.complex_functions.complex_upsample">
+<span class="sig-prename descclassname"><span class="pre">torchsar.layerfunction.complex_functions.</span></span><span class="sig-name descname"><span class="pre">complex_upsample</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'nearest'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">align_corners</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.layerfunction.complex_functions.complex_upsample" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </section>
 <section id="module-torchsar.layerfunction.cplxfunc">
 <span id="torchsar-layerfunction-cplxfunc-module"></span><h2>torchsar.layerfunction.cplxfunc module<a class="headerlink" href="#module-torchsar.layerfunction.cplxfunc" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.layerfunction.cplxfunc.csign">
-<code class="sig-prename descclassname">torchsar.layerfunction.cplxfunc.</code><code class="sig-name descname">csign</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">caxis=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.layerfunction.cplxfunc.csign" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.layerfunction.cplxfunc.csign">
+<span class="sig-prename descclassname"><span class="pre">torchsar.layerfunction.cplxfunc.</span></span><span class="sig-name descname"><span class="pre">csign</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.layerfunction.cplxfunc.csign" title="Permalink to this definition">¶</a></dt>
 <dd><p>The signum function like Matlab’s sign</p>
 <div class="math">
 \[{\rm csign}(x+jy) = \frac{x+jy}{\sqrt{x^2+y^2}}
@@ -258,9 +260,9 @@
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.layerfunction.cplxfunc.csoftshrink">
-<code class="sig-prename descclassname">torchsar.layerfunction.cplxfunc.</code><code class="sig-name descname">csoftshrink</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">alpha=0.5</em>, <em class="sig-param">caxis=None</em>, <em class="sig-param">inplace=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.layerfunction.cplxfunc.csoftshrink" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.layerfunction.cplxfunc.csoftshrink">
+<span class="sig-prename descclassname"><span class="pre">torchsar.layerfunction.cplxfunc.</span></span><span class="sig-name descname"><span class="pre">csoftshrink</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.layerfunction.cplxfunc.csoftshrink" title="Permalink to this definition">¶</a></dt>
 <dd><p>Complex soft shrink function</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -282,9 +284,9 @@
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.layerfunction.cplxfunc.softshrink">
-<code class="sig-prename descclassname">torchsar.layerfunction.cplxfunc.</code><code class="sig-name descname">softshrink</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">alpha=0.5</em>, <em class="sig-param">inplace=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.layerfunction.cplxfunc.softshrink" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.layerfunction.cplxfunc.softshrink">
+<span class="sig-prename descclassname"><span class="pre">torchsar.layerfunction.cplxfunc.</span></span><span class="sig-name descname"><span class="pre">softshrink</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.layerfunction.cplxfunc.softshrink" title="Permalink to this definition">¶</a></dt>
 <dd><p>Real soft shrink function</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

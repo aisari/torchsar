@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>torchsar.simulation package &mdash; TorchSAR 1.0 documentation</title>
@@ -13,7 +14,9 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
 
   
@@ -28,12 +31,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"></script>
         <script src="_static/katex_autorenderer.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
@@ -41,7 +44,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="torchsar.utils package" href="torchsar.utils.html" />
+    <link rel="next" title="torchsar.sparse package" href="torchsar.sparse.html" />
     <link rel="prev" title="torchsar.sharing package" href="torchsar.sharing.html" /> 
 </head>
 
@@ -89,7 +92,9 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="setup.html">setup module</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="torchsar.autofocus.html">torchsar.autofocus package</a></li>
@@ -104,6 +109,7 @@
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sarcfg.html">torchsar.sarcfg package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html">torchsar.sharing package</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">torchsar.simulation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sparse.html">torchsar.sparse package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a></li>
 </ul>
 </li>
@@ -181,16 +187,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="torchsar-simulation-package">
+  <section id="torchsar-simulation-package">
 <h1>torchsar.simulation package<a class="headerlink" href="#torchsar-simulation-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="submodules">
+<section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-torchsar.simulation.geometry">
+</section>
+<section id="module-torchsar.simulation.geometry">
 <span id="torchsar-simulation-geometry-module"></span><h2>torchsar.simulation.geometry module<a class="headerlink" href="#module-torchsar.simulation.geometry" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.simulation.geometry.disc">
-<code class="sig-prename descclassname">torchsar.simulation.geometry.</code><code class="sig-name descname">disc</code><span class="sig-paren">(</span><em class="sig-param">SceneArea</em>, <em class="sig-param">x0</em>, <em class="sig-param">y0</em>, <em class="sig-param">r</em>, <em class="sig-param">a=None</em>, <em class="sig-param">dx=None</em>, <em class="sig-param">dy=None</em>, <em class="sig-param">verbose=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.geometry.disc" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.simulation.geometry.disc">
+<span class="sig-prename descclassname"><span class="pre">torchsar.simulation.geometry.</span></span><span class="sig-name descname"><span class="pre">disc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">SceneArea</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.geometry.disc" title="Permalink to this definition">¶</a></dt>
 <dd><p>disc area</p>
 <p>generates disc area</p>
 <dl class="field-list simple">
@@ -215,9 +221,9 @@
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.simulation.geometry.rectangle">
-<code class="sig-prename descclassname">torchsar.simulation.geometry.</code><code class="sig-name descname">rectangle</code><span class="sig-paren">(</span><em class="sig-param">SceneArea</em>, <em class="sig-param">x0</em>, <em class="sig-param">y0</em>, <em class="sig-param">h</em>, <em class="sig-param">w</em>, <em class="sig-param">a=None</em>, <em class="sig-param">dx=None</em>, <em class="sig-param">dy=None</em>, <em class="sig-param">verbose=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.geometry.rectangle" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.simulation.geometry.rectangle">
+<span class="sig-prename descclassname"><span class="pre">torchsar.simulation.geometry.</span></span><span class="sig-name descname"><span class="pre">rectangle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">SceneArea</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.geometry.rectangle" title="Permalink to this definition">¶</a></dt>
 <dd><p>rectangle area</p>
 <p>generates rectangle area</p>
 <dl class="field-list simple">
@@ -243,17 +249,17 @@
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.simulation.make_sar_params">
+</section>
+<section id="module-torchsar.simulation.make_sar_params">
 <span id="torchsar-simulation-make-sar-params-module"></span><h2>torchsar.simulation.make_sar_params module<a class="headerlink" href="#module-torchsar.simulation.make_sar_params" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="torchsar.simulation.make_sar_params.SARParameterGenerator">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.simulation.make_sar_params.</code><code class="sig-name descname">SARParameterGenerator</code><span class="sig-paren">(</span><em class="sig-param">prdict</em>, <em class="sig-param">seed=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.make_sar_params.SARParameterGenerator" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.simulation.make_sar_params.SARParameterGenerator">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.simulation.make_sar_params.</span></span><span class="sig-name descname"><span class="pre">SARParameterGenerator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prdict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.make_sar_params.SARParameterGenerator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>SAR Parameter Generator</p>
-<dl class="attribute">
-<dt id="torchsar.simulation.make_sar_params.SARParameterGenerator.prdict">
-<code class="sig-name descname">prdict</code><a class="headerlink" href="#torchsar.simulation.make_sar_params.SARParameterGenerator.prdict" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.simulation.make_sar_params.SARParameterGenerator.prdict">
+<span class="sig-name descname"><span class="pre">prdict</span></span><a class="headerlink" href="#torchsar.simulation.make_sar_params.SARParameterGenerator.prdict" title="Permalink to this definition">¶</a></dt>
 <dd><p><code class="docutils literal notranslate"><span class="pre">{'p1':</span> <span class="pre">[low,</span> <span class="pre">high],</span> <span class="pre">'p2':</span> <span class="pre">[low,</span> <span class="pre">high]...}</span></code></p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -262,9 +268,9 @@
 </dl>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.simulation.make_sar_params.SARParameterGenerator.seed">
-<code class="sig-name descname">seed</code><a class="headerlink" href="#torchsar.simulation.make_sar_params.SARParameterGenerator.seed" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.simulation.make_sar_params.SARParameterGenerator.seed">
+<span class="sig-name descname"><span class="pre">seed</span></span><a class="headerlink" href="#torchsar.simulation.make_sar_params.SARParameterGenerator.seed" title="Permalink to this definition">¶</a></dt>
 <dd><p>The seed for random generator.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type</dt>
@@ -273,9 +279,9 @@
 </dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="torchsar.simulation.make_sar_params.SARParameterGenerator.mksarp">
-<code class="sig-name descname">mksarp</code><span class="sig-paren">(</span><em class="sig-param">n=1</em>, <em class="sig-param">seed=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.make_sar_params.SARParameterGenerator.mksarp" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.simulation.make_sar_params.SARParameterGenerator.mksarp">
+<span class="sig-name descname"><span class="pre">mksarp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.make_sar_params.SARParameterGenerator.mksarp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Makes SAR Parameters</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -295,12 +301,12 @@
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.simulation.make_targets">
+</section>
+<section id="module-torchsar.simulation.make_targets">
 <span id="torchsar-simulation-make-targets-module"></span><h2>torchsar.simulation.make_targets module<a class="headerlink" href="#module-torchsar.simulation.make_targets" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.simulation.make_targets.gpoints">
-<code class="sig-prename descclassname">torchsar.simulation.make_targets.</code><code class="sig-name descname">gpoints</code><span class="sig-paren">(</span><em class="sig-param">SceneArea</em>, <em class="sig-param">npoints</em>, <em class="sig-param">amax=1.0</em>, <em class="sig-param">seed=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.make_targets.gpoints" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.simulation.make_targets.gpoints">
+<span class="sig-prename descclassname"><span class="pre">torchsar.simulation.make_targets.</span></span><span class="sig-name descname"><span class="pre">gpoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">SceneArea</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">npoints</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amax</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.make_targets.gpoints" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generates point targets</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -320,12 +326,12 @@
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.simulation.sar_model">
+</section>
+<section id="module-torchsar.simulation.sar_model">
 <span id="torchsar-simulation-sar-model-module"></span><h2>torchsar.simulation.sar_model module<a class="headerlink" href="#module-torchsar.simulation.sar_model" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.simulation.sar_model.load_sarmodel">
-<code class="sig-prename descclassname">torchsar.simulation.sar_model.</code><code class="sig-name descname">load_sarmodel</code><span class="sig-paren">(</span><em class="sig-param">datafile</em>, <em class="sig-param">mod='AinvA'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.sar_model.load_sarmodel" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.simulation.sar_model.load_sarmodel">
+<span class="sig-prename descclassname"><span class="pre">torchsar.simulation.sar_model.</span></span><span class="sig-name descname"><span class="pre">load_sarmodel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datafile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'AinvA'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.sar_model.load_sarmodel" title="Permalink to this definition">¶</a></dt>
 <dd><p>load sarmodel file</p>
 <p>load sarmodel file (<code class="docutils literal notranslate"><span class="pre">.pkl</span></code>)</p>
 <dl class="field-list simple">
@@ -349,9 +355,9 @@
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.simulation.sar_model.sarmodel">
-<code class="sig-prename descclassname">torchsar.simulation.sar_model.</code><code class="sig-name descname">sarmodel</code><span class="sig-paren">(</span><em class="sig-param">pdict</em>, <em class="sig-param">mod='2D1'</em>, <em class="sig-param">gdshape=None</em>, <em class="sig-param">device='cpu'</em>, <em class="sig-param">islog=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.sar_model.sarmodel" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.simulation.sar_model.sarmodel">
+<span class="sig-prename descclassname"><span class="pre">torchsar.simulation.sar_model.</span></span><span class="sig-name descname"><span class="pre">sarmodel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pdict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'2D1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gdshape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cpu'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">islog</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.sar_model.sarmodel" title="Permalink to this definition">¶</a></dt>
 <dd><p>model sar imaging process.</p>
 <p>SAR imaging model</p>
 <dl class="field-list simple">
@@ -396,9 +402,9 @@ NxH       NxW    WxH(M: Na, N: Nr, N &lt;&lt; W)</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.simulation.sar_model.save_sarmodel">
-<code class="sig-prename descclassname">torchsar.simulation.sar_model.</code><code class="sig-name descname">save_sarmodel</code><span class="sig-paren">(</span><em class="sig-param">A</em>, <em class="sig-param">invA=None</em>, <em class="sig-param">AH=None</em>, <em class="sig-param">datafile='./model.pkl'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.sar_model.save_sarmodel" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.simulation.sar_model.save_sarmodel">
+<span class="sig-prename descclassname"><span class="pre">torchsar.simulation.sar_model.</span></span><span class="sig-name descname"><span class="pre">save_sarmodel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">A</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">invA</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">AH</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datafile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./model.pkl'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.sar_model.save_sarmodel" title="Permalink to this definition">¶</a></dt>
 <dd><p>save model mapping matrix</p>
 <p>save model mapping matrix to a file.</p>
 <dl class="field-list simple">
@@ -414,23 +420,23 @@ NxH       NxW    WxH(M: Na, N: Nr, N &lt;&lt; W)</p>
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.simulation.sharing">
+</section>
+<section id="module-torchsar.simulation.sharing">
 <span id="torchsar-simulation-sharing-module"></span><h2>torchsar.simulation.sharing module<a class="headerlink" href="#module-torchsar.simulation.sharing" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.simulation.sharing.range_angle">
-<code class="sig-prename descclassname">torchsar.simulation.sharing.</code><code class="sig-name descname">range_angle</code><span class="sig-paren">(</span><em class="sig-param">sensorpos</em>, <em class="sig-param">targetpos</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.sharing.range_angle" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.simulation.sharing.range_angle">
+<span class="sig-prename descclassname"><span class="pre">torchsar.simulation.sharing.</span></span><span class="sig-name descname"><span class="pre">range_angle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sensorpos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">targetpos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.sharing.range_angle" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.simulation.simulation_chirp_scaling">
+</section>
+<section id="module-torchsar.simulation.simulation_chirp_scaling">
 <span id="torchsar-simulation-simulation-chirp-scaling-module"></span><h2>torchsar.simulation.simulation_chirp_scaling module<a class="headerlink" href="#module-torchsar.simulation.simulation_chirp_scaling" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-torchsar.simulation.simulation_freq_domain">
+</section>
+<section id="module-torchsar.simulation.simulation_freq_domain">
 <span id="torchsar-simulation-simulation-freq-domain-module"></span><h2>torchsar.simulation.simulation_freq_domain module<a class="headerlink" href="#module-torchsar.simulation.simulation_freq_domain" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.simulation.simulation_freq_domain.dsm2sar_fd">
-<code class="sig-prename descclassname">torchsar.simulation.simulation_freq_domain.</code><code class="sig-name descname">dsm2sar_fd</code><span class="sig-paren">(</span><em class="sig-param">g</em>, <em class="sig-param">pdict</em>, <em class="sig-param">mode='StationaryTarget2D'</em>, <em class="sig-param">ftshift=True</em>, <em class="sig-param">device='cpu'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.simulation_freq_domain.dsm2sar_fd" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.simulation.simulation_freq_domain.dsm2sar_fd">
+<span class="sig-prename descclassname"><span class="pre">torchsar.simulation.simulation_freq_domain.</span></span><span class="sig-name descname"><span class="pre">dsm2sar_fd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pdict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'StationaryTarget2D'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cpu'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.simulation_freq_domain.dsm2sar_fd" title="Permalink to this definition">¶</a></dt>
 <dd><p>Frequency-domain simulation</p>
 <p>SAR raw data simulation by frequency-domain method.</p>
 <dl class="field-list simple">
@@ -452,12 +458,12 @@ NxH       NxW    WxH(M: Na, N: Nr, N &lt;&lt; W)</p>
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.simulation.simulation_time_domain">
+</section>
+<section id="module-torchsar.simulation.simulation_time_domain">
 <span id="torchsar-simulation-simulation-time-domain-module"></span><h2>torchsar.simulation.simulation_time_domain module<a class="headerlink" href="#module-torchsar.simulation.simulation_time_domain" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.simulation.simulation_time_domain.tgs2sar_td">
-<code class="sig-prename descclassname">torchsar.simulation.simulation_time_domain.</code><code class="sig-name descname">tgs2sar_td</code><span class="sig-paren">(</span><em class="sig-param">targets</em>, <em class="sig-param">pdict</em>, <em class="sig-param">mode='Target'</em>, <em class="sig-param">device='cpu'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.simulation_time_domain.tgs2sar_td" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.simulation.simulation_time_domain.tgs2sar_td">
+<span class="sig-prename descclassname"><span class="pre">torchsar.simulation.simulation_time_domain.</span></span><span class="sig-name descname"><span class="pre">tgs2sar_td</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">targets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pdict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Target'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cpu'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.simulation.simulation_time_domain.tgs2sar_td" title="Permalink to this definition">¶</a></dt>
 <dd><p>Time-domain simulation</p>
 <p>SAR raw data simulation by time-domain method.</p>
 <dl class="field-list simple">
@@ -479,11 +485,11 @@ each row is a target [x, y, z, vx, vy, vz, a].</p></li>
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.simulation">
+</section>
+<section id="module-torchsar.simulation">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-torchsar.simulation" title="Permalink to this headline">¶</a></h2>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -493,7 +499,7 @@ each row is a target [x, y, z, vx, vy, vz, a].</p></li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="torchsar.utils.html" class="btn btn-neutral float-right" title="torchsar.utils package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="torchsar.sparse.html" class="btn btn-neutral float-right" title="torchsar.sparse package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="torchsar.sharing.html" class="btn btn-neutral float-left" title="torchsar.sharing package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

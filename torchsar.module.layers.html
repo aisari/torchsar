@@ -14,7 +14,9 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
 
   
@@ -29,12 +31,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"></script>
         <script src="_static/katex_autorenderer.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
@@ -88,7 +90,7 @@
               
             
             
-              <p><span class="caption-text">Contents:</span></p>
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
@@ -197,13 +199,13 @@
 <p>Created on Tue Mar 19 10:30:02 2019</p>
 <p>&#64;author: Sebastien M. Popoff</p>
 <p>Based on <a class="reference external" href="https://openreview.net/forum?id=H1T2hmZAb">https://openreview.net/forum?id=H1T2hmZAb</a></p>
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.ComplexBatchNorm1d">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexBatchNorm1d</code><span class="sig-paren">(</span><em class="sig-param">num_features</em>, <em class="sig-param">eps=1e-05</em>, <em class="sig-param">momentum=0.1</em>, <em class="sig-param">affine=True</em>, <em class="sig-param">track_running_stats=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexBatchNorm1d" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexBatchNorm1d">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">ComplexBatchNorm1d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_features</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">momentum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">affine</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">track_running_stats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexBatchNorm1d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torchsar.module.layers.complex_layers._ComplexBatchNorm</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.ComplexBatchNorm1d.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">input</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexBatchNorm1d.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexBatchNorm1d.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexBatchNorm1d.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -215,20 +217,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.ComplexBatchNorm1d.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexBatchNorm1d.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexBatchNorm1d.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexBatchNorm1d.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.ComplexBatchNorm2d">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexBatchNorm2d</code><span class="sig-paren">(</span><em class="sig-param">num_features</em>, <em class="sig-param">eps=1e-05</em>, <em class="sig-param">momentum=0.1</em>, <em class="sig-param">affine=True</em>, <em class="sig-param">track_running_stats=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexBatchNorm2d" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexBatchNorm2d">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">ComplexBatchNorm2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_features</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">momentum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">affine</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">track_running_stats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexBatchNorm2d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torchsar.module.layers.complex_layers._ComplexBatchNorm</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.ComplexBatchNorm2d.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">input</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexBatchNorm2d.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexBatchNorm2d.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexBatchNorm2d.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -240,20 +242,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.ComplexBatchNorm2d.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexBatchNorm2d.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexBatchNorm2d.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexBatchNorm2d.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.ComplexConv1">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexConv1</code><span class="sig-paren">(</span><em class="sig-param">axis</em>, <em class="sig-param">in_channels</em>, <em class="sig-param">out_channels</em>, <em class="sig-param">kernel_size=3</em>, <em class="sig-param">stride=1</em>, <em class="sig-param">padding=0</em>, <em class="sig-param">dilation=1</em>, <em class="sig-param">groups=1</em>, <em class="sig-param">bias=True</em>, <em class="sig-param">padding_mode='zeros'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv1" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexConv1">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">ComplexConv1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">axis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'zeros'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv1" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.ComplexConv1.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">Xr</em>, <em class="sig-param">Xi</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv1.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexConv1.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Xr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Xi</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv1.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -265,20 +267,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.ComplexConv1.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv1.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexConv1.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv1.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.ComplexConv1d">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexConv1d</code><span class="sig-paren">(</span><em class="sig-param">in_channels</em>, <em class="sig-param">out_channels</em>, <em class="sig-param">kernel_size=3</em>, <em class="sig-param">stride=1</em>, <em class="sig-param">padding=0</em>, <em class="sig-param">dilation=1</em>, <em class="sig-param">groups=1</em>, <em class="sig-param">bias=True</em>, <em class="sig-param">padding_mode='zeros'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv1d" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexConv1d">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">ComplexConv1d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'zeros'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv1d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.ComplexConv1d.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">input</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv1d.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexConv1d.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv1d.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -290,20 +292,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.ComplexConv1d.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv1d.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexConv1d.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv1d.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.ComplexConv2">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexConv2</code><span class="sig-paren">(</span><em class="sig-param">in_channels</em>, <em class="sig-param">out_channels</em>, <em class="sig-param">kernel_size=3</em>, <em class="sig-param">stride=1</em>, <em class="sig-param">padding=0</em>, <em class="sig-param">dilation=1</em>, <em class="sig-param">groups=1</em>, <em class="sig-param">bias=True</em>, <em class="sig-param">padding_mode='zeros'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv2" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexConv2">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">ComplexConv2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'zeros'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv2" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.ComplexConv2.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">Xr</em>, <em class="sig-param">Xi</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv2.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexConv2.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Xr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Xi</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv2.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -315,20 +317,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.ComplexConv2.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv2.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexConv2.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv2.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.ComplexConv2d">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexConv2d</code><span class="sig-paren">(</span><em class="sig-param">in_channels</em>, <em class="sig-param">out_channels</em>, <em class="sig-param">kernel_size=3</em>, <em class="sig-param">stride=1</em>, <em class="sig-param">padding=0</em>, <em class="sig-param">dilation=1</em>, <em class="sig-param">groups=1</em>, <em class="sig-param">bias=True</em>, <em class="sig-param">padding_mode='zeros'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv2d" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexConv2d">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">ComplexConv2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'zeros'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv2d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.ComplexConv2d.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">input</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv2d.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexConv2d.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv2d.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -340,20 +342,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.ComplexConv2d.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv2d.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexConv2d.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConv2d.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.ComplexConvTranspose1d">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexConvTranspose1d</code><span class="sig-paren">(</span><em class="sig-param">in_channels</em>, <em class="sig-param">out_channels</em>, <em class="sig-param">kernel_size</em>, <em class="sig-param">stride=1</em>, <em class="sig-param">padding=0</em>, <em class="sig-param">output_padding=0</em>, <em class="sig-param">groups=1</em>, <em class="sig-param">bias=True</em>, <em class="sig-param">dilation=1</em>, <em class="sig-param">padding_mode='zeros'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConvTranspose1d" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexConvTranspose1d">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">ComplexConvTranspose1d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'zeros'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConvTranspose1d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.ComplexConvTranspose1d.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">input</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConvTranspose1d.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexConvTranspose1d.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConvTranspose1d.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -365,20 +367,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.ComplexConvTranspose1d.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConvTranspose1d.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexConvTranspose1d.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConvTranspose1d.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.ComplexConvTranspose2d">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexConvTranspose2d</code><span class="sig-paren">(</span><em class="sig-param">in_channels</em>, <em class="sig-param">out_channels</em>, <em class="sig-param">kernel_size</em>, <em class="sig-param">stride=1</em>, <em class="sig-param">padding=0</em>, <em class="sig-param">output_padding=0</em>, <em class="sig-param">groups=1</em>, <em class="sig-param">bias=True</em>, <em class="sig-param">dilation=1</em>, <em class="sig-param">padding_mode='zeros'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConvTranspose2d" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexConvTranspose2d">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">ComplexConvTranspose2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'zeros'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConvTranspose2d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.ComplexConvTranspose2d.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">input</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConvTranspose2d.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexConvTranspose2d.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConvTranspose2d.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -390,20 +392,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.ComplexConvTranspose2d.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConvTranspose2d.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexConvTranspose2d.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexConvTranspose2d.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.ComplexDropout">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexDropout</code><span class="sig-paren">(</span><em class="sig-param">p=0.5</em>, <em class="sig-param">inplace=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexDropout" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexDropout">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">ComplexDropout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexDropout" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.ComplexDropout.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">input</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexDropout.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexDropout.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexDropout.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -415,20 +417,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.ComplexDropout.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexDropout.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexDropout.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexDropout.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.ComplexDropout2d">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexDropout2d</code><span class="sig-paren">(</span><em class="sig-param">p=0.5</em>, <em class="sig-param">inplace=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexDropout2d" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexDropout2d">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">ComplexDropout2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexDropout2d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.ComplexDropout2d.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">input</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexDropout2d.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexDropout2d.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexDropout2d.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -440,20 +442,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.ComplexDropout2d.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexDropout2d.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexDropout2d.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexDropout2d.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.ComplexLeakyReLU">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexLeakyReLU</code><span class="sig-paren">(</span><em class="sig-param">negative_slope=(0.01</em>, <em class="sig-param">0.01)</em>, <em class="sig-param">inplace=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexLeakyReLU" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexLeakyReLU">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">ComplexLeakyReLU</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">negative_slope</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.01,</span> <span class="pre">0.01)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexLeakyReLU" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.ComplexLeakyReLU.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">input</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexLeakyReLU.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexLeakyReLU.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexLeakyReLU.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -465,20 +467,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.ComplexLeakyReLU.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexLeakyReLU.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexLeakyReLU.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexLeakyReLU.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.ComplexLinear">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexLinear</code><span class="sig-paren">(</span><em class="sig-param">in_features</em>, <em class="sig-param">out_features</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexLinear" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexLinear">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">ComplexLinear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_features</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_features</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexLinear" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.ComplexLinear.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">input</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexLinear.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexLinear.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexLinear.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -490,20 +492,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.ComplexLinear.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexLinear.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexLinear.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexLinear.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.ComplexMaxPool1">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexMaxPool1</code><span class="sig-paren">(</span><em class="sig-param">axis</em>, <em class="sig-param">kernel_size</em>, <em class="sig-param">stride=None</em>, <em class="sig-param">padding=0</em>, <em class="sig-param">dilation=1</em>, <em class="sig-param">return_indices=False</em>, <em class="sig-param">ceil_mode=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool1" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexMaxPool1">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">ComplexMaxPool1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">axis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_indices</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ceil_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool1" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.ComplexMaxPool1.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">Xr</em>, <em class="sig-param">Xi</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool1.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexMaxPool1.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Xr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Xi</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool1.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -515,20 +517,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.ComplexMaxPool1.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool1.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexMaxPool1.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool1.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.ComplexMaxPool1d">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexMaxPool1d</code><span class="sig-paren">(</span><em class="sig-param">kernel_size</em>, <em class="sig-param">stride=None</em>, <em class="sig-param">padding=0</em>, <em class="sig-param">dilation=1</em>, <em class="sig-param">return_indices=False</em>, <em class="sig-param">ceil_mode=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool1d" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexMaxPool1d">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">ComplexMaxPool1d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_indices</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ceil_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool1d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.ComplexMaxPool1d.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">input</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool1d.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexMaxPool1d.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool1d.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -540,20 +542,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.ComplexMaxPool1d.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool1d.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexMaxPool1d.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool1d.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.ComplexMaxPool2">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexMaxPool2</code><span class="sig-paren">(</span><em class="sig-param">kernel_size</em>, <em class="sig-param">stride=None</em>, <em class="sig-param">padding=0</em>, <em class="sig-param">dilation=1</em>, <em class="sig-param">return_indices=False</em>, <em class="sig-param">ceil_mode=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool2" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexMaxPool2">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">ComplexMaxPool2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_indices</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ceil_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool2" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.ComplexMaxPool2.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">Xr</em>, <em class="sig-param">Xi</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool2.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexMaxPool2.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Xr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Xi</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool2.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -565,20 +567,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.ComplexMaxPool2.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool2.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexMaxPool2.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool2.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.ComplexMaxPool2d">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexMaxPool2d</code><span class="sig-paren">(</span><em class="sig-param">kernel_size</em>, <em class="sig-param">stride=None</em>, <em class="sig-param">padding=0</em>, <em class="sig-param">dilation=1</em>, <em class="sig-param">return_indices=False</em>, <em class="sig-param">ceil_mode=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool2d" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexMaxPool2d">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">ComplexMaxPool2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_indices</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ceil_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool2d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.ComplexMaxPool2d.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">input</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool2d.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexMaxPool2d.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool2d.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -590,20 +592,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.ComplexMaxPool2d.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool2d.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexMaxPool2d.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexMaxPool2d.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.ComplexReLU">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexReLU</code><span class="sig-paren">(</span><em class="sig-param">inplace=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexReLU" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexReLU">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">ComplexReLU</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexReLU" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.ComplexReLU.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">input</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexReLU.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexReLU.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexReLU.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -615,20 +617,22 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.ComplexReLU.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexReLU.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexReLU.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexReLU.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.ComplexSequential">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexSequential</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexSequential" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexSequential">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">ComplexSequential</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">torch.nn.modules.module.Module</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexSequential" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">ComplexSequential</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">OrderedDict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span> </span><span class="pre">Module</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.container.Sequential</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.ComplexSequential.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">input</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexSequential.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexSequential.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexSequential.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -640,20 +644,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.ComplexSequential.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexSequential.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexSequential.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexSequential.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.ComplexSoftShrink">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexSoftShrink</code><span class="sig-paren">(</span><em class="sig-param">alpha=0.5</em>, <em class="sig-param">caxis=None</em>, <em class="sig-param">inplace=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexSoftShrink" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexSoftShrink">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">ComplexSoftShrink</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexSoftShrink" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.ComplexSoftShrink.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">input</em>, <em class="sig-param">alpha=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexSoftShrink.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexSoftShrink.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexSoftShrink.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -665,20 +669,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.ComplexSoftShrink.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexSoftShrink.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexSoftShrink.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexSoftShrink.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.ComplexUpsample">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">ComplexUpsample</code><span class="sig-paren">(</span><em class="sig-param">size=None</em>, <em class="sig-param">scale_factor=None</em>, <em class="sig-param">mode='nearest'</em>, <em class="sig-param">align_corners=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexUpsample" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexUpsample">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">ComplexUpsample</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale_factor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'nearest'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">align_corners</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexUpsample" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.ComplexUpsample.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">input</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexUpsample.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexUpsample.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexUpsample.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -690,47 +694,21 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.ComplexUpsample.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexUpsample.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.ComplexUpsample.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.ComplexUpsample.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.NaiveComplexBatchNorm1d">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">NaiveComplexBatchNorm1d</code><span class="sig-paren">(</span><em class="sig-param">num_features</em>, <em class="sig-param">eps=1e-05</em>, <em class="sig-param">momentum=0.1</em>, <em class="sig-param">affine=True</em>, <em class="sig-param">track_running_stats=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.NaiveComplexBatchNorm1d" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<p>Naive approach to complex batch norm, perform batch norm independently on real and imaginary part.</p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.NaiveComplexBatchNorm1d.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">input</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.NaiveComplexBatchNorm1d.forward" title="Permalink to this definition">¶</a></dt>
-<dd><p>Defines the computation performed at every call.</p>
-<p>Should be overridden by all subclasses.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Although the recipe for forward pass needs to be defined within
-this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
-instead of this since the former takes care of running the
-registered hooks while the latter silently ignores them.</p>
-</div>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.NaiveComplexBatchNorm1d.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.NaiveComplexBatchNorm1d.training" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.NaiveComplexBatchNorm2d">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">NaiveComplexBatchNorm2d</code><span class="sig-paren">(</span><em class="sig-param">num_features</em>, <em class="sig-param">eps=1e-05</em>, <em class="sig-param">momentum=0.1</em>, <em class="sig-param">affine=True</em>, <em class="sig-param">track_running_stats=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.NaiveComplexBatchNorm2d" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.NaiveComplexBatchNorm1d">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">NaiveComplexBatchNorm1d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_features</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">momentum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">affine</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">track_running_stats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.NaiveComplexBatchNorm1d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <p>Naive approach to complex batch norm, perform batch norm independently on real and imaginary part.</p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.NaiveComplexBatchNorm2d.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">input</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.NaiveComplexBatchNorm2d.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.NaiveComplexBatchNorm1d.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.NaiveComplexBatchNorm1d.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -742,20 +720,21 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.NaiveComplexBatchNorm2d.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.NaiveComplexBatchNorm2d.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.NaiveComplexBatchNorm1d.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.NaiveComplexBatchNorm1d.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.complex_layers.SoftShrink">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.complex_layers.</code><code class="sig-name descname">SoftShrink</code><span class="sig-paren">(</span><em class="sig-param">alpha=0.5</em>, <em class="sig-param">inplace=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.SoftShrink" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.NaiveComplexBatchNorm2d">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">NaiveComplexBatchNorm2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_features</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">momentum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">affine</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">track_running_stats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.NaiveComplexBatchNorm2d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.complex_layers.SoftShrink.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">input</em>, <em class="sig-param">alpha=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.SoftShrink.forward" title="Permalink to this definition">¶</a></dt>
+<p>Naive approach to complex batch norm, perform batch norm independently on real and imaginary part.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.NaiveComplexBatchNorm2d.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.NaiveComplexBatchNorm2d.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -767,9 +746,34 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.complex_layers.SoftShrink.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.complex_layers.SoftShrink.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.NaiveComplexBatchNorm2d.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.NaiveComplexBatchNorm2d.training" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.SoftShrink">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.complex_layers.</span></span><span class="sig-name descname"><span class="pre">SoftShrink</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.SoftShrink" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.SoftShrink.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.complex_layers.SoftShrink.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.complex_layers.SoftShrink.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.complex_layers.SoftShrink.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -777,13 +781,13 @@ registered hooks while the latter silently ignores them.</p>
 </section>
 <section id="module-torchsar.module.layers.consistency_layers">
 <span id="torchsar-module-layers-consistency-layers-module"></span><h2>torchsar.module.layers.consistency_layers module<a class="headerlink" href="#module-torchsar.module.layers.consistency_layers" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="torchsar.module.layers.consistency_layers.DataConsistency2d">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.consistency_layers.</code><code class="sig-name descname">DataConsistency2d</code><span class="sig-paren">(</span><em class="sig-param">ftaxis=(-2</em>, <em class="sig-param">-1)</em>, <em class="sig-param">mixrate=1.0</em>, <em class="sig-param">isfft=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.consistency_layers.DataConsistency2d" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.consistency_layers.DataConsistency2d">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.consistency_layers.</span></span><span class="sig-name descname"><span class="pre">DataConsistency2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ftaxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(-</span> <span class="pre">2,</span> <span class="pre">-</span> <span class="pre">1)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mixrate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isfft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.consistency_layers.DataConsistency2d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.consistency_layers.DataConsistency2d.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">y</em>, <em class="sig-param">mask</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.consistency_layers.DataConsistency2d.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.consistency_layers.DataConsistency2d.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.consistency_layers.DataConsistency2d.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -795,9 +799,9 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.consistency_layers.DataConsistency2d.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.consistency_layers.DataConsistency2d.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.consistency_layers.DataConsistency2d.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.consistency_layers.DataConsistency2d.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -805,13 +809,13 @@ registered hooks while the latter silently ignores them.</p>
 </section>
 <section id="module-torchsar.module.layers.fft_layers">
 <span id="torchsar-module-layers-fft-layers-module"></span><h2>torchsar.module.layers.fft_layers module<a class="headerlink" href="#module-torchsar.module.layers.fft_layers" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="torchsar.module.layers.fft_layers.FFTLayer1d">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.fft_layers.</code><code class="sig-name descname">FFTLayer1d</code><span class="sig-paren">(</span><em class="sig-param">nfft=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.fft_layers.FFTLayer1d" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.fft_layers.FFTLayer1d">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.fft_layers.</span></span><span class="sig-name descname"><span class="pre">FFTLayer1d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nfft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.fft_layers.FFTLayer1d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.fft_layers.FFTLayer1d.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.fft_layers.FFTLayer1d.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.fft_layers.FFTLayer1d.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.fft_layers.FFTLayer1d.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -823,9 +827,9 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.fft_layers.FFTLayer1d.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.fft_layers.FFTLayer1d.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.fft_layers.FFTLayer1d.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.fft_layers.FFTLayer1d.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -833,13 +837,13 @@ registered hooks while the latter silently ignores them.</p>
 </section>
 <section id="module-torchsar.module.layers.phase_convolution">
 <span id="torchsar-module-layers-phase-convolution-module"></span><h2>torchsar.module.layers.phase_convolution module<a class="headerlink" href="#module-torchsar.module.layers.phase_convolution" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="torchsar.module.layers.phase_convolution.ComplexPhaseConv1d">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.phase_convolution.</code><code class="sig-name descname">ComplexPhaseConv1d</code><span class="sig-paren">(</span><em class="sig-param">in_channels</em>, <em class="sig-param">out_channels</em>, <em class="sig-param">kernel_size=3</em>, <em class="sig-param">stride=1</em>, <em class="sig-param">padding=0</em>, <em class="sig-param">dilation=1</em>, <em class="sig-param">groups=1</em>, <em class="sig-param">bias=None</em>, <em class="sig-param">padding_mode='zeros'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConv1d" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.ComplexPhaseConv1d">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.phase_convolution.</span></span><span class="sig-name descname"><span class="pre">ComplexPhaseConv1d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'zeros'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConv1d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.phase_convolution.ComplexPhaseConv1d.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConv1d.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.ComplexPhaseConv1d.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConv1d.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -851,20 +855,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.phase_convolution.ComplexPhaseConv1d.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConv1d.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.ComplexPhaseConv1d.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConv1d.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.phase_convolution.ComplexPhaseConv2d">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.phase_convolution.</code><code class="sig-name descname">ComplexPhaseConv2d</code><span class="sig-paren">(</span><em class="sig-param">in_channels</em>, <em class="sig-param">out_channels</em>, <em class="sig-param">kernel_size=3</em>, <em class="sig-param">stride=1</em>, <em class="sig-param">padding=0</em>, <em class="sig-param">dilation=1</em>, <em class="sig-param">groups=1</em>, <em class="sig-param">bias=None</em>, <em class="sig-param">padding_mode='zeros'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConv2d" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.ComplexPhaseConv2d">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.phase_convolution.</span></span><span class="sig-name descname"><span class="pre">ComplexPhaseConv2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'zeros'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConv2d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.phase_convolution.ComplexPhaseConv2d.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConv2d.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.ComplexPhaseConv2d.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConv2d.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -876,20 +880,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.phase_convolution.ComplexPhaseConv2d.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConv2d.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.ComplexPhaseConv2d.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConv2d.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose1d">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.phase_convolution.</code><code class="sig-name descname">ComplexPhaseConvTranspose1d</code><span class="sig-paren">(</span><em class="sig-param">in_channels</em>, <em class="sig-param">out_channels</em>, <em class="sig-param">kernel_size</em>, <em class="sig-param">stride=1</em>, <em class="sig-param">padding=0</em>, <em class="sig-param">output_padding=0</em>, <em class="sig-param">groups=1</em>, <em class="sig-param">bias=None</em>, <em class="sig-param">dilation=1</em>, <em class="sig-param">padding_mode='zeros'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose1d" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose1d">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.phase_convolution.</span></span><span class="sig-name descname"><span class="pre">ComplexPhaseConvTranspose1d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'zeros'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose1d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose1d.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose1d.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose1d.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose1d.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -901,20 +905,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose1d.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose1d.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose1d.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose1d.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose2d">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.phase_convolution.</code><code class="sig-name descname">ComplexPhaseConvTranspose2d</code><span class="sig-paren">(</span><em class="sig-param">in_channels</em>, <em class="sig-param">out_channels</em>, <em class="sig-param">kernel_size</em>, <em class="sig-param">stride=1</em>, <em class="sig-param">padding=0</em>, <em class="sig-param">output_padding=0</em>, <em class="sig-param">groups=1</em>, <em class="sig-param">bias=None</em>, <em class="sig-param">dilation=1</em>, <em class="sig-param">padding_mode='zeros'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose2d" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose2d">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.phase_convolution.</span></span><span class="sig-name descname"><span class="pre">ComplexPhaseConvTranspose2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'zeros'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose2d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose2d.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose2d.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose2d.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose2d.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -926,20 +930,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose2d.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose2d.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose2d.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.phase_convolution.ComplexPhaseConvTranspose2d.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.phase_convolution.PhaseConv1d">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.phase_convolution.</code><code class="sig-name descname">PhaseConv1d</code><span class="sig-paren">(</span><em class="sig-param">in_channels</em>, <em class="sig-param">out_channels</em>, <em class="sig-param">kernel_size=3</em>, <em class="sig-param">stride=1</em>, <em class="sig-param">padding=0</em>, <em class="sig-param">dilation=1</em>, <em class="sig-param">groups=1</em>, <em class="sig-param">bias=None</em>, <em class="sig-param">padding_mode='zeros'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConv1d" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.PhaseConv1d">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.phase_convolution.</span></span><span class="sig-name descname"><span class="pre">PhaseConv1d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'zeros'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConv1d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.phase_convolution.PhaseConv1d.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConv1d.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.PhaseConv1d.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConv1d.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -951,20 +955,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.phase_convolution.PhaseConv1d.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConv1d.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.PhaseConv1d.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConv1d.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.phase_convolution.PhaseConv2d">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.phase_convolution.</code><code class="sig-name descname">PhaseConv2d</code><span class="sig-paren">(</span><em class="sig-param">in_channels</em>, <em class="sig-param">out_channels</em>, <em class="sig-param">kernel_size=3</em>, <em class="sig-param">stride=1</em>, <em class="sig-param">padding=0</em>, <em class="sig-param">dilation=1</em>, <em class="sig-param">groups=1</em>, <em class="sig-param">bias=None</em>, <em class="sig-param">padding_mode='zeros'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConv2d" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.PhaseConv2d">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.phase_convolution.</span></span><span class="sig-name descname"><span class="pre">PhaseConv2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'zeros'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConv2d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.phase_convolution.PhaseConv2d.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConv2d.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.PhaseConv2d.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConv2d.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -976,20 +980,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.phase_convolution.PhaseConv2d.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConv2d.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.PhaseConv2d.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConv2d.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.phase_convolution.PhaseConvTranspose1d">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.phase_convolution.</code><code class="sig-name descname">PhaseConvTranspose1d</code><span class="sig-paren">(</span><em class="sig-param">in_channels</em>, <em class="sig-param">out_channels</em>, <em class="sig-param">kernel_size</em>, <em class="sig-param">stride=1</em>, <em class="sig-param">padding=0</em>, <em class="sig-param">output_padding=0</em>, <em class="sig-param">groups=1</em>, <em class="sig-param">bias=None</em>, <em class="sig-param">dilation=1</em>, <em class="sig-param">padding_mode='zeros'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConvTranspose1d" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.PhaseConvTranspose1d">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.phase_convolution.</span></span><span class="sig-name descname"><span class="pre">PhaseConvTranspose1d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'zeros'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConvTranspose1d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.phase_convolution.PhaseConvTranspose1d.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConvTranspose1d.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.PhaseConvTranspose1d.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConvTranspose1d.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -1001,20 +1005,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.phase_convolution.PhaseConvTranspose1d.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConvTranspose1d.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.PhaseConvTranspose1d.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConvTranspose1d.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.layers.phase_convolution.PhaseConvTranspose2d">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.layers.phase_convolution.</code><code class="sig-name descname">PhaseConvTranspose2d</code><span class="sig-paren">(</span><em class="sig-param">in_channels</em>, <em class="sig-param">out_channels</em>, <em class="sig-param">kernel_size</em>, <em class="sig-param">stride=1</em>, <em class="sig-param">padding=0</em>, <em class="sig-param">output_padding=0</em>, <em class="sig-param">groups=1</em>, <em class="sig-param">bias=None</em>, <em class="sig-param">dilation=1</em>, <em class="sig-param">padding_mode='zeros'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConvTranspose2d" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.PhaseConvTranspose2d">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.layers.phase_convolution.</span></span><span class="sig-name descname"><span class="pre">PhaseConvTranspose2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">in_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'zeros'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConvTranspose2d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.layers.phase_convolution.PhaseConvTranspose2d.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConvTranspose2d.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.PhaseConvTranspose2d.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConvTranspose2d.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -1026,9 +1030,9 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.layers.phase_convolution.PhaseConvTranspose2d.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConvTranspose2d.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.layers.phase_convolution.PhaseConvTranspose2d.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.layers.phase_convolution.PhaseConvTranspose2d.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>

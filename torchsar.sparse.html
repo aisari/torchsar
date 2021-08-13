@@ -14,7 +14,9 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
 
   
@@ -29,12 +31,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"></script>
         <script src="_static/katex_autorenderer.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
@@ -88,7 +90,7 @@
               
             
             
-              <p><span class="caption-text">Contents:</span></p>
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
@@ -192,18 +194,18 @@
 </section>
 <section id="module-torchsar.sparse.complex_image">
 <span id="torchsar-sparse-complex-image-module"></span><h2>torchsar.sparse.complex_image module<a class="headerlink" href="#module-torchsar.sparse.complex_image" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="torchsar.sparse.complex_image.CICISTA">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.sparse.complex_image.</code><code class="sig-name descname">CICISTA</code><span class="sig-paren">(</span><em class="sig-param">niter=10</em>, <em class="sig-param">mu=0.5</em>, <em class="sig-param">k=None</em>, <em class="sig-param">eps=0.0001</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.sparse.complex_image.CICISTA" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.sparse.complex_image.CICISTA">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.sparse.complex_image.</span></span><span class="sig-name descname"><span class="pre">CICISTA</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">niter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mu</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0001</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.sparse.complex_image.CICISTA" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<dl class="method">
-<dt id="torchsar.sparse.complex_image.CICISTA.optimize">
-<code class="sig-name descname">optimize</code><span class="sig-paren">(</span><em class="sig-param">Y</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.sparse.complex_image.CICISTA.optimize" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.sparse.complex_image.CICISTA.optimize">
+<span class="sig-name descname"><span class="pre">optimize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.sparse.complex_image.CICISTA.optimize" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="torchsar.sparse.complex_image.CICISTA.step">
-<code class="sig-name descname">step</code><span class="sig-paren">(</span><em class="sig-param">Y</em>, <em class="sig-param">Xt</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.sparse.complex_image.CICISTA.step" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.sparse.complex_image.CICISTA.step">
+<span class="sig-name descname"><span class="pre">step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Xt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.sparse.complex_image.CICISTA.step" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -211,9 +213,9 @@
 </section>
 <section id="module-torchsar.sparse.sharing">
 <span id="torchsar-sparse-sharing-module"></span><h2>torchsar.sparse.sharing module<a class="headerlink" href="#module-torchsar.sparse.sharing" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.sparse.sharing.sparse_degree">
-<code class="sig-prename descclassname">torchsar.sparse.sharing.</code><code class="sig-name descname">sparse_degree</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">t</em>, <em class="sig-param">mode='percentile'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.sparse.sharing.sparse_degree" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.sparse.sharing.sparse_degree">
+<span class="sig-prename descclassname"><span class="pre">torchsar.sparse.sharing.</span></span><span class="sig-name descname"><span class="pre">sparse_degree</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'percentile'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.sparse.sharing.sparse_degree" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </section>

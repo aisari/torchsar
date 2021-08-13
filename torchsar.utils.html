@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>torchsar.utils package &mdash; TorchSAR 1.0 documentation</title>
@@ -13,7 +14,9 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
 
   
@@ -28,12 +31,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"></script>
         <script src="_static/katex_autorenderer.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
@@ -41,7 +44,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="torchsar.simulation package" href="torchsar.simulation.html" /> 
+    <link rel="prev" title="torchsar.sparse package" href="torchsar.sparse.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -88,7 +91,9 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="setup.html">setup module</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="torchsar.autofocus.html">torchsar.autofocus package</a></li>
@@ -103,6 +108,7 @@
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sarcfg.html">torchsar.sarcfg package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html">torchsar.sharing package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.simulation.html">torchsar.simulation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sparse.html">torchsar.sparse package</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">torchsar.utils package</a></li>
 </ul>
 </li>
@@ -180,16 +186,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="torchsar-utils-package">
+  <section id="torchsar-utils-package">
 <h1>torchsar.utils package<a class="headerlink" href="#torchsar-utils-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="submodules">
+<section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-torchsar.utils.colors">
+</section>
+<section id="module-torchsar.utils.colors">
 <span id="torchsar-utils-colors-module"></span><h2>torchsar.utils.colors module<a class="headerlink" href="#module-torchsar.utils.colors" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.utils.colors.rgb2gray">
-<code class="sig-prename descclassname">torchsar.utils.colors.</code><code class="sig-name descname">rgb2gray</code><span class="sig-paren">(</span><em class="sig-param">rgb</em>, <em class="sig-param">fmt='chnllast'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.colors.rgb2gray" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.colors.rgb2gray">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.colors.</span></span><span class="sig-name descname"><span class="pre">rgb2gray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rgb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'chnllast'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.colors.rgb2gray" title="Permalink to this definition">¶</a></dt>
 <dd><p>Converts RGB image to GRAY image</p>
 <p>Converts RGB image to GRAY image according to</p>
 <div class="math">
@@ -209,15 +215,15 @@
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.utils.const">
+</section>
+<section id="module-torchsar.utils.const">
 <span id="torchsar-utils-const-module"></span><h2>torchsar.utils.const module<a class="headerlink" href="#module-torchsar.utils.const" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-torchsar.utils.convert">
+</section>
+<section id="module-torchsar.utils.convert">
 <span id="torchsar-utils-convert-module"></span><h2>torchsar.utils.convert module<a class="headerlink" href="#module-torchsar.utils.convert" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.utils.convert.str2list">
-<code class="sig-prename descclassname">torchsar.utils.convert.</code><code class="sig-name descname">str2list</code><span class="sig-paren">(</span><em class="sig-param">s</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.convert.str2list" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.convert.str2list">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.convert.</span></span><span class="sig-name descname"><span class="pre">str2list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.convert.str2list" title="Permalink to this definition">¶</a></dt>
 <dd><p>Converts string with <code class="docutils literal notranslate"><span class="pre">[</span></code> and <code class="docutils literal notranslate"><span class="pre">]</span></code> to list</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -226,9 +232,9 @@
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.utils.convert.str2num">
-<code class="sig-prename descclassname">torchsar.utils.convert.</code><code class="sig-name descname">str2num</code><span class="sig-paren">(</span><em class="sig-param">s</em>, <em class="sig-param">tfunc=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.convert.str2num" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.convert.str2num">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.convert.</span></span><span class="sig-name descname"><span class="pre">str2num</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tfunc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.convert.str2num" title="Permalink to this definition">¶</a></dt>
 <dd><p>Extracts numbers in a string.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -246,12 +252,12 @@
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.utils.file">
+</section>
+<section id="module-torchsar.utils.file">
 <span id="torchsar-utils-file-module"></span><h2>torchsar.utils.file module<a class="headerlink" href="#module-torchsar.utils.file" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.utils.file.fileparts">
-<code class="sig-prename descclassname">torchsar.utils.file.</code><code class="sig-name descname">fileparts</code><span class="sig-paren">(</span><em class="sig-param">file</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.file.fileparts" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.file.fileparts">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.file.</span></span><span class="sig-name descname"><span class="pre">fileparts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.file.fileparts" title="Permalink to this definition">¶</a></dt>
 <dd><p>Filename parts</p>
 <p>Returns the path, file name, and file name extension for the specified <code class="xref py py-attr docutils literal notranslate"><span class="pre">file</span></code>.
 The <code class="xref py py-attr docutils literal notranslate"><span class="pre">file</span></code> input is the name of a file or folder, and can include a path and
@@ -271,9 +277,9 @@ file name extension.</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.utils.file.listxfile">
-<code class="sig-prename descclassname">torchsar.utils.file.</code><code class="sig-name descname">listxfile</code><span class="sig-paren">(</span><em class="sig-param">listdir=None</em>, <em class="sig-param">exts=None</em>, <em class="sig-param">recursive=False</em>, <em class="sig-param">filelist=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.file.listxfile" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.file.listxfile">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.file.</span></span><span class="sig-name descname"><span class="pre">listxfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">listdir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">recursive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filelist</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.file.listxfile" title="Permalink to this definition">¶</a></dt>
 <dd><p>List the files in a directory.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -294,9 +300,9 @@ The default is None, which means any extension.</p></li>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.utils.file.pathjoin">
-<code class="sig-prename descclassname">torchsar.utils.file.</code><code class="sig-name descname">pathjoin</code><span class="sig-paren">(</span><em class="sig-param">*kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.file.pathjoin" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.file.pathjoin">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.file.</span></span><span class="sig-name descname"><span class="pre">pathjoin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.file.pathjoin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Joint strings to a path.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -311,9 +317,9 @@ The default is None, which means any extension.</p></li>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.utils.file.readnum">
-<code class="sig-prename descclassname">torchsar.utils.file.</code><code class="sig-name descname">readnum</code><span class="sig-paren">(</span><em class="sig-param">filepath</em>, <em class="sig-param">pmain='Train'</em>, <em class="sig-param">psub='loss'</em>, <em class="sig-param">vfn=&lt;class 'float'&gt;</em>, <em class="sig-param">nshots=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.file.readnum" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.file.readnum">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.file.</span></span><span class="sig-name descname"><span class="pre">readnum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">filepath</span></em>, <em class="sig-param"><span class="pre">pmain='Train'</span></em>, <em class="sig-param"><span class="pre">psub='loss'</span></em>, <em class="sig-param"><span class="pre">vfn=&lt;class</span> <span class="pre">'float'&gt;</span></em>, <em class="sig-param"><span class="pre">nshots=None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.file.readnum" title="Permalink to this definition">¶</a></dt>
 <dd><p>Read a file and extract numbers in it.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -334,9 +340,9 @@ The default is None, which means any extension.</p></li>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.utils.file.readtxt">
-<code class="sig-prename descclassname">torchsar.utils.file.</code><code class="sig-name descname">readtxt</code><span class="sig-paren">(</span><em class="sig-param">filepath</em>, <em class="sig-param">mode=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.file.readtxt" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.file.readtxt">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.file.</span></span><span class="sig-name descname"><span class="pre">readtxt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.file.readtxt" title="Permalink to this definition">¶</a></dt>
 <dd><p>Read a text file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -355,32 +361,32 @@ The default is None, which means any extension.</p></li>
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.utils.image">
+</section>
+<section id="module-torchsar.utils.image">
 <span id="torchsar-utils-image-module"></span><h2>torchsar.utils.image module<a class="headerlink" href="#module-torchsar.utils.image" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.utils.image.histeq">
-<code class="sig-prename descclassname">torchsar.utils.image.</code><code class="sig-name descname">histeq</code><span class="sig-paren">(</span><em class="sig-param">img</em>, <em class="sig-param">nbins=256</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.image.histeq" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.image.histeq">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.image.</span></span><span class="sig-name descname"><span class="pre">histeq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nbins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">256</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.image.histeq" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.utils.image.imadjust">
-<code class="sig-prename descclassname">torchsar.utils.image.</code><code class="sig-name descname">imadjust</code><span class="sig-paren">(</span><em class="sig-param">img</em>, <em class="sig-param">lhin</em>, <em class="sig-param">lhout</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.image.imadjust" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.image.imadjust">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.image.</span></span><span class="sig-name descname"><span class="pre">imadjust</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lhin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lhout</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.image.imadjust" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.utils.image.imadjustlog">
-<code class="sig-prename descclassname">torchsar.utils.image.</code><code class="sig-name descname">imadjustlog</code><span class="sig-paren">(</span><em class="sig-param">img</em>, <em class="sig-param">lhin=None</em>, <em class="sig-param">lhout=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.image.imadjustlog" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.image.imadjustlog">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.image.</span></span><span class="sig-name descname"><span class="pre">imadjustlog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lhin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lhout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.image.imadjustlog" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.utils.image.imread">
-<code class="sig-prename descclassname">torchsar.utils.image.</code><code class="sig-name descname">imread</code><span class="sig-paren">(</span><em class="sig-param">imgfile</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.image.imread" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.image.imread">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.image.</span></span><span class="sig-name descname"><span class="pre">imread</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">imgfile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.image.imread" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.utils.image.imresize">
-<code class="sig-prename descclassname">torchsar.utils.image.</code><code class="sig-name descname">imresize</code><span class="sig-paren">(</span><em class="sig-param">img</em>, <em class="sig-param">oshape=None</em>, <em class="sig-param">odtype=None</em>, <em class="sig-param">order=1</em>, <em class="sig-param">mode='constant'</em>, <em class="sig-param">cval=0</em>, <em class="sig-param">clip=True</em>, <em class="sig-param">preserve_range=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.image.imresize" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.image.imresize">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.image.</span></span><span class="sig-name descname"><span class="pre">imresize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">oshape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'constant'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preserve_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.image.imresize" title="Permalink to this definition">¶</a></dt>
 <dd><p>resize image to oshape</p>
 <p>see <code class="xref py py-func docutils literal notranslate"><span class="pre">skimage.transform.resize()</span></code>.</p>
 <dl class="field-list simple">
@@ -418,8 +424,8 @@ has values [0, 1, 2] and was padded to the right by four values using
 symmetric, the result would be [0, 1, 2, 2, 1, 0, 0], while for reflect it
 would be [0, 1, 2, 1, 0, 1, 2].</p>
 <p class="rubric">Examples</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">skimage</span> <span class="k">import</span> <span class="n">data</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">skimage.transform</span> <span class="k">import</span> <span class="n">resize</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">skimage</span> <span class="kn">import</span> <span class="n">data</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">skimage.transform</span> <span class="kn">import</span> <span class="n">resize</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">image</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">camera</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">resize</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;reflect&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">shape</span>
 <span class="go">(100, 100)</span>
@@ -427,19 +433,19 @@ would be [0, 1, 2, 1, 0, 1, 2].</p>
 </div>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.utils.image.imsave">
-<code class="sig-prename descclassname">torchsar.utils.image.</code><code class="sig-name descname">imsave</code><span class="sig-paren">(</span><em class="sig-param">outfile</em>, <em class="sig-param">img</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.image.imsave" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.image.imsave">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.image.</span></span><span class="sig-name descname"><span class="pre">imsave</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">outfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">img</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.image.imsave" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.utils.ios">
+</section>
+<section id="module-torchsar.utils.ios">
 <span id="torchsar-utils-ios-module"></span><h2>torchsar.utils.ios module<a class="headerlink" href="#module-torchsar.utils.ios" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.utils.ios.loadh5">
-<code class="sig-prename descclassname">torchsar.utils.ios.</code><code class="sig-name descname">loadh5</code><span class="sig-paren">(</span><em class="sig-param">filepath</em>, <em class="sig-param">keys=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.loadh5" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.ios.loadh5">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.ios.</span></span><span class="sig-name descname"><span class="pre">loadh5</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.loadh5" title="Permalink to this definition">¶</a></dt>
 <dd><p>load h5 file</p>
-<p>load all the data from a h5 file.</p>
+<p>load all the data from a <code class="docutils literal notranslate"><span class="pre">.h5</span></code> file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>filepath</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – File’s full path string.</p>
@@ -453,34 +459,28 @@ would be [0, 1, 2, 1, 0, 1, 2].</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.utils.ios.loadjson">
-<code class="sig-prename descclassname">torchsar.utils.ios.</code><code class="sig-name descname">loadjson</code><span class="sig-paren">(</span><em class="sig-param">filepath</em>, <em class="sig-param">field=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.loadjson" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.ios.loadjson">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.ios.</span></span><span class="sig-name descname"><span class="pre">loadjson</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.loadjson" title="Permalink to this definition">¶</a></dt>
 <dd><p>Summary</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>filepath</strong> (<em>TYPE</em>) – Description</p></li>
-<li><p><strong>field</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – Description</p></li>
+<li><p><strong>filepath</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – The file path string.</p></li>
+<li><p><strong>field</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – The string of field that want to be loaded.</p></li>
 </ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Description</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>TYPE</p>
 </dd>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.utils.ios.loadmat">
-<code class="sig-prename descclassname">torchsar.utils.ios.</code><code class="sig-name descname">loadmat</code><span class="sig-paren">(</span><em class="sig-param">filepath</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.loadmat" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.ios.loadmat">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.ios.</span></span><span class="sig-name descname"><span class="pre">loadmat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.loadmat" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.utils.ios.loadyaml">
-<code class="sig-prename descclassname">torchsar.utils.ios.</code><code class="sig-name descname">loadyaml</code><span class="sig-paren">(</span><em class="sig-param">filepath</em>, <em class="sig-param">field=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.loadyaml" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.ios.loadyaml">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.ios.</span></span><span class="sig-name descname"><span class="pre">loadyaml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.loadyaml" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load a yaml file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -489,20 +489,36 @@ would be [0, 1, 2, 1, 0, 1, 2].</p>
 <li><p><strong>field</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – The string of field that want to be loaded.</p></li>
 </ul>
 </dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.ios.mvkeyh5">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.ios.</span></span><span class="sig-name descname"><span class="pre">mvkeyh5</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ksf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.mvkeyh5" title="Permalink to this definition">¶</a></dt>
+<dd><p>rename keys in <code class="docutils literal notranslate"><span class="pre">.h5</span></code> file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filepath</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – The file path string</p></li>
+<li><p><strong>ksf</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a>) – keys from list, e.g. [‘a.x’, ‘b.y’]</p></li>
+<li><p><strong>kst</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a>) – keys to list, e.g. [‘a.1’, ‘b.2’]</p></li>
+<li><p><strong>sep</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – The separate pattern, default is <code class="docutils literal notranslate"><span class="pre">'.'</span></code></p></li>
+</ul>
+</dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Description</p>
+<dd class="field-even"><p>All is ok!</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>TYPE</p>
+<dd class="field-odd"><p>0</p>
 </dd>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.utils.ios.saveh5">
-<code class="sig-prename descclassname">torchsar.utils.ios.</code><code class="sig-name descname">saveh5</code><span class="sig-paren">(</span><em class="sig-param">filepath</em>, <em class="sig-param">mdict</em>, <em class="sig-param">mode='w'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.saveh5" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.ios.saveh5">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.ios.</span></span><span class="sig-name descname"><span class="pre">saveh5</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mdict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'w'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.saveh5" title="Permalink to this definition">¶</a></dt>
 <dd><p>save data to h5 file</p>
-<p>save data to h5 file</p>
+<p>save data to <code class="docutils literal notranslate"><span class="pre">.h5</span></code> file</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -520,35 +536,35 @@ would be [0, 1, 2, 1, 0, 1, 2].</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.utils.ios.savemat">
-<code class="sig-prename descclassname">torchsar.utils.ios.</code><code class="sig-name descname">savemat</code><span class="sig-paren">(</span><em class="sig-param">filepath</em>, <em class="sig-param">mdict</em>, <em class="sig-param">fmt='5'</em>, <em class="sig-param">dtype=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.savemat" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.ios.savemat">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.ios.</span></span><span class="sig-name descname"><span class="pre">savemat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mdict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'5'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.ios.savemat" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.utils.plot_show">
+</section>
+<section id="module-torchsar.utils.plot_show">
 <span id="torchsar-utils-plot-show-module"></span><h2>torchsar.utils.plot_show module<a class="headerlink" href="#module-torchsar.utils.plot_show" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="torchsar.utils.plot_show.Plots">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.utils.plot_show.</code><code class="sig-name descname">Plots</code><span class="sig-paren">(</span><em class="sig-param">plotdir='./'</em>, <em class="sig-param">xlabel='x'</em>, <em class="sig-param">ylabel='y'</em>, <em class="sig-param">title=''</em>, <em class="sig-param">figname=None</em>, <em class="sig-param">issave=False</em>, <em class="sig-param">isshow=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.plot_show.Plots" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.utils.plot_show.Plots">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.utils.plot_show.</span></span><span class="sig-name descname"><span class="pre">Plots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plotdir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xlabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'x'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ylabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'y'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">issave</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isshow</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.plot_show.Plots" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.utils.plot_show.cplot">
-<code class="sig-prename descclassname">torchsar.utils.plot_show.</code><code class="sig-name descname">cplot</code><span class="sig-paren">(</span><em class="sig-param">ca</em>, <em class="sig-param">lmod=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.plot_show.cplot" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.plot_show.cplot">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.plot_show.</span></span><span class="sig-name descname"><span class="pre">cplot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ca</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lmod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.plot_show.cplot" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.utils.plot_show.plots">
-<code class="sig-prename descclassname">torchsar.utils.plot_show.</code><code class="sig-name descname">plots</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">ydict</em>, <em class="sig-param">plotdir='./'</em>, <em class="sig-param">xlabel='x'</em>, <em class="sig-param">ylabel='y'</em>, <em class="sig-param">title=''</em>, <em class="sig-param">issave=False</em>, <em class="sig-param">isshow=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.plot_show.plots" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.utils.plot_show.plots">
+<span class="sig-prename descclassname"><span class="pre">torchsar.utils.plot_show.</span></span><span class="sig-name descname"><span class="pre">plots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ydict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plotdir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xlabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'x'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ylabel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'y'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">issave</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isshow</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.utils.plot_show.plots" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.utils">
+</section>
+<section id="module-torchsar.utils">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-torchsar.utils" title="Permalink to this headline">¶</a></h2>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -559,7 +575,7 @@ would be [0, 1, 2, 1, 0, 1, 2].</p>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="torchsar.simulation.html" class="btn btn-neutral float-left" title="torchsar.simulation package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="torchsar.sparse.html" class="btn btn-neutral float-left" title="torchsar.sparse package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

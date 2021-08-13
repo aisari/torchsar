@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>torchsar.module.imaging package &mdash; TorchSAR 1.0 documentation</title>
@@ -13,7 +14,9 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
 
   
@@ -28,12 +31,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"></script>
         <script src="_static/katex_autorenderer.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
@@ -89,7 +92,9 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="setup.html">setup module</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="torchsar.autofocus.html">torchsar.autofocus package</a></li>
@@ -104,6 +109,7 @@
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sarcfg.html">torchsar.sarcfg package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html">torchsar.sharing package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.simulation.html">torchsar.simulation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sparse.html">torchsar.sparse package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a></li>
 </ul>
 </li>
@@ -183,25 +189,25 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="torchsar-module-imaging-package">
+  <section id="torchsar-module-imaging-package">
 <h1>torchsar.module.imaging package<a class="headerlink" href="#torchsar-module-imaging-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="submodules">
+<section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-torchsar.module.imaging.range_doppler_algorithm">
+</section>
+<section id="module-torchsar.module.imaging.range_doppler_algorithm">
 <span id="torchsar-module-imaging-range-doppler-algorithm-module"></span><h2>torchsar.module.imaging.range_doppler_algorithm module<a class="headerlink" href="#module-torchsar.module.imaging.range_doppler_algorithm" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="torchsar.module.imaging.range_doppler_algorithm.LRDAnet">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.imaging.range_doppler_algorithm.</code><code class="sig-name descname">LRDAnet</code><span class="sig-paren">(</span><em class="sig-param">Na</em>, <em class="sig-param">Nr</em>, <em class="sig-param">Fsa</em>, <em class="sig-param">Fsr</em>, <em class="sig-param">Ta</em>, <em class="sig-param">Tp</em>, <em class="sig-param">Ka</em>, <em class="sig-param">Kr</em>, <em class="sig-param">fdc</em>, <em class="sig-param">Fc</em>, <em class="sig-param">R0</em>, <em class="sig-param">Vr</em>, <em class="sig-param">La</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.imaging.range_doppler_algorithm.LRDAnet" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.imaging.range_doppler_algorithm.LRDAnet">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.imaging.range_doppler_algorithm.</span></span><span class="sig-name descname"><span class="pre">LRDAnet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Na</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fsa</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fsr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Ta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Tp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Ka</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Kr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fdc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">R0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Vr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">La</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.imaging.range_doppler_algorithm.LRDAnet" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.imaging.range_doppler_algorithm.LRDAnet.focus">
-<code class="sig-name descname">focus</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">pa=None</em>, <em class="sig-param">pr=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.imaging.range_doppler_algorithm.LRDAnet.focus" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.imaging.range_doppler_algorithm.LRDAnet.focus">
+<span class="sig-name descname"><span class="pre">focus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.imaging.range_doppler_algorithm.LRDAnet.focus" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="torchsar.module.imaging.range_doppler_algorithm.LRDAnet.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.imaging.range_doppler_algorithm.LRDAnet.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.imaging.range_doppler_algorithm.LRDAnet.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.imaging.range_doppler_algorithm.LRDAnet.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -213,18 +219,18 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.imaging.range_doppler_algorithm.LRDAnet.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.imaging.range_doppler_algorithm.LRDAnet.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.imaging.range_doppler_algorithm.LRDAnet.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.imaging.range_doppler_algorithm.LRDAnet.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.module.imaging">
+</section>
+<section id="module-torchsar.module.imaging">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-torchsar.module.imaging" title="Permalink to this headline">¶</a></h2>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

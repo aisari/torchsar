@@ -14,7 +14,9 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
 
   
@@ -29,12 +31,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"></script>
         <script src="_static/katex_autorenderer.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
@@ -88,7 +90,7 @@
               
             
             
-              <p><span class="caption-text">Contents:</span></p>
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
@@ -194,13 +196,13 @@
 </section>
 <section id="module-torchsar.module.autofocus.autofocus">
 <span id="torchsar-module-autofocus-autofocus-module"></span><h2>torchsar.module.autofocus.autofocus module<a class="headerlink" href="#module-torchsar.module.autofocus.autofocus" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="torchsar.module.autofocus.autofocus.AutoFocusBarePhi">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.autofocus.autofocus.</code><code class="sig-name descname">AutoFocusBarePhi</code><span class="sig-paren">(</span><em class="sig-param">Na</em>, <em class="sig-param">Nr</em>, <em class="sig-param">Nb=None</em>, <em class="sig-param">pa=None</em>, <em class="sig-param">pr=None</em>, <em class="sig-param">Ma=None</em>, <em class="sig-param">Mr=None</em>, <em class="sig-param">xa=None</em>, <em class="sig-param">xr=None</em>, <em class="sig-param">ftshift=False</em>, <em class="sig-param">trainable=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusBarePhi" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.autofocus.AutoFocusBarePhi">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.autofocus.autofocus.</span></span><span class="sig-name descname"><span class="pre">AutoFocusBarePhi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Na</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Ma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trainable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusBarePhi" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.autofocus.autofocus.AutoFocusBarePhi.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">isfft=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusBarePhi.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.autofocus.AutoFocusBarePhi.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isfft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusBarePhi.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -212,30 +214,30 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="torchsar.module.autofocus.autofocus.AutoFocusBarePhi.get_param">
-<code class="sig-name descname">get_param</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusBarePhi.get_param" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.autofocus.AutoFocusBarePhi.get_param">
+<span class="sig-name descname"><span class="pre">get_param</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusBarePhi.get_param" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="torchsar.module.autofocus.autofocus.AutoFocusBarePhi.param_init">
-<code class="sig-name descname">param_init</code><span class="sig-paren">(</span><em class="sig-param">pa=None</em>, <em class="sig-param">pr=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusBarePhi.param_init" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.autofocus.AutoFocusBarePhi.param_init">
+<span class="sig-name descname"><span class="pre">param_init</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusBarePhi.param_init" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.autofocus.autofocus.AutoFocusBarePhi.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusBarePhi.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.autofocus.AutoFocusBarePhi.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusBarePhi.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.autofocus.autofocus.AutoFocusDctPhi">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.autofocus.autofocus.</code><code class="sig-name descname">AutoFocusDctPhi</code><span class="sig-paren">(</span><em class="sig-param">Na</em>, <em class="sig-param">Nr</em>, <em class="sig-param">Nb=None</em>, <em class="sig-param">ca=None</em>, <em class="sig-param">cr=None</em>, <em class="sig-param">Pa=4</em>, <em class="sig-param">Pr=4</em>, <em class="sig-param">ftshift=False</em>, <em class="sig-param">trainable=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusDctPhi" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.autofocus.AutoFocusDctPhi">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.autofocus.autofocus.</span></span><span class="sig-name descname"><span class="pre">AutoFocusDctPhi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Na</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ca</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Pa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Pr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trainable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusDctPhi" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.autofocus.autofocus.AutoFocusDctPhi.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">isfft=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusDctPhi.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.autofocus.AutoFocusDctPhi.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isfft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusDctPhi.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -247,30 +249,30 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="torchsar.module.autofocus.autofocus.AutoFocusDctPhi.get_param">
-<code class="sig-name descname">get_param</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusDctPhi.get_param" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.autofocus.AutoFocusDctPhi.get_param">
+<span class="sig-name descname"><span class="pre">get_param</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusDctPhi.get_param" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="torchsar.module.autofocus.autofocus.AutoFocusDctPhi.param_init">
-<code class="sig-name descname">param_init</code><span class="sig-paren">(</span><em class="sig-param">ca=None</em>, <em class="sig-param">cr=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusDctPhi.param_init" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.autofocus.AutoFocusDctPhi.param_init">
+<span class="sig-name descname"><span class="pre">param_init</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ca</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusDctPhi.param_init" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.autofocus.autofocus.AutoFocusDctPhi.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusDctPhi.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.autofocus.AutoFocusDctPhi.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusDctPhi.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.autofocus.autofocus.AutoFocusPolyPhi">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.autofocus.autofocus.</code><code class="sig-name descname">AutoFocusPolyPhi</code><span class="sig-paren">(</span><em class="sig-param">Na</em>, <em class="sig-param">Nr</em>, <em class="sig-param">Nb=None</em>, <em class="sig-param">ca=None</em>, <em class="sig-param">cr=None</em>, <em class="sig-param">Ma=2</em>, <em class="sig-param">Mr=2</em>, <em class="sig-param">xa=None</em>, <em class="sig-param">xr=None</em>, <em class="sig-param">ftshift=False</em>, <em class="sig-param">trainable=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusPolyPhi" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.autofocus.AutoFocusPolyPhi">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.autofocus.autofocus.</span></span><span class="sig-name descname"><span class="pre">AutoFocusPolyPhi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Na</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ca</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Ma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trainable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusPolyPhi" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.autofocus.autofocus.AutoFocusPolyPhi.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">isfft=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusPolyPhi.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.autofocus.AutoFocusPolyPhi.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isfft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusPolyPhi.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -282,30 +284,30 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="torchsar.module.autofocus.autofocus.AutoFocusPolyPhi.get_param">
-<code class="sig-name descname">get_param</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusPolyPhi.get_param" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.autofocus.AutoFocusPolyPhi.get_param">
+<span class="sig-name descname"><span class="pre">get_param</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusPolyPhi.get_param" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="torchsar.module.autofocus.autofocus.AutoFocusPolyPhi.param_init">
-<code class="sig-name descname">param_init</code><span class="sig-paren">(</span><em class="sig-param">ca=None</em>, <em class="sig-param">cr=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusPolyPhi.param_init" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.autofocus.AutoFocusPolyPhi.param_init">
+<span class="sig-name descname"><span class="pre">param_init</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ca</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusPolyPhi.param_init" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.autofocus.autofocus.AutoFocusPolyPhi.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusPolyPhi.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.autofocus.AutoFocusPolyPhi.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusPolyPhi.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.autofocus.autofocus.AutoFocusSinPhi">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.autofocus.autofocus.</code><code class="sig-name descname">AutoFocusSinPhi</code><span class="sig-paren">(</span><em class="sig-param">Na</em>, <em class="sig-param">Nr</em>, <em class="sig-param">Nb=None</em>, <em class="sig-param">aa=None</em>, <em class="sig-param">fa=None</em>, <em class="sig-param">ar=None</em>, <em class="sig-param">fr=None</em>, <em class="sig-param">ftshift=False</em>, <em class="sig-param">trainable=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusSinPhi" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.autofocus.AutoFocusSinPhi">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.autofocus.autofocus.</span></span><span class="sig-name descname"><span class="pre">AutoFocusSinPhi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Na</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trainable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusSinPhi" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.autofocus.autofocus.AutoFocusSinPhi.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">isfft=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusSinPhi.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.autofocus.AutoFocusSinPhi.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isfft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusSinPhi.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -317,19 +319,19 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="torchsar.module.autofocus.autofocus.AutoFocusSinPhi.get_param">
-<code class="sig-name descname">get_param</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusSinPhi.get_param" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.autofocus.AutoFocusSinPhi.get_param">
+<span class="sig-name descname"><span class="pre">get_param</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusSinPhi.get_param" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="torchsar.module.autofocus.autofocus.AutoFocusSinPhi.param_init">
-<code class="sig-name descname">param_init</code><span class="sig-paren">(</span><em class="sig-param">aa=None</em>, <em class="sig-param">fa=None</em>, <em class="sig-param">ar=None</em>, <em class="sig-param">fr=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusSinPhi.param_init" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.autofocus.AutoFocusSinPhi.param_init">
+<span class="sig-name descname"><span class="pre">param_init</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">aa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusSinPhi.param_init" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.autofocus.autofocus.AutoFocusSinPhi.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusSinPhi.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.autofocus.AutoFocusSinPhi.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.autofocus.autofocus.AutoFocusSinPhi.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -337,13 +339,13 @@ registered hooks while the latter silently ignores them.</p>
 </section>
 <section id="module-torchsar.module.autofocus.fast_fourier_domain_optimization">
 <span id="torchsar-module-autofocus-fast-fourier-domain-optimization-module"></span><h2>torchsar.module.autofocus.fast_fourier_domain_optimization module<a class="headerlink" href="#module-torchsar.module.autofocus.fast_fourier_domain_optimization" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.autofocus.fast_fourier_domain_optimization.</code><code class="sig-name descname">AutoFocusFFO</code><span class="sig-paren">(</span><em class="sig-param">Na</em>, <em class="sig-param">Nr</em>, <em class="sig-param">Nb=None</em>, <em class="sig-param">ftshift=False</em>, <em class="sig-param">trainable=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.autofocus.fast_fourier_domain_optimization.</span></span><span class="sig-name descname"><span class="pre">AutoFocusFFO</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Na</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trainable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">isfft=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isfft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -355,24 +357,24 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO.get_param">
-<code class="sig-name descname">get_param</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO.get_param" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO.get_param">
+<span class="sig-name descname"><span class="pre">get_param</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO.get_param" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO.imaging">
-<code class="sig-name descname">imaging</code><span class="sig-paren">(</span><em class="sig-param">Xc</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO.imaging" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO.imaging">
+<span class="sig-name descname"><span class="pre">imaging</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Xc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO.imaging" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO.param_init">
-<code class="sig-name descname">param_init</code><span class="sig-paren">(</span><em class="sig-param">pa=None</em>, <em class="sig-param">pr=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO.param_init" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO.param_init">
+<span class="sig-name descname"><span class="pre">param_init</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO.param_init" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.autofocus.fast_fourier_domain_optimization.AutoFocusFFO.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -380,13 +382,13 @@ registered hooks while the latter silently ignores them.</p>
 </section>
 <section id="module-torchsar.module.autofocus.focusing">
 <span id="torchsar-module-autofocus-focusing-module"></span><h2>torchsar.module.autofocus.focusing module<a class="headerlink" href="#module-torchsar.module.autofocus.focusing" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="torchsar.module.autofocus.focusing.AutoFocus">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.autofocus.focusing.</code><code class="sig-name descname">AutoFocus</code><span class="sig-paren">(</span><em class="sig-param">Na</em>, <em class="sig-param">Nr</em>, <em class="sig-param">pa=None</em>, <em class="sig-param">pr=None</em>, <em class="sig-param">ftshift=False</em>, <em class="sig-param">trainable=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.focusing.AutoFocus" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.focusing.AutoFocus">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.autofocus.focusing.</span></span><span class="sig-name descname"><span class="pre">AutoFocus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Na</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trainable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.focusing.AutoFocus" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.autofocus.focusing.AutoFocus.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">isfft=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.focusing.AutoFocus.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.focusing.AutoFocus.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isfft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.focusing.AutoFocus.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -398,9 +400,9 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.autofocus.focusing.AutoFocus.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.autofocus.focusing.AutoFocus.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.focusing.AutoFocus.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.autofocus.focusing.AutoFocus.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -408,13 +410,13 @@ registered hooks while the latter silently ignores them.</p>
 </section>
 <section id="module-torchsar.module.autofocus.phase_error_model">
 <span id="torchsar-module-autofocus-phase-error-model-module"></span><h2>torchsar.module.autofocus.phase_error_model module<a class="headerlink" href="#module-torchsar.module.autofocus.phase_error_model" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="torchsar.module.autofocus.phase_error_model.BarePhi">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.autofocus.phase_error_model.</code><code class="sig-name descname">BarePhi</code><span class="sig-paren">(</span><em class="sig-param">Na</em>, <em class="sig-param">Nr</em>, <em class="sig-param">Nb=None</em>, <em class="sig-param">pa=None</em>, <em class="sig-param">pr=None</em>, <em class="sig-param">Ma=None</em>, <em class="sig-param">Mr=None</em>, <em class="sig-param">xa=None</em>, <em class="sig-param">xr=None</em>, <em class="sig-param">shift=False</em>, <em class="sig-param">trainable=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.BarePhi" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.phase_error_model.BarePhi">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.autofocus.phase_error_model.</span></span><span class="sig-name descname"><span class="pre">BarePhi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Na</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Ma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trainable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.BarePhi" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.autofocus.phase_error_model.BarePhi.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.BarePhi.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.phase_error_model.BarePhi.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.BarePhi.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -426,30 +428,30 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="torchsar.module.autofocus.phase_error_model.BarePhi.get_param">
-<code class="sig-name descname">get_param</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.BarePhi.get_param" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.phase_error_model.BarePhi.get_param">
+<span class="sig-name descname"><span class="pre">get_param</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.BarePhi.get_param" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="torchsar.module.autofocus.phase_error_model.BarePhi.param_init">
-<code class="sig-name descname">param_init</code><span class="sig-paren">(</span><em class="sig-param">pa=None</em>, <em class="sig-param">pr=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.BarePhi.param_init" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.phase_error_model.BarePhi.param_init">
+<span class="sig-name descname"><span class="pre">param_init</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.BarePhi.param_init" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.autofocus.phase_error_model.BarePhi.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.BarePhi.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.phase_error_model.BarePhi.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.BarePhi.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.autofocus.phase_error_model.DctPhi">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.autofocus.phase_error_model.</code><code class="sig-name descname">DctPhi</code><span class="sig-paren">(</span><em class="sig-param">Na</em>, <em class="sig-param">Nr</em>, <em class="sig-param">Nb=None</em>, <em class="sig-param">ca=None</em>, <em class="sig-param">cr=None</em>, <em class="sig-param">Pa=4</em>, <em class="sig-param">Pr=4</em>, <em class="sig-param">shift=False</em>, <em class="sig-param">trainable=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.DctPhi" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.phase_error_model.DctPhi">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.autofocus.phase_error_model.</span></span><span class="sig-name descname"><span class="pre">DctPhi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Na</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ca</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Pa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Pr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trainable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.DctPhi" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.autofocus.phase_error_model.DctPhi.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.DctPhi.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.phase_error_model.DctPhi.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.DctPhi.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -461,30 +463,30 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="torchsar.module.autofocus.phase_error_model.DctPhi.get_param">
-<code class="sig-name descname">get_param</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.DctPhi.get_param" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.phase_error_model.DctPhi.get_param">
+<span class="sig-name descname"><span class="pre">get_param</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.DctPhi.get_param" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="torchsar.module.autofocus.phase_error_model.DctPhi.param_init">
-<code class="sig-name descname">param_init</code><span class="sig-paren">(</span><em class="sig-param">ca=None</em>, <em class="sig-param">cr=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.DctPhi.param_init" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.phase_error_model.DctPhi.param_init">
+<span class="sig-name descname"><span class="pre">param_init</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ca</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.DctPhi.param_init" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.autofocus.phase_error_model.DctPhi.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.DctPhi.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.phase_error_model.DctPhi.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.DctPhi.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.autofocus.phase_error_model.PolyPhi">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.autofocus.phase_error_model.</code><code class="sig-name descname">PolyPhi</code><span class="sig-paren">(</span><em class="sig-param">Na</em>, <em class="sig-param">Nr</em>, <em class="sig-param">Nb=None</em>, <em class="sig-param">ca=None</em>, <em class="sig-param">cr=None</em>, <em class="sig-param">Ma=2</em>, <em class="sig-param">Mr=2</em>, <em class="sig-param">xa=None</em>, <em class="sig-param">xr=None</em>, <em class="sig-param">shift=False</em>, <em class="sig-param">trainable=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.PolyPhi" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.phase_error_model.PolyPhi">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.autofocus.phase_error_model.</span></span><span class="sig-name descname"><span class="pre">PolyPhi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Na</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ca</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Ma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trainable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.PolyPhi" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.autofocus.phase_error_model.PolyPhi.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.PolyPhi.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.phase_error_model.PolyPhi.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.PolyPhi.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -496,30 +498,30 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="torchsar.module.autofocus.phase_error_model.PolyPhi.get_param">
-<code class="sig-name descname">get_param</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.PolyPhi.get_param" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.phase_error_model.PolyPhi.get_param">
+<span class="sig-name descname"><span class="pre">get_param</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.PolyPhi.get_param" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="torchsar.module.autofocus.phase_error_model.PolyPhi.param_init">
-<code class="sig-name descname">param_init</code><span class="sig-paren">(</span><em class="sig-param">ca=None</em>, <em class="sig-param">cr=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.PolyPhi.param_init" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.phase_error_model.PolyPhi.param_init">
+<span class="sig-name descname"><span class="pre">param_init</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ca</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.PolyPhi.param_init" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.autofocus.phase_error_model.PolyPhi.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.PolyPhi.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.phase_error_model.PolyPhi.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.PolyPhi.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.autofocus.phase_error_model.SinPhi">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.autofocus.phase_error_model.</code><code class="sig-name descname">SinPhi</code><span class="sig-paren">(</span><em class="sig-param">Na</em>, <em class="sig-param">Nr</em>, <em class="sig-param">Nb=None</em>, <em class="sig-param">aa=None</em>, <em class="sig-param">fa=None</em>, <em class="sig-param">ar=None</em>, <em class="sig-param">fr=None</em>, <em class="sig-param">shift=False</em>, <em class="sig-param">trainable=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.SinPhi" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.phase_error_model.SinPhi">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.autofocus.phase_error_model.</span></span><span class="sig-name descname"><span class="pre">SinPhi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Na</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trainable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.SinPhi" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.autofocus.phase_error_model.SinPhi.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.SinPhi.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.phase_error_model.SinPhi.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.SinPhi.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -531,19 +533,19 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="method">
-<dt id="torchsar.module.autofocus.phase_error_model.SinPhi.get_param">
-<code class="sig-name descname">get_param</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.SinPhi.get_param" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.phase_error_model.SinPhi.get_param">
+<span class="sig-name descname"><span class="pre">get_param</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.SinPhi.get_param" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="torchsar.module.autofocus.phase_error_model.SinPhi.param_init">
-<code class="sig-name descname">param_init</code><span class="sig-paren">(</span><em class="sig-param">fa=None</em>, <em class="sig-param">aa=None</em>, <em class="sig-param">fr=None</em>, <em class="sig-param">ar=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.SinPhi.param_init" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.phase_error_model.SinPhi.param_init">
+<span class="sig-name descname"><span class="pre">param_init</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.SinPhi.param_init" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.autofocus.phase_error_model.SinPhi.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.SinPhi.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.autofocus.phase_error_model.SinPhi.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.autofocus.phase_error_model.SinPhi.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>

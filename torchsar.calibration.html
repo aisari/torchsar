@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>torchsar.calibration package &mdash; TorchSAR 1.0 documentation</title>
@@ -13,7 +14,9 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
 
   
@@ -28,12 +31,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"></script>
         <script src="_static/katex_autorenderer.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
@@ -89,7 +92,9 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="setup.html">setup module</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="torchsar.autofocus.html">torchsar.autofocus package</a></li>
@@ -104,6 +109,7 @@
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sarcfg.html">torchsar.sarcfg package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html">torchsar.sharing package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.simulation.html">torchsar.simulation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sparse.html">torchsar.sparse package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a></li>
 </ul>
 </li>
@@ -181,16 +187,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="torchsar-calibration-package">
+  <section id="torchsar-calibration-package">
 <h1>torchsar.calibration package<a class="headerlink" href="#torchsar-calibration-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="submodules">
+<section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-torchsar.calibration.channel_process">
+</section>
+<section id="module-torchsar.calibration.channel_process">
 <span id="torchsar-calibration-channel-process-module"></span><h2>torchsar.calibration.channel_process module<a class="headerlink" href="#module-torchsar.calibration.channel_process" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.calibration.channel_process.iq_correct">
-<code class="sig-prename descclassname">torchsar.calibration.channel_process.</code><code class="sig-name descname">iq_correct</code><span class="sig-paren">(</span><em class="sig-param">Sr</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.calibration.channel_process.iq_correct" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.calibration.channel_process.iq_correct">
+<span class="sig-prename descclassname"><span class="pre">torchsar.calibration.channel_process.</span></span><span class="sig-name descname"><span class="pre">iq_correct</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.calibration.channel_process.iq_correct" title="Permalink to this definition">¶</a></dt>
 <dd><p>IQ Correction performs the I Q data correction</p>
 <p>IQ Correction performs the I Q data correction</p>
 <ul class="simple">
@@ -213,12 +219,12 @@ Flag : dict</p>
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.calibration.multilook_process">
+</section>
+<section id="module-torchsar.calibration.multilook_process">
 <span id="torchsar-calibration-multilook-process-module"></span><h2>torchsar.calibration.multilook_process module<a class="headerlink" href="#module-torchsar.calibration.multilook_process" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.calibration.multilook_process.multilook_spatial">
-<code class="sig-prename descclassname">torchsar.calibration.multilook_process.</code><code class="sig-name descname">multilook_spatial</code><span class="sig-paren">(</span><em class="sig-param">Sslc</em>, <em class="sig-param">nlooks</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.calibration.multilook_process.multilook_spatial" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.calibration.multilook_process.multilook_spatial">
+<span class="sig-prename descclassname"><span class="pre">torchsar.calibration.multilook_process.</span></span><span class="sig-name descname"><span class="pre">multilook_spatial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sslc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nlooks</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.calibration.multilook_process.multilook_spatial" title="Permalink to this definition">¶</a></dt>
 <dd><p>spatial multilook processing</p>
 <p>spatial averaging in azimuth or range direction.</p>
 <dl class="field-list simple">
@@ -237,11 +243,11 @@ Flag : dict</p>
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.calibration">
+</section>
+<section id="module-torchsar.calibration">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-torchsar.calibration" title="Permalink to this headline">¶</a></h2>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

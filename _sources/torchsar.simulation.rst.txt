@@ -68,7 +68,6 @@ torchsar.simulation.simulation\_time\_domain module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

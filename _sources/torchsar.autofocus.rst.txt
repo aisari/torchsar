@@ -52,7 +52,6 @@ torchsar.autofocus.phase\_gradient module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

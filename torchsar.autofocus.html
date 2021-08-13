@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>torchsar.autofocus package &mdash; TorchSAR 1.0 documentation</title>
@@ -13,7 +14,9 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
 
   
@@ -28,12 +31,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"></script>
         <script src="_static/katex_autorenderer.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
@@ -89,7 +92,9 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="setup.html">setup module</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">torchsar.autofocus package</a></li>
@@ -104,6 +109,7 @@
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sarcfg.html">torchsar.sarcfg package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html">torchsar.sharing package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.simulation.html">torchsar.simulation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sparse.html">torchsar.sparse package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a></li>
 </ul>
 </li>
@@ -181,16 +187,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="torchsar-autofocus-package">
+  <section id="torchsar-autofocus-package">
 <h1>torchsar.autofocus package<a class="headerlink" href="#torchsar-autofocus-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="submodules">
+<section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-torchsar.autofocus.focusing">
+</section>
+<section id="module-torchsar.autofocus.focusing">
 <span id="torchsar-autofocus-focusing-module"></span><h2>torchsar.autofocus.focusing module<a class="headerlink" href="#module-torchsar.autofocus.focusing" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.autofocus.focusing.defocus">
-<code class="sig-prename descclassname">torchsar.autofocus.focusing.</code><code class="sig-name descname">defocus</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">pa=None</em>, <em class="sig-param">pr=None</em>, <em class="sig-param">isfft=True</em>, <em class="sig-param">ftshift=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.focusing.defocus" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.autofocus.focusing.defocus">
+<span class="sig-prename descclassname"><span class="pre">torchsar.autofocus.focusing.</span></span><span class="sig-name descname"><span class="pre">defocus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isfft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.focusing.defocus" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defocus image with given phase error</p>
 <p>Defocus image in azimuth by</p>
 <div class="math">
@@ -224,9 +230,9 @@ the focused pixel.</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.autofocus.focusing.focus">
-<code class="sig-prename descclassname">torchsar.autofocus.focusing.</code><code class="sig-name descname">focus</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">pa=None</em>, <em class="sig-param">pr=None</em>, <em class="sig-param">isfft=True</em>, <em class="sig-param">ftshift=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.focusing.focus" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.autofocus.focusing.focus">
+<span class="sig-prename descclassname"><span class="pre">torchsar.autofocus.focusing.</span></span><span class="sig-name descname"><span class="pre">focus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isfft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.focusing.focus" title="Permalink to this definition">¶</a></dt>
 <dd><p>Focus image with given phase error</p>
 <p>Focus image in azimuth by</p>
 <div class="math">
@@ -260,17 +266,17 @@ the focused pixel.</p>
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.autofocus.fourier_domain_optim">
+</section>
+<section id="module-torchsar.autofocus.fourier_domain_optim">
 <span id="torchsar-autofocus-fourier-domain-optim-module"></span><h2>torchsar.autofocus.fourier_domain_optim module<a class="headerlink" href="#module-torchsar.autofocus.fourier_domain_optim" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.autofocus.fourier_domain_optim.af_ffo">
-<code class="sig-prename descclassname">torchsar.autofocus.fourier_domain_optim.</code><code class="sig-name descname">af_ffo</code><span class="sig-paren">(</span><em class="sig-param">g</em>, <em class="sig-param">w=None</em>, <em class="sig-param">p=2</em>, <em class="sig-param">niter=10</em>, <em class="sig-param">eta=0.5</em>, <em class="sig-param">tol=0.01</em>, <em class="sig-param">ftshift=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.fourier_domain_optim.af_ffo" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.autofocus.fourier_domain_optim.af_ffo">
+<span class="sig-prename descclassname"><span class="pre">torchsar.autofocus.fourier_domain_optim.</span></span><span class="sig-name descname"><span class="pre">af_ffo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">niter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.01</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.fourier_domain_optim.af_ffo" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.autofocus.fourier_domain_optim.af_ffo_sm">
-<code class="sig-prename descclassname">torchsar.autofocus.fourier_domain_optim.</code><code class="sig-name descname">af_ffo_sm</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">p=2</em>, <em class="sig-param">niter=10</em>, <em class="sig-param">delta=None</em>, <em class="sig-param">toli=0.01</em>, <em class="sig-param">tolo=0.01</em>, <em class="sig-param">ftshift=True</em>, <em class="sig-param">islog=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.fourier_domain_optim.af_ffo_sm" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.autofocus.fourier_domain_optim.af_ffo_sm">
+<span class="sig-prename descclassname"><span class="pre">torchsar.autofocus.fourier_domain_optim.</span></span><span class="sig-name descname"><span class="pre">af_ffo_sm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">niter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">toli</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.01</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.01</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">islog</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.fourier_domain_optim.af_ffo_sm" title="Permalink to this definition">¶</a></dt>
 <dd><p>Stage-by-Stage minimum entropy</p>
 <p>[1] Morrison Jr, Robert Lee; Autofocus, Entropy-based (2002): Entropy-based autofocus for synthetic aperture radar.</p>
 <dl class="field-list simple">
@@ -288,12 +294,12 @@ the focused pixel.</p>
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.autofocus.maximum_contrast">
+</section>
+<section id="module-torchsar.autofocus.maximum_contrast">
 <span id="torchsar-autofocus-maximum-contrast-module"></span><h2>torchsar.autofocus.maximum_contrast module<a class="headerlink" href="#module-torchsar.autofocus.maximum_contrast" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.autofocus.maximum_contrast.mcaf_sm">
-<code class="sig-prename descclassname">torchsar.autofocus.maximum_contrast.</code><code class="sig-name descname">mcaf_sm</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">phi=None</em>, <em class="sig-param">niter=10</em>, <em class="sig-param">tol=0.0001</em>, <em class="sig-param">eta=0.1</em>, <em class="sig-param">method='N-MCA'</em>, <em class="sig-param">selscat=False</em>, <em class="sig-param">axis=-2</em>, <em class="sig-param">ftshift=True</em>, <em class="sig-param">islog=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.maximum_contrast.mcaf_sm" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.autofocus.maximum_contrast.mcaf_sm">
+<span class="sig-prename descclassname"><span class="pre">torchsar.autofocus.maximum_contrast.</span></span><span class="sig-name descname"><span class="pre">mcaf_sm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">niter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0001</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'N-MCA'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">selscat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">islog</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.maximum_contrast.mcaf_sm" title="Permalink to this definition">¶</a></dt>
 <dd><p>Contrast based autofocus</p>
 <p>Maximum-Contrast based Autofocus (MCA)</p>
 <dl class="field-list simple">
@@ -322,12 +328,12 @@ the focused pixel.</p>
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.autofocus.minimum_entropy">
+</section>
+<section id="module-torchsar.autofocus.minimum_entropy">
 <span id="torchsar-autofocus-minimum-entropy-module"></span><h2>torchsar.autofocus.minimum_entropy module<a class="headerlink" href="#module-torchsar.autofocus.minimum_entropy" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.autofocus.minimum_entropy.meaf_sm">
-<code class="sig-prename descclassname">torchsar.autofocus.minimum_entropy.</code><code class="sig-name descname">meaf_sm</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">phi=None</em>, <em class="sig-param">niter=10</em>, <em class="sig-param">tol=0.0001</em>, <em class="sig-param">eta=0.1</em>, <em class="sig-param">method='N-MEA'</em>, <em class="sig-param">selscat=False</em>, <em class="sig-param">axis=-2</em>, <em class="sig-param">ftshift=True</em>, <em class="sig-param">islog=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.minimum_entropy.meaf_sm" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.autofocus.minimum_entropy.meaf_sm">
+<span class="sig-prename descclassname"><span class="pre">torchsar.autofocus.minimum_entropy.</span></span><span class="sig-name descname"><span class="pre">meaf_sm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">niter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0001</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'N-MEA'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">selscat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">islog</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.minimum_entropy.meaf_sm" title="Permalink to this definition">¶</a></dt>
 <dd><p>Entropy based autofocus</p>
 <p>Minimum-Entropy based Autofocus (MEA)</p>
 <dl class="field-list simple">
@@ -349,7 +355,15 @@ the focused pixel.</p>
 <li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – Compensation axis.</p></li>
 <li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Does shift zero frequency to center?</p></li>
 <li><p><strong>islog</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Does print log info.</p></li>
-<li><p><strong>[</strong><strong>1</strong><strong>] </strong><strong>Zhang S</strong><strong> , </strong><strong>Liu Y</strong><strong> , </strong><strong>Li X . Fast Entropy Minimization Based Autofocusing Technique for ISAR Imaging</strong><strong>[</strong><strong>J</strong><strong>]</strong><strong> IEEE Transactions on Signal Processing</strong><strong>, </strong><strong>2015</strong><strong>, </strong><strong>63</strong> (<em>see</em>) – 3425-3434.
+<li><p><strong>[</strong><strong>1</strong><strong>] </strong><strong>Zhang S</strong> (<em>see</em>) – 3425-3434.
+[2] Zeng T , Wang R , Li F . SAR Image Autofocus Utilizing Minimum-Entropy Criterion[J]. IEEE Geoence &amp; Remote Sensing Letters, 2013, 10(6):1552-1556.</p></li>
+<li><p><strong>Y</strong> (<em>Liu</em>) – 3425-3434.
+[2] Zeng T , Wang R , Li F . SAR Image Autofocus Utilizing Minimum-Entropy Criterion[J]. IEEE Geoence &amp; Remote Sensing Letters, 2013, 10(6):1552-1556.</p></li>
+<li><p><strong>X . Fast Entropy Minimization Based Autofocusing Technique for ISAR Imaging</strong><strong>[</strong><strong>J</strong><strong>]</strong><strong> IEEE Transactions on Signal Processing</strong> (<em>Li</em>) – 3425-3434.
+[2] Zeng T , Wang R , Li F . SAR Image Autofocus Utilizing Minimum-Entropy Criterion[J]. IEEE Geoence &amp; Remote Sensing Letters, 2013, 10(6):1552-1556.</p></li>
+<li><p><strong>2015</strong> (<em>13</em>) – 3425-3434.
+[2] Zeng T , Wang R , Li F . SAR Image Autofocus Utilizing Minimum-Entropy Criterion[J]. IEEE Geoence &amp; Remote Sensing Letters, 2013, 10(6):1552-1556.</p></li>
+<li><p><strong>63</strong> (<em>13</em>) – 3425-3434.
 [2] Zeng T , Wang R , Li F . SAR Image Autofocus Utilizing Minimum-Entropy Criterion[J]. IEEE Geoence &amp; Remote Sensing Letters, 2013, 10(6):1552-1556.</p></li>
 </ul>
 </dd>
@@ -362,9 +376,9 @@ the focused pixel.</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.autofocus.minimum_entropy.meaf_ssa_sm">
-<code class="sig-prename descclassname">torchsar.autofocus.minimum_entropy.</code><code class="sig-name descname">meaf_ssa_sm</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">niter=10</em>, <em class="sig-param">delta=None</em>, <em class="sig-param">toli=0.01</em>, <em class="sig-param">tolo=0.01</em>, <em class="sig-param">ftshift=True</em>, <em class="sig-param">islog=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.minimum_entropy.meaf_ssa_sm" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.autofocus.minimum_entropy.meaf_ssa_sm">
+<span class="sig-prename descclassname"><span class="pre">torchsar.autofocus.minimum_entropy.</span></span><span class="sig-name descname"><span class="pre">meaf_ssa_sm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">niter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">toli</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.01</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.01</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">islog</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.minimum_entropy.meaf_ssa_sm" title="Permalink to this definition">¶</a></dt>
 <dd><p>Stage-by-Stage minimum entropy</p>
 <p>[1] Morrison Jr, Robert Lee; Autofocus, Entropy-based (2002): Entropy-based autofocus for synthetic aperture radar.</p>
 <dl class="field-list simple">
@@ -382,16 +396,16 @@ the focused pixel.</p>
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.autofocus.phase_error_model">
+</section>
+<section id="module-torchsar.autofocus.phase_error_model">
 <span id="torchsar-autofocus-phase-error-model-module"></span><h2>torchsar.autofocus.phase_error_model module<a class="headerlink" href="#module-torchsar.autofocus.phase_error_model" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="torchsar.autofocus.phase_error_model.PolyPhaseErrorGenerator">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.autofocus.phase_error_model.</code><code class="sig-name descname">PolyPhaseErrorGenerator</code><span class="sig-paren">(</span><em class="sig-param">carange=None</em>, <em class="sig-param">crrange=None</em>, <em class="sig-param">seed=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_error_model.PolyPhaseErrorGenerator" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.autofocus.phase_error_model.PolyPhaseErrorGenerator">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.autofocus.phase_error_model.</span></span><span class="sig-name descname"><span class="pre">PolyPhaseErrorGenerator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">carange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_error_model.PolyPhaseErrorGenerator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<dl class="method">
-<dt id="torchsar.autofocus.phase_error_model.PolyPhaseErrorGenerator.mkpec">
-<code class="sig-name descname">mkpec</code><span class="sig-paren">(</span><em class="sig-param">n</em>, <em class="sig-param">seed=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_error_model.PolyPhaseErrorGenerator.mkpec" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.autofocus.phase_error_model.PolyPhaseErrorGenerator.mkpec">
+<span class="sig-name descname"><span class="pre">mkpec</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_error_model.PolyPhaseErrorGenerator.mkpec" title="Permalink to this definition">¶</a></dt>
 <dd><p>Make phase error</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -411,9 +425,9 @@ the focused pixel.</p>
 
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.autofocus.phase_error_model.convert_ppec">
-<code class="sig-prename descclassname">torchsar.autofocus.phase_error_model.</code><code class="sig-name descname">convert_ppec</code><span class="sig-paren">(</span><em class="sig-param">cs</em>, <em class="sig-param">degs=None</em>, <em class="sig-param">mode='fftfreq-&gt;2fftfreq'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_error_model.convert_ppec" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.autofocus.phase_error_model.convert_ppec">
+<span class="sig-prename descclassname"><span class="pre">torchsar.autofocus.phase_error_model.</span></span><span class="sig-name descname"><span class="pre">convert_ppec</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'fftfreq-&gt;2fftfreq'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_error_model.convert_ppec" title="Permalink to this definition">¶</a></dt>
 <dd><p>convert polynominal phase error</p>
 <p>Convert polynominal phase error.</p>
 <dl class="field-list simple">
@@ -436,9 +450,9 @@ the focused pixel.</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.autofocus.phase_error_model.dctpe">
-<code class="sig-prename descclassname">torchsar.autofocus.phase_error_model.</code><code class="sig-name descname">dctpe</code><span class="sig-paren">(</span><em class="sig-param">c</em>, <em class="sig-param">x</em>, <em class="sig-param">deg=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_error_model.dctpe" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.autofocus.phase_error_model.dctpe">
+<span class="sig-prename descclassname"><span class="pre">torchsar.autofocus.phase_error_model.</span></span><span class="sig-name descname"><span class="pre">dctpe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_error_model.dctpe" title="Permalink to this definition">¶</a></dt>
 <dd><p>compute phase error with DCT model</p>
 <p>compute phase error with DCT model</p>
 <div class="math">
@@ -468,9 +482,9 @@ where, <span class="math">\({\bf p}_n = [p_0, \cdots, p_M]^T\)</span>).</p></li>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.autofocus.phase_error_model.polype">
-<code class="sig-prename descclassname">torchsar.autofocus.phase_error_model.</code><code class="sig-name descname">polype</code><span class="sig-paren">(</span><em class="sig-param">c</em>, <em class="sig-param">x</em>, <em class="sig-param">deg=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_error_model.polype" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.autofocus.phase_error_model.polype">
+<span class="sig-prename descclassname"><span class="pre">torchsar.autofocus.phase_error_model.</span></span><span class="sig-name descname"><span class="pre">polype</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_error_model.polype" title="Permalink to this definition">¶</a></dt>
 <dd><p>compute phase error with polynominal model</p>
 <p>compute phase error with polynominal model</p>
 <dl class="field-list simple">
@@ -494,9 +508,9 @@ where, <span class="math">\({\bf p}_n = [p_2, \cdots, p_M]^T\)</span>).</p></li>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.autofocus.phase_error_model.ppeaxis">
-<code class="sig-prename descclassname">torchsar.autofocus.phase_error_model.</code><code class="sig-name descname">ppeaxis</code><span class="sig-paren">(</span><em class="sig-param">n</em>, <em class="sig-param">norm=True</em>, <em class="sig-param">shift=True</em>, <em class="sig-param">mode='fftfreq'</em>, <em class="sig-param">dtype=torch.float32</em>, <em class="sig-param">device='cpu'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_error_model.ppeaxis" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.autofocus.phase_error_model.ppeaxis">
+<span class="sig-prename descclassname"><span class="pre">torchsar.autofocus.phase_error_model.</span></span><span class="sig-name descname"><span class="pre">ppeaxis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'fftfreq'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">torch.float32</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cpu'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_error_model.ppeaxis" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the sample axis</p>
 <p>Return the sample frequencies axis.</p>
 <dl class="field-list simple">
@@ -520,9 +534,9 @@ using <code class="docutils literal notranslate"><span class="pre">'2fftfreq'</s
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.autofocus.phase_error_model.rmlpe">
-<code class="sig-prename descclassname">torchsar.autofocus.phase_error_model.</code><code class="sig-name descname">rmlpe</code><span class="sig-paren">(</span><em class="sig-param">phi</em>, <em class="sig-param">mode='poly'</em>, <em class="sig-param">deg=4</em>, <em class="sig-param">ftshift=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_error_model.rmlpe" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.autofocus.phase_error_model.rmlpe">
+<span class="sig-prename descclassname"><span class="pre">torchsar.autofocus.phase_error_model.</span></span><span class="sig-name descname"><span class="pre">rmlpe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">phi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'poly'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_error_model.rmlpe" title="Permalink to this definition">¶</a></dt>
 <dd><p>remove linear phase error</p>
 <p>Remove linear phase error based on linear fitting, the linear phase error
 will cause image shift.</p>
@@ -545,12 +559,12 @@ If <code class="xref py py-attr docutils literal notranslate"><span class="pre">
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.autofocus.phase_gradient">
+</section>
+<section id="module-torchsar.autofocus.phase_gradient">
 <span id="torchsar-autofocus-phase-gradient-module"></span><h2>torchsar.autofocus.phase_gradient module<a class="headerlink" href="#module-torchsar.autofocus.phase_gradient" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.autofocus.phase_gradient.pgaf_sm">
-<code class="sig-prename descclassname">torchsar.autofocus.phase_gradient.</code><code class="sig-name descname">pgaf_sm</code><span class="sig-paren">(</span><em class="sig-param">SI</em>, <em class="sig-param">nsar</em>, <em class="sig-param">nsub=None</em>, <em class="sig-param">windb=None</em>, <em class="sig-param">est='ML'</em>, <em class="sig-param">deg=4</em>, <em class="sig-param">niter=None</em>, <em class="sig-param">tol=1e-06</em>, <em class="sig-param">isplot=False</em>, <em class="sig-param">islog=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_gradient.pgaf_sm" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.autofocus.phase_gradient.pgaf_sm">
+<span class="sig-prename descclassname"><span class="pre">torchsar.autofocus.phase_gradient.</span></span><span class="sig-name descname"><span class="pre">pgaf_sm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">SI</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nsar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nsub</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">windb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">est</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ML'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">niter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-06</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isplot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">islog</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_gradient.pgaf_sm" title="Permalink to this definition">¶</a></dt>
 <dd><p>Phase gradient autofocus for stripmap SAR.</p>
 <p>Phase gradient autofocus for stripmap SAR.</p>
 <dl class="field-list simple">
@@ -585,9 +599,9 @@ phi (Tensor): Estimated phase error <span class="math">\({\phi}\in {\mathbb R}^{
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.autofocus.phase_gradient.pgaf_sm_1iter">
-<code class="sig-prename descclassname">torchsar.autofocus.phase_gradient.</code><code class="sig-name descname">pgaf_sm_1iter</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">windb=None</em>, <em class="sig-param">est='ML'</em>, <em class="sig-param">deg=4</em>, <em class="sig-param">axis=-2</em>, <em class="sig-param">isrmlpe=False</em>, <em class="sig-param">iscrct=False</em>, <em class="sig-param">isplot=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_gradient.pgaf_sm_1iter" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.autofocus.phase_gradient.pgaf_sm_1iter">
+<span class="sig-prename descclassname"><span class="pre">torchsar.autofocus.phase_gradient.</span></span><span class="sig-name descname"><span class="pre">pgaf_sm_1iter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">windb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">est</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ML'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isrmlpe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iscrct</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isplot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_gradient.pgaf_sm_1iter" title="Permalink to this definition">¶</a></dt>
 <dd><p>perform phase gradient autofocus 1 iter</p>
 <p>Perform phase gradient autofocus 1 iter as described in [1].</p>
 <p>revised for stripmap SAR</p>
@@ -630,21 +644,21 @@ phi (Tensor): Estimated phase error <span class="math">\(\phi\in {\mathbb R}^{N�
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.autofocus.phase_gradient.phase_correction">
-<code class="sig-prename descclassname">torchsar.autofocus.phase_gradient.</code><code class="sig-name descname">phase_correction</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">phi</em>, <em class="sig-param">nsub=None</em>, <em class="sig-param">axis=-2</em>, <em class="sig-param">ftshift=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_gradient.phase_correction" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.autofocus.phase_gradient.phase_correction">
+<span class="sig-prename descclassname"><span class="pre">torchsar.autofocus.phase_gradient.</span></span><span class="sig-name descname"><span class="pre">phase_correction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nsub</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_gradient.phase_correction" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.autofocus.phase_gradient.spotlight_width">
-<code class="sig-prename descclassname">torchsar.autofocus.phase_gradient.</code><code class="sig-name descname">spotlight_width</code><span class="sig-paren">(</span><em class="sig-param">H</em>, <em class="sig-param">BWa</em>, <em class="sig-param">Lsar</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_gradient.spotlight_width" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.autofocus.phase_gradient.spotlight_width">
+<span class="sig-prename descclassname"><span class="pre">torchsar.autofocus.phase_gradient.</span></span><span class="sig-name descname"><span class="pre">spotlight_width</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">H</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">BWa</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lsar</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_gradient.spotlight_width" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.autofocus">
+</section>
+<section id="module-torchsar.autofocus">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-torchsar.autofocus" title="Permalink to this headline">¶</a></h2>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

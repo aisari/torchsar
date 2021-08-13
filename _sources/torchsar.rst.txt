@@ -5,6 +5,7 @@ Subpackages
 -----------
 
 .. toctree::
+   :maxdepth: 4
 
    torchsar.autofocus
    torchsar.base
@@ -20,6 +21,17 @@ Subpackages
    torchsar.simulation
    torchsar.sparse
    torchsar.utils
+
+Submodules
+----------
+
+torchsar.version module
+-----------------------
+
+.. automodule:: torchsar.version
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
 Module contents
 ---------------

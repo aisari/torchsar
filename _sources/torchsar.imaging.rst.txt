@@ -12,7 +12,6 @@ torchsar.imaging.range\_doppler\_mftd module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

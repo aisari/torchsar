@@ -14,7 +14,9 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
 
   
@@ -29,12 +31,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"></script>
         <script src="_static/katex_autorenderer.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
@@ -88,7 +90,7 @@
               
             
             
-              <p><span class="caption-text">Contents:</span></p>
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
@@ -192,9 +194,9 @@
 </section>
 <section id="module-torchsar.misc.data">
 <span id="torchsar-misc-data-module"></span><h2>torchsar.misc.data module<a class="headerlink" href="#module-torchsar.misc.data" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.misc.data.format_data">
-<code class="sig-prename descclassname">torchsar.misc.data.</code><code class="sig-name descname">format_data</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">modefrom='chnl_last'</em>, <em class="sig-param">modeto='chnl_first'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.data.format_data" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.data.format_data">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.data.</span></span><span class="sig-name descname"><span class="pre">format_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modefrom</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'chnl_last'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modeto</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'chnl_first'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.data.format_data" title="Permalink to this definition">¶</a></dt>
 <dd><p>format data</p>
 <p>Format data to chanel first or chanel last.</p>
 <dl class="field-list simple">
@@ -222,9 +224,9 @@
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.data.sarread">
-<code class="sig-prename descclassname">torchsar.misc.data.</code><code class="sig-name descname">sarread</code><span class="sig-paren">(</span><em class="sig-param">file</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.data.sarread" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.data.sarread">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.data.</span></span><span class="sig-name descname"><span class="pre">sarread</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.data.sarread" title="Permalink to this definition">¶</a></dt>
 <dd><p>Read SAR file</p>
 <p>Read SAR file (<code class="docutils literal notranslate"><span class="pre">.pkl</span></code> or <code class="docutils literal notranslate"><span class="pre">.mat</span></code>) and returns SAR data and platform</p>
 <dl class="field-list simple">
@@ -242,9 +244,9 @@
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.data.sarstore">
-<code class="sig-prename descclassname">torchsar.misc.data.</code><code class="sig-name descname">sarstore</code><span class="sig-paren">(</span><em class="sig-param">sardata</em>, <em class="sig-param">sarplat</em>, <em class="sig-param">file</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.data.sarstore" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.data.sarstore">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.data.</span></span><span class="sig-name descname"><span class="pre">sarstore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sardata</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sarplat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.data.sarstore" title="Permalink to this definition">¶</a></dt>
 <dd><p>Read SAR file</p>
 <p>Store SAR data and platform to a file (<code class="docutils literal notranslate"><span class="pre">.pkl</span></code> , <code class="docutils literal notranslate"><span class="pre">.h5</span></code> or <code class="docutils literal notranslate"><span class="pre">.mat</span></code>)</p>
 <dl class="field-list simple">
@@ -267,14 +269,14 @@
 </section>
 <section id="module-torchsar.misc.draw_shapes">
 <span id="torchsar-misc-draw-shapes-module"></span><h2>torchsar.misc.draw_shapes module<a class="headerlink" href="#module-torchsar.misc.draw_shapes" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.misc.draw_shapes.draw_eclipse">
-<code class="sig-prename descclassname">torchsar.misc.draw_shapes.</code><code class="sig-name descname">draw_eclipse</code><span class="sig-paren">(</span><em class="sig-param">x, centroids, aradii, bradii, edgecolors=[255, 0, 0], linewidths=1, fillcolors=None, axes=(-2, -1)</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.draw_shapes.draw_eclipse" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.draw_shapes.draw_eclipse">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.draw_shapes.</span></span><span class="sig-name descname"><span class="pre">draw_eclipse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">centroids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aradii</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bradii</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edgecolors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[255,</span> <span class="pre">0,</span> <span class="pre">0]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">linewidths</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fillcolors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(-</span> <span class="pre">2,</span> <span class="pre">-</span> <span class="pre">1)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.draw_shapes.draw_eclipse" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.draw_shapes.draw_rectangle">
-<code class="sig-prename descclassname">torchsar.misc.draw_shapes.</code><code class="sig-name descname">draw_rectangle</code><span class="sig-paren">(</span><em class="sig-param">x, rects, edgecolors=[[255, 0, 0]], linewidths=[1], fillcolors=[None], axes=(-3, -2)</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.draw_shapes.draw_rectangle" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.draw_shapes.draw_rectangle">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.draw_shapes.</span></span><span class="sig-name descname"><span class="pre">draw_rectangle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rects</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edgecolors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[[255,</span> <span class="pre">0,</span> <span class="pre">0]]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">linewidths</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[1]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fillcolors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[None]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(-</span> <span class="pre">3,</span> <span class="pre">-</span> <span class="pre">2)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.draw_shapes.draw_rectangle" title="Permalink to this definition">¶</a></dt>
 <dd><p>Draw rectangles in a tensor</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -293,9 +295,9 @@
 </section>
 <section id="module-torchsar.misc.mapping_operation">
 <span id="torchsar-misc-mapping-operation-module"></span><h2>torchsar.misc.mapping_operation module<a class="headerlink" href="#module-torchsar.misc.mapping_operation" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.misc.mapping_operation.mapping">
-<code class="sig-prename descclassname">torchsar.misc.mapping_operation.</code><code class="sig-name descname">mapping</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">drange=(0.0</em>, <em class="sig-param">255.0)</em>, <em class="sig-param">mode='amplitude'</em>, <em class="sig-param">method='2Sigma'</em>, <em class="sig-param">odtype='auto'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.mapping_operation.mapping" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.mapping_operation.mapping">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.mapping_operation.</span></span><span class="sig-name descname"><span class="pre">mapping</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.0,</span> <span class="pre">255.0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'amplitude'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'2Sigma'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'auto'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.mapping_operation.mapping" title="Permalink to this definition">¶</a></dt>
 <dd><p>convert to image</p>
 <p>Convert data to image data <span class="math">\(\bm X\)</span> with dynamic range <span class="math">\(d=[{\rm min}({\bm X}), {\rm max}({\bm X})]\)</span>.</p>
 <dl class="field-list simple">
@@ -306,7 +308,7 @@
 <li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – data mode in <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code>, <code class="docutils literal notranslate"><span class="pre">'amplitude'</span></code> (default) or <code class="docutils literal notranslate"><span class="pre">'power'</span></code>.</p></li>
 <li><p><strong>method</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – converting method, surpported values are <code class="docutils literal notranslate"><span class="pre">'1Sigma'</span></code>, <code class="docutils literal notranslate"><span class="pre">'2Sigma'</span></code>, <code class="docutils literal notranslate"><span class="pre">'3Sigma'</span></code>
 (the default is ‘2Sigma’, which means two-sigma mapping)</p></li>
-<li><p><strong>odtype</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>None... }</em><em>, </em><em>optional</em>) – output data type, supportted are <code class="docutils literal notranslate"><span class="pre">'auto'</span></code> (auto infer, default),
+<li><p><strong>odtype</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>...</em><em> }</em><em>, </em><em>optional</em>) – output data type, supportted are <code class="docutils literal notranslate"><span class="pre">'auto'</span></code> (auto infer, default),
 or torch tensor’s dtype string.
 If the type of <code class="xref py py-attr docutils literal notranslate"><span class="pre">odtype</span></code> is not string, the output data type is <code class="docutils literal notranslate"><span class="pre">'th.float32'</span></code>.</p></li>
 </ul>
@@ -323,9 +325,9 @@ If the type of <code class="xref py py-attr docutils literal notranslate"><span 
 </section>
 <section id="module-torchsar.misc.noising">
 <span id="torchsar-misc-noising-module"></span><h2>torchsar.misc.noising module<a class="headerlink" href="#module-torchsar.misc.noising" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.misc.noising.awgn">
-<code class="sig-prename descclassname">torchsar.misc.noising.</code><code class="sig-name descname">awgn</code><span class="sig-paren">(</span><em class="sig-param">sig</em>, <em class="sig-param">snr=30</em>, <em class="sig-param">peak=1</em>, <em class="sig-param">pmode='db'</em>, <em class="sig-param">measMode='measured'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.noising.awgn" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.noising.awgn">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.noising.</span></span><span class="sig-name descname"><span class="pre">awgn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">snr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">peak</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pmode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'db'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'measured'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.noising.awgn" title="Permalink to this definition">¶</a></dt>
 <dd><p>AWGN Add white Gaussian noise to a signal.</p>
 <p>Y = AWGN(X,snr) adds white Gaussian noise to X.  The snr is in dB.
 The power of X is assumed to be 0 dBW.  If X is complex, then
@@ -355,9 +357,9 @@ AWGN adds complex noise.</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.noising.imnoise">
-<code class="sig-prename descclassname">torchsar.misc.noising.</code><code class="sig-name descname">imnoise</code><span class="sig-paren">(</span><em class="sig-param">img</em>, <em class="sig-param">noise='wgn'</em>, <em class="sig-param">snr=30</em>, <em class="sig-param">peak=None</em>, <em class="sig-param">fmt='chnllast'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.noising.imnoise" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.noising.imnoise">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.noising.</span></span><span class="sig-name descname"><span class="pre">imnoise</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'wgn'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">snr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">peak</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'chnllast'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.noising.imnoise" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add noise to image</p>
 <p>Add noise to image</p>
 <dl class="field-list simple">
@@ -379,9 +381,9 @@ AWGN adds complex noise.</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.noising.matnoise">
-<code class="sig-prename descclassname">torchsar.misc.noising.</code><code class="sig-name descname">matnoise</code><span class="sig-paren">(</span><em class="sig-param">mat</em>, <em class="sig-param">noise='wgn'</em>, <em class="sig-param">snr=30</em>, <em class="sig-param">peak='maxv'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.noising.matnoise" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.noising.matnoise">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.noising.</span></span><span class="sig-name descname"><span class="pre">matnoise</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'wgn'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">snr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">peak</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'maxv'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.noising.matnoise" title="Permalink to this definition">¶</a></dt>
 <dd><p>add noise to an matrix</p>
 <p>Add noise to an matrix (real or complex)</p>
 <dl class="field-list simple">
@@ -402,9 +404,9 @@ AWGN adds complex noise.</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.noising.wgn">
-<code class="sig-prename descclassname">torchsar.misc.noising.</code><code class="sig-name descname">wgn</code><span class="sig-paren">(</span><em class="sig-param">shape</em>, <em class="sig-param">p</em>, <em class="sig-param">peak=1</em>, <em class="sig-param">pmode='dbw'</em>, <em class="sig-param">dtype='real'</em>, <em class="sig-param">seed=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.noising.wgn" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.noising.wgn">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.noising.</span></span><span class="sig-name descname"><span class="pre">wgn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">peak</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pmode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'dbw'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'real'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.noising.wgn" title="Permalink to this definition">¶</a></dt>
 <dd><p>WGN Generate white Gaussian noise.</p>
 <p>Y = WGN((M,N),P) generates an M-by-N matrix of white Gaussian noise. P
 specifies the power of the output noise in dBW. The unit of measure for
@@ -433,9 +435,9 @@ assumed that there is a load of 1 Ohm.</p>
 </section>
 <section id="module-torchsar.misc.sampling">
 <span id="torchsar-misc-sampling-module"></span><h2>torchsar.misc.sampling module<a class="headerlink" href="#module-torchsar.misc.sampling" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.misc.sampling.dnsampling">
-<code class="sig-prename descclassname">torchsar.misc.sampling.</code><code class="sig-name descname">dnsampling</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">ratio=1.0</em>, <em class="sig-param">axis=-1</em>, <em class="sig-param">smode='uniform'</em>, <em class="sig-param">omode='discard'</em>, <em class="sig-param">seed=None</em>, <em class="sig-param">extra=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sampling.dnsampling" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.sampling.dnsampling">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.sampling.</span></span><span class="sig-name descname"><span class="pre">dnsampling</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ratio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'uniform'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">omode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'discard'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sampling.dnsampling" title="Permalink to this definition">¶</a></dt>
 <dd><p>Summary</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -464,14 +466,14 @@ assumed that there is a load of 1 Ohm.</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.sampling.patch2tensor">
-<code class="sig-prename descclassname">torchsar.misc.sampling.</code><code class="sig-name descname">patch2tensor</code><span class="sig-paren">(</span><em class="sig-param">p</em>, <em class="sig-param">size=(256</em>, <em class="sig-param">256)</em>, <em class="sig-param">axis=(1</em>, <em class="sig-param">2)</em>, <em class="sig-param">mode='nfirst'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sampling.patch2tensor" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.sampling.patch2tensor">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.sampling.</span></span><span class="sig-name descname"><span class="pre">patch2tensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(256,</span> <span class="pre">256)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(1,</span> <span class="pre">2)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'nfirst'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sampling.patch2tensor" title="Permalink to this definition">¶</a></dt>
 <dd><p>merge patch to a tensor</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>p</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#type" title="(in Python v3.9)"><em>type</em></a>) – A tensor of patches.</p></li>
+<li><p><strong>p</strong> (<em>Tensor</em>) – A tensor of patches.</p></li>
 <li><p><strong>size</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><em>tuple</em></a><em>, </em><em>optional</em>) – Merged tensor size in the dimension (the default is (256, 256)).</p></li>
 <li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><em>tuple</em></a><em>, </em><em>optional</em>) – Merged axis of patch (the default is (1, 2))</p></li>
 <li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – Patch mode <code class="docutils literal notranslate"><span class="pre">'nfirst'</span></code> or <code class="docutils literal notranslate"><span class="pre">'nlast'</span></code> (the default is ‘nfirst’,
@@ -487,9 +489,38 @@ which means the first dimension is the number of patches)</p></li>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.sampling.sample_tensor">
-<code class="sig-prename descclassname">torchsar.misc.sampling.</code><code class="sig-name descname">sample_tensor</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">n</em>, <em class="sig-param">axis=0</em>, <em class="sig-param">groups=1</em>, <em class="sig-param">mode='sequentially'</em>, <em class="sig-param">seed=None</em>, <em class="sig-param">extra=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sampling.sample_tensor" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.sampling.read_samples">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.sampling.</span></span><span class="sig-name descname"><span class="pre">read_samples</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datafiles</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[['SI',</span> <span class="pre">'ca',</span> <span class="pre">'cr']]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nsamples</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[10]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[1]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'sequentially'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sampling.read_samples" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read samples</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>datafiles</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a>) – list of path strings</p></li>
+<li><p><strong>keys</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em>, </em><em>optional</em>) – data keys to be read</p></li>
+<li><p><strong>nsamples</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em>, </em><em>optional</em>) – number of samples for each data file</p></li>
+<li><p><strong>groups</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em>, </em><em>optional</em>) – number of groups in each data file</p></li>
+<li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – sampling mode for all datafiles</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – sampling axis for all datafiles</p></li>
+<li><p><strong>parts</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – number of parts (split samples into some parts)</p></li>
+<li><p><strong>seed</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – the seed for random stream</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>samples</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tensor</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.9)"><strong>ValueError</strong></a> – <code class="xref py py-attr docutils literal notranslate"><span class="pre">nsamples</span></code> should be large enough</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.sampling.sample_tensor">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.sampling.</span></span><span class="sig-name descname"><span class="pre">sample_tensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'sequentially'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sampling.sample_tensor" title="Permalink to this definition">¶</a></dt>
 <dd><p>sample a tensor</p>
 <p>Sample a tensor sequentially/uniformly/randomly.</p>
 <dl class="field-list simple">
@@ -551,9 +582,9 @@ idx (list): Sampled indexes, if <code class="xref py py-attr docutils literal no
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.sampling.shuffle_tensor">
-<code class="sig-prename descclassname">torchsar.misc.sampling.</code><code class="sig-name descname">shuffle_tensor</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">axis=0</em>, <em class="sig-param">groups=1</em>, <em class="sig-param">mode='inter'</em>, <em class="sig-param">seed=None</em>, <em class="sig-param">extra=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sampling.shuffle_tensor" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.sampling.shuffle_tensor">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.sampling.</span></span><span class="sig-name descname"><span class="pre">shuffle_tensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'inter'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sampling.shuffle_tensor" title="Permalink to this definition">¶</a></dt>
 <dd><p>shuffle a tensor</p>
 <p>Shuffle a tensor randomly.</p>
 <dl class="field-list simple">
@@ -609,9 +640,9 @@ idx (list): Shuffled indexes, if <code class="xref py py-attr docutils literal n
 </div>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.sampling.slidegrid">
-<code class="sig-prename descclassname">torchsar.misc.sampling.</code><code class="sig-name descname">slidegrid</code><span class="sig-paren">(</span><em class="sig-param">start</em>, <em class="sig-param">stop</em>, <em class="sig-param">step</em>, <em class="sig-param">shake=0</em>, <em class="sig-param">n=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sampling.slidegrid" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.sampling.slidegrid">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.sampling.</span></span><span class="sig-name descname"><span class="pre">slidegrid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shake</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sampling.slidegrid" title="Permalink to this definition">¶</a></dt>
 <dd><p>generates sliding grid indexes</p>
 <p>Generates <code class="xref py py-attr docutils literal notranslate"><span class="pre">n</span></code> sliding grid indexes from <code class="xref py py-attr docutils literal notranslate"><span class="pre">start</span></code> to <code class="xref py py-attr docutils literal notranslate"><span class="pre">stop</span></code>
 with step size <code class="xref py py-attr docutils literal notranslate"><span class="pre">step</span></code>.</p>
@@ -636,9 +667,9 @@ if positive, add a positive shake, if negative, add a negative.</p></li>
 <p>see <code class="xref py py-func docutils literal notranslate"><span class="pre">randperm()</span></code>, <code class="xref py py-func docutils literal notranslate"><span class="pre">randgrid()</span></code>.</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.sampling.split_tensor">
-<code class="sig-prename descclassname">torchsar.misc.sampling.</code><code class="sig-name descname">split_tensor</code><span class="sig-paren">(</span><em class="sig-param">x, ratios=[0.7, 0.2, 0.1], axis=0, shuffle=False, seed=None, extra=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sampling.split_tensor" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.sampling.split_tensor">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.sampling.</span></span><span class="sig-name descname"><span class="pre">split_tensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ratios</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[0.7,</span> <span class="pre">0.2,</span> <span class="pre">0.1]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shuffle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sampling.split_tensor" title="Permalink to this definition">¶</a></dt>
 <dd><p>split tensor</p>
 <p>split a tensor into some parts.</p>
 <dl class="field-list simple">
@@ -661,9 +692,9 @@ if positive, add a positive shake, if negative, add a negative.</p></li>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.sampling.tensor2patch">
-<code class="sig-prename descclassname">torchsar.misc.sampling.</code><code class="sig-name descname">tensor2patch</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">n=None</em>, <em class="sig-param">size=(256</em>, <em class="sig-param">256)</em>, <em class="sig-param">axis=(0</em>, <em class="sig-param">1)</em>, <em class="sig-param">start=(0</em>, <em class="sig-param">0)</em>, <em class="sig-param">stop=(None</em>, <em class="sig-param">None)</em>, <em class="sig-param">step=(1</em>, <em class="sig-param">1)</em>, <em class="sig-param">shake=(0</em>, <em class="sig-param">0)</em>, <em class="sig-param">mode='slidegrid'</em>, <em class="sig-param">seed=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sampling.tensor2patch" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.sampling.tensor2patch">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.sampling.</span></span><span class="sig-name descname"><span class="pre">tensor2patch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(256,</span> <span class="pre">256)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">1)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(None,</span> <span class="pre">None)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(1,</span> <span class="pre">1)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shake</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'slidegrid'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sampling.tensor2patch" title="Permalink to this definition">¶</a></dt>
 <dd><p>sample patch from a tensor</p>
 <p>Sample some patches from a tensor, tensor and patch can be any size.</p>
 <dl class="field-list simple">
@@ -694,33 +725,33 @@ equals to the number of blocks with specified <code class="xref py py-attr docut
 </section>
 <section id="module-torchsar.misc.sardata">
 <span id="torchsar-misc-sardata-module"></span><h2>torchsar.misc.sardata module<a class="headerlink" href="#module-torchsar.misc.sardata" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="torchsar.misc.sardata.SarData">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.misc.sardata.</code><code class="sig-name descname">SarData</code><a class="headerlink" href="#torchsar.misc.sardata.SarData" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.misc.sardata.SarData">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.misc.sardata.</span></span><span class="sig-name descname"><span class="pre">SarData</span></span><a class="headerlink" href="#torchsar.misc.sardata.SarData" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>SAR data class.
 rawdata
 image
 store
 read</p>
-<dl class="method">
-<dt id="torchsar.misc.sardata.SarData.image">
-<em class="property">property </em><code class="sig-name descname">image</code><a class="headerlink" href="#torchsar.misc.sardata.SarData.image" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="torchsar.misc.sardata.SarData.image">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">image</span></span><a class="headerlink" href="#torchsar.misc.sardata.SarData.image" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="torchsar.misc.sardata.SarData.name">
-<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#torchsar.misc.sardata.SarData.name" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="torchsar.misc.sardata.SarData.name">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#torchsar.misc.sardata.SarData.name" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="torchsar.misc.sardata.SarData.rawdata">
-<em class="property">property </em><code class="sig-name descname">rawdata</code><a class="headerlink" href="#torchsar.misc.sardata.SarData.rawdata" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="torchsar.misc.sardata.SarData.rawdata">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">rawdata</span></span><a class="headerlink" href="#torchsar.misc.sardata.SarData.rawdata" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="torchsar.misc.sardata.SarData.read">
-<code class="sig-name descname">read</code><span class="sig-paren">(</span><em class="sig-param">file</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sardata.SarData.read" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.misc.sardata.SarData.read">
+<span class="sig-name descname"><span class="pre">read</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sardata.SarData.read" title="Permalink to this definition">¶</a></dt>
 <dd><p>Read SAR data file</p>
 <p>Read SAR data file (<code class="docutils literal notranslate"><span class="pre">.pkl</span></code> or <code class="docutils literal notranslate"><span class="pre">.mat</span></code>)</p>
 <dl class="field-list simple">
@@ -737,9 +768,9 @@ read</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="torchsar.misc.sardata.SarData.store">
-<code class="sig-name descname">store</code><span class="sig-paren">(</span><em class="sig-param">sarplat</em>, <em class="sig-param">file</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sardata.SarData.store" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.misc.sardata.SarData.store">
+<span class="sig-name descname"><span class="pre">store</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sarplat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sardata.SarData.store" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -747,42 +778,42 @@ read</p>
 </section>
 <section id="module-torchsar.misc.sarplat">
 <span id="torchsar-misc-sarplat-module"></span><h2>torchsar.misc.sarplat module<a class="headerlink" href="#module-torchsar.misc.sarplat" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="torchsar.misc.sarplat.SarPlat">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.misc.sarplat.</code><code class="sig-name descname">SarPlat</code><a class="headerlink" href="#torchsar.misc.sarplat.SarPlat" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.misc.sarplat.SarPlat">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.misc.sarplat.</span></span><span class="sig-name descname"><span class="pre">SarPlat</span></span><a class="headerlink" href="#torchsar.misc.sarplat.SarPlat" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>SAR platform class.
 sensor
 acquisition
 params</p>
-<dl class="method">
-<dt id="torchsar.misc.sarplat.SarPlat.acquisition">
-<em class="property">property </em><code class="sig-name descname">acquisition</code><a class="headerlink" href="#torchsar.misc.sarplat.SarPlat.acquisition" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="torchsar.misc.sarplat.SarPlat.acquisition">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">acquisition</span></span><a class="headerlink" href="#torchsar.misc.sarplat.SarPlat.acquisition" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="torchsar.misc.sarplat.SarPlat.name">
-<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#torchsar.misc.sarplat.SarPlat.name" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="torchsar.misc.sarplat.SarPlat.name">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#torchsar.misc.sarplat.SarPlat.name" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="torchsar.misc.sarplat.SarPlat.params">
-<em class="property">property </em><code class="sig-name descname">params</code><a class="headerlink" href="#torchsar.misc.sarplat.SarPlat.params" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="torchsar.misc.sarplat.SarPlat.params">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">params</span></span><a class="headerlink" href="#torchsar.misc.sarplat.SarPlat.params" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="torchsar.misc.sarplat.SarPlat.printsp">
-<code class="sig-name descname">printsp</code><span class="sig-paren">(</span><em class="sig-param">verbose=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sarplat.SarPlat.printsp" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.misc.sarplat.SarPlat.printsp">
+<span class="sig-name descname"><span class="pre">printsp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.sarplat.SarPlat.printsp" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="torchsar.misc.sarplat.SarPlat.selection">
-<em class="property">property </em><code class="sig-name descname">selection</code><a class="headerlink" href="#torchsar.misc.sarplat.SarPlat.selection" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="torchsar.misc.sarplat.SarPlat.selection">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">selection</span></span><a class="headerlink" href="#torchsar.misc.sarplat.SarPlat.selection" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="torchsar.misc.sarplat.SarPlat.sensor">
-<em class="property">property </em><code class="sig-name descname">sensor</code><a class="headerlink" href="#torchsar.misc.sarplat.SarPlat.sensor" title="Permalink to this definition">¶</a></dt>
+<dl class="py property">
+<dt class="sig sig-object py" id="torchsar.misc.sarplat.SarPlat.sensor">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">sensor</span></span><a class="headerlink" href="#torchsar.misc.sarplat.SarPlat.sensor" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -790,9 +821,9 @@ params</p>
 </section>
 <section id="module-torchsar.misc.transform">
 <span id="torchsar-misc-transform-module"></span><h2>torchsar.misc.transform module<a class="headerlink" href="#module-torchsar.misc.transform" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.misc.transform.ct2rt">
-<code class="sig-prename descclassname">torchsar.misc.transform.</code><code class="sig-name descname">ct2rt</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">axis=0</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.transform.ct2rt" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.transform.ct2rt">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.transform.</span></span><span class="sig-name descname"><span class="pre">ct2rt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.transform.ct2rt" title="Permalink to this definition">¶</a></dt>
 <dd><p>Converts a complex-valued tensor to a real-valued tensor</p>
 <p>Converts a complex-valued tensor <span class="math">\({\bf x}\)</span> to a real-valued tensor with FFT and conjugate symmetry.</p>
 <dl class="field-list simple">
@@ -811,9 +842,9 @@ params</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.transform.db20">
-<code class="sig-prename descclassname">torchsar.misc.transform.</code><code class="sig-name descname">db20</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.transform.db20" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.transform.db20">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.transform.</span></span><span class="sig-name descname"><span class="pre">db20</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.transform.db20" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes dB value of a tensor</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -828,9 +859,9 @@ params</p>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.transform.quantization">
-<code class="sig-prename descclassname">torchsar.misc.transform.</code><code class="sig-name descname">quantization</code><span class="sig-paren">(</span><em class="sig-param">X, idrange=None, odrange=[0, 31], odtype='auto', extra=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.transform.quantization" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.transform.quantization">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.transform.</span></span><span class="sig-name descname"><span class="pre">quantization</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[0,</span> <span class="pre">31]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'auto'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.transform.quantization" title="Permalink to this definition">¶</a></dt>
 <dd><p>Quantize data.</p>
 <div class="math">
 \[x \in [a, b] \rightarrow y \in [c, d]
@@ -862,9 +893,9 @@ the type of output data is the same with input.</p></li>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.transform.rt2ct">
-<code class="sig-prename descclassname">torchsar.misc.transform.</code><code class="sig-name descname">rt2ct</code><span class="sig-paren">(</span><em class="sig-param">y</em>, <em class="sig-param">axis=0</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.transform.rt2ct" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.transform.rt2ct">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.transform.</span></span><span class="sig-name descname"><span class="pre">rt2ct</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.transform.rt2ct" title="Permalink to this definition">¶</a></dt>
 <dd><p>Converts a real-valued tensor to a complex-valued tensor</p>
 <p>Converts a real-valued tensor <span class="math">\({\bf y}\)</span> to a complex-valued tensor with FFT and conjugate symmetry.</p>
 <dl class="field-list simple">
@@ -883,9 +914,9 @@ the type of output data is the same with input.</p></li>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.transform.scale">
-<code class="sig-prename descclassname">torchsar.misc.transform.</code><code class="sig-name descname">scale</code><span class="sig-paren">(</span><em class="sig-param">X, st=[0, 1], sf=None, istrunc=True, extra=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.transform.scale" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.transform.scale">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.transform.</span></span><span class="sig-name descname"><span class="pre">scale</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">st</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[0,</span> <span class="pre">1]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sf</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">istrunc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.transform.scale" title="Permalink to this definition">¶</a></dt>
 <dd><p>Scale data.</p>
 <div class="math">
 \[x \in [a, b] \rightarrow y \in [c, d]
@@ -917,9 +948,9 @@ then X[X &lt; a] == a and X[X &gt; b] == b.</p></li>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.transform.standardization">
-<code class="sig-prename descclassname">torchsar.misc.transform.</code><code class="sig-name descname">standardization</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">mean=None</em>, <em class="sig-param">std=None</em>, <em class="sig-param">axis=None</em>, <em class="sig-param">extra=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.transform.standardization" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.transform.standardization">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.transform.</span></span><span class="sig-name descname"><span class="pre">standardization</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.transform.standardization" title="Permalink to this definition">¶</a></dt>
 <dd><div class="math">
 \[\bar{X} = \frac{X-\mu}{\sigma}
 
@@ -940,9 +971,9 @@ then X[X &lt; a] == a and X[X &gt; b] == b.</p></li>
 </section>
 <section id="module-torchsar.misc.visual">
 <span id="torchsar-misc-visual-module"></span><h2>torchsar.misc.visual module<a class="headerlink" href="#module-torchsar.misc.visual" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.misc.visual.apshow">
-<code class="sig-prename descclassname">torchsar.misc.visual.</code><code class="sig-name descname">apshow</code><span class="sig-paren">(</span><em class="sig-param">Srx</em>, <em class="sig-param">Title=None</em>, <em class="sig-param">cmap=None</em>, <em class="sig-param">extent=None</em>, <em class="sig-param">keepAspectRatio=True</em>, <em class="sig-param">outfile=None</em>, <em class="sig-param">isshow=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.visual.apshow" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.visual.apshow">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.visual.</span></span><span class="sig-name descname"><span class="pre">apshow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Srx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cmap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepAspectRatio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isshow</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.visual.apshow" title="Permalink to this definition">¶</a></dt>
 <dd><p>[summary]</p>
 <p>Show amplitude and phase.</p>
 <dl class="field-list simple">
@@ -961,21 +992,21 @@ no title).</p></li>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.visual.imshow">
-<code class="sig-prename descclassname">torchsar.misc.visual.</code><code class="sig-name descname">imshow</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">cmap=None</em>, <em class="sig-param">norm=None</em>, <em class="sig-param">aspect=None</em>, <em class="sig-param">interpolation=None</em>, <em class="sig-param">alpha=None</em>, <em class="sig-param">vmin=None</em>, <em class="sig-param">vmax=None</em>, <em class="sig-param">origin=None</em>, <em class="sig-param">extent=None</em>, <em class="sig-param">filternorm=True</em>, <em class="sig-param">filterrad=4.0</em>, <em class="sig-param">resample=None</em>, <em class="sig-param">url=None</em>, <em class="sig-param">data=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.visual.imshow" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.visual.imshow">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.visual.</span></span><span class="sig-name descname"><span class="pre">imshow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cmap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aspect</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interpolation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vmin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vmax</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filternorm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filterrad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resample</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.visual.imshow" title="Permalink to this definition">¶</a></dt>
 <dd><p>show an image</p>
 <p>This function create an figure and show an image, see <code class="docutils literal notranslate"><span class="pre">pyplot.imshow</span></code> for documentation.</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.visual.saraxis">
-<code class="sig-prename descclassname">torchsar.misc.visual.</code><code class="sig-name descname">saraxis</code><span class="sig-paren">(</span><em class="sig-param">pdict</em>, <em class="sig-param">axismod=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.visual.saraxis" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.visual.saraxis">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.visual.</span></span><span class="sig-name descname"><span class="pre">saraxis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pdict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axismod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.visual.saraxis" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.visual.sarshow">
-<code class="sig-prename descclassname">torchsar.misc.visual.</code><code class="sig-name descname">sarshow</code><span class="sig-paren">(</span><em class="sig-param">SI</em>, <em class="sig-param">pdict</em>, <em class="sig-param">axismod=None</em>, <em class="sig-param">title=None</em>, <em class="sig-param">cmap=None</em>, <em class="sig-param">aspect=None</em>, <em class="sig-param">outfile=None</em>, <em class="sig-param">newfig=True</em>, <em class="sig-param">figsize=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.visual.sarshow" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.visual.sarshow">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.visual.</span></span><span class="sig-name descname"><span class="pre">sarshow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">SI</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pdict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axismod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cmap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aspect</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">newfig</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.visual.sarshow" title="Permalink to this definition">¶</a></dt>
 <dd><p>show sar image</p>
 <p>show sar image</p>
 <dl class="field-list simple">
@@ -999,9 +1030,9 @@ no title).</p></li>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.visual.showReImAmplitudePhase">
-<code class="sig-prename descclassname">torchsar.misc.visual.</code><code class="sig-name descname">showReImAmplitudePhase</code><span class="sig-paren">(</span><em class="sig-param">Srx</em>, <em class="sig-param">extent=None</em>, <em class="sig-param">title='Figure'</em>, <em class="sig-param">keepAspectRatio=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.visual.showReImAmplitudePhase" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.visual.showReImAmplitudePhase">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.visual.</span></span><span class="sig-name descname"><span class="pre">showReImAmplitudePhase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Srx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Figure'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepAspectRatio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.visual.showReImAmplitudePhase" title="Permalink to this definition">¶</a></dt>
 <dd><p>[summary]</p>
 <p>[description]</p>
 <dl class="field-list simple">
@@ -1016,14 +1047,14 @@ no title).</p></li>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.visual.show_image">
-<code class="sig-prename descclassname">torchsar.misc.visual.</code><code class="sig-name descname">show_image</code><span class="sig-paren">(</span><em class="sig-param">img</em>, <em class="sig-param">Title=None</em>, <em class="sig-param">cmap=None</em>, <em class="sig-param">keepAspectRatio=True</em>, <em class="sig-param">outfile=None</em>, <em class="sig-param">isshow=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.visual.show_image" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.visual.show_image">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.visual.</span></span><span class="sig-name descname"><span class="pre">show_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cmap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepAspectRatio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isshow</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.visual.show_image" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.visual.show_response">
-<code class="sig-prename descclassname">torchsar.misc.visual.</code><code class="sig-name descname">show_response</code><span class="sig-paren">(</span><em class="sig-param">Srx</em>, <em class="sig-param">extent=None</em>, <em class="sig-param">title='Figure'</em>, <em class="sig-param">keepAspectRatio=True</em>, <em class="sig-param">outfile=None</em>, <em class="sig-param">isshow=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.visual.show_response" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.visual.show_response">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.visual.</span></span><span class="sig-name descname"><span class="pre">show_response</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Srx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Figure'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepAspectRatio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isshow</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.visual.show_response" title="Permalink to this definition">¶</a></dt>
 <dd><p>show SAR response</p>
 <p>[description]</p>
 <dl class="field-list simple">
@@ -1042,9 +1073,9 @@ no title).</p></li>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.visual.show_sarimage">
-<code class="sig-prename descclassname">torchsar.misc.visual.</code><code class="sig-name descname">show_sarimage</code><span class="sig-paren">(</span><em class="sig-param">SI</em>, <em class="sig-param">pdict</em>, <em class="sig-param">axismod=None</em>, <em class="sig-param">title=None</em>, <em class="sig-param">cmap=None</em>, <em class="sig-param">isimgadj=False</em>, <em class="sig-param">aspect=None</em>, <em class="sig-param">outfile=None</em>, <em class="sig-param">newfig=True</em>, <em class="sig-param">figsize=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.visual.show_sarimage" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.visual.show_sarimage">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.visual.</span></span><span class="sig-name descname"><span class="pre">show_sarimage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">SI</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pdict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axismod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cmap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isimgadj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aspect</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">newfig</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.visual.show_sarimage" title="Permalink to this definition">¶</a></dt>
 <dd><p>[summary]</p>
 <p>[description]</p>
 <dl class="field-list simple">
@@ -1069,9 +1100,9 @@ no title).</p></li>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.visual.show_sarimage3d">
-<code class="sig-prename descclassname">torchsar.misc.visual.</code><code class="sig-name descname">show_sarimage3d</code><span class="sig-paren">(</span><em class="sig-param">SI</em>, <em class="sig-param">pdict</em>, <em class="sig-param">axismod=None</em>, <em class="sig-param">title=None</em>, <em class="sig-param">cmap=None</em>, <em class="sig-param">isimgadj=False</em>, <em class="sig-param">aspect=None</em>, <em class="sig-param">outfile=None</em>, <em class="sig-param">figsize=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.visual.show_sarimage3d" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.visual.show_sarimage3d">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.visual.</span></span><span class="sig-name descname"><span class="pre">show_sarimage3d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">SI</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pdict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axismod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cmap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isimgadj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aspect</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.visual.show_sarimage3d" title="Permalink to this definition">¶</a></dt>
 <dd><p>[summary]</p>
 <p>[description]</p>
 <dl class="field-list simple">
@@ -1095,9 +1126,9 @@ no title).</p></li>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.misc.visual.tgshow">
-<code class="sig-prename descclassname">torchsar.misc.visual.</code><code class="sig-name descname">tgshow</code><span class="sig-paren">(</span><em class="sig-param">targets, scene, shape, extent=None, cmap=None, isflip=[False, False], labelstr=None, outfile=None, isshow=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.visual.tgshow" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.misc.visual.tgshow">
+<span class="sig-prename descclassname"><span class="pre">torchsar.misc.visual.</span></span><span class="sig-name descname"><span class="pre">tgshow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">targets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scene</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cmap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isflip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[False,</span> <span class="pre">False]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labelstr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isshow</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.misc.visual.tgshow" title="Permalink to this definition">¶</a></dt>
 <dd><p>show targets</p>
 <p>Show targets in an image.</p>
 <dl class="field-list simple">

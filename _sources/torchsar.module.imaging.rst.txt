@@ -12,7 +12,6 @@ torchsar.module.imaging.range\_doppler\_algorithm module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

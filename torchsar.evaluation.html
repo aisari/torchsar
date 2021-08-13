@@ -14,7 +14,9 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
 
   
@@ -29,12 +31,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"></script>
         <script src="_static/katex_autorenderer.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
@@ -88,7 +90,7 @@
               
             
             
-              <p><span class="caption-text">Contents:</span></p>
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
@@ -192,9 +194,9 @@
 </section>
 <section id="module-torchsar.evaluation.contrast">
 <span id="torchsar-evaluation-contrast-module"></span><h2>torchsar.evaluation.contrast module<a class="headerlink" href="#module-torchsar.evaluation.contrast" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.evaluation.contrast.contrast">
-<code class="sig-prename descclassname">torchsar.evaluation.contrast.</code><code class="sig-name descname">contrast</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">mode='way1'</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.contrast.contrast" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.evaluation.contrast.contrast">
+<span class="sig-prename descclassname"><span class="pre">torchsar.evaluation.contrast.</span></span><span class="sig-name descname"><span class="pre">contrast</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'way1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mean'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.contrast.contrast" title="Permalink to this definition">¶</a></dt>
 <dd><p>way1 is defined as follows, see [1]:</p>
 <div class="math">
 \[C = \frac{\sqrt{{\rm E}\left(|I|^2 - {\rm E}(|I|^2)\right)^2}}{{\rm E}(|I|^2)}
@@ -212,9 +214,9 @@
 </section>
 <section id="module-torchsar.evaluation.entropy">
 <span id="torchsar-evaluation-entropy-module"></span><h2>torchsar.evaluation.entropy module<a class="headerlink" href="#module-torchsar.evaluation.entropy" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.evaluation.entropy.entropy">
-<code class="sig-prename descclassname">torchsar.evaluation.entropy.</code><code class="sig-name descname">entropy</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">mode='shannon'</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.entropy.entropy" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.evaluation.entropy.entropy">
+<span class="sig-prename descclassname"><span class="pre">torchsar.evaluation.entropy.</span></span><span class="sig-name descname"><span class="pre">entropy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'shannon'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mean'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.entropy.entropy" title="Permalink to this definition">¶</a></dt>
 <dd><p>compute the entropy of the inputs</p>
 <p>[description]</p>
 <dl class="field-list simple">
@@ -237,9 +239,9 @@
 </section>
 <section id="module-torchsar.evaluation.norm">
 <span id="torchsar-evaluation-norm-module"></span><h2>torchsar.evaluation.norm module<a class="headerlink" href="#module-torchsar.evaluation.norm" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.evaluation.norm.frobenius">
-<code class="sig-prename descclassname">torchsar.evaluation.norm.</code><code class="sig-name descname">frobenius</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">p=2</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.norm.frobenius" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.evaluation.norm.frobenius">
+<span class="sig-prename descclassname"><span class="pre">torchsar.evaluation.norm.</span></span><span class="sig-name descname"><span class="pre">frobenius</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mean'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.norm.frobenius" title="Permalink to this definition">¶</a></dt>
 <dd><p>frobenius norm</p>
 <div class="math">
 \[\|\bm X\|_p^p = (\sum{x^p})^{1/p}
@@ -250,9 +252,9 @@
 </section>
 <section id="module-torchsar.evaluation.ssims">
 <span id="torchsar-evaluation-ssims-module"></span><h2>torchsar.evaluation.ssims module<a class="headerlink" href="#module-torchsar.evaluation.ssims" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.evaluation.ssims.gaussian_filter">
-<code class="sig-prename descclassname">torchsar.evaluation.ssims.</code><code class="sig-name descname">gaussian_filter</code><span class="sig-paren">(</span><em class="sig-param">input</em>, <em class="sig-param">win</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.ssims.gaussian_filter" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.evaluation.ssims.gaussian_filter">
+<span class="sig-prename descclassname"><span class="pre">torchsar.evaluation.ssims.</span></span><span class="sig-name descname"><span class="pre">gaussian_filter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">win</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.ssims.gaussian_filter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Blur input with 1-D kernel
 :param input: a batch of tensors to be blurred
 :type input: torch.Tensor
@@ -268,9 +270,9 @@
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.evaluation.ssims.msssim">
-<code class="sig-prename descclassname">torchsar.evaluation.ssims.</code><code class="sig-name descname">msssim</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">Y</em>, <em class="sig-param">data_range=255</em>, <em class="sig-param">size_average=True</em>, <em class="sig-param">win_size=11</em>, <em class="sig-param">win_sigma=1.5</em>, <em class="sig-param">win=None</em>, <em class="sig-param">weights=None</em>, <em class="sig-param">K=(0.01</em>, <em class="sig-param">0.03)</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.ssims.msssim" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.evaluation.ssims.msssim">
+<span class="sig-prename descclassname"><span class="pre">torchsar.evaluation.ssims.</span></span><span class="sig-name descname"><span class="pre">msssim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">255</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size_average</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">win_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">11</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">win_sigma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">win</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weights</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.01,</span> <span class="pre">0.03)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.ssims.msssim" title="Permalink to this definition">¶</a></dt>
 <dd><p>interface of ms-ssim
 :param X: a batch of images, (N,C,[T,]H,W)
 :type X: torch.Tensor
@@ -298,9 +300,9 @@
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.evaluation.ssims.ssim">
-<code class="sig-prename descclassname">torchsar.evaluation.ssims.</code><code class="sig-name descname">ssim</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">Y</em>, <em class="sig-param">data_range=255</em>, <em class="sig-param">size_average=True</em>, <em class="sig-param">win_size=11</em>, <em class="sig-param">win_sigma=1.5</em>, <em class="sig-param">win=None</em>, <em class="sig-param">K=(0.01</em>, <em class="sig-param">0.03)</em>, <em class="sig-param">nonnegative_ssim=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.ssims.ssim" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.evaluation.ssims.ssim">
+<span class="sig-prename descclassname"><span class="pre">torchsar.evaluation.ssims.</span></span><span class="sig-name descname"><span class="pre">ssim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">255</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size_average</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">win_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">11</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">win_sigma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">win</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.01,</span> <span class="pre">0.03)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nonnegative_ssim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.ssims.ssim" title="Permalink to this definition">¶</a></dt>
 <dd><p>interface of ssim
 :param X: a batch of images, (N,C,H,W)
 :type X: torch.Tensor
@@ -331,9 +333,9 @@
 </section>
 <section id="module-torchsar.evaluation.target_background">
 <span id="torchsar-evaluation-target-background-module"></span><h2>torchsar.evaluation.target_background module<a class="headerlink" href="#module-torchsar.evaluation.target_background" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.evaluation.target_background.extract_targets">
-<code class="sig-prename descclassname">torchsar.evaluation.target_background.</code><code class="sig-name descname">extract_targets</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">region=None</em>, <em class="sig-param">thresh=None</em>, <em class="sig-param">caxis=None</em>, <em class="sig-param">isshow=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.target_background.extract_targets" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.evaluation.target_background.extract_targets">
+<span class="sig-prename descclassname"><span class="pre">torchsar.evaluation.target_background.</span></span><span class="sig-name descname"><span class="pre">extract_targets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isshow</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.target_background.extract_targets" title="Permalink to this definition">¶</a></dt>
 <dd><p>Extracts the pixels of targetss</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -348,9 +350,9 @@
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.evaluation.target_background.tbr">
-<code class="sig-prename descclassname">torchsar.evaluation.target_background.</code><code class="sig-name descname">tbr</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">targets</em>, <em class="sig-param">region=None</em>, <em class="sig-param">caxis=None</em>, <em class="sig-param">isshow=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.target_background.tbr" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.evaluation.target_background.tbr">
+<span class="sig-prename descclassname"><span class="pre">torchsar.evaluation.target_background.</span></span><span class="sig-name descname"><span class="pre">tbr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">targets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isshow</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.target_background.tbr" title="Permalink to this definition">¶</a></dt>
 <dd><p>Target-to-Background Ratio (TBR)</p>
 <div class="math">
 \[\begin{align}
@@ -372,9 +374,9 @@
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.evaluation.target_background.tbr2">
-<code class="sig-prename descclassname">torchsar.evaluation.target_background.</code><code class="sig-name descname">tbr2</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">tgrs</em>, <em class="sig-param">subrs=None</em>, <em class="sig-param">isshow=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.target_background.tbr2" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.evaluation.target_background.tbr2">
+<span class="sig-prename descclassname"><span class="pre">torchsar.evaluation.target_background.</span></span><span class="sig-name descname"><span class="pre">tbr2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tgrs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subrs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isshow</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.evaluation.target_background.tbr2" title="Permalink to this definition">¶</a></dt>
 <dd><p>Target-to-Background Ratio (TBR)</p>
 <div class="math">
 \[\begin{align}

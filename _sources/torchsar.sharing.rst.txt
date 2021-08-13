@@ -108,6 +108,14 @@ torchsar.sharing.scene\_and\_targets module
    :undoc-members:
    :show-inheritance:
 
+torchsar.sharing.sidelobe\_suppression module
+---------------------------------------------
+
+.. automodule:: torchsar.sharing.sidelobe_suppression
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 torchsar.sharing.slant\_ground\_range module
 --------------------------------------------
 
@@ -123,7 +131,6 @@ torchsar.sharing.window\_function module
    :members:
    :undoc-members:
    :show-inheritance:
-
 
 Module contents
 ---------------

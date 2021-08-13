@@ -5,6 +5,7 @@ Subpackages
 -----------
 
 .. toctree::
+   :maxdepth: 4
 
    torchsar.module.autofocus
    torchsar.module.dsp

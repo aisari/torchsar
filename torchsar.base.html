@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>torchsar.base package &mdash; TorchSAR 1.0 documentation</title>
@@ -13,7 +14,9 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
 
   
@@ -28,12 +31,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"></script>
         <script src="_static/katex_autorenderer.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
@@ -89,7 +92,9 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="setup.html">setup module</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="torchsar.autofocus.html">torchsar.autofocus package</a></li>
@@ -104,6 +109,7 @@
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sarcfg.html">torchsar.sarcfg package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html">torchsar.sharing package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.simulation.html">torchsar.simulation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sparse.html">torchsar.sparse package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a></li>
 </ul>
 </li>
@@ -181,21 +187,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="torchsar-base-package">
+  <section id="torchsar-base-package">
 <h1>torchsar.base package<a class="headerlink" href="#torchsar-base-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="submodules">
+<section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-torchsar.base.arrayops">
+</section>
+<section id="module-torchsar.base.arrayops">
 <span id="torchsar-base-arrayops-module"></span><h2>torchsar.base.arrayops module<a class="headerlink" href="#module-torchsar.base.arrayops" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.base.arrayops.arraycomb">
-<code class="sig-prename descclassname">torchsar.base.arrayops.</code><code class="sig-name descname">arraycomb</code><span class="sig-paren">(</span><em class="sig-param">arrays</em>, <em class="sig-param">out=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.arrayops.arraycomb" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.base.arrayops.arraycomb">
+<span class="sig-prename descclassname"><span class="pre">torchsar.base.arrayops.</span></span><span class="sig-name descname"><span class="pre">arraycomb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arrays</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.arrayops.arraycomb" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.base.arrayops.cut">
-<code class="sig-prename descclassname">torchsar.base.arrayops.</code><code class="sig-name descname">cut</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">pos</em>, <em class="sig-param">axis=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.arrayops.cut" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.base.arrayops.cut">
+<span class="sig-prename descclassname"><span class="pre">torchsar.base.arrayops.</span></span><span class="sig-name descname"><span class="pre">cut</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.arrayops.cut" title="Permalink to this definition">¶</a></dt>
 <dd><p>Cut array at given position.</p>
 <p>Cut array at given position.</p>
 <dl class="field-list simple">
@@ -209,9 +215,9 @@
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.base.arrayops.sl">
-<code class="sig-prename descclassname">torchsar.base.arrayops.</code><code class="sig-name descname">sl</code><span class="sig-paren">(</span><em class="sig-param">dims</em>, <em class="sig-param">axis</em>, <em class="sig-param">idx=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.arrayops.sl" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.base.arrayops.sl">
+<span class="sig-prename descclassname"><span class="pre">torchsar.base.arrayops.</span></span><span class="sig-name descname"><span class="pre">sl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dims</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.arrayops.sl" title="Permalink to this definition">¶</a></dt>
 <dd><p>slice any axis</p>
 <p>generates slice of specified axis.</p>
 <dl class="field-list simple">
@@ -231,12 +237,12 @@
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.base.baseops">
+</section>
+<section id="module-torchsar.base.baseops">
 <span id="torchsar-base-baseops-module"></span><h2>torchsar.base.baseops module<a class="headerlink" href="#module-torchsar.base.baseops" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.base.baseops.cat">
-<code class="sig-prename descclassname">torchsar.base.baseops.</code><code class="sig-name descname">cat</code><span class="sig-paren">(</span><em class="sig-param">shapes</em>, <em class="sig-param">axis=0</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.baseops.cat" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.base.baseops.cat">
+<span class="sig-prename descclassname"><span class="pre">torchsar.base.baseops.</span></span><span class="sig-name descname"><span class="pre">cat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shapes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.baseops.cat" title="Permalink to this definition">¶</a></dt>
 <dd><p>Concatenates</p>
 <p>Concatenates the given sequence of seq shapes in the given dimension.
 All tensors must either have the same shape (except in the concatenating dimension) or be empty.</p>
@@ -259,9 +265,9 @@ All tensors must either have the same shape (except in the concatenating dimensi
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.base.baseops.concat2">
-<code class="sig-prename descclassname">torchsar.base.baseops.</code><code class="sig-name descname">concat2</code><span class="sig-paren">(</span><em class="sig-param">X1</em>, <em class="sig-param">X2</em>, <em class="sig-param">axis</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.baseops.concat2" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.base.baseops.concat2">
+<span class="sig-prename descclassname"><span class="pre">torchsar.base.baseops.</span></span><span class="sig-name descname"><span class="pre">concat2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.baseops.concat2" title="Permalink to this definition">¶</a></dt>
 <dd><p>concatenate [X1, X2] in aixs direction</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -280,9 +286,9 @@ All tensors must either have the same shape (except in the concatenating dimensi
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.base.baseops.dmka">
-<code class="sig-prename descclassname">torchsar.base.baseops.</code><code class="sig-name descname">dmka</code><span class="sig-paren">(</span><em class="sig-param">D</em>, <em class="sig-param">Ds</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.baseops.dmka" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.base.baseops.dmka">
+<span class="sig-prename descclassname"><span class="pre">torchsar.base.baseops.</span></span><span class="sig-name descname"><span class="pre">dmka</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">D</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Ds</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.baseops.dmka" title="Permalink to this definition">¶</a></dt>
 <dd><p>Multi-key value assign</p>
 <p>Multi-key value assign</p>
 <dl class="field-list simple">
@@ -295,22 +301,22 @@ All tensors must either have the same shape (except in the concatenating dimensi
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.base.mathops">
+</section>
+<section id="module-torchsar.base.mathops">
 <span id="torchsar-base-mathops-module"></span><h2>torchsar.base.mathops module<a class="headerlink" href="#module-torchsar.base.mathops" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.base.mathops.absc">
-<code class="sig-prename descclassname">torchsar.base.mathops.</code><code class="sig-name descname">absc</code><span class="sig-paren">(</span><em class="sig-param">X</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.absc" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.base.mathops.absc">
+<span class="sig-prename descclassname"><span class="pre">torchsar.base.mathops.</span></span><span class="sig-name descname"><span class="pre">absc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.absc" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.base.mathops.conj">
-<code class="sig-prename descclassname">torchsar.base.mathops.</code><code class="sig-name descname">conj</code><span class="sig-paren">(</span><em class="sig-param">X</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.conj" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.base.mathops.conj">
+<span class="sig-prename descclassname"><span class="pre">torchsar.base.mathops.</span></span><span class="sig-name descname"><span class="pre">conj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.conj" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.base.mathops.ebemulcc">
-<code class="sig-prename descclassname">torchsar.base.mathops.</code><code class="sig-name descname">ebemulcc</code><span class="sig-paren">(</span><em class="sig-param">A</em>, <em class="sig-param">B</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.ebemulcc" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.base.mathops.ebemulcc">
+<span class="sig-prename descclassname"><span class="pre">torchsar.base.mathops.</span></span><span class="sig-name descname"><span class="pre">ebemulcc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">A</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">B</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.ebemulcc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Element-by-element complex multiplication</p>
 <p>like A .* B in matlab</p>
 <dl class="field-list simple">
@@ -332,9 +338,9 @@ For real representation, the last dimension is 2 (the first –&gt; real part, t
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.base.mathops.matmulcc">
-<code class="sig-prename descclassname">torchsar.base.mathops.</code><code class="sig-name descname">matmulcc</code><span class="sig-paren">(</span><em class="sig-param">A</em>, <em class="sig-param">B</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.matmulcc" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.base.mathops.matmulcc">
+<span class="sig-prename descclassname"><span class="pre">torchsar.base.mathops.</span></span><span class="sig-name descname"><span class="pre">matmulcc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">A</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">B</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.matmulcc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Complex matrix multiplication</p>
 <p>like A * B in matlab</p>
 <dl class="field-list simple">
@@ -355,9 +361,9 @@ For real representation, the last dimension is 2 (the first –&gt; real part, t
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.base.mathops.mmcc">
-<code class="sig-prename descclassname">torchsar.base.mathops.</code><code class="sig-name descname">mmcc</code><span class="sig-paren">(</span><em class="sig-param">A</em>, <em class="sig-param">B</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.mmcc" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.base.mathops.mmcc">
+<span class="sig-prename descclassname"><span class="pre">torchsar.base.mathops.</span></span><span class="sig-name descname"><span class="pre">mmcc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">A</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">B</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.mmcc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Complex matrix multiplication</p>
 <p>like A * B in matlab</p>
 <dl class="field-list simple">
@@ -378,27 +384,27 @@ For real representation, the last dimension is 2 (the first –&gt; real part, t
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.base.mathops.nextpow2">
-<code class="sig-prename descclassname">torchsar.base.mathops.</code><code class="sig-name descname">nextpow2</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.nextpow2" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.base.mathops.nextpow2">
+<span class="sig-prename descclassname"><span class="pre">torchsar.base.mathops.</span></span><span class="sig-name descname"><span class="pre">nextpow2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.nextpow2" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.base.mathops.prevpow2">
-<code class="sig-prename descclassname">torchsar.base.mathops.</code><code class="sig-name descname">prevpow2</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.prevpow2" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.base.mathops.prevpow2">
+<span class="sig-prename descclassname"><span class="pre">torchsar.base.mathops.</span></span><span class="sig-name descname"><span class="pre">prevpow2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.prevpow2" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="function">
-<dt id="torchsar.base.mathops.sinc">
-<code class="sig-prename descclassname">torchsar.base.mathops.</code><code class="sig-name descname">sinc</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.sinc" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.base.mathops.sinc">
+<span class="sig-prename descclassname"><span class="pre">torchsar.base.mathops.</span></span><span class="sig-name descname"><span class="pre">sinc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.mathops.sinc" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.base.randomfunc">
+</section>
+<section id="module-torchsar.base.randomfunc">
 <span id="torchsar-base-randomfunc-module"></span><h2>torchsar.base.randomfunc module<a class="headerlink" href="#module-torchsar.base.randomfunc" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.base.randomfunc.permutation">
-<code class="sig-prename descclassname">torchsar.base.randomfunc.</code><code class="sig-name descname">permutation</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.randomfunc.permutation" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.base.randomfunc.permutation">
+<span class="sig-prename descclassname"><span class="pre">torchsar.base.randomfunc.</span></span><span class="sig-name descname"><span class="pre">permutation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.randomfunc.permutation" title="Permalink to this definition">¶</a></dt>
 <dd><p>permutation function like numpy.random.permutation</p>
 <p>permutation function like numpy.random.permutation</p>
 <dl class="field-list simple">
@@ -414,9 +420,9 @@ For real representation, the last dimension is 2 (the first –&gt; real part, t
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.base.randomfunc.randgrid">
-<code class="sig-prename descclassname">torchsar.base.randomfunc.</code><code class="sig-name descname">randgrid</code><span class="sig-paren">(</span><em class="sig-param">start</em>, <em class="sig-param">stop</em>, <em class="sig-param">step</em>, <em class="sig-param">shake=0</em>, <em class="sig-param">n=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.randomfunc.randgrid" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.base.randomfunc.randgrid">
+<span class="sig-prename descclassname"><span class="pre">torchsar.base.randomfunc.</span></span><span class="sig-name descname"><span class="pre">randgrid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shake</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.randomfunc.randgrid" title="Permalink to this definition">¶</a></dt>
 <dd><p>generates non-repeated uniform stepped random ints</p>
 <p>Generates <code class="xref py py-attr docutils literal notranslate"><span class="pre">n</span></code> non-repeated random ints from <code class="xref py py-attr docutils literal notranslate"><span class="pre">start</span></code> to <code class="xref py py-attr docutils literal notranslate"><span class="pre">stop</span></code>
 with step size <code class="xref py py-attr docutils literal notranslate"><span class="pre">step</span></code>.</p>
@@ -440,7 +446,7 @@ if positive, add a positive shake, if negative, add a negative.</p></li>
 </dd>
 </dl>
 <p class="rubric">Example</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <span class="n">setseed</span><span class="p">(</span><span class="mi">2021</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">randperm</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="s2">&quot;, randperm(2, 40, 8)&quot;</span><span class="p">)</span>
@@ -480,9 +486,9 @@ if positive, add a positive shake, if negative, add a negative.</p></li>
 <p>see <a class="reference internal" href="#torchsar.base.randomfunc.randperm" title="torchsar.base.randomfunc.randperm"><code class="xref py py-func docutils literal notranslate"><span class="pre">randperm()</span></code></a>.</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.base.randomfunc.randperm">
-<code class="sig-prename descclassname">torchsar.base.randomfunc.</code><code class="sig-name descname">randperm</code><span class="sig-paren">(</span><em class="sig-param">start</em>, <em class="sig-param">stop</em>, <em class="sig-param">n</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.randomfunc.randperm" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.base.randomfunc.randperm">
+<span class="sig-prename descclassname"><span class="pre">torchsar.base.randomfunc.</span></span><span class="sig-name descname"><span class="pre">randperm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.randomfunc.randperm" title="Permalink to this definition">¶</a></dt>
 <dd><p>randperm function like matlab</p>
 <p>genarates diffrent random interges in range [start, stop)</p>
 <dl class="field-list simple">
@@ -497,9 +503,9 @@ if positive, add a positive shake, if negative, add a negative.</p></li>
 <p>:param see <a class="reference internal" href="#torchsar.base.randomfunc.randgrid" title="torchsar.base.randomfunc.randgrid"><code class="xref py py-func docutils literal notranslate"><span class="pre">randgrid()</span></code></a>.:</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.base.randomfunc.randperm2d">
-<code class="sig-prename descclassname">torchsar.base.randomfunc.</code><code class="sig-name descname">randperm2d</code><span class="sig-paren">(</span><em class="sig-param">H</em>, <em class="sig-param">W</em>, <em class="sig-param">number</em>, <em class="sig-param">population=None</em>, <em class="sig-param">mask=None</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.randomfunc.randperm2d" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.base.randomfunc.randperm2d">
+<span class="sig-prename descclassname"><span class="pre">torchsar.base.randomfunc.</span></span><span class="sig-name descname"><span class="pre">randperm2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">H</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">W</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">population</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.randomfunc.randperm2d" title="Permalink to this definition">¶</a></dt>
 <dd><p>randperm 2d function</p>
 <p>genarates diffrent random interges in range [start, end)</p>
 <dl class="field-list simple">
@@ -514,9 +520,9 @@ if positive, add a positive shake, if negative, add a negative.</p></li>
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="torchsar.base.randomfunc.setseed">
-<code class="sig-prename descclassname">torchsar.base.randomfunc.</code><code class="sig-name descname">setseed</code><span class="sig-paren">(</span><em class="sig-param">seed=None</em>, <em class="sig-param">target='torch'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.randomfunc.setseed" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.base.randomfunc.setseed">
+<span class="sig-prename descclassname"><span class="pre">torchsar.base.randomfunc.</span></span><span class="sig-name descname"><span class="pre">setseed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'torch'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.randomfunc.setseed" title="Permalink to this definition">¶</a></dt>
 <dd><p>set seed</p>
 <p>Set numpy / random / torch / torch.random / torch.cuda seed.</p>
 <dl class="field-list simple">
@@ -537,11 +543,11 @@ if positive, add a positive shake, if negative, add a negative.</p></li>
 </dl>
 </dd></dl>
 
-</div>
-<div class="section" id="module-torchsar.base">
+</section>
+<section id="module-torchsar.base">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-torchsar.base" title="Permalink to this headline">¶</a></h2>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>

@@ -76,7 +76,6 @@ torchsar.misc.visual module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

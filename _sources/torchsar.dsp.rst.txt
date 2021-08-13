@@ -52,7 +52,6 @@ torchsar.dsp.polynomialfit module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

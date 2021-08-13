@@ -14,7 +14,9 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
 
   
@@ -29,12 +31,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"></script>
         <script src="_static/katex_autorenderer.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
@@ -88,7 +90,7 @@
               
             
             
-              <p><span class="caption-text">Contents:</span></p>
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
@@ -192,9 +194,9 @@
 </section>
 <section id="module-torchsar.imaging.range_doppler_mftd">
 <span id="torchsar-imaging-range-doppler-mftd-module"></span><h2>torchsar.imaging.range_doppler_mftd module<a class="headerlink" href="#module-torchsar.imaging.range_doppler_mftd" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="torchsar.imaging.range_doppler_mftd.rda_mftd">
-<code class="sig-prename descclassname">torchsar.imaging.range_doppler_mftd.</code><code class="sig-name descname">rda_mftd</code><span class="sig-paren">(</span><em class="sig-param">Sr</em>, <em class="sig-param">pdict</em>, <em class="sig-param">mfmod='fftconv'</em>, <em class="sig-param">iqc=False</em>, <em class="sig-param">rcmc=False</em>, <em class="sig-param">dcem=None</em>, <em class="sig-param">win=None</em>, <em class="sig-param">afa=None</em>, <em class="sig-param">ftshift=False</em>, <em class="sig-param">isplot=False</em>, <em class="sig-param">islog=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.imaging.range_doppler_mftd.rda_mftd" title="Permalink to this definition">¶</a></dt>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.imaging.range_doppler_mftd.rda_mftd">
+<span class="sig-prename descclassname"><span class="pre">torchsar.imaging.range_doppler_mftd.</span></span><span class="sig-name descname"><span class="pre">rda_mftd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pdict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mfmod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'fftconv'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iqc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rcmc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dcem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">win</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">afa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isplot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">islog</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.imaging.range_doppler_mftd.rda_mftd" title="Permalink to this definition">¶</a></dt>
 <dd><p>Range Doppler Algorithm with time domain matched filters</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

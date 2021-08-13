@@ -14,7 +14,9 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" type="text/css" />
   <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
 
   
@@ -29,12 +31,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"></script>
         <script src="_static/katex_autorenderer.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
@@ -88,7 +90,7 @@
               
             
             
-              <p><span class="caption-text">Contents:</span></p>
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
@@ -111,6 +113,8 @@
 <li class="toctree-l4"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-torchsar.version">torchsar.version module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-torchsar">Module contents</a></li>
 </ul>
 </li>
@@ -194,9 +198,9 @@
 </section>
 <section id="module-torchsar.module.evaluation.contrast">
 <span id="torchsar-module-evaluation-contrast-module"></span><h2>torchsar.module.evaluation.contrast module<a class="headerlink" href="#module-torchsar.module.evaluation.contrast" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="torchsar.module.evaluation.contrast.Contrast">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.evaluation.contrast.</code><code class="sig-name descname">Contrast</code><span class="sig-paren">(</span><em class="sig-param">mode='way1'</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.contrast.Contrast" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.contrast.Contrast">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.evaluation.contrast.</span></span><span class="sig-name descname"><span class="pre">Contrast</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'way1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mean'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.contrast.Contrast" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <p>way1 is defined as follows, see [1]:</p>
 <div class="math">
@@ -210,9 +214,9 @@
 \]</div>
 <p>[1] Efficient Nonparametric ISAR Autofocus Algorithm Based on Contrast Maximization and Newton
 [2] section 13.4.1 in “Ian G. Cumming’s SAR book”</p>
-<dl class="method">
-<dt id="torchsar.module.evaluation.contrast.Contrast.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.contrast.Contrast.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.contrast.Contrast.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.contrast.Contrast.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -224,9 +228,9 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.evaluation.contrast.Contrast.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.evaluation.contrast.Contrast.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.contrast.Contrast.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.evaluation.contrast.Contrast.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -234,9 +238,9 @@ registered hooks while the latter silently ignores them.</p>
 </section>
 <section id="module-torchsar.module.evaluation.entropy">
 <span id="torchsar-module-evaluation-entropy-module"></span><h2>torchsar.module.evaluation.entropy module<a class="headerlink" href="#module-torchsar.module.evaluation.entropy" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="torchsar.module.evaluation.entropy.Entropy">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.evaluation.entropy.</code><code class="sig-name descname">Entropy</code><span class="sig-paren">(</span><em class="sig-param">mode='shannon'</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.entropy.Entropy" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.entropy.Entropy">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.evaluation.entropy.</span></span><span class="sig-name descname"><span class="pre">Entropy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'shannon'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mean'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.entropy.Entropy" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <div class="math">
 \[\mathrm{S}=-\sum_{i=0}^{H-1} \sum_{j=0}^{W-1} \frac{|\mathbf{X}|_{i j}^{2}}{Z} \ln \frac{|\mathbf{X}|_{i j}^{2}}{Z}
@@ -246,9 +250,9 @@ registered hooks while the latter silently ignores them.</p>
 \[Z=\sum_{i=0}^{H-1} \sum_{j=0}^{W-1}|\mathbf{X}|_{i j}^{2}
 
 \]</div>
-<dl class="method">
-<dt id="torchsar.module.evaluation.entropy.Entropy.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.entropy.Entropy.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.entropy.Entropy.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.entropy.Entropy.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -260,9 +264,9 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.evaluation.entropy.Entropy.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.evaluation.entropy.Entropy.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.entropy.Entropy.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.evaluation.entropy.Entropy.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -270,17 +274,17 @@ registered hooks while the latter silently ignores them.</p>
 </section>
 <section id="module-torchsar.module.evaluation.norm">
 <span id="torchsar-module-evaluation-norm-module"></span><h2>torchsar.module.evaluation.norm module<a class="headerlink" href="#module-torchsar.module.evaluation.norm" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="torchsar.module.evaluation.norm.Frobenius">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.evaluation.norm.</code><code class="sig-name descname">Frobenius</code><span class="sig-paren">(</span><em class="sig-param">p=2</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.norm.Frobenius" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.norm.Frobenius">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.evaluation.norm.</span></span><span class="sig-name descname"><span class="pre">Frobenius</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mean'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.norm.Frobenius" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <div class="math">
 \[\|\bm X\|_p^p = (\sum{x^p})^{1/p}
 
 \]</div>
-<dl class="method">
-<dt id="torchsar.module.evaluation.norm.Frobenius.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.norm.Frobenius.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.norm.Frobenius.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.norm.Frobenius.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -292,24 +296,24 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.evaluation.norm.Frobenius.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.evaluation.norm.Frobenius.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.norm.Frobenius.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.evaluation.norm.Frobenius.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.evaluation.norm.LogFrobenius">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.evaluation.norm.</code><code class="sig-name descname">LogFrobenius</code><span class="sig-paren">(</span><em class="sig-param">p=2</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.norm.LogFrobenius" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.norm.LogFrobenius">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.evaluation.norm.</span></span><span class="sig-name descname"><span class="pre">LogFrobenius</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mean'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.norm.LogFrobenius" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <div class="math">
 \[{\log}{\||\bm X|\|_p^p} = \log {\left((\sum{|x|^p})^{1/p}\right)}
 
 \]</div>
-<dl class="method">
-<dt id="torchsar.module.evaluation.norm.LogFrobenius.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.norm.LogFrobenius.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.norm.LogFrobenius.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.norm.LogFrobenius.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -321,9 +325,9 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.evaluation.norm.LogFrobenius.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.evaluation.norm.LogFrobenius.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.norm.LogFrobenius.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.evaluation.norm.LogFrobenius.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -331,25 +335,25 @@ registered hooks while the latter silently ignores them.</p>
 </section>
 <section id="module-torchsar.module.evaluation.retrieval">
 <span id="torchsar-module-evaluation-retrieval-module"></span><h2>torchsar.module.evaluation.retrieval module<a class="headerlink" href="#module-torchsar.module.evaluation.retrieval" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="torchsar.module.evaluation.retrieval.Dice">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.evaluation.retrieval.</code><code class="sig-name descname">Dice</code><span class="sig-paren">(</span><em class="sig-param">size_average=True</em>, <em class="sig-param">reduce=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.retrieval.Dice" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.retrieval.Dice">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.evaluation.retrieval.</span></span><span class="sig-name descname"><span class="pre">Dice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size_average</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduce</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.retrieval.Dice" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.evaluation.retrieval.Dice.soft_dice_coeff">
-<code class="sig-name descname">soft_dice_coeff</code><span class="sig-paren">(</span><em class="sig-param">P</em>, <em class="sig-param">G</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.retrieval.Dice.soft_dice_coeff" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.retrieval.Dice.soft_dice_coeff">
+<span class="sig-name descname"><span class="pre">soft_dice_coeff</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">P</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">G</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.retrieval.Dice.soft_dice_coeff" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.evaluation.retrieval.Dice.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.evaluation.retrieval.Dice.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.retrieval.Dice.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.evaluation.retrieval.Dice.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.evaluation.retrieval.F1">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.evaluation.retrieval.</code><code class="sig-name descname">F1</code><span class="sig-paren">(</span><em class="sig-param">size_average=True</em>, <em class="sig-param">reduce=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.retrieval.F1" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.retrieval.F1">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.evaluation.retrieval.</span></span><span class="sig-name descname"><span class="pre">F1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size_average</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduce</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.retrieval.F1" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <p>F1 distance</p>
 <div class="math" id="equation-equ-f-measure">
@@ -365,9 +369,9 @@ registered hooks while the latter silently ignores them.</p>
 <span class="eqno">(3)<a class="headerlink" href="#equation-equ-recall" title="Permalink to this equation">¶</a></span>\[{\rm TPR} = {R} = \frac{\rm TP}{{\rm TP} + {\rm FN}}
 
 \]</div>
-<dl class="method">
-<dt id="torchsar.module.evaluation.retrieval.F1.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">P</em>, <em class="sig-param">G</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.retrieval.F1.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.retrieval.F1.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">P</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">G</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.retrieval.F1.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -379,25 +383,25 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.evaluation.retrieval.F1.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.evaluation.retrieval.F1.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.retrieval.F1.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.evaluation.retrieval.F1.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.evaluation.retrieval.Iridescent">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.evaluation.retrieval.</code><code class="sig-name descname">Iridescent</code><span class="sig-paren">(</span><em class="sig-param">size_average=True</em>, <em class="sig-param">reduce=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.retrieval.Iridescent" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.retrieval.Iridescent">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.evaluation.retrieval.</span></span><span class="sig-name descname"><span class="pre">Iridescent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size_average</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduce</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.retrieval.Iridescent" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <p>Iridescent Distance</p>
 <div class="math">
 \[d_{J}({\mathbb A}, {\mathbb B})=1-J({\mathbb A}, {\mathbb B})=\frac{|{\mathbb A} \cup {\mathbb B}|-|{\mathbb A} \cap {\mathbb B}|}{|{\mathbb A} \cup {\mathbb B}|}
 
 \]</div>
-<dl class="method">
-<dt id="torchsar.module.evaluation.retrieval.Iridescent.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">P</em>, <em class="sig-param">G</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.retrieval.Iridescent.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.retrieval.Iridescent.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">P</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">G</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.retrieval.Iridescent.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -409,25 +413,25 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.evaluation.retrieval.Iridescent.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.evaluation.retrieval.Iridescent.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.retrieval.Iridescent.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.evaluation.retrieval.Iridescent.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.evaluation.retrieval.Jaccard">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.evaluation.retrieval.</code><code class="sig-name descname">Jaccard</code><span class="sig-paren">(</span><em class="sig-param">size_average=True</em>, <em class="sig-param">reduce=True</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.retrieval.Jaccard" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.retrieval.Jaccard">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.evaluation.retrieval.</span></span><span class="sig-name descname"><span class="pre">Jaccard</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size_average</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduce</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.retrieval.Jaccard" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <p>Jaccard distance</p>
 <div class="math">
 \[d_{J}({\mathbb A}, {\mathbb B})=1-J({\mathbb A}, {\mathbb B})=\frac{|{\mathbb A} \cup {\mathbb B}|-|{\mathbb A} \cap {\mathbb B}|}{|{\mathbb A} \cup {\mathbb B}|}
 
 \]</div>
-<dl class="method">
-<dt id="torchsar.module.evaluation.retrieval.Jaccard.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">P</em>, <em class="sig-param">G</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.retrieval.Jaccard.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.retrieval.Jaccard.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">P</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">G</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.retrieval.Jaccard.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -439,9 +443,9 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.evaluation.retrieval.Jaccard.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.evaluation.retrieval.Jaccard.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.retrieval.Jaccard.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.evaluation.retrieval.Jaccard.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -449,13 +453,13 @@ registered hooks while the latter silently ignores them.</p>
 </section>
 <section id="module-torchsar.module.evaluation.ssims">
 <span id="torchsar-module-evaluation-ssims-module"></span><h2>torchsar.module.evaluation.ssims module<a class="headerlink" href="#module-torchsar.module.evaluation.ssims" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="torchsar.module.evaluation.ssims.MSSSIM">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.evaluation.ssims.</code><code class="sig-name descname">MSSSIM</code><span class="sig-paren">(</span><em class="sig-param">data_range=255</em>, <em class="sig-param">size_average=True</em>, <em class="sig-param">win_size=11</em>, <em class="sig-param">win_sigma=1.5</em>, <em class="sig-param">channel=3</em>, <em class="sig-param">spatial_dims=2</em>, <em class="sig-param">weights=None</em>, <em class="sig-param">K=(0.01</em>, <em class="sig-param">0.03)</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.ssims.MSSSIM" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.ssims.MSSSIM">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.evaluation.ssims.</span></span><span class="sig-name descname"><span class="pre">MSSSIM</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">255</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size_average</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">win_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">11</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">win_sigma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">channel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spatial_dims</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weights</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.01,</span> <span class="pre">0.03)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.ssims.MSSSIM" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.evaluation.ssims.MSSSIM.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">Y</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.ssims.MSSSIM.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.ssims.MSSSIM.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.ssims.MSSSIM.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -467,20 +471,20 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.evaluation.ssims.MSSSIM.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.evaluation.ssims.MSSSIM.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.ssims.MSSSIM.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.evaluation.ssims.MSSSIM.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="torchsar.module.evaluation.ssims.SSIM">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.evaluation.ssims.</code><code class="sig-name descname">SSIM</code><span class="sig-paren">(</span><em class="sig-param">data_range=255</em>, <em class="sig-param">size_average=True</em>, <em class="sig-param">win_size=11</em>, <em class="sig-param">win_sigma=1.5</em>, <em class="sig-param">channel=3</em>, <em class="sig-param">spatial_dims=2</em>, <em class="sig-param">K=(0.01</em>, <em class="sig-param">0.03)</em>, <em class="sig-param">nonnegative_ssim=False</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.ssims.SSIM" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.ssims.SSIM">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.evaluation.ssims.</span></span><span class="sig-name descname"><span class="pre">SSIM</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">255</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size_average</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">win_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">11</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">win_sigma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">channel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spatial_dims</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.01,</span> <span class="pre">0.03)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nonnegative_ssim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.ssims.SSIM" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="method">
-<dt id="torchsar.module.evaluation.ssims.SSIM.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">Y</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.ssims.SSIM.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.ssims.SSIM.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.ssims.SSIM.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -492,9 +496,9 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.evaluation.ssims.SSIM.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.evaluation.ssims.SSIM.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.ssims.SSIM.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.evaluation.ssims.SSIM.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -502,9 +506,9 @@ registered hooks while the latter silently ignores them.</p>
 </section>
 <section id="module-torchsar.module.evaluation.variation">
 <span id="torchsar-module-evaluation-variation-module"></span><h2>torchsar.module.evaluation.variation module<a class="headerlink" href="#module-torchsar.module.evaluation.variation" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
-<dt id="torchsar.module.evaluation.variation.TotalVariation">
-<em class="property">class </em><code class="sig-prename descclassname">torchsar.module.evaluation.variation.</code><code class="sig-name descname">TotalVariation</code><span class="sig-paren">(</span><em class="sig-param">axis=0</em>, <em class="sig-param">reduction='mean'</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.variation.TotalVariation" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.variation.TotalVariation">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.evaluation.variation.</span></span><span class="sig-name descname"><span class="pre">TotalVariation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mean'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.variation.TotalVariation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <p>Total Variarion</p>
 <dl class="simple">
@@ -513,9 +517,9 @@ diff_j = torch.sum(torch.abs(y_hat[:, :, 1:, :] - y_hat[:, :, :-1, :]))
 tv_loss = TV_WEIGHT*(diff_i + diff_j)</p>
 </dd>
 </dl>
-<dl class="method">
-<dt id="torchsar.module.evaluation.variation.TotalVariation.forward">
-<code class="sig-name descname">forward</code><span class="sig-paren">(</span><em class="sig-param">X</em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.variation.TotalVariation.forward" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.variation.TotalVariation.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.evaluation.variation.TotalVariation.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -527,9 +531,9 @@ registered hooks while the latter silently ignores them.</p>
 </div>
 </dd></dl>
 
-<dl class="attribute">
-<dt id="torchsar.module.evaluation.variation.TotalVariation.training">
-<code class="sig-name descname">training</code><em class="property"> = None</em><a class="headerlink" href="#torchsar.module.evaluation.variation.TotalVariation.training" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="torchsar.module.evaluation.variation.TotalVariation.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.evaluation.variation.TotalVariation.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>

@@ -36,7 +36,6 @@ torchsar.module.autofocus.phase\_error\_model module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

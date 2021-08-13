@@ -60,7 +60,6 @@ torchsar.utils.plot\_show module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

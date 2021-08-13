@@ -1,13 +1,19 @@
 Get Started
 ============
 
+Some links:
+
+- [pypi, torchsar](https://pypi.org/project/torchsar/)
+- [github, torchsar](https://github.com/aisari/torchsar/)
+- [document, torchsar](https://aisari.iridescent.ink/torchsar/)
+
+
 Installation
 -------------
 
 The `TorchSAR <https://pypi.org/project/torchsar/>`_ package can be easily installed by ``pip install torchsar``. After it is installed, just excute ``import torchsar as ts`` to import the package.
 
-
-.. important:: At present, not all functions are open.
+.. important:: At present, nt all functions are open.
 
 
 

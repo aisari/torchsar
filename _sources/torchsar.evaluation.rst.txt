@@ -44,7 +44,6 @@ torchsar.evaluation.target\_background module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 
