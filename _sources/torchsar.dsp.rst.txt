@@ -28,6 +28,14 @@ torchsar.dsp.ffts module
    :undoc-members:
    :show-inheritance:
 
+torchsar.dsp.function\_base module
+----------------------------------
+
+.. automodule:: torchsar.dsp.function_base
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 torchsar.dsp.interpolation module
 ---------------------------------
 

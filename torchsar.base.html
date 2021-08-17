@@ -113,6 +113,8 @@
 <li class="toctree-l4"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-torchsar.version">torchsar.version module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-torchsar">Module contents</a></li>
 </ul>
 </li>
@@ -207,9 +209,9 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>x</strong> (<em>{torch.tensor}</em>) – [description]</p></li>
-<li><p><strong>pos</strong> (<em>{tulpe</em><em> or </em><em>list}</em>) – cut positions: ((cpstart, cpend), (cpstart, cpend), …)</p></li>
-<li><p><strong>axis</strong> (<em>{number</em><em>, </em><em>tulpe</em><em> or </em><em>list}</em><em>, </em><em>optional</em>) – cut axis (the default is None, which means nothing)</p></li>
+<li><p><strong>x</strong> (<em>Tensor</em>) – A tensor to be cutted.</p></li>
+<li><p><strong>pos</strong> (<em>tulpe</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a>) – cut positions: ((cpstart, cpend), (cpstart, cpend), …)</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>tulpe</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em>, </em><em>optional</em>) – cut axis (the default is None, which means nothing)</p></li>
 </ul>
 </dd>
 </dl>
@@ -224,7 +226,7 @@
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>dims</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – total dimensions</p></li>
-<li><p><strong>axis</strong> (<em>{int</em><em> or </em><em>list}</em>) – select axis list.</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a>) – select axis list.</p></li>
 <li><p><strong>idx</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – slice lists of the specified <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code>, if None, does nothing (the default)</p></li>
 </ul>
 </dd>
@@ -232,7 +234,7 @@
 <dd class="field-even"><p>slice for specified axis elements.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>[tuple of slice]</p>
+<dd class="field-odd"><p>tuple of slice</p>
 </dd>
 </dl>
 </dd></dl>
@@ -423,16 +425,16 @@ For real representation, the last dimension is 2 (the first –&gt; real part, t
 <dl class="py function">
 <dt class="sig sig-object py" id="torchsar.base.randomfunc.randgrid">
 <span class="sig-prename descclassname"><span class="pre">torchsar.base.randomfunc.</span></span><span class="sig-name descname"><span class="pre">randgrid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shake</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.base.randomfunc.randgrid" title="Permalink to this definition">¶</a></dt>
-<dd><p>generates non-repeated uniform stepped random ints</p>
-<p>Generates <code class="xref py py-attr docutils literal notranslate"><span class="pre">n</span></code> non-repeated random ints from <code class="xref py py-attr docutils literal notranslate"><span class="pre">start</span></code> to <code class="xref py py-attr docutils literal notranslate"><span class="pre">stop</span></code>
+<dd><p>generates non-repeated uniform stepped random integers</p>
+<p>Generates <code class="xref py py-attr docutils literal notranslate"><span class="pre">n</span></code> non-repeated random integers from <code class="xref py py-attr docutils literal notranslate"><span class="pre">start</span></code> to <code class="xref py py-attr docutils literal notranslate"><span class="pre">stop</span></code>
 with step size <code class="xref py py-attr docutils literal notranslate"><span class="pre">step</span></code>.</p>
 <p>When step is 1 and shake is 0, it works similar to randperm,</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>start</strong> (<em>{int</em><em> or </em><em>list}</em>) – start sampling point</p></li>
-<li><p><strong>stop</strong> (<em>{int</em><em> or </em><em>list}</em>) – stop sampling point</p></li>
-<li><p><strong>step</strong> (<em>{int</em><em> or </em><em>list}</em>) – sampling stepsize</p></li>
+<li><p><strong>start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a>) – start sampling point</p></li>
+<li><p><strong>stop</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a>) – stop sampling point</p></li>
+<li><p><strong>step</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a>) – sampling stepsize</p></li>
 <li><p><strong>shake</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><em>float</em></a>) – the shake rate, if <code class="xref py py-attr docutils literal notranslate"><span class="pre">shake</span></code> is 0, no shake, (default),
 if positive, add a positive shake, if negative, add a negative.</p></li>
 <li><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a>) – the number of samples (default None, int((stop0 - start0) / step0) * int((stop1 - start1) / step1)…).</p></li>
@@ -494,9 +496,9 @@ if positive, add a positive shake, if negative, add a negative.</p></li>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>start</strong> (<em>{int</em><em> or </em><em>list}</em>) – start sampling point</p></li>
-<li><p><strong>stop</strong> (<em>{int</em><em> or </em><em>list}</em>) – stop sampling point</p></li>
-<li><p><strong>n</strong> (<em>{int</em><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em> or </em><em>None}</em>) – the number of samples (default None, (stop - start))</p></li>
+<li><p><strong>start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a>) – start sampling point</p></li>
+<li><p><strong>stop</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a>) – stop sampling point</p></li>
+<li><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a>) – the number of samples (default None, (stop - start))</p></li>
 </ul>
 </dd>
 </dl>

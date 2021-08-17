@@ -113,6 +113,8 @@
 <li class="toctree-l4"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-torchsar.version">torchsar.version module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-torchsar">Module contents</a></li>
 </ul>
 </li>
@@ -653,6 +655,60 @@ functions differ by one sample for odd-length <cite>x</cite>.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>Tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-torchsar.dsp.function_base">
+<span id="torchsar-dsp-function-base-module"></span><h2>torchsar.dsp.function_base module<a class="headerlink" href="#module-torchsar.dsp.function_base" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.dsp.function_base.unwrap">
+<span class="sig-prename descclassname"><span class="pre">torchsar.dsp.function_base.</span></span><span class="sig-name descname"><span class="pre">unwrap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">discont</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3.141592653589793</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'numpy'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.dsp.function_base.unwrap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unwrap by changing deltas between values to $2*pi$ complement.</p>
+<p>Unwrap radian phase <cite>x</cite> by changing absolute jumps greater than
+<cite>discont</cite> to their 2*pi complement along the given axis.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>Tensor</em><em> or </em><em>ndarray</em>) – The input.</p></li>
+<li><p><strong>discont</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><em>float</em></a><em>, </em><em>optional</em>) – Maximum discontinuity between values, default is $pi$.</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – Axis along which unwrap will operate, default is the last axis.</p></li>
+<li><p><strong>imp</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – Implenmentation way, <code class="docutils literal notranslate"><span class="pre">'numpy'</span></code> –&gt; numpy</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The unwrapped.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Tensor or ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.dsp.function_base.unwrap2">
+<span class="sig-prename descclassname"><span class="pre">torchsar.dsp.function_base.</span></span><span class="sig-name descname"><span class="pre">unwrap2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">discont</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3.141592653589793</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'numpy'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.dsp.function_base.unwrap2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unwrap by changing deltas between values to $2*pi$ complement.</p>
+<p>Unwrap radian phase <cite>x</cite> by changing absolute jumps greater than
+<cite>discont</cite> to their 2*pi complement along the given axis. The elements
+are divided into 2 parts (with equal length) along the given axis.
+The first part is unwrapped in inverse order, while the second part
+is unwrapped in normal order.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>Tensor</em><em> or </em><em>ndarray</em>) – The input.</p></li>
+<li><p><strong>discont</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><em>float</em></a><em>, </em><em>optional</em>) – Maximum discontinuity between values, default is $pi$.</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – Axis along which unwrap will operate, default is the last axis.</p></li>
+<li><p><strong>imp</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – Implenmentation way, <code class="docutils literal notranslate"><span class="pre">'numpy'</span></code> –&gt; numpy</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The unwrapped.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Tensor or ndarray</p>
 </dd>
 </dl>
 </dd></dl>
