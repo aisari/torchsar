@@ -12,6 +12,14 @@ torchsar.calibration.channel\_process module
    :undoc-members:
    :show-inheritance:
 
+torchsar.calibration.gain\_compensation module
+----------------------------------------------
+
+.. automodule:: torchsar.calibration.gain_compensation
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 torchsar.calibration.multilook\_process module
 ----------------------------------------------
 

@@ -1,0 +1,691 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>torchsar.products package &mdash; TorchSAR 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"></script>
+        <script src="_static/katex_autorenderer.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="torchsar.sarcfg package" href="torchsar.sarcfg.html" />
+    <link rel="prev" title="torchsar.module.sharing package" href="torchsar.module.sharing.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> TorchSAR
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">torchsar</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="setup.html">setup module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="torchsar.autofocus.html">torchsar.autofocus package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.calibration.html">torchsar.calibration package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.evaluation.html">torchsar.evaluation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.imaging.html">torchsar.imaging package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.misc.html">torchsar.misc package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.module.html">torchsar.module package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">torchsar.products package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sarcfg.html">torchsar.sarcfg package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html">torchsar.sharing package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.simulation.html">torchsar.simulation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.sparse.html">torchsar.sparse package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-torchsar.version">torchsar.version module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-torchsar">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TorchSAR</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">torchsar</a> &raquo;</li>
+        
+          <li><a href="torchsar.html">torchsar package</a> &raquo;</li>
+        
+      <li>torchsar.products package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/torchsar.products.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="torchsar-products-package">
+<h1>torchsar.products package<a class="headerlink" href="#torchsar-products-package" title="Permalink to this headline">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-torchsar.products.alos">
+<span id="torchsar-products-alos-module"></span><h2>torchsar.products.alos module<a class="headerlink" href="#module-torchsar.products.alos" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.products.alos.get_alos_palsar_attitude">
+<span class="sig-prename descclassname"><span class="pre">torchsar.products.alos.</span></span><span class="sig-name descname"><span class="pre">get_alos_palsar_attitude</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">D</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.products.alos.get_alos_palsar_attitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>get attitude data</p>
+<dl>
+<dt>return a numpy array</dt><dd><p>1st: Pitch Roll Yaw PitchRate RollRate YawRate
+2st: Pitch Roll Yaw PitchRate RollRate YawRate</p>
+<blockquote>
+<div><p>:</p>
+</div></blockquote>
+<p>nst: Pitch Roll Yaw PitchRate RollRate YawRate</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>D</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)"><em>dict</em></a>) – LeaderFileImportantImagingParametersRecordALOS dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.products.alos.get_alos_palsar_plat_position">
+<span class="sig-prename descclassname"><span class="pre">torchsar.products.alos.</span></span><span class="sig-name descname"><span class="pre">get_alos_palsar_plat_position</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">D</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.products.alos.get_alos_palsar_plat_position" title="Permalink to this definition">¶</a></dt>
+<dd><p>get platform position data</p>
+<dl>
+<dt>return a numpy array</dt><dd><p>1st: X Y Z Vx Vy Vz
+2st: X Y Z Vx Vy Vz</p>
+<blockquote>
+<div><p>:</p>
+</div></blockquote>
+<p>nst: X Y Z Vx Vy Vz</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>D</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)"><em>dict</em></a>) – LeaderFileImportantImagingParametersRecordALOS dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.products.alos.read_alos_palsar_ldr_iip">
+<span class="sig-prename descclassname"><span class="pre">torchsar.products.alos.</span></span><span class="sig-name descname"><span class="pre">read_alos_palsar_ldr_iip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ledfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.products.alos.read_alos_palsar_ldr_iip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read important imaging parameters from leader file</p>
+<p>Read important imaging parameters from leader file.</p>
+<p>For example, <code class="docutils literal notranslate"><span class="pre">LED-ALPSRP050500980-H1.0__A</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ledfile</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – Leader file path string.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.products.alos.read_alos_palsar_raw">
+<span class="sig-prename descclassname"><span class="pre">torchsar.products.alos.</span></span><span class="sig-name descname"><span class="pre">read_alos_palsar_raw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rawfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ledfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">el</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rmbp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.products.alos.read_alos_palsar_raw" title="Permalink to this definition">¶</a></dt>
+<dd><p>read ALOS PALSAR raw data</p>
+<p>read ALOS PALSAR raw data pulse from line <code class="xref py py-attr docutils literal notranslate"><span class="pre">sl</span></code> to line <code class="xref py py-attr docutils literal notranslate"><span class="pre">el</span></code>. This function call
+function <code class="xref py py-func docutils literal notranslate"><span class="pre">read_ceos_sar_raw()</span></code> firstly and do some post-process.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rawfile</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – ALOS PALSAR raw data file path string, —&gt; <code class="docutils literal notranslate"><span class="pre">IMG*.0__A</span></code>, e.g. <code class="docutils literal notranslate"><span class="pre">IMG-HH-ALPSRP050500980-H1.0__A</span></code></p></li>
+<li><p><strong>ledfile</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – ALOS PALSAR leader file path string, —&gt; <code class="docutils literal notranslate"><span class="pre">LED*.0__A</span></code>, e.g. <code class="docutils literal notranslate"><span class="pre">LED-ALPSRP050500980-H1.0__A</span></code></p></li>
+<li><p><strong>sl</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – start line (azimuth) (the default is 1, which means the first line)</p></li>
+<li><p><strong>el</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – end line (azimuth) (the default is -1, which means the last line)</p></li>
+<li><p><strong>rmbp</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – If you want to remove the padded border pixels, set <code class="xref py py-attr docutils literal notranslate"><span class="pre">rmbp</span></code> to <code class="docutils literal notranslate"><span class="pre">True</span></code>, else set to <code class="docutils literal notranslate"><span class="pre">False</span></code> (the default is <code class="docutils literal notranslate"><span class="pre">False</span></code>).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>Sr</strong> (<em>2d-array</em>) – SAR raw signal data matrix.</p></li>
+<li><p><strong>Pd</strong> (<em>dict</em>) – Parameter dictionary.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.products.alos.read_alos_palsar_slc">
+<span class="sig-prename descclassname"><span class="pre">torchsar.products.alos.</span></span><span class="sig-name descname"><span class="pre">read_alos_palsar_slc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">el</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rmbp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.products.alos.read_alos_palsar_slc" title="Permalink to this definition">¶</a></dt>
+<dd><p>read ALOS PALSAR SLC data</p>
+<p>read ALOS PALSAR SLC data pulse from line <code class="xref py py-attr docutils literal notranslate"><span class="pre">sl</span></code> to line <code class="xref py py-attr docutils literal notranslate"><span class="pre">el</span></code>. This function call
+function <code class="xref py py-func docutils literal notranslate"><span class="pre">read_ceos_sar_slc()</span></code> firstly.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filepath</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – ALOS PALSAR raw data file path string, for ALOSPALSAR –&gt; <code class="docutils literal notranslate"><span class="pre">IMG*.1__A</span></code></p></li>
+<li><p><strong>sl</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – start line (azimuth) (the default is 1, which means the first line)</p></li>
+<li><p><strong>el</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – end line (azimuth) (the default is -1, which means the last line)</p></li>
+<li><p><strong>rmbp</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – If you want to remove the padded border pixels, set <code class="xref py py-attr docutils literal notranslate"><span class="pre">rmbp</span></code> to <code class="docutils literal notranslate"><span class="pre">True</span></code>, else set to <code class="docutils literal notranslate"><span class="pre">False</span></code> (the default is <code class="docutils literal notranslate"><span class="pre">False</span></code>).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>S</strong> – SAR SLC data matrix.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>2d-array</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-torchsar.products.ceos">
+<span id="torchsar-products-ceos-module"></span><h2>torchsar.products.ceos module<a class="headerlink" href="#module-torchsar.products.ceos" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.products.ceos.decfmtfceos">
+<span class="sig-prename descclassname"><span class="pre">torchsar.products.ceos.</span></span><span class="sig-name descname"><span class="pre">decfmtfceos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">F</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'&lt;'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.products.ceos.decfmtfceos" title="Permalink to this definition">¶</a></dt>
+<dd><p>decode format descriptor of CEOS</p>
+<p>decode format descriptor of CEOS.</p>
+<p><code class="docutils literal notranslate"><span class="pre">'nFx'</span></code> –&gt; decode <code class="xref py py-attr docutils literal notranslate"><span class="pre">b</span></code> x Bytes-by-x Bytes as format <code class="xref py py-attr docutils literal notranslate"><span class="pre">F</span></code> specified,
+and do <code class="xref py py-attr docutils literal notranslate"><span class="pre">n</span></code> times.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>F</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – formation string, <code class="docutils literal notranslate"><span class="pre">C</span></code> –&gt; Complex(real, imag), <code class="docutils literal notranslate"><span class="pre">F</span></code> –&gt; float, <code class="docutils literal notranslate"><span class="pre">B</span></code> –&gt; Bytes, <code class="docutils literal notranslate"><span class="pre">A</span></code> –&gt; String, <code class="docutils literal notranslate"><span class="pre">I</span></code> –&gt; asicc</p></li>
+<li><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – amount of elements with formation <code class="xref py py-attr docutils literal notranslate"><span class="pre">F</span></code></p></li>
+<li><p><strong>x</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – number of Bytes</p></li>
+<li><p><strong>b</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.10)"><em>bytes</em></a>) – bytes to be decoded</p></li>
+<li><p><strong>e</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – endian, <code class="docutils literal notranslate"><span class="pre">'&lt;'</span></code> –&gt; little, <code class="docutils literal notranslate"><span class="pre">'&gt;'</span></code> – &gt; big (the default is ‘&lt;’, which means little endian)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>decoded result list.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.products.ceos.read_ceos_sar_raw">
+<span class="sig-prename descclassname"><span class="pre">torchsar.products.ceos.</span></span><span class="sig-name descname"><span class="pre">read_ceos_sar_raw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">el</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rmbp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.products.ceos.read_ceos_sar_raw" title="Permalink to this definition">¶</a></dt>
+<dd><p>read CEOS SAR raw data</p>
+<p>read CEOS SAR raw data pulse from line <code class="xref py py-attr docutils literal notranslate"><span class="pre">sl</span></code> to line <code class="xref py py-attr docutils literal notranslate"><span class="pre">el</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filepath</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – SAR raw data file path string, for ERS1/2 –&gt; <code class="docutils literal notranslate"><span class="pre">*.raw</span></code> for RADARSAT –&gt; <code class="docutils literal notranslate"><span class="pre">DAT_01.001</span></code></p></li>
+<li><p><strong>sl</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – start line (azimuth) (the default is 1, which means the first line)</p></li>
+<li><p><strong>el</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – end line (azimuth) (the default is -1, which means the last line)</p></li>
+<li><p><strong>rmbp</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – If you want to remove the padded border pixels, set <code class="xref py py-attr docutils literal notranslate"><span class="pre">rmbp</span></code> to <code class="docutils literal notranslate"><span class="pre">True</span></code>, else set to <code class="docutils literal notranslate"><span class="pre">False</span></code> (the default is <code class="docutils literal notranslate"><span class="pre">False</span></code>).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>S</strong></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>2d-array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.products.ceos.read_ceos_sar_slc">
+<span class="sig-prename descclassname"><span class="pre">torchsar.products.ceos.</span></span><span class="sig-name descname"><span class="pre">read_ceos_sar_slc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">el</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rmbp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.products.ceos.read_ceos_sar_slc" title="Permalink to this definition">¶</a></dt>
+<dd><p>read CEOS SAR slc data</p>
+<p>read CEOS SAR slc data from line <code class="xref py py-attr docutils literal notranslate"><span class="pre">sl</span></code> to line <code class="xref py py-attr docutils literal notranslate"><span class="pre">el</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filepath</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – SAR slc data file path string, for ERS1/2 –&gt; <code class="docutils literal notranslate"><span class="pre">*.D</span></code> for RADARSAT –&gt; <code class="docutils literal notranslate"><span class="pre">DAT_01.001</span></code></p></li>
+<li><p><strong>sl</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – start line (azimuth) (the default is 1, which means the first line)</p></li>
+<li><p><strong>el</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – end line (azimuth) (the default is -1, which means the last line)</p></li>
+<li><p><strong>rmbp</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – If you want to remove the padded border pixels, set <code class="xref py py-attr docutils literal notranslate"><span class="pre">rmbp</span></code> to <code class="docutils literal notranslate"><span class="pre">True</span></code>, else set to <code class="docutils literal notranslate"><span class="pre">False</span></code> (the default is <code class="docutils literal notranslate"><span class="pre">False</span></code>).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>S</strong> – Processed SLC SAR data matrix.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>2d-array</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-torchsar.products.ers">
+<span id="torchsar-products-ers-module"></span><h2>torchsar.products.ers module<a class="headerlink" href="#module-torchsar.products.ers" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.products.ers.get_ers_sar_plat_position">
+<span class="sig-prename descclassname"><span class="pre">torchsar.products.ers.</span></span><span class="sig-name descname"><span class="pre">get_ers_sar_plat_position</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">D</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.products.ers.get_ers_sar_plat_position" title="Permalink to this definition">¶</a></dt>
+<dd><p>get platform position data</p>
+<dl>
+<dt>return a numpy array</dt><dd><p>1st: X Y Z Vx Vy Vz
+2st: X Y Z Vx Vy Vz</p>
+<blockquote>
+<div><p>:</p>
+</div></blockquote>
+<p>nst: X Y Z Vx Vy Vz</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>D</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)"><em>dict</em></a>) – LeaderFileImportantImagingParametersRecordALOS dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.products.ers.read_ers_sar_ldr_iip">
+<span class="sig-prename descclassname"><span class="pre">torchsar.products.ers.</span></span><span class="sig-name descname"><span class="pre">read_ers_sar_ldr_iip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.products.ers.read_ers_sar_ldr_iip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read important imaging parameters from leader file</p>
+<p>Read important imaging parameters from leader file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filepath</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – Leader file path string.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.products.ers.read_ers_sar_raw">
+<span class="sig-prename descclassname"><span class="pre">torchsar.products.ers.</span></span><span class="sig-name descname"><span class="pre">read_ers_sar_raw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rawfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ledfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">el</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rmbp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.products.ers.read_ers_sar_raw" title="Permalink to this definition">¶</a></dt>
+<dd><p>read ERS SAR raw data</p>
+<p>read ERS1/2 SAR raw data pulse from line <code class="xref py py-attr docutils literal notranslate"><span class="pre">sl</span></code> to line <code class="xref py py-attr docutils literal notranslate"><span class="pre">el</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rawfile</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – ERS SAR raw data file path string, for ERS1/2 –&gt; <code class="docutils literal notranslate"><span class="pre">*.raw</span></code>
+e.g. <code class="docutils literal notranslate"><span class="pre">E2_81988_STD_L0_F327.000.raw</span></code></p></li>
+<li><p><strong>ledfile</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – ERS SAR leader file path string, —&gt; <code class="docutils literal notranslate"><span class="pre">*.ldr</span></code>, e.g. <code class="docutils literal notranslate"><span class="pre">E2_81988_STD_L0_F327.000.ldr</span></code></p></li>
+<li><p><strong>sl</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – start line (azimuth) (the default is 1, which means the first line)</p></li>
+<li><p><strong>el</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – end line (azimuth) (the default is -1, which means the last line)</p></li>
+<li><p><strong>rmbp</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – If you want to remove the padded border pixels, set <code class="xref py py-attr docutils literal notranslate"><span class="pre">rmbp</span></code> to <code class="docutils literal notranslate"><span class="pre">True</span></code>, else set to <code class="docutils literal notranslate"><span class="pre">False</span></code> (the default is <code class="docutils literal notranslate"><span class="pre">False</span></code>).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>S</strong> (<em>2d-array</em>) – SAR raw signal data matrix.</p></li>
+<li><p><strong>Pd</strong> (<em>dict</em>) – Parameter dictionary.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.products.ers.read_ers_sar_slc">
+<span class="sig-prename descclassname"><span class="pre">torchsar.products.ers.</span></span><span class="sig-name descname"><span class="pre">read_ers_sar_slc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">el</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rmbp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.products.ers.read_ers_sar_slc" title="Permalink to this definition">¶</a></dt>
+<dd><p>read ERS SAR SLC data</p>
+<p>read ERS1/2 SAR SLC data pulse from line <code class="xref py py-attr docutils literal notranslate"><span class="pre">sl</span></code> to line <code class="xref py py-attr docutils literal notranslate"><span class="pre">el</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filepath</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – ERS SAR raw data file path string, for ERS1/2 –&gt; <code class="docutils literal notranslate"><span class="pre">*.raw</span></code></p></li>
+<li><p><strong>sl</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – start line (azimuth) (the default is 1, which means the first line)</p></li>
+<li><p><strong>el</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – end line (azimuth) (the default is -1, which means the last line)</p></li>
+<li><p><strong>rmbp</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – If you want to remove the padded border pixels, set <code class="xref py py-attr docutils literal notranslate"><span class="pre">rmbp</span></code> to <code class="docutils literal notranslate"><span class="pre">True</span></code>, else set to <code class="docutils literal notranslate"><span class="pre">False</span></code> (the default is <code class="docutils literal notranslate"><span class="pre">False</span></code>).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>S</strong> – SAR SLC data matrix.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>2d-array</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-torchsar.products.radarsat">
+<span id="torchsar-products-radarsat-module"></span><h2>torchsar.products.radarsat module<a class="headerlink" href="#module-torchsar.products.radarsat" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.products.radarsat.read_radarsat_sar_raw">
+<span class="sig-prename descclassname"><span class="pre">torchsar.products.radarsat.</span></span><span class="sig-name descname"><span class="pre">read_radarsat_sar_raw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">el</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rmbp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.products.radarsat.read_radarsat_sar_raw" title="Permalink to this definition">¶</a></dt>
+<dd><p>read RADARSAT SAR raw data</p>
+<p>read RADARSAT raw data pulse from line <code class="xref py py-attr docutils literal notranslate"><span class="pre">sl</span></code> to line <code class="xref py py-attr docutils literal notranslate"><span class="pre">el</span></code>. This function call
+function <code class="xref py py-func docutils literal notranslate"><span class="pre">read_ceos_sar_raw()</span></code> firstly and do some post-process.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filepath</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – RADARSAT SAR raw data file path string with format <code class="docutils literal notranslate"><span class="pre">.001</span></code>, such as <code class="docutils literal notranslate"><span class="pre">DAT_01.001</span></code>.</p></li>
+<li><p><strong>sl</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – start line (azimuth) (the default is 1, which means the first line)</p></li>
+<li><p><strong>el</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – end line (azimuth) (the default is -1, which means the last line)</p></li>
+<li><p><strong>rmbp</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – If you want to remove the padded border pixels, set <code class="xref py py-attr docutils literal notranslate"><span class="pre">rmbp</span></code> to <code class="docutils literal notranslate"><span class="pre">True</span></code>, else set to <code class="docutils literal notranslate"><span class="pre">False</span></code> (the default is <code class="docutils literal notranslate"><span class="pre">False</span></code>).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>S</strong> – SAR raw data.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>2d-array</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-torchsar.products.record">
+<span id="torchsar-products-record-module"></span><h2>torchsar.products.record module<a class="headerlink" href="#module-torchsar.products.record" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.products.record.printrcd">
+<span class="sig-prename descclassname"><span class="pre">torchsar.products.record.</span></span><span class="sig-name descname"><span class="pre">printrcd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">D</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.products.record.printrcd" title="Permalink to this definition">¶</a></dt>
+<dd><p>print record</p>
+<p>print record in ascend address order.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>D</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)"><em>dict</em></a>) – descriptor dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.products.record.readrcd">
+<span class="sig-prename descclassname"><span class="pre">torchsar.products.record.</span></span><span class="sig-name descname"><span class="pre">readrcd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decfmtf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">D</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endian</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'&gt;'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.products.record.readrcd" title="Permalink to this definition">¶</a></dt>
+<dd><p>read file record</p>
+<p>read record information from a file. see <code class="xref py py-func docutils literal notranslate"><span class="pre">read_ers_sar_raw()</span></code> for reading ERS SAR raw data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filepath</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – file path string</p></li>
+<li><p><strong>decfmtf</strong> (<em>function</em>) – format decoding function. see <code class="xref py py-func docutils literal notranslate"><span class="pre">decfmtfers()</span></code> for example.</p></li>
+<li><p><strong>D</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)"><em>dict</em></a>) – record descriptor dict, each value will be rewrited after reading.</p></li>
+<li><p><strong>offset</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – record offset, read from the offset-th Byte (the default is 0)</p></li>
+<li><p><strong>endian</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – endian, <code class="docutils literal notranslate"><span class="pre">'&lt;'</span></code> –&gt; little, <code class="docutils literal notranslate"><span class="pre">'&gt;'</span></code> – &gt; big (the default is ‘&lt;’, which means little endian)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>state</strong> – reading status. 0 –&gt; OK and done; 1 –&gt; no such file; 2 –&gt; bad record</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>number</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.products.record.readrcd1item">
+<span class="sig-prename descclassname"><span class="pre">torchsar.products.record.</span></span><span class="sig-name descname"><span class="pre">readrcd1item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decfmtf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adrfmt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endian</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'&gt;'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.products.record.readrcd1item" title="Permalink to this definition">¶</a></dt>
+<dd><p>read one file record item</p>
+<p>read one record item information from a file. see <code class="xref py py-func docutils literal notranslate"><span class="pre">read_ceos_sar_raw()</span></code> for reading ERS SAR raw data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filepath</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – file path string</p></li>
+<li><p><strong>decfmtf</strong> (<em>function</em>) – format decoding function. see <code class="xref py py-func docutils literal notranslate"><span class="pre">decfmtfers()</span></code> for example.</p></li>
+<li><p><strong>adrfmt</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.10)"><em>tuple</em></a>) – address and formation of one record item, a tuple with two
+elements: <code class="docutils literal notranslate"><span class="pre">(adr,</span> <span class="pre">fmt)</span></code>, where, <code class="docutils literal notranslate"><span class="pre">adr</span></code> = (start address, end address) is a tuple and specifies
+the address (unit Bytes), <code class="docutils literal notranslate"><span class="pre">fmt</span></code> is the formation string.</p></li>
+<li><p><strong>offset</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – record address offset, begin from the offset-th Byte (the default is 0)</p></li>
+<li><p><strong>endian</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – endian, <code class="docutils literal notranslate"><span class="pre">'&lt;'</span></code> –&gt; little, <code class="docutils literal notranslate"><span class="pre">'&gt;'</span></code> – &gt; big (the default is ‘&lt;’, which means little endian)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>v</strong> – readed record item value.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>{}</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-torchsar.products.uavsar">
+<span id="torchsar-products-uavsar-module"></span><h2>torchsar.products.uavsar module<a class="headerlink" href="#module-torchsar.products.uavsar" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.products.uavsar.read_uavsar_csm">
+<span class="sig-prename descclassname"><span class="pre">torchsar.products.uavsar.</span></span><span class="sig-name descname"><span class="pre">read_uavsar_csm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">el</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rmbp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.products.uavsar.read_uavsar_csm" title="Permalink to this definition">¶</a></dt>
+<dd><p>read UAVSAR raw data</p>
+<p>read UAVSAR SAR raw data pulse from line <code class="xref py py-attr docutils literal notranslate"><span class="pre">sl</span></code> to line <code class="xref py py-attr docutils literal notranslate"><span class="pre">el</span></code>. This function call
+function <code class="xref py py-func docutils literal notranslate"><span class="pre">read_ceos_sar_raw()</span></code> firstly and do some post-process.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filepath</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – UAVSAR raw data file path string, for UAVSAR –&gt; <code class="docutils literal notranslate"><span class="pre">*.raw</span></code></p></li>
+<li><p><strong>sl</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – start line (azimuth) (the default is 1, which means the first line)</p></li>
+<li><p><strong>el</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – end line (azimuth) (the default is -1, which means the last line)</p></li>
+<li><p><strong>rmbp</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – If you want to remove the padded border pixels, set <code class="xref py py-attr docutils literal notranslate"><span class="pre">rmbp</span></code> to <code class="docutils literal notranslate"><span class="pre">True</span></code>, else set to <code class="docutils literal notranslate"><span class="pre">False</span></code> (the default is <code class="docutils literal notranslate"><span class="pre">False</span></code>).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>S</strong> – SAR raw signal data matrix.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>2d-array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.products.uavsar.read_uavsar_mlc">
+<span class="sig-prename descclassname"><span class="pre">torchsar.products.uavsar.</span></span><span class="sig-name descname"><span class="pre">read_uavsar_mlc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dshape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'complex'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.products.uavsar.read_uavsar_mlc" title="Permalink to this definition">¶</a></dt>
+<dd><p>read UAVSAR MLC data</p>
+<p>read UAVSAR SAR MLC data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filepath</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – UAVSAR MLC data file path string, for UAVSAR –&gt; <code class="docutils literal notranslate"><span class="pre">*.mlc</span></code></p></li>
+<li><p><strong>dshape</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – MLC data shape (<span class="math">\(N_a\times N_r\)</span>), where, <span class="math">\(N_a, N_r\)</span> equal
+to <code class="docutils literal notranslate"><span class="pre">mlc_mag.set_rows</span></code>, <code class="docutils literal notranslate"><span class="pre">mlc_mag.set_cols</span></code> which can be obtained
+from the <code class="docutils literal notranslate"><span class="pre">.ann</span></code> file (the default is 1, which means the first line)</p></li>
+<li><p><strong>dshape</strong> – MLC data type: <code class="docutils literal notranslate"><span class="pre">'complex'</span></code> for complex-valued floating point data,
+<code class="docutils literal notranslate"><span class="pre">'real'</span></code> for real-valued floating point data.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>S</strong> – SAR MLC data matrix.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>2d-array</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-torchsar.products.utils">
+<span id="torchsar-products-utils-module"></span><h2>torchsar.products.utils module<a class="headerlink" href="#module-torchsar.products.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.products.utils.getnumber">
+<span class="sig-prename descclassname"><span class="pre">torchsar.products.utils.</span></span><span class="sig-name descname"><span class="pre">getnumber</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.products.utils.getnumber" title="Permalink to this definition">¶</a></dt>
+<dd><p>obtain number in string or bytes</p>
+<p>obtain number in string/bytes, e.g. b’ 123 45 ‘ –&gt; [123, 45],
+b’ 123, 45 ‘ –&gt; [123, 45] and b’  ‘ –&gt; []</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>b</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.10)"><em>bytes</em></a>) – bytes string for extracting numbers.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>n</strong> – extracted number list, if there only one element, return a number.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>number list or number</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.products.utils.splitfmt">
+<span class="sig-prename descclassname"><span class="pre">torchsar.products.utils.</span></span><span class="sig-name descname"><span class="pre">splitfmt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fmt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.products.utils.splitfmt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-torchsar.products">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-torchsar.products" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="torchsar.sarcfg.html" class="btn btn-neutral float-right" title="torchsar.sarcfg package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="torchsar.module.sharing.html" class="btn btn-neutral float-left" title="torchsar.module.sharing package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2017-2021, Zhi Liu, School of Artificial Intelligence, Xidian University
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

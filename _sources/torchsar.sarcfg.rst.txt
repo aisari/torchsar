@@ -4,10 +4,26 @@ torchsar.sarcfg package
 Submodules
 ----------
 
-torchsar.sarcfg.sensors module
-------------------------------
+torchsar.sarcfg.sensor\_airbone module
+--------------------------------------
 
-.. automodule:: torchsar.sarcfg.sensors
+.. automodule:: torchsar.sarcfg.sensor_airbone
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+torchsar.sarcfg.sensor\_satellite module
+----------------------------------------
+
+.. automodule:: torchsar.sarcfg.sensor_satellite
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+torchsar.sarcfg.sensor\_simulated module
+----------------------------------------
+
+.. automodule:: torchsar.sarcfg.sensor_simulated
    :members:
    :undoc-members:
    :show-inheritance:

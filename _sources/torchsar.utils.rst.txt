@@ -12,10 +12,10 @@ torchsar.utils.colors module
    :undoc-members:
    :show-inheritance:
 
-torchsar.utils.const module
+torchlib.utils.const module
 ---------------------------
 
-.. automodule:: torchsar.utils.const
+.. automodule:: torchlib.utils.const
    :members:
    :undoc-members:
    :show-inheritance:

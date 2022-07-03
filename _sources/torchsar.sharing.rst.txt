@@ -52,14 +52,6 @@ torchsar.sharing.doppler\_rate\_estimation module
    :undoc-members:
    :show-inheritance:
 
-torchsar.sharing.gain\_compensation module
-------------------------------------------
-
-.. automodule:: torchsar.sharing.gain_compensation
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 torchsar.sharing.matched\_filter module
 ---------------------------------------
 
@@ -120,14 +112,6 @@ torchsar.sharing.slant\_ground\_range module
 --------------------------------------------
 
 .. automodule:: torchsar.sharing.slant_ground_range
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-torchsar.sharing.window\_function module
-----------------------------------------
-
-.. automodule:: torchsar.sharing.window_function
    :members:
    :undoc-members:
    :show-inheritance:

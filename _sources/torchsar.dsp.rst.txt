@@ -1,61 +1,69 @@
-torchsar.dsp package
+torchlib.dsp package
 ====================
 
 Submodules
 ----------
 
-torchsar.dsp.convolution module
+torchlib.dsp.convolution module
 -------------------------------
 
-.. automodule:: torchsar.dsp.convolution
+.. automodule:: torchlib.dsp.convolution
    :members:
    :undoc-members:
    :show-inheritance:
 
-torchsar.dsp.correlation module
+torchlib.dsp.correlation module
 -------------------------------
 
-.. automodule:: torchsar.dsp.correlation
+.. automodule:: torchlib.dsp.correlation
    :members:
    :undoc-members:
    :show-inheritance:
 
-torchsar.dsp.ffts module
+torchlib.dsp.ffts module
 ------------------------
 
-.. automodule:: torchsar.dsp.ffts
+.. automodule:: torchlib.dsp.ffts
    :members:
    :undoc-members:
    :show-inheritance:
 
-torchsar.dsp.function\_base module
+torchlib.dsp.ffts1 module
+-------------------------
+
+.. automodule:: torchlib.dsp.ffts1
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+torchlib.dsp.function\_base module
 ----------------------------------
 
-.. automodule:: torchsar.dsp.function_base
+.. automodule:: torchlib.dsp.function_base
    :members:
    :undoc-members:
    :show-inheritance:
 
-torchsar.dsp.interpolation module
+torchlib.dsp.interpolation module
 ---------------------------------
 
-.. automodule:: torchsar.dsp.interpolation
+.. automodule:: torchlib.dsp.interpolation
    :members:
    :undoc-members:
    :show-inheritance:
 
-torchsar.dsp.normalsignals module
+torchlib.dsp.normalsignals module
 ---------------------------------
 
-.. automodule:: torchsar.dsp.normalsignals
+.. automodule:: torchlib.dsp.normalsignals
    :members:
    :undoc-members:
    :show-inheritance:
 
-torchsar.dsp.polynomialfit module
+torchlib.dsp.polynomialfit module
 ---------------------------------
 
-.. automodule:: torchsar.dsp.polynomialfit
+.. automodule:: torchlib.dsp.polynomialfit
    :members:
    :undoc-members:
    :show-inheritance:
@@ -63,7 +71,7 @@ torchsar.dsp.polynomialfit module
 Module contents
 ---------------
 
-.. automodule:: torchsar.dsp
+.. automodule:: torchlib.dsp
    :members:
    :undoc-members:
    :show-inheritance:

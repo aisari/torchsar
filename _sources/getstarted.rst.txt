@@ -15,7 +15,9 @@ Installation
 
 The `TorchSAR <https://pypi.org/project/torchsar/>`_ package can be easily installed by ``pip install torchsar``. After it is installed, just excute ``import torchsar as ts`` to import the package.
 
-.. important:: At present, nt all functions are open.
 
+.. important:: If you want to install torchcs on Windows system. The C/C++ build tools should be installed firstly! Just download it from `here <https://visualstudio.microsoft.com/visual-cpp-build-tools/>`_ , and select the follow components to install.
+
+.. image:: ./_static/vs-installer-workloads.png
 
 

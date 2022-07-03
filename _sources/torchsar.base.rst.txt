@@ -1,37 +1,37 @@
-torchsar.base package
+torchlib.base package
 =====================
 
 Submodules
 ----------
 
-torchsar.base.arrayops module
+torchlib.base.arrayops module
 -----------------------------
 
-.. automodule:: torchsar.base.arrayops
+.. automodule:: torchlib.base.arrayops
    :members:
    :undoc-members:
    :show-inheritance:
 
-torchsar.base.baseops module
+torchlib.base.baseops module
 ----------------------------
 
-.. automodule:: torchsar.base.baseops
+.. automodule:: torchlib.base.baseops
    :members:
    :undoc-members:
    :show-inheritance:
 
-torchsar.base.mathops module
+torchlib.base.mathops module
 ----------------------------
 
-.. automodule:: torchsar.base.mathops
+.. automodule:: torchlib.base.mathops
    :members:
    :undoc-members:
    :show-inheritance:
 
-torchsar.base.randomfunc module
+torchlib.base.randomfunc module
 -------------------------------
 
-.. automodule:: torchsar.base.randomfunc
+.. automodule:: torchlib.base.randomfunc
    :members:
    :undoc-members:
    :show-inheritance:
@@ -39,7 +39,7 @@ torchsar.base.randomfunc module
 Module contents
 ---------------
 
-.. automodule:: torchsar.base
+.. automodule:: torchlib.base
    :members:
    :undoc-members:
    :show-inheritance:

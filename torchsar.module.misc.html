@@ -98,21 +98,20 @@
 <li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="torchsar.autofocus.html">torchsar.autofocus package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="torchsar.base.html">torchsar.base package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.calibration.html">torchsar.calibration package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="torchsar.dsp.html">torchsar.dsp package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.evaluation.html">torchsar.evaluation package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.imaging.html">torchsar.imaging package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="torchsar.layerfunction.html">torchsar.layerfunction package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.misc.html">torchsar.misc package</a></li>
 <li class="toctree-l4 current"><a class="reference internal" href="torchsar.module.html">torchsar.module package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.products.html">torchsar.products package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sarcfg.html">torchsar.sarcfg package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html">torchsar.sharing package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.simulation.html">torchsar.simulation package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sparse.html">torchsar.sparse package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-torchsar.version">torchsar.version module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-torchsar">Module contents</a></li>
 </ul>
 </li>
@@ -191,116 +190,6 @@
             
   <section id="torchsar-module-misc-package">
 <h1>torchsar.module.misc package<a class="headerlink" href="#torchsar-module-misc-package" title="Permalink to this headline">¶</a></h1>
-<section id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</section>
-<section id="module-torchsar.module.misc.transform">
-<span id="torchsar-module-misc-transform-module"></span><h2>torchsar.module.misc.transform module<a class="headerlink" href="#module-torchsar.module.misc.transform" title="Permalink to this headline">¶</a></h2>
-<dl class="py class">
-<dt class="sig sig-object py" id="torchsar.module.misc.transform.Standardization">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.module.misc.transform.</span></span><span class="sig-name descname"><span class="pre">Standardization</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mean</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unbiased</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.misc.transform.Standardization" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<div class="math">
-\[\bar{X} = \frac{X-\mu}{\sigma}
-
-\]</div>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>X</strong> (<em>Tensor</em>) – data to be normalized,</p></li>
-<li><p><strong>mean</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – mean value (the default is None, which means auto computed)</p></li>
-<li><p><strong>std</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – Standard deviation (the default is None, which means auto computed)</p></li>
-<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – Specify the axis for computing mean and standard deviation (the default is None, which means all elements)</p></li>
-<li><p><strong>unbiased</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – If unbiased is False, then the standard-deviation will be calculated via the biased estimator. Otherwise, Bessel’s correction will be used.</p></li>
-<li><p><strong>extra</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – If True, also return the mean and std (the default is False, which means just return the standardized data)</p></li>
-</ul>
-</dd>
-</dl>
-<p class="rubric">Examples</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">torchsar</span> <span class="k">as</span> <span class="nn">ts</span>
-<span class="n">ts</span><span class="o">.</span><span class="n">setseed</span><span class="p">(</span><span class="n">seed</span><span class="o">=</span><span class="mi">2020</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="s1">&#39;torch&#39;</span><span class="p">)</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">th</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-
-<span class="n">f</span> <span class="o">=</span> <span class="n">Standardization</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">unbiased</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">y</span><span class="p">,</span> <span class="n">meanv</span><span class="p">,</span> <span class="n">stdv</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-
-<span class="n">g</span> <span class="o">=</span> <span class="n">th</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">InstanceNorm2d</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-
-<span class="n">z</span> <span class="o">=</span> <span class="n">g</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">z</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-
-<span class="n">f</span> <span class="o">=</span> <span class="n">Standardization</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">unbiased</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">y</span><span class="p">,</span> <span class="n">meanv</span><span class="p">,</span> <span class="n">stdv</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-
-<span class="n">g</span> <span class="o">=</span> <span class="n">th</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">BatchNorm2d</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-
-<span class="n">z</span> <span class="o">=</span> <span class="n">g</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">z</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>The results are:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tensor</span><span class="p">([[[</span> <span class="mf">0.2761</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1161</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.3316</span><span class="p">],</span>
-         <span class="p">[</span> <span class="mf">0.4918</span><span class="p">,</span>  <span class="mf">0.5450</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.7350</span><span class="p">],</span>
-         <span class="p">[</span> <span class="mf">1.5699</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.8567</span><span class="p">,</span>  <span class="mf">1.7366</span><span class="p">],</span>
-         <span class="p">[</span><span class="o">-</span><span class="mf">0.1463</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1318</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.3019</span><span class="p">]],</span>
-
-        <span class="p">[[</span><span class="o">-</span><span class="mf">1.0576</span><span class="p">,</span>  <span class="mf">0.5794</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.6489</span><span class="p">],</span>
-         <span class="p">[</span><span class="o">-</span><span class="mf">0.3410</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.6589</span><span class="p">,</span>  <span class="mf">0.2531</span><span class="p">],</span>
-         <span class="p">[</span> <span class="mf">1.2150</span><span class="p">,</span>  <span class="mf">0.7262</span><span class="p">,</span>  <span class="mf">0.3333</span><span class="p">],</span>
-         <span class="p">[</span><span class="o">-</span><span class="mf">1.1270</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.2132</span><span class="p">,</span>  <span class="mf">1.9397</span><span class="p">]]])</span> <span class="n">torch</span><span class="o">.</span><span class="n">Size</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-<span class="n">tensor</span><span class="p">([[[</span> <span class="mf">0.2761</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1161</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.3316</span><span class="p">],</span>
-         <span class="p">[</span> <span class="mf">0.4918</span><span class="p">,</span>  <span class="mf">0.5450</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.7350</span><span class="p">],</span>
-         <span class="p">[</span> <span class="mf">1.5699</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.8567</span><span class="p">,</span>  <span class="mf">1.7366</span><span class="p">],</span>
-         <span class="p">[</span><span class="o">-</span><span class="mf">0.1463</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1318</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.3019</span><span class="p">]],</span>
-
-        <span class="p">[[</span><span class="o">-</span><span class="mf">1.0576</span><span class="p">,</span>  <span class="mf">0.5794</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.6489</span><span class="p">],</span>
-         <span class="p">[</span><span class="o">-</span><span class="mf">0.3410</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.6588</span><span class="p">,</span>  <span class="mf">0.2531</span><span class="p">],</span>
-         <span class="p">[</span> <span class="mf">1.2150</span><span class="p">,</span>  <span class="mf">0.7262</span><span class="p">,</span>  <span class="mf">0.3333</span><span class="p">],</span>
-         <span class="p">[</span><span class="o">-</span><span class="mf">1.1270</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.2132</span><span class="p">,</span>  <span class="mf">1.9397</span><span class="p">]]])</span> <span class="n">torch</span><span class="o">.</span><span class="n">Size</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-<span class="n">tensor</span><span class="p">([[[</span> <span class="mf">0.0498</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.2576</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.2101</span><span class="p">],</span>
-         <span class="p">[</span> <span class="mf">0.2188</span><span class="p">,</span>  <span class="mf">0.2605</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.7426</span><span class="p">],</span>
-         <span class="p">[</span> <span class="mf">1.0637</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.6216</span><span class="p">,</span>  <span class="mf">1.1943</span><span class="p">],</span>
-         <span class="p">[</span><span class="o">-</span><span class="mf">0.2812</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.2698</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.4032</span><span class="p">]],</span>
-
-        <span class="p">[[</span><span class="o">-</span><span class="mf">1.1965</span><span class="p">,</span>  <span class="mf">0.0760</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.8788</span><span class="p">],</span>
-         <span class="p">[</span><span class="o">-</span><span class="mf">0.6395</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.6639</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1776</span><span class="p">],</span>
-         <span class="p">[</span> <span class="mf">0.5701</span><span class="p">,</span>  <span class="mf">0.1901</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1153</span><span class="p">],</span>
-         <span class="p">[</span><span class="o">-</span><span class="mf">1.2505</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5402</span><span class="p">,</span>  <span class="mf">1.1335</span><span class="p">]]])</span> <span class="n">torch</span><span class="o">.</span><span class="n">Size</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-<span class="n">tensor</span><span class="p">([[[</span> <span class="mf">0.0498</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.2576</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.2101</span><span class="p">],</span>
-         <span class="p">[</span> <span class="mf">0.2188</span><span class="p">,</span>  <span class="mf">0.2605</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.7426</span><span class="p">],</span>
-         <span class="p">[</span> <span class="mf">1.0637</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.6216</span><span class="p">,</span>  <span class="mf">1.1943</span><span class="p">],</span>
-         <span class="p">[</span><span class="o">-</span><span class="mf">0.2812</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.2698</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.4032</span><span class="p">]],</span>
-
-        <span class="p">[[</span><span class="o">-</span><span class="mf">1.1965</span><span class="p">,</span>  <span class="mf">0.0760</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.8788</span><span class="p">],</span>
-         <span class="p">[</span><span class="o">-</span><span class="mf">0.6395</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.6639</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1776</span><span class="p">],</span>
-         <span class="p">[</span> <span class="mf">0.5701</span><span class="p">,</span>  <span class="mf">0.1901</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1153</span><span class="p">],</span>
-         <span class="p">[</span><span class="o">-</span><span class="mf">1.2505</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5401</span><span class="p">,</span>  <span class="mf">1.1335</span><span class="p">]]],</span> <span class="n">grad_fn</span><span class="o">=&lt;</span><span class="n">SelectBackward</span><span class="o">&gt;</span><span class="p">)</span> <span class="n">torch</span><span class="o">.</span><span class="n">Size</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-</pre></div>
-</div>
-<dl class="py method">
-<dt class="sig sig-object py" id="torchsar.module.misc.transform.Standardization.forward">
-<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.module.misc.transform.Standardization.forward" title="Permalink to this definition">¶</a></dt>
-<dd><p>Defines the computation performed at every call.</p>
-<p>Should be overridden by all subclasses.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Although the recipe for forward pass needs to be defined within
-this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
-instead of this since the former takes care of running the
-registered hooks while the latter silently ignores them.</p>
-</div>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="torchsar.module.misc.transform.Standardization.training">
-<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><a class="headerlink" href="#torchsar.module.misc.transform.Standardization.training" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-</section>
 <section id="module-torchsar.module.misc">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-torchsar.module.misc" title="Permalink to this headline">¶</a></h2>
 </section>

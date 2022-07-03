@@ -44,7 +44,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="torchsar.base package" href="torchsar.base.html" />
+    <link rel="next" title="torchsar.calibration package" href="torchsar.calibration.html" />
     <link rel="prev" title="torchsar package" href="torchsar.html" /> 
 </head>
 
@@ -98,19 +98,16 @@
 <li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">torchsar.autofocus package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="torchsar.base.html">torchsar.base package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.calibration.html">torchsar.calibration package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="torchsar.dsp.html">torchsar.dsp package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.evaluation.html">torchsar.evaluation package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.imaging.html">torchsar.imaging package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="torchsar.layerfunction.html">torchsar.layerfunction package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.misc.html">torchsar.misc package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.module.html">torchsar.module package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.products.html">torchsar.products package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sarcfg.html">torchsar.sarcfg package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html">torchsar.sharing package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.simulation.html">torchsar.simulation package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sparse.html">torchsar.sparse package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="torchsar.html#submodules">Submodules</a></li>
@@ -216,8 +213,8 @@ the focused pixel.</p>
 <span class="math">\({\mathbf X} \in{\mathbb R}^{N\times N_c\times N_a\times N_r\times 2}\)</span>.</p></li>
 <li><p><strong>pa</strong> (<em>Tensor</em><em>, </em><em>optional</em>) – Defocus parameters in azimuth, phase error in rad unit. (the default is None, not focus)</p></li>
 <li><p><strong>pr</strong> (<em>Tensor</em><em>, </em><em>optional</em>) – Defocus parameters in range, phase error in rad unit. (the default is None, not focus)</p></li>
-<li><p><strong>isfft</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Is need do fft (the default is True)</p></li>
-<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Is shift zero frequency to center when do fft/ifft/fftfreq (the default is True)</p></li>
+<li><p><strong>isfft</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Is need do fft (the default is True)</p></li>
+<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Is shift zero frequency to center when do fft/ifft/fftfreq (the default is True)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -227,7 +224,7 @@ the focused pixel.</p>
 <dd class="field-odd"><p>(Tensor)</p>
 </dd>
 <dt class="field-even">Raises</dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.9)"><strong>TypeError</strong></a> – <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> is complex and should be in complex or real represent formation!</p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.10)"><strong>TypeError</strong></a> – <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> is complex and should be in complex or real represent formation!</p>
 </dd>
 </dl>
 </dd></dl>
@@ -252,8 +249,8 @@ the focused pixel.</p>
 <span class="math">\({\mathbf X} \in{\mathbb R}^{N\times N_c\times N_a\times N_r\times 2}\)</span>.</p></li>
 <li><p><strong>pa</strong> (<em>Tensor</em><em>, </em><em>optional</em>) – Focus parameters in azimuth, phase error in rad unit. (the default is None, not focus)</p></li>
 <li><p><strong>pr</strong> (<em>Tensor</em><em>, </em><em>optional</em>) – Focus parameters in range, phase error in rad unit. (the default is None, not focus)</p></li>
-<li><p><strong>isfft</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Is need do fft (the default is True)</p></li>
-<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Is shift zero frequency to center when do fft/ifft/fftfreq (the default is True)</p></li>
+<li><p><strong>isfft</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Is need do fft (the default is True)</p></li>
+<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Is shift zero frequency to center when do fft/ifft/fftfreq (the default is True)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -263,7 +260,7 @@ the focused pixel.</p>
 <dd class="field-odd"><p>(Tensor)</p>
 </dd>
 <dt class="field-even">Raises</dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.9)"><strong>TypeError</strong></a> – <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> is complex and should be in complex or real represent formation!</p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.10)"><strong>TypeError</strong></a> – <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> is complex and should be in complex or real represent formation!</p>
 </dd>
 </dl>
 </dd></dl>
@@ -285,12 +282,12 @@ the focused pixel.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>Tensor</em>) – Corrupt complex SAR image. N-Na-Nr(complex) or N-Na-Nr-2(real)</p></li>
-<li><p><strong>niter</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – The number of iteration (the default is 10)</p></li>
+<li><p><strong>niter</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – The number of iteration (the default is 10)</p></li>
 <li><p><strong>delta</strong> (<em>{float</em><em> or </em><em>None}</em><em>, </em><em>optional</em>) – The change step (the default is None (i.e. PI))</p></li>
-<li><p><strong>toli</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – Tolerance error for inner loop (the default is 1e-2)</p></li>
-<li><p><strong>tolo</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – Tolerance error for outer loop (the default is 1e-2)</p></li>
-<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Shift the zero frequency to center? (the default is True)</p></li>
-<li><p><strong>islog</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Print log information? (the default is False)</p></li>
+<li><p><strong>toli</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – Tolerance error for inner loop (the default is 1e-2)</p></li>
+<li><p><strong>tolo</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – Tolerance error for outer loop (the default is 1e-2)</p></li>
+<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Shift the zero frequency to center? (the default is True)</p></li>
+<li><p><strong>islog</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Print log information? (the default is False)</p></li>
 </ul>
 </dd>
 </dl>
@@ -308,19 +305,19 @@ the focused pixel.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>Tensor</em>) – complex image with shape <span class="math">\(N×N_a×N_r\)</span> or <span class="math">\(N×N_a×N_r×2\)</span></p></li>
-<li><p><strong>phi</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><em>float</em></a><em>, </em><em>optional</em>) – initial value of <span class="math">\(\phi\)</span> (the default is None, which means zeros)</p></li>
-<li><p><strong>niter</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – number of iterations (the default is 10)</p></li>
-<li><p><strong>method</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – method used to update the phase error
+<li><p><strong>phi</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – initial value of <span class="math">\(\phi\)</span> (the default is None, which means zeros)</p></li>
+<li><p><strong>niter</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – number of iterations (the default is 10)</p></li>
+<li><p><strong>method</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – method used to update the phase error
 - <code class="docutils literal notranslate"><span class="pre">'FP-MCA'</span></code> –&gt; Fix Point
 - <code class="docutils literal notranslate"><span class="pre">'CD-MCA'</span></code> –&gt; Coordinate Descent
 - <code class="docutils literal notranslate"><span class="pre">'SU-MCA'</span></code> –&gt; Simultaneous Update
 - <code class="docutils literal notranslate"><span class="pre">'N-MCA'</span></code> –&gt; Newton, see [2], [1] has problem when used to small image
 - <code class="docutils literal notranslate"><span class="pre">'SN-MCA'</span></code> –&gt; Simplified Newton
 - <code class="docutils literal notranslate"><span class="pre">'MN-MCA'</span></code> –&gt; Modified Newton</p></li>
-<li><p><strong>selscat</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Select brighter scatters.</p></li>
-<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – Compensation axis.</p></li>
-<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Does shift zero frequency to center?</p></li>
-<li><p><strong>islog</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Does print log info.</p></li>
+<li><p><strong>selscat</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Select brighter scatters.</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – Compensation axis.</p></li>
+<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Does shift zero frequency to center?</p></li>
+<li><p><strong>islog</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Does print log info.</p></li>
 </ul>
 </dd>
 </dl>
@@ -335,7 +332,7 @@ the focused pixel.</p>
 <span id="torchsar-autofocus-minimum-entropy-module"></span><h2>torchsar.autofocus.minimum_entropy module<a class="headerlink" href="#module-torchsar.autofocus.minimum_entropy" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="torchsar.autofocus.minimum_entropy.meaf_sm">
-<span class="sig-prename descclassname"><span class="pre">torchsar.autofocus.minimum_entropy.</span></span><span class="sig-name descname"><span class="pre">meaf_sm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">niter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0001</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'N-MEA'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">selscat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isunwrap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">islog</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.minimum_entropy.meaf_sm" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">torchsar.autofocus.minimum_entropy.</span></span><span class="sig-name descname"><span class="pre">meaf_sm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">niter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0001</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'N-MEA'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">selscat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isunwrap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">islog</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.minimum_entropy.meaf_sm" title="Permalink to this definition">¶</a></dt>
 <dd><p>Entropy based autofocus</p>
 <p>Minimum-Entropy based Autofocus (MEA)</p>
 <dl class="field-list simple">
@@ -343,21 +340,22 @@ the focused pixel.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>Tensor</em>) – complex image with shape <span class="math">\(N×N_a×N_r\)</span> or <span class="math">\(N×N_a×N_r×2\)</span></p></li>
 <li><p><strong>phi</strong> (<em>Tensor</em><em>, </em><em>optional</em>) – initial value of <span class="math">\(\phi\)</span> (the default is None, which means zeros)</p></li>
-<li><p><strong>niter</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – number of iterations (the default is 10)</p></li>
-<li><p><strong>tol</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><em>float</em></a><em>, </em><em>optional</em>) – Error tolerance.</p></li>
-<li><p><strong>eta</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><em>float</em></a><em>, </em><em>optional</em>) – Learning rate.</p></li>
-<li><p><strong>method</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – method used to update the phase error
+<li><p><strong>niter</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – number of iterations (the default is 10)</p></li>
+<li><p><strong>tol</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – Error tolerance.</p></li>
+<li><p><strong>eta</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – Learning rate.</p></li>
+<li><p><strong>method</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – method used to update the phase error
 - <code class="docutils literal notranslate"><span class="pre">'FP-MEA'</span></code> –&gt; Fix Point
 - <code class="docutils literal notranslate"><span class="pre">'CD-MEA'</span></code> –&gt; Coordinate Descent
 - <code class="docutils literal notranslate"><span class="pre">'SU-MEA'</span></code> –&gt; Simultaneous Update
 - <code class="docutils literal notranslate"><span class="pre">'N-MEA'</span></code> –&gt; Newton, see [2], [1] has problem when used to small image
 - <code class="docutils literal notranslate"><span class="pre">'SN-MEA'</span></code> –&gt; Simplified Newton
 - <code class="docutils literal notranslate"><span class="pre">'MN-MEA'</span></code> –&gt; Modified Newton</p></li>
-<li><p><strong>selscat</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Select brighter scatters (default: False).</p></li>
-<li><p><strong>isunwrap</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Unwrap radian phase (default: True).</p></li>
-<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – Compensation axis.</p></li>
-<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Does shift zero frequency to center?</p></li>
-<li><p><strong>islog</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Does print log info.</p></li>
+<li><p><strong>selscat</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Select brighter scatters (default: False).</p></li>
+<li><p><strong>isunwrap</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Unwrap radian phase (default: True).</p></li>
+<li><p><strong>deg</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em>, </em><em>optional</em>) – The degree of polynominal, if None, no fitting.</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – Compensation axis.</p></li>
+<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Does shift zero frequency to center?</p></li>
+<li><p><strong>islog</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Does print log info.</p></li>
 <li><p><strong>[</strong><strong>1</strong><strong>] </strong><strong>Zhang S</strong> (<em>see</em>) – 3425-3434.
 [2] Zeng T , Wang R , Li F . SAR Image Autofocus Utilizing Minimum-Entropy Criterion[J]. IEEE Geoence &amp; Remote Sensing Letters, 2013, 10(6):1552-1556.</p></li>
 <li><p><strong>Y</strong> (<em>Liu</em>) – 3425-3434.
@@ -388,12 +386,12 @@ the focused pixel.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>Tensor</em>) – Corrupt complex SAR image. N-Na-Nr(complex) or N-Na-Nr-2(real)</p></li>
-<li><p><strong>niter</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – The number of iteration (the default is 10)</p></li>
+<li><p><strong>niter</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – The number of iteration (the default is 10)</p></li>
 <li><p><strong>delta</strong> (<em>{float</em><em> or </em><em>None}</em><em>, </em><em>optional</em>) – The change step (the default is None (i.e. PI))</p></li>
-<li><p><strong>toli</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – Tolerance error for inner loop (the default is 1e-2)</p></li>
-<li><p><strong>tolo</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – Tolerance error for outer loop (the default is 1e-2)</p></li>
-<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Shift the zero frequency to center? (the default is True)</p></li>
-<li><p><strong>islog</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Print log information? (the default is False)</p></li>
+<li><p><strong>toli</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – Tolerance error for inner loop (the default is 1e-2)</p></li>
+<li><p><strong>tolo</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – Tolerance error for outer loop (the default is 1e-2)</p></li>
+<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Shift the zero frequency to center? (the default is True)</p></li>
+<li><p><strong>islog</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Print log information? (the default is False)</p></li>
 </ul>
 </dd>
 </dl>
@@ -405,7 +403,7 @@ the focused pixel.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="torchsar.autofocus.phase_error_model.PolyPhaseErrorGenerator">
 <em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">torchsar.autofocus.phase_error_model.</span></span><span class="sig-name descname"><span class="pre">PolyPhaseErrorGenerator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">carange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_error_model.PolyPhaseErrorGenerator" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="torchsar.autofocus.phase_error_model.PolyPhaseErrorGenerator.mkpec">
 <span class="sig-name descname"><span class="pre">mkpec</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.autofocus.phase_error_model.PolyPhaseErrorGenerator.mkpec" title="Permalink to this definition">¶</a></dt>
@@ -413,8 +411,8 @@ the focused pixel.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – The number of phase errors.</p></li>
-<li><p><strong>seed</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – The random seed.</p></li>
+<li><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – The number of phase errors.</p></li>
+<li><p><strong>seed</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – The random seed.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -437,8 +435,8 @@ the focused pixel.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>cs</strong> (<em>Tensor</em>) – The polynominal coefficients.</p></li>
-<li><p><strong>degs</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – The degrees of polynominal.</p></li>
-<li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – <code class="docutils literal notranslate"><span class="pre">'fftfreq-&gt;2fftfreq'</span></code> or <code class="docutils literal notranslate"><span class="pre">'2fftfreq-&gt;fftfreq'</span></code> (the default is ‘fftfeq-&gt;2fftfreq’)</p></li>
+<li><p><strong>degs</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em>, </em><em>optional</em>) – The degrees of polynominal.</p></li>
+<li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – <code class="docutils literal notranslate"><span class="pre">'fftfreq-&gt;2fftfreq'</span></code> or <code class="docutils literal notranslate"><span class="pre">'2fftfreq-&gt;fftfreq'</span></code> (the default is ‘fftfeq-&gt;2fftfreq’)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -448,7 +446,7 @@ the focused pixel.</p>
 <dd class="field-odd"><p>Tensor</p>
 </dd>
 <dt class="field-even">Raises</dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.9)"><strong>ValueError</strong></a> – Not support mode.</p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.10)"><strong>ValueError</strong></a> – Not support mode.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -470,7 +468,7 @@ the focused pixel.</p>
 <li><p><strong>c</strong> (<em>Tensor</em><em>, </em><em>optional</em>) – The DCT coefficients matrix <span class="math">\({\bf P} = [{\bf p}_1, {\bf p}_2, \cdots, {\bf p}_N ]^T ∈{\mathbb R}^{N × (M + 1)}\)</span>,
 where, <span class="math">\({\bf p}_n = [p_0, \cdots, p_M]^T\)</span>).</p></li>
 <li><p><strong>x</strong> (<em>Tensor</em><em>, </em><em>optional</em>) – Axis, such as <span class="math">\((0, Na)\)</span>.</p></li>
-<li><p><strong>deg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><em>tuple</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – The degree of the coefficients, <span class="math">\([p_{\rm min}, p_{\rm_max}]\)</span>, default is <code class="docutils literal notranslate"><span class="pre">None</span></code>, which means <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">size(c,</span> <span class="pre">1)]</span></code></p></li>
+<li><p><strong>deg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.10)"><em>tuple</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em>, </em><em>optional</em>) – The degree of the coefficients, <span class="math">\([p_{\rm min}, p_{\rm_max}]\)</span>, default is <code class="docutils literal notranslate"><span class="pre">None</span></code>, which means <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">size(c,</span> <span class="pre">1)]</span></code></p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -480,7 +478,7 @@ where, <span class="math">\({\bf p}_n = [p_0, \cdots, p_M]^T\)</span>).</p></li>
 <dd class="field-odd"><p>(Tensor)</p>
 </dd>
 <dt class="field-even">Raises</dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.9)"><strong>TypeError</strong></a> – <code class="xref py py-attr docutils literal notranslate"><span class="pre">c</span></code> should not be None!</p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.10)"><strong>TypeError</strong></a> – <code class="xref py py-attr docutils literal notranslate"><span class="pre">c</span></code> should not be None!</p>
 </dd>
 </dl>
 </dd></dl>
@@ -495,8 +493,8 @@ where, <span class="math">\({\bf p}_n = [p_0, \cdots, p_M]^T\)</span>).</p></li>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>c</strong> (<em>Tensor</em><em>, </em><em>optional</em>) – The polynominal coefficients matrix <span class="math">\({\bf P} = [{\bf p}_1, {\bf p}_2, \cdots, {\bf p}_N ]^T ∈{\mathbb R}^{N × (M -1)}\)</span>,
 where, <span class="math">\({\bf p}_n = [p_2, \cdots, p_M]^T\)</span>).</p></li>
-<li><p><strong>x</strong> (<em>Tensor</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – Axis, such as a vector in range of (-1, 1). If <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> is None, return <code class="xref py py-attr docutils literal notranslate"><span class="pre">c</span></code> directly.</p></li>
-<li><p><strong>deg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><em>tuple</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em>, </em><em>optional</em>) – The degree of the coefficients, <span class="math">\([p_{\rm min}, p_{\rm_max}]\)</span>, default is <code class="docutils literal notranslate"><span class="pre">None</span></code>, which means <code class="docutils literal notranslate"><span class="pre">[2,</span> <span class="pre">size(c,</span> <span class="pre">1)</span> <span class="pre">+</span> <span class="pre">1]</span></code></p></li>
+<li><p><strong>x</strong> (<em>Tensor</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em>, </em><em>optional</em>) – Axis, such as a vector in range of (-1, 1). If <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> is None, return <code class="xref py py-attr docutils literal notranslate"><span class="pre">c</span></code> directly.</p></li>
+<li><p><strong>deg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.10)"><em>tuple</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em>, </em><em>optional</em>) – The degree of the coefficients, <span class="math">\([p_{\rm min}, p_{\rm_max}]\)</span>, default is <code class="docutils literal notranslate"><span class="pre">None</span></code>, which means <code class="docutils literal notranslate"><span class="pre">[2,</span> <span class="pre">size(c,</span> <span class="pre">1)</span> <span class="pre">+</span> <span class="pre">1]</span></code></p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -506,7 +504,7 @@ where, <span class="math">\({\bf p}_n = [p_2, \cdots, p_M]^T\)</span>).</p></li>
 <dd class="field-odd"><p>(Tensor)</p>
 </dd>
 <dt class="field-even">Raises</dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.9)"><strong>TypeError</strong></a> – <code class="xref py py-attr docutils literal notranslate"><span class="pre">c</span></code> should not be None!</p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.10)"><strong>TypeError</strong></a> – <code class="xref py py-attr docutils literal notranslate"><span class="pre">c</span></code> should not be None!</p>
 </dd>
 </dl>
 </dd></dl>
@@ -519,13 +517,13 @@ where, <span class="math">\({\bf p}_n = [p_2, \cdots, p_M]^T\)</span>).</p></li>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – Number of samples.</p></li>
-<li><p><strong>norm</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a>) – Normalize the frequencies.</p></li>
-<li><p><strong>shift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a>) – Does shift the zero frequency to center.</p></li>
-<li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a>) – Frequency sampling mode. <code class="docutils literal notranslate"><span class="pre">'fftfreq'</span></code> or <code class="docutils literal notranslate"><span class="pre">'freq'</span></code> normalize the frequencies in (-1/2, 1/2).
+<li><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – Number of samples.</p></li>
+<li><p><strong>norm</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a>) – Normalize the frequencies.</p></li>
+<li><p><strong>shift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a>) – Does shift the zero frequency to center.</p></li>
+<li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a>) – Frequency sampling mode. <code class="docutils literal notranslate"><span class="pre">'fftfreq'</span></code> or <code class="docutils literal notranslate"><span class="pre">'freq'</span></code> normalize the frequencies in (-1/2, 1/2).
 <code class="docutils literal notranslate"><span class="pre">'2fftfreq'</span></code> or <code class="docutils literal notranslate"><span class="pre">'2freq'</span></code> normalize the frequencies in (-1, 1). If <code class="docutils literal notranslate"><span class="pre">None</span></code>, return <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
 <li><p><strong>dtype</strong> (<em>Tensor</em>) – Data type, default is <code class="docutils literal notranslate"><span class="pre">th.float32</span></code>.</p></li>
-<li><p><strong>device</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – device string, default is <code class="docutils literal notranslate"><span class="pre">'cpu'</span></code>.</p></li>
+<li><p><strong>device</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – device string, default is <code class="docutils literal notranslate"><span class="pre">'cpu'</span></code>.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -547,9 +545,9 @@ will cause image shift.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>phi</strong> (<em>Tensor</em>) – A <span class="math">\(N×N_x\)</span> phase error tensor with linear trend, where, <span class="math">\(N\)</span> is the batchsize, <span class="math">\(N_x\)</span> is the samples numbers in direction x.</p></li>
-<li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a>) – model mode, default is polynominal</p></li>
-<li><p><strong>deg</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – Polynomial degrees (default 4) to fit the error, once fitted, the term of deg=[0,1] will be removed. If <code class="xref py py-attr docutils literal notranslate"><span class="pre">deg</span></code> is None or lower than 2, then we do not fit the error with polynominal and not remove the linear trend.</p></li>
-<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a>) – Shift zero frequency to center when do fft/ifft/fftfreq? (the default is False)</p></li>
+<li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – model mode, default is polynominal</p></li>
+<li><p><strong>deg</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – Polynomial degrees (default 4) to fit the error, once fitted, the term of deg=[0,1] will be removed. If <code class="xref py py-attr docutils literal notranslate"><span class="pre">deg</span></code> is None or lower than 2, then we do not fit the error with polynominal and not remove the linear trend.</p></li>
+<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a>) – Shift zero frequency to center when do fft/ifft/fftfreq? (the default is False)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -573,16 +571,16 @@ will cause image shift.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>SI</strong> (<em>Tensor</em>) – Complex SAR image <span class="math">\(N_a×N_r\)</span>.</p></li>
-<li><p><strong>nsar</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – Number of synthetic aperture pixels.</p></li>
-<li><p><strong>nsub</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – Number of sub-aperture pixels. (the default is <span class="math">\({\rm min}{N_{sar}, N_a}\)</span>)</p></li>
-<li><p><strong>windb</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><em>float</em></a><em>, </em><em>optional</em>) – cutoff for window (the default is None, which use the mean as the cutoff.)</p></li>
-<li><p><strong>est</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – estimator, <code class="docutils literal notranslate"><span class="pre">'ML'</span></code> for Maximum Likelihood estimation, <code class="docutils literal notranslate"><span class="pre">'LUMV'</span></code> for Linear Unbiased Minimum Variance estimation (the default is ‘ML’)</p></li>
-<li><p><strong>deg</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – Polynomial degrees (default 4) to fit the error, once fitted, the term of deg=[0,1] will be removed.
+<li><p><strong>nsar</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – Number of synthetic aperture pixels.</p></li>
+<li><p><strong>nsub</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – Number of sub-aperture pixels. (the default is <span class="math">\({\rm min}{N_{sar}, N_a}\)</span>)</p></li>
+<li><p><strong>windb</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – cutoff for window (the default is None, which use the mean as the cutoff.)</p></li>
+<li><p><strong>est</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – estimator, <code class="docutils literal notranslate"><span class="pre">'ML'</span></code> for Maximum Likelihood estimation, <code class="docutils literal notranslate"><span class="pre">'LUMV'</span></code> for Linear Unbiased Minimum Variance estimation (the default is ‘ML’)</p></li>
+<li><p><strong>deg</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – Polynomial degrees (default 4) to fit the error, once fitted, the term of deg=[0,1] will be removed.
 If <code class="xref py py-attr docutils literal notranslate"><span class="pre">deg</span></code> is None or lower than 2, then we do not fit the error with polynominal and not remove the linear trend.</p></li>
-<li><p><strong>niter</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – Maximum iters (the default is None, which means using <code class="xref py py-attr docutils literal notranslate"><span class="pre">tol</span></code> for stopping)</p></li>
-<li><p><strong>tol</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><em>float</em></a><em>, </em><em>optional</em>) – Phase error tolerance. (the default is 1.e-6)</p></li>
-<li><p><strong>isplot</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Plot estimated phase error or corrected image. (the default is False)</p></li>
-<li><p><strong>islog</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Print log information? (the default is False)</p></li>
+<li><p><strong>niter</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – Maximum iters (the default is None, which means using <code class="xref py py-attr docutils literal notranslate"><span class="pre">tol</span></code> for stopping)</p></li>
+<li><p><strong>tol</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – Phase error tolerance. (the default is 1.e-6)</p></li>
+<li><p><strong>isplot</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Plot estimated phase error or corrected image. (the default is False)</p></li>
+<li><p><strong>islog</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Print log information? (the default is False)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -594,8 +592,8 @@ phi (Tensor): Estimated phase error <span class="math">\({\phi}\in {\mathbb R}^{
 </dd>
 <dt class="field-even">Raises</dt>
 <dd class="field-even"><ul class="simple">
-<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.9)"><strong>TypeError</strong></a> – The input is complex and should be in complex or real represent formation!</p></li>
-<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.9)"><strong>ValueError</strong></a> – For stripmap SAR, processing sub aperture should be smaller than synthetic aperture!</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.10)"><strong>TypeError</strong></a> – The input is complex and should be in complex or real represent formation!</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.10)"><strong>ValueError</strong></a> – For stripmap SAR, processing sub aperture should be smaller than synthetic aperture!</p></li>
 </ul>
 </dd>
 </dl>
@@ -621,13 +619,13 @@ correction,” IEEE Trans. Aero. &amp; Elec. Sys., vol. 30, no. 3, 1994.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>Tensor</em>) – Complex SAR image <span class="math">\({\bm X}\in {\mathbb C}^{N×N_a×N_r}\)</span>, where <span class="math">\(N\)</span> is the batchsize.</p></li>
-<li><p><strong>windb</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><em>None</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><em>float</em></a><em>, </em><em>optional</em>) – Cutoff for window (the default is None, which use the mean as the cutoff.)</p></li>
-<li><p><strong>est</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><em>str</em></a><em>, </em><em>optional</em>) – Estimator, <code class="docutils literal notranslate"><span class="pre">'ML'</span></code> for Maximum Likelihood estimation, <code class="docutils literal notranslate"><span class="pre">'LUMV'</span></code> for Linear Unbiased Minimum Variance estimation (the default is ‘ML’)</p></li>
-<li><p><strong>deg</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – The degree of polynominal</p></li>
-<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a><em>, </em><em>optional</em>) – Autofocus axis.</p></li>
-<li><p><strong>isrmlpe</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Is remove linear phase error? (the default is False)</p></li>
-<li><p><strong>iscrct</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Is corrected image? (the default is False)</p></li>
-<li><p><strong>isplot</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><em>bool</em></a><em>, </em><em>optional</em>) – Is plot estimated phase error? (the default is False)</p></li>
+<li><p><strong>windb</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – Cutoff for window (the default is None, which use the mean as the cutoff.)</p></li>
+<li><p><strong>est</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – Estimator, <code class="docutils literal notranslate"><span class="pre">'ML'</span></code> for Maximum Likelihood estimation, <code class="docutils literal notranslate"><span class="pre">'LUMV'</span></code> for Linear Unbiased Minimum Variance estimation (the default is ‘ML’)</p></li>
+<li><p><strong>deg</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – The degree of polynominal</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – Autofocus axis.</p></li>
+<li><p><strong>isrmlpe</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Is remove linear phase error? (the default is False)</p></li>
+<li><p><strong>iscrct</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Is corrected image? (the default is False)</p></li>
+<li><p><strong>isplot</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Is plot estimated phase error? (the default is False)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -639,8 +637,8 @@ phi (Tensor): Estimated phase error <span class="math">\(\phi\in {\mathbb R}^{N�
 </dd>
 <dt class="field-even">Raises</dt>
 <dd class="field-even"><ul class="simple">
-<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.9)"><strong>TypeError</strong></a> – <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> is complex and should be in complex or real represent formation!</p></li>
-<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.9)"><strong>ValueError</strong></a> – Not supported estimator! Supported are <code class="docutils literal notranslate"><span class="pre">'ML'</span></code> and <code class="docutils literal notranslate"><span class="pre">'LUMV'</span></code>.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.10)"><strong>TypeError</strong></a> – <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> is complex and should be in complex or real represent formation!</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.10)"><strong>ValueError</strong></a> – Not supported estimator! Supported are <code class="docutils literal notranslate"><span class="pre">'ML'</span></code> and <code class="docutils literal notranslate"><span class="pre">'LUMV'</span></code>.</p></li>
 </ul>
 </dd>
 </dl>
@@ -670,7 +668,7 @@ phi (Tensor): Estimated phase error <span class="math">\(\phi\in {\mathbb R}^{N�
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="torchsar.base.html" class="btn btn-neutral float-right" title="torchsar.base package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="torchsar.calibration.html" class="btn btn-neutral float-right" title="torchsar.calibration package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="torchsar.html" class="btn btn-neutral float-left" title="torchsar package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

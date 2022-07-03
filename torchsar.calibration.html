@@ -44,8 +44,8 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="torchsar.dsp package" href="torchsar.dsp.html" />
-    <link rel="prev" title="torchsar.base package" href="torchsar.base.html" /> 
+    <link rel="next" title="torchsar.evaluation package" href="torchsar.evaluation.html" />
+    <link rel="prev" title="torchsar.autofocus package" href="torchsar.autofocus.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -98,22 +98,21 @@
 <li class="toctree-l2 current"><a class="reference internal" href="torchsar.html">torchsar package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="torchsar.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="torchsar.autofocus.html">torchsar.autofocus package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="torchsar.base.html">torchsar.base package</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">torchsar.calibration package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="torchsar.dsp.html">torchsar.dsp package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.evaluation.html">torchsar.evaluation package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.imaging.html">torchsar.imaging package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="torchsar.layerfunction.html">torchsar.layerfunction package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.misc.html">torchsar.misc package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.module.html">torchsar.module package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="torchsar.products.html">torchsar.products package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sarcfg.html">torchsar.sarcfg package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sharing.html">torchsar.sharing package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.simulation.html">torchsar.simulation package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="torchsar.sparse.html">torchsar.sparse package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="torchsar.utils.html">torchsar.utils package</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-torchsar">Module contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-torchsar.version">torchsar.version module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="torchsar.html#module-contents">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -220,6 +219,41 @@ Flag : dict</p>
 </dd></dl>
 
 </section>
+<section id="module-torchsar.calibration.gain_compensation">
+<span id="torchsar-calibration-gain-compensation-module"></span><h2>torchsar.calibration.gain_compensation module<a class="headerlink" href="#module-torchsar.calibration.gain_compensation" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="torchsar.calibration.gain_compensation.vga_gain_compensation">
+<span class="sig-prename descclassname"><span class="pre">torchsar.calibration.gain_compensation.</span></span><span class="sig-name descname"><span class="pre">vga_gain_compensation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">S</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">V</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'linear'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fact</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#torchsar.calibration.gain_compensation.vga_gain_compensation" title="Permalink to this definition">¶</a></dt>
+<dd><p>vga gain compensation</p>
+<p>vga gain compensation</p>
+<div class="math">
+\[\begin{aligned}
+{\bm F} &= (λ 10^{{\bm V}/20})\\
+{\bm S}_{c} &= {\bm F} \odot {\bm S}
+\end{aligned}
+
+\]</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>S</strong> (<em>torch tensor</em>) – <code class="xref py py-attr docutils literal notranslate"><span class="pre">S</span></code> is an <span class="math">\(N_a×N_r×2\)</span> array, where, <span class="math">\(S[:,:,0]\)</span> is the I signal
+and <span class="math">\(S[:,:,1]\)</span> is the Q signal.</p></li>
+<li><p><strong>V</strong> (<em>torch tensor</em>) – <code class="xref py py-attr docutils literal notranslate"><span class="pre">S</span></code> is an <span class="math">\(N_a×N_r\)</span> or <span class="math">\(N_a×1\)</span> VGA gain array, the gain values are in
+<code class="docutils literal notranslate"><span class="pre">dB</span></code> unit.</p></li>
+<li><p><strong>mod</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – compensation mode (the default is ‘linear’)</p></li>
+<li><p><strong>fact</strong> (<em>number</em><em>, </em><em>optional</em>) – fact is the factor <span class="math">\(\lambda\)</span> (the default is 1.0)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>compensated signal, <span class="math">\(N_a×N_r×2\)</span> array.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>torch tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
 <section id="module-torchsar.calibration.multilook_process">
 <span id="torchsar-calibration-multilook-process-module"></span><h2>torchsar.calibration.multilook_process module<a class="headerlink" href="#module-torchsar.calibration.multilook_process" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
@@ -231,7 +265,7 @@ Flag : dict</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>Sslc</strong> (<em>Tensor</em>) – Processed single look complex (or intensity) sar data tensor with size <span class="math">\(N_a×N_r\)</span>.</p></li>
-<li><p><strong>nlooks</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)"><em>tuple</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)"><em>list</em></a>) – The number of looks in azimuth and range direction, [na, nr] or (na, nr).</p></li>
+<li><p><strong>nlooks</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.10)"><em>tuple</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><em>list</em></a>) – The number of looks in azimuth and range direction, [na, nr] or (na, nr).</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -257,10 +291,10 @@ Flag : dict</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="torchsar.dsp.html" class="btn btn-neutral float-right" title="torchsar.dsp package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="torchsar.evaluation.html" class="btn btn-neutral float-right" title="torchsar.evaluation package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="torchsar.base.html" class="btn btn-neutral float-left" title="torchsar.base package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="torchsar.autofocus.html" class="btn btn-neutral float-left" title="torchsar.autofocus package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
